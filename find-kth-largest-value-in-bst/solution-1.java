@@ -17,7 +17,7 @@ class Program {
 
         traverseRNL(tree, Q);
 
-        for(var i = 0; i < k; i++) { Q.poll(); }
+        for(var i = 0; i < k - 1; i++) { Q.poll(); }
 
         return Q.poll();
     }
