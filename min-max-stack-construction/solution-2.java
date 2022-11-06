@@ -13,17 +13,21 @@ class Program {
         public void push(Integer number) {
             this.vals.add(number);
             
-            this.mins.add(isEmpty()
-                ? number
-                : (number < this.mins.get(N - 1))
+            this.mins.add(
+                isEmpty()
                     ? number
-                    : this.mins.get(N - 1));
+                    : (number < this.mins.get(N - 1))
+                        ? number
+                        : this.mins.get(N - 1)
+            );
             
-            this.maxs.add(isEmpty()
-                ? number
-                : (number > this.maxs.get(N - 1))
+            this.maxs.add(
+                isEmpty()
                     ? number
-                    : this.maxs.get(N - 1));
+                    : (number > this.maxs.get(N - 1))
+                        ? number
+                        : this.maxs.get(N - 1)
+            );
                     
             N++;
         }
