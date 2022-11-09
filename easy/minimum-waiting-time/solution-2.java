@@ -1,0 +1,15 @@
+import java.util.*;
+
+class Program {
+
+    public int minimumWaitingTime(int[] Q) {
+        var R = 0;
+        var N = Q.length;
+
+        Arrays.sort(Q);
+
+        for(var i = 0; i < N; i++) { R +=  (N - i - 1) * Q[i]; }
+
+        return R;
+    }
+}
