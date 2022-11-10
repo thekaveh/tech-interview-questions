@@ -1,0 +1,15 @@
+import java.util.*;
+
+class Program {
+    public static boolean isPalindrome(String S) {
+        var N = S.length();
+
+        for(var lo = 0; lo < N / 2; lo++) {
+            var hi = N - 1 - lo;
+
+            if(S.charAt(lo) != S.charAt(hi)) { return false; }
+        }
+
+        return true;
+    }
+}
