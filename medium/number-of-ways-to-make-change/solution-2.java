@@ -13,7 +13,7 @@ class Program {
         var N = D.length;
 
         if(S == 0)              { return 1; }
-        if(N == 0 || at >= N)   { return 0; }
+        if(N == 0 || N <= at)   { return 0; }
 
         if(M[at][S] != null) { return M[at][S]; }
 
