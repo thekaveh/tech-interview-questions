@@ -2,7 +2,19 @@ import java.util.*;
 
 class Program {
     public int minimumPassesOfMatrix(int[][] A) {
+        var passes = 0;
 
+        var VN = validNegatives(A);
+
+        while(!VN.isEmpty()) {
+            for(var vn : VN) { A[vn[0]][vn[1]] *= -1; }
+
+            passes++;
+
+            VN = validNegatives(A);
+        }
+
+        return isAllPositives(A) ? passes : -1;
     }
 
     private static int[][] adj(int r, int c) {
@@ -21,9 +33,6 @@ class Program {
 
     private static boolean isValidNegative(int r, int c, int[][] A) {
         if(!isValidPosition(r, c, A)) { return false; }
-
-        var R = A.length;
-        var C = A[0].length;
 
         if(A[r][c] >= 0) { return false; }
 
@@ -51,5 +60,18 @@ class Program {
         }
 
         return VN;
+    }
+
+    private static boolean isAllPositives(int[][] A) {
+        var R = A.length;
+        var C = A[0].length;
+
+        for(var r = 0; r < R; r++) {
+            for(var c = 0; c < C; c++) {
+                if(A[r][c] < 0) { return false; }
+            }
+        }
+
+        return true;
     }
 }
