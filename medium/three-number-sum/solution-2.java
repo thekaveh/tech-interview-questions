@@ -8,8 +8,8 @@ class Program {
         Arrays.sort(A);
         
         for(var i = 0; i < N - 2; i++) {
-            int lo = i + 1
-            , hi = N - 1;
+            var lo = i + 1;
+            var hi = N - 1;
             
             while(lo < hi) {
                 int T = A[i] + A[lo] + A[hi];
