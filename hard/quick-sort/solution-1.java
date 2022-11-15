@@ -12,7 +12,7 @@ class Program {
     }
 
     private static void quickSort(int[] A, int lo, int hi) {
-        if(lo >= hi) { return; }
+        if(lo > hi) { return; }
 
         // pre: A[lo...hi]
 
