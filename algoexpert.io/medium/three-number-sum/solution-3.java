@@ -12,7 +12,7 @@ class Program {
                 int T = A[i] + A[lo] + A[hi];
                 
                 if	    (T < S) { lo++; }
-                else if	(T > S) { hi--; }
+                else if	(S < T) { hi--; }
                 else {
                     R.add(new Integer[] { A[i], A[lo], A[hi] });
                     

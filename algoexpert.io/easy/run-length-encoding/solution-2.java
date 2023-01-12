@@ -3,21 +3,21 @@ import java.util.*;
 class Program {
     public String runLengthEncoding(String txt) {
         var N = txt.length();
-        var cipher = new StringBuilder();
+        var R = new StringBuilder();
 
         for(var lo = 0; lo < N; lo++) {
-            var runCount = 1;
+            var runLen = 1;
             var runChar = txt.charAt(lo);
 
-            for(var hi = lo + 1; hi < N && runChar == txt.charAt(hi) && runCount < 9; hi++) {
+            for(var hi = lo + 1; hi < N && txt.charAt(hi) == runChar && runLen < 9; hi++) {
                 lo++;
-                runCount++;
+                runLen++;
             }
 
-            cipher.append(runCount);
-            cipher.append(runChar);
+            R.append(runLen);
+            R.append(runChar);
         }
 
-        return cipher.toString();
+        return R.toString();
     }
 }

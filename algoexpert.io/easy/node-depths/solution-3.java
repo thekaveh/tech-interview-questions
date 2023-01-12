@@ -2,11 +2,11 @@ import java.util.*;
 
 class Program {
     static class BinaryTree {
-            int value;
-            BinaryTree left;
-            BinaryTree right;
+        int value;
+        BinaryTree left;
+        BinaryTree right;
 
-            public BinaryTree(int value) {
+        public BinaryTree(int value) {
             this.value = value;
             left = null;
             right = null;

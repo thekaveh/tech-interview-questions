@@ -2,16 +2,20 @@ import java.util.*;
 
 class Program {
     public static int getNthFib(int n) {
-        var M = new int[] { 0, 1 };
+        if(n == 1 || n == 2) { return n - 1; }
 
-        if(n == 1 ||n == 2) { return M[n - 1]; }
-        
-        for(var i = 3; i <= n; i++) {
-            var t = M[0] + M[1];
-            M[0] = M[1];
-            M[1] = t;
+        var M = new Integer[n + 1];
+        M[1] = 0;
+        M[2] = 1;
+
+        return getNthFib(n, M);
+    }
+
+    private static int getNthFib(int n, Integer[] M) {
+        if(M[n] == null) {
+            M[n] = getNthFib(n - 2, M) + getNthFib(n - 1, M);
         }
 
-        return M[1];
+        return M[n];
     }
 }
