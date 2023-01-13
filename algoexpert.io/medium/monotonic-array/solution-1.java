@@ -6,14 +6,14 @@ class Program {
     
         if(N == 0 || N == 1) { return true; }
 
-        var nonInc = true;
-        var nonDec = true;
+        var isMonoInc = true;
+        var isMonoDec = true;
 
         for(var i = 0; i < N - 1; i++) {
-            if(A[i] < A[i + 1]) { nonInc = false; }
-            if(A[i] > A[i + 1]) { nonDec = false; }
+            if(A[i] < A[i + 1]) { isMonoDec = false; }
+            if(A[i] > A[i + 1]) { isMonoInc = false; }
         }
 
-        return nonInc || nonDec;
+        return isMonoInc || isMonoDec;
     }
 }
