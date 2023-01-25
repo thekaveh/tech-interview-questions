@@ -12,24 +12,20 @@ class Program {
         }
     }
 
-    public BST reconstructBst(ArrayList<Integer> NLR) {
-        return reconstruct(NLR);
-    }
+    public BST reconstructBst(List<Integer> NLR) {
+		var N = NLR.size();
+		
+		if(N == 0) { return null; }
+		
+		var v = NLR.get(0);
+		var node = new BST(v);
 
-    public BST reconstruct(List<Integer> NLR) {
-        var N = NLR.size();
-
-        if(N == 0) { return null; }
-
-        var v = NLR.get(0);
-        var node = new BST(v);
-
-        var idx = 1;
-        while(idx < N && NLR.get(idx) < v) { idx++; }
-
-        node.left = reconstruct(NLR.subList(1, idx));
-        node.right = reconstruct(NLR.subList(idx, N));
-
-        return node;
+		var mid = 1;
+		while(mid < N && NLR.get(mid) < v) { mid++; }
+		
+		node.left = reconstructBst(NLR.subList(1, mid));
+		node.right = reconstructBst(NLR.subList(mid, N));
+		
+	    return node;
     }
 }

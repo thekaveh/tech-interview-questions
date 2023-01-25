@@ -21,7 +21,7 @@ class Program {
     private static BST reconstructBst(ArrayList<Integer> NLR, int lo, int hi) {
         var N = NLR.size();
 
-        if(lo > hi || hi >= N) { return null; }
+        if(hi < lo || N <= hi) { return null; }
         
         var node = new BST(NLR.get(lo));
 

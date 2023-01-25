@@ -2,15 +2,15 @@ import java.util.*;
 
 class Program {
     public static AncestralTree getYoungestCommonAncestor(AncestralTree R, AncestralTree A, AncestralTree B) {
-        int depthA = 0, depthB = 0;
-        for(var T = A; T != R; T = T.ancestor) { depthA++; }
-        for(var T = B; T != R; T = T.ancestor) { depthB++; }
-
-        if     (depthA > depthB)    { for(; depthA > depthB; depthA--) { A = A.ancestor; } }
-        else if(depthB > depthA)    { for(; depthB > depthA; depthB--) { B = B.ancestor; } }
-
+        int dA = 0, dB = 0;
+        for(var T = A; T != R; T = T.ancestor) { dA++; }
+        for(var T = B; T != R; T = T.ancestor) { dB++; }
+  
+        if     (dA < dB) { while(dA != dB) { B = B.ancestor; dB--; } }
+        else if(dB < dA) { while(dA != dB) { A = A.ancestor; dA--; } }
+  
         while(A != B) { A = A.ancestor; B = B.ancestor; }
-
+  
         return A;
     }
 

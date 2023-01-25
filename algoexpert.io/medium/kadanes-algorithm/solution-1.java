@@ -5,7 +5,7 @@ class Program {
         var N = A.length;
         var S = Integer.MIN_VALUE;
 
-        for(var lo = 0; lo < N; lo ++) {
+        for(var lo = 0; lo < N; lo++) {
             for(var hi = lo; hi < N; hi++) {
                 var T = 0;
 

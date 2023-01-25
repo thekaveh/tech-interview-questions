@@ -10,7 +10,7 @@ class Program {
         var N = D.length;
 
         if(S == 0)              { return 1; }
-        if(N == 0 || at >= N)   { return 0; }
+        if(N == 0 || N <= at)   { return 0; }
 
         var altA = (D[at] <= S) ? solve(S - D[at], D, at) : 0;  // inc
         var altB = solve(S, D, at + 1);                         // exc

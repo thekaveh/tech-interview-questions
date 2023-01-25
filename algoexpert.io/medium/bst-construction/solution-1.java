@@ -25,7 +25,7 @@ class Program {
                 if(tree.left != null) 	{ insert(tree.left, key); }
                 else 				    { tree.left = new BST(key); }
             }
-            else if	(cmp >= 0) {
+            else if	(0 <= cmp) {
                 if(tree.right != null) 	{ insert(tree.right, key); }
                 else 					{ tree.right = new BST(key);; }
             }
@@ -41,7 +41,7 @@ class Program {
             int cmp = Integer.valueOf(key).compareTo(tree.value);
             
             if      (cmp < 0)   { return contains(tree.left, key); }
-            else if	(cmp > 0)	{ return contains(tree.right, key); }
+            else if	(0 < cmp)	{ return contains(tree.right, key); }
             else 				{ return true; }
         }
 
@@ -55,7 +55,7 @@ class Program {
             int cmp = Integer.valueOf(key).compareTo(tree.value);
             
             if		(cmp < 0)   { if(tree.left != null)  { remove(tree.left, tree, key); } }
-            else if	(cmp > 0)	{ if(tree.right != null) { remove(tree.right, tree, key); } }
+            else if	(0 < cmp)	{ if(tree.right != null) { remove(tree.right, tree, key); } }
             else {
                 if(tree.left != null && tree.right != null) {
                     tree.value = tree.right.min();

@@ -20,7 +20,7 @@ class Program {
                     if(current.left != null) 	{ current = current.left; }
                     else 			            { current.left = new BST(key); break; }
                 }
-                else if	(cmp >= 0)	{
+                else if	(0 <= cmp)	{
                     if(current.right != null)   { current = current.right; }
                     else 					    { current.right = new BST(key); break; }
                 }
@@ -36,7 +36,7 @@ class Program {
                 int cmp = Integer.valueOf(key).compareTo(current.value);
                 
                 if      (cmp < 0)   { current = current.left; }
-                else if	(cmp > 0)   { current = current.right; }
+                else if	(0 < cmp)   { current = current.right; }
                 else 				{ return true; }
             }
                 
@@ -56,7 +56,7 @@ class Program {
                 int cmp = Integer.valueOf(key).compareTo(current.value);
                 
                 if		(cmp < 0)   { parent = current; current = current.left; }
-                else if	(cmp > 0)   { parent = current; current = current.right; }
+                else if	(0 < cmp)   { parent = current; current = current.right; }
                 else 							{
                     if(current.left != null && current.right != null) {
                         current.value = current.right.min();

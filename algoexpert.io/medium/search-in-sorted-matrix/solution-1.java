@@ -5,13 +5,13 @@ class Program {
         var R = M.length;
         var C = M[0].length;
 
-        for(var row = R - 1; row >= 0; row--) {
-            for(var col = 0; col < C; col++) {
-                var cmp = new Integer(M[row][col]).compareTo(v);
+        for(var r = R - 1; 0 <= r; r--) {
+            for(var c = 0; c < C; c++) {
+                var cmp = Integer.valueOf(M[r][c]).compareTo(v);
 
                 if      (cmp < 0) { continue; }
-                else if (cmp > 0) { break;  }
-                else              { return new int[] { row, col }; }
+                else if (0 < cmp) { break;  }
+                else              { return new int[] { r, c }; }
             }
         }
 

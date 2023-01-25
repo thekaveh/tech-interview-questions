@@ -7,11 +7,11 @@ class Program {
 
         var idx = new int[] { 0, C - 1 };
 
-        while(idx[0] < R && idx[1] >= 0) {
+        while(idx[0] < R && 0 <= idx[1]) {
             var t = M[idx[0]][idx[1]];
 
             if      (t < v) { idx[0]++; }
-            else if (t > v) { idx[1]--; }
+            else if (v < t) { idx[1]--; }
             else            { return idx; }
         }
 

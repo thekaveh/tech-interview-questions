@@ -8,22 +8,22 @@ class Program {
         var V = new boolean[R][C];
         var CCC = new ArrayList<Integer>();
 
-        for(var i = 0; i < R; i++) {
-            for(var j = 0; j < C; j++) {
-                if(!canVisit(i, j, M, V)) { continue; }
+        for(var r = 0; r < R; r++) {
+            for(var c = 0; c < C; c++) {
+                if(!canVisit(r, c, M, V)) { continue; }
 
-                CCC.add(visitDFS(i, j, M, V, 0));
+                CCC.add(visitDFS(r, c, M, V, 0));
             }
         }
 
         return CCC;
     }
 
-    private static int visitDFS(int i, int j, int[][] M, boolean[][] V, int cccc) {
+    private static int visitDFS(int r, int c, int[][] M, boolean[][] V, int cccc) {
         cccc++;
-        V[i][j] = true;
+        V[r][c] = true;
 
-        for(var adj : adj(i, j)) {
+        for(var adj : adj(r, c)) {
             if(!canVisit(adj[0], adj[1], M, V)) { continue; }
 
             cccc = visitDFS(adj[0], adj[1], M, V, cccc);
@@ -32,24 +32,24 @@ class Program {
         return cccc;
     }
 
-    private static boolean canVisit(int i, int j, int[][] M, boolean[][] V) {
+    private static boolean canVisit(int r, int c, int[][] M, boolean[][] V) {
         var R = M.length;
         var C = M[0].length;
 
-        if(i < 0 || i >= R) { return false; }
-        if(j < 0 || j >= C) { return false; }
-        if(M[i][j] == 0)    { return false; }
-        if(V[i][j])         { return false; }
+        if(r < 0 || R <= r) { return false; }
+        if(c < 0 || C <= c) { return false; }
+        if(M[r][c] == 0)    { return false; }
+        if(V[r][c])         { return false; }
 
         return true;
     }
 
-    private static int[][] adj(int i, int j) {
+    private static int[][] adj(int r, int c) {
         return new int[][] {
-            { i - 1, j }
-            , { i + 1, j }
-            , { i, j - 1 }
-            , { i, j + 1 }
+            { r - 1, c }
+            , { r + 1, c }
+            , { r, c - 1 }
+            , { r, c + 1 }
         };
     }
 }
