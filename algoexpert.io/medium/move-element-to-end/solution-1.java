@@ -10,12 +10,12 @@ class Program {
     public static List<Integer> moveElementToEnd(List<Integer> A, int v) {
         var N = A.size();
 
-        var lo = 0;
+        var at = 0;
         var hi = N - 1;
 
-        while(lo < hi) {
-            if(A.get(lo) == v) { swap(A, lo, hi--); }
-            else               { lo++; }
+        while(at <= hi) {
+            if(A.get(at) == v) { swap(A, at, hi--); }
+            else               { at++; }
         }
 
         return A;
