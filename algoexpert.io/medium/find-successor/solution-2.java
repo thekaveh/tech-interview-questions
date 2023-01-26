@@ -28,13 +28,13 @@ class Program {
         return null;
     }
 
-    private static void traverseRNL(BinaryTree node, Stack<BinaryTree> S) {
-        if(node == null) { return; }
+    private static void traverseRNL(BinaryTree tree, Stack<BinaryTree> S) {
+        if(tree == null) { return; }
         
-        traverseRNL(node.right, S);
+        traverseRNL(tree.right, S);
 
-        S.push(node);
+        S.push(tree);
 
-        traverseRNL(node.left, S);
+        traverseRNL(tree.left, S);
     }
 }

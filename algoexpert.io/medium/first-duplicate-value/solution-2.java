@@ -12,11 +12,15 @@ class Program {
     }
 
     private static boolean isMarked(int a, int[] A) {
-        return A[Math.abs(a) - 1] < 0;
+        var idx = Math.abs(a) - 1;
+
+        return A[idx] < 0;
     }
 
     private static void mark(int a, int[] A) {
-        A[Math.abs(a) - 1] *= -1;
+        var idx = Math.abs(a) - 1;
+
+        A[idx] *= -1;
     }
 
     private static int unmarked(int a) {

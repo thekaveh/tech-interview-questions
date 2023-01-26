@@ -33,9 +33,7 @@ class Program {
         
         traverseRNL(tree.right, node, S);
 
-        S.push(tree);
-
-        if(tree == node) { return; }
+        S.push(tree); if(tree == node) { return; }
 
         traverseRNL(tree.left, node, S);
     }

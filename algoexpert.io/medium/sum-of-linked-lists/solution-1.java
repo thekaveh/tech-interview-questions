@@ -13,20 +13,20 @@ class Program {
     }
 
     public LinkedList sumOfLinkedLists(LinkedList A, LinkedList B) {
-        var carry = 0;
+        var c = 0;
         LinkedList R = null, r = null;
 
-        while(A != null || B != null || carry != 0) {
+        while(A != null || B != null || c != 0) {
             var a = (A != null) ? A.value : 0;
             var b = (B != null) ? B.value : 0;
-            var c = a + b + carry;
-
-            carry = c / 10;
-            c %= 10;
-
-            if(R == null)   { R = r = new LinkedList(c); }
-            else            { r.next = new LinkedList(c); r = r.next; }
-
+      
+            var s = a + b + c;
+            c = s / 10;
+            s %= 10;
+      
+            if(R == null) { R = r = new LinkedList(s); }
+            else          { r.next = new LinkedList(s); r = r.next; }
+      
             A = (A != null) ? A.next : null;
             B = (B != null) ? B.next : null;
         }
