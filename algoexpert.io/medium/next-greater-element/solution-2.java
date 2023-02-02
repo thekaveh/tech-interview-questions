@@ -8,7 +8,7 @@ class Program {
 
         Arrays.fill(R, -1);
 
-        for(var i = 2 * N - 1; i >= 0; i--) {
+        for(var i = 2 * N - 1; 0 <= i; i--) {
             var idx = i % N;
 
             while(!S.isEmpty()) {

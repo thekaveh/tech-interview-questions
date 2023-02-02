@@ -39,7 +39,7 @@ class Program {
     }
 
     private static BST solve(List<Integer> A, int lo, int hi) {
-        if(lo > hi) { return null; }
+        if(hi < lo) { return null; }
 
         var mid = lo + (hi - lo) / 2;
 

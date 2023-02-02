@@ -11,7 +11,7 @@ class Program {
         public List<Integer> buildHeap(List<Integer> H) {
             int N = H.size();
             
-            for(int i = parentIndex(N - 1); i >= 0; i--) {
+            for(int i = parentIndex(N - 1); 0 <= i; i--) {
                 siftDown(i, N - 1, H);
             }
             
@@ -46,7 +46,7 @@ class Program {
             int ret = this.heap.get(N - 1);
             this.heap.remove(N - 1);
             
-            siftDown(0, N - 1, this.heap);
+            siftDown(0, N - 2, this.heap);
             
             return ret;
         }
@@ -65,7 +65,7 @@ class Program {
             var ret = -1;
             var parentIndex = parentIndex(i);
             
-            if(parentIndex >= 0 && H.get(i) < H.get(parentIndex)) { ret = parentIndex; }
+            if(0 <= parentIndex && H.get(i) < H.get(parentIndex)) { ret = parentIndex; }
             
             return ret;
         }

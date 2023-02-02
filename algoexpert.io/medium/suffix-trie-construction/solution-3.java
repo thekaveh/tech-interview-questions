@@ -28,7 +28,7 @@ class Program {
             
             if(node == null || at > N) { return; }
             
-            char keyChar =  (at < N) ? key.charAt(at) : endSymbol;
+            char keyChar = (at < N) ? key.charAt(at) : endSymbol;
             
             if(!node.children.containsKey(keyChar)) {
                 node.children.put(keyChar, (keyChar != endSymbol) ? new TrieNode() : null);
@@ -46,11 +46,13 @@ class Program {
             
             if(node == null || at > N) { return false; }
             else {
-                char keyChar =  (at < N) ? key.charAt(at) : endSymbol;
+                char keyChar = (at < N) ? key.charAt(at) : endSymbol;
                 
                 if(!node.children.containsKey(keyChar)) { return false; }
                 
-                return (at == N) ? true : contains(node.children.get(keyChar), key, at + 1);
+                return (at == N)
+                    ? node.children.containsKey('*')
+                    : contains(node.children.get(keyChar), key, at + 1);
             }
         }
     }

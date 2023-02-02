@@ -16,6 +16,7 @@ class Program {
             this.next = next;
         }
     }
+    
     static class MinMaxStack {
         Node head;
 
