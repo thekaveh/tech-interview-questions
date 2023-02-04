@@ -42,7 +42,7 @@ class Program {
 			R.put(v, true);
 			
 			for(var w : G.adj(v)) {
-				if			(!M.get(w))	{ if(!dfs(w, G, M, R, O)) { O.clear(); return false; } }
+				if		(!M.get(w))	{ if(!dfs(w, G, M, R, O)) { O.clear(); return false; } }
 				else if	(R.get(w))	{ return false; }
 			}
 			

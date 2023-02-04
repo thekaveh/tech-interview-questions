@@ -8,7 +8,7 @@ class Program {
 
         int lo = 0, hi = N - 1;
 
-        for(var k=N-1; k >= 0; k--) {
+        for(var k = N - 1; k >= 0; k--) {
             var loSq = A[lo] * A[lo];
             var hiSq = A[hi] * A[hi];
 

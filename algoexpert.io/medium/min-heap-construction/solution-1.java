@@ -11,19 +11,17 @@ class Program {
         public List<Integer> buildHeap(List<Integer> H) {
             var N = H.size();
 
-            for(var i = parentIdx(N - 1); 0 <= i; i--)  { siftDown(i, N - 1, H); }
+            for(var idx = parentIdx(N - 1); 0 <= idx; idx--)  { siftDown(idx, N - 1, H); }
 
             return H;
         }
 
-        public void siftDown(int idx, int endIdx, List<Integer> H) {
-            var N = H.size();
-
-            while(ltChildIdx(idx) < N) {
+        public void siftDown(int idx, int hi, List<Integer> H) {
+            while(ltChildIdx(idx) <= hi) {
                 var ltChildIdx = ltChildIdx(idx);
                 var gtChildIdx = gtChildIdx(idx);
 
-                var minChildIdx = (gtChildIdx < N) && H.get(gtChildIdx) < H.get(ltChildIdx)
+                var minChildIdx = (gtChildIdx <= hi) && H.get(gtChildIdx) < H.get(ltChildIdx)
                     ? gtChildIdx
                     : ltChildIdx;
 
@@ -36,7 +34,7 @@ class Program {
         }
 
         public void siftUp(int idx, List<Integer> H) {
-            while(0 <= idx) {
+            while(0 <= parentIdx(idx)) {
                 var parentIdx = parentIdx(idx);
 
                 if(H.get(parentIdx) <= H.get(idx)) { break; }
