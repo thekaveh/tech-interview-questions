@@ -30,8 +30,8 @@ class Program {
             R[v] = true;
             
             for(var w : G.adj(v)) {
-                if     (!M[w]) { if(!visit(w, G, M, R)) { return false; } }
-                else if(R[w])  { return false; }
+                if(!M[w])   { if(!visit(w, G, M, R)) { return false; } }
+                if(R[w])    { return false; }
             }
             
             R[v] = false;

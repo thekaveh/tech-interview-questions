@@ -51,7 +51,7 @@ class Program {
 			runningPath.add(0, v);
 			
 			for(var w : this.g.adj(v)) {
-				if(runningPath.contains(w)) { this.hasCycle = true; }
+				if(runningPath.contains(w)) { this.hasCycle = true; return; }
 				if(visited.get(w)) 			{ continue; }
 				
 				dfs(w, runningPath, visited);

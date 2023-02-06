@@ -32,8 +32,8 @@ class Program {
                 if(e[0] != v) { continue; }
                 var w = e[1];
 
-                if      (!M.get(w)) { if(!dfs(w, V, E, M, R, O)) { return false; } }
-                else if (R.get(w))  { return false; }
+                if  (!M.get(w)) { if(!dfs(w, V, E, M, R, O)) { return false; } }
+                if  (R.get(w))  { return false; }
             }
 
             O.add(0, v);

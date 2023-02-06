@@ -46,8 +46,8 @@ class Program {
             T.put(v, true);
             
             for(var w : G.adj(v)) {
-                if		(!M.get(w)) { if(hasCycle(w, G, M, T)) { return true; } }
-                else if	(T.get(w)) 	{ return true; }
+                if(!M.get(w))   { if(hasCycle(w, G, M, T)) { return true; } }
+                if(T.get(w))    { return true; }
             }
             
             T.put(v, false);

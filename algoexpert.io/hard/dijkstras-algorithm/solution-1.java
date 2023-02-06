@@ -7,16 +7,17 @@ class Program {
         var minPQ = new PriorityQueue<Integer>((v, w) -> D[v] - D[w]);
 
         Arrays.fill(D, Integer.MAX_VALUE);
+        
         D[s] = 0;
-
-        minPQ.add(s);
+        minPQ.offer(s);
 
         while(!minPQ.isEmpty()) {
             var v = minPQ.poll();
 
             for(var e : E[v]) {
                 var w = e[0];
-                var altDw = D[v] + e[1];
+                var vw = e[1];
+                var altDw = D[v] + vw;
 
                 if(D[w] > altDw) {
                     D[w] = altDw;

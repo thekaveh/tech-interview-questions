@@ -43,8 +43,8 @@ class Program {
             R.put(v, true);
             
             for(var w : G.adj(v)) {
-                if     (!M.get(w)) { if(!visit(w, G, M, R)) { return false; } }
-                else if(R.get(w))  { return false; }
+                if(!M.get(w))   { if(!visit(w, G, M, R)) { return false; } }
+                if(R.get(w))    { return false; }
             }
             
             R.put(v, false);
