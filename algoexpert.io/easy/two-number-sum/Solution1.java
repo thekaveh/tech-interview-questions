@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public static int[] twoNumberSum(int[] A, int S) {
         int N = A.length;
         
