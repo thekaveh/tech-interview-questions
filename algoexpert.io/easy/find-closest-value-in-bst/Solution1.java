@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     static class BST {
         public int value;
         public BST left;

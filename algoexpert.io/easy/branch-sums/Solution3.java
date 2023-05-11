@@ -1,7 +1,6 @@
 import java.util.*;
 
-class Program {
-    // This is the class of the input root. Do not edit it.
+class Solution3 {
     public static class BinaryTree {
         int value;
         BinaryTree left;

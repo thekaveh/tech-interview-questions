@@ -2,7 +2,7 @@ import java.util.*;
 
 import javax.lang.model.util.ElementScanner6;
 
-class Program {
+class Solution2 {
     static class BST {
         public int value;
         public BST left;

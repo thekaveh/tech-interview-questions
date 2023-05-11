@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     // Do not edit the class below except
     // for the depthFirstSearch method.
     // Feel free to add new properties
@@ -13,14 +13,20 @@ class Program {
             this.name = name;
         }
 
-        public List<String> depthFirstSearch(List<String> R) {
-            R.add(name);
+        public List<String> depthFirstSearch(List<String> array) {
+            var S = new Stack<String>();
             
-            for(var child : children) {
-                child.depthFirstSearch(R);
+            visitDFS(this, S);
+            
+            return new ArrayList<String>(S);
+        }
+            
+        private static void visitDFS(Node node, Stack<String> S) {
+            S.push(node.name);
+            
+            for(Node child : node.children) {
+                visitDFS(child, S);
             }
-            
-            return R;
         }
 
         public Node addChild(String name) {

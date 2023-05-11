@@ -1,15 +1,15 @@
 import java.util.*;
 
-class Program {
-    public static int binarySearch(int[] array, int v) {
-        var N = array.length;
+class Solution2 {
+    public static int binarySearch(int[] A, int v) {
+        var N = A.length;
 
         var lo = 0;
         var hi = N - 1;
 
         while(lo <= hi) {
             var mid = lo + (hi - lo) / 2;
-            var cmp = Integer.valueOf(v).compareTo(array[mid]);
+            var cmp = Integer.valueOf(v).compareTo(A[mid]);
 
             if     (cmp < 0) { hi = mid - 1; }
             else if(0 < cmp) { lo = mid + 1; }

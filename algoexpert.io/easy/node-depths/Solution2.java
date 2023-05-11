@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     static class BinaryTree {
             int value;
             BinaryTree left;

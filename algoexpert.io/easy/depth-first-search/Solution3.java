@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution3 {
     // Do not edit the class below except
     // for the depthFirstSearch method.
     // Feel free to add new properties

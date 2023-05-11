@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution4 {
     static class BinaryTree {
         int value;
         BinaryTree left;
@@ -13,29 +13,11 @@ class Program {
         }
     }
 
-    static class Pair<K, V> {
-        private final K key;
-        private final V value;
-        
-        public Pair(K key, V value) {
-            this.key = key;
-            this.value = value;
-        }
-        
-        public K getKey() {
-            return this.key;
-        }
-        
-        public V getValue() {
-            return this.value;
-        }
-      }
-
     public static int nodeDepths(BinaryTree root) {
         int R = 0;
-        var S = new Stack<Pair<BinaryTree, Integer>>();
+        var S = new Stack<Map.Entry<BinaryTree, Integer>>();
         
-        S.push(new Pair<BinaryTree, Integer>(root, 0));
+        S.push(new AbstractMap.SimpleEntry<>(root, 0));
         
         while(!S.isEmpty()) {
             var next = S.pop();
@@ -44,7 +26,7 @@ class Program {
             
             for(var child : new BinaryTree[] { next.getKey().left, next.getKey().right }) {
                 if(child != null) {
-                    S.push(new Pair<>(child, next.getValue() + 1));
+                    S.push(new AbstractMap.SimpleEntry<>(child, next.getValue() + 1));
                 }
             }
         }

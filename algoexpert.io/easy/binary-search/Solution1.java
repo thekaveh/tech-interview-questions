@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public static int binarySearch(int[] A, int v) {
         var N = A.length;
 

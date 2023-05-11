@@ -1,7 +1,6 @@
 import java.util.*;
 
-class Program {
-    // This is an input class. Do not edit.
+class Solution2 {
     public static class LinkedList {
         public int value;
         public LinkedList next;
@@ -13,12 +12,16 @@ class Program {
     }
 
     public LinkedList removeDuplicatesFromLinkedList(LinkedList head) {
-        for(var curr = head; curr != null; curr = curr.next) {
-            var next = curr.next;
+        var current = head;
+        
+        while(current != null) {
+            var next = current.next;
             
-            while(next != null && curr.value == next.value) { next = next.next; }
+            while(next != null && current.value == next.value) { next = next.next; }
             
-            curr.next = next;
+            current.next = next;
+            
+            current = current.next;
         }
         
         return head;
