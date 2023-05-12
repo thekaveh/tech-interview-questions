@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public static int getNthFib(int n) {
         var M = new HashMap<Integer, Integer>();
         M.put(1, 0);

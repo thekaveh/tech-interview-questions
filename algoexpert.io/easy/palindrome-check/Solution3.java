@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution3 {
     public static boolean isPalindrome(String S) {
         return isPalindrome(S, 0);
     }

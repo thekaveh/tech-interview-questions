@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public static boolean isPalindrome(String S) {
         var N = S.length();
 

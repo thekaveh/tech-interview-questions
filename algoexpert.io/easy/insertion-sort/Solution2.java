@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     private static final int H = 1;
 
     public static int[] insertionSort(int[] A) {

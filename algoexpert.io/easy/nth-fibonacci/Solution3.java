@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution3 {
     public static int getNthFib(int n) {
         if(n == 1 || n == 2) { return n - 1; }
 

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public static int[] findThreeLargestNumbers(int[] A) {
         var maxPQ = new PriorityQueue<Integer>((a, b) -> b - a);
 

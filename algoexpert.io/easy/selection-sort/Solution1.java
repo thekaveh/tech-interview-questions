@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public static int[] selectionSort(int[] A) {
         var N = A.length;
 
