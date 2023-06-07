@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution3 {
     public static boolean isValidSubsequence(List<Integer> A, List<Integer> S) {
         var M = A.size();
         var N = S.size();

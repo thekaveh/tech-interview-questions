@@ -1,24 +1,18 @@
 import java.util.*;
 
-class Program {
-
+class Solution3 {
     public int[] sortedSquaredArray(int[] A) {
         var N = A.length;
         var R = new int[N];
 
-        var k = N - 1;
+        int lo = 0, hi = N - 1;
 
-        var lo = 0;
-        var hi = N - 1;
-
-        while(lo <= hi) {
+        for(var k = N - 1; k >= 0; k--) {
             var loSq = A[lo] * A[lo];
             var hiSq = A[hi] * A[hi];
 
-            if(loSq > hiSq) { R[k] = loSq; lo++; }
-            else            { R[k] = hiSq; hi--; }
-
-            k--;
+            if(loSq >= hiSq)  { R[k] = loSq; lo++; }
+            else              { R[k] = hiSq; hi--; }
         }
 
         return R;
