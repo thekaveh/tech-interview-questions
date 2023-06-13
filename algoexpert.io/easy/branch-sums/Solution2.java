@@ -16,19 +16,16 @@ class Solution2 {
     public static List<Integer> branchSums(BinaryTree root) {
         var R = new ArrayList<Integer>();
 
-        solve(root, 0, R);
+        solve(root, R, 0);
 
         return R;
     }
 
-    private static void solve(BinaryTree node, int T, List<Integer> R) {
-        if(node == null) { return; }
-
-        T += node.value;
-
-        if(node.left == null && node.right == null) { R.add(T); return; }
-
-        solve(node.left, T, R);
-        solve(node.right, T, R);
+    private static void solve(BinaryTree tree, List<Integer> R, int T) {
+        T += tree.value;
+        
+        if(tree.left != null) 					    { solve(tree.left, R, T); }
+        if(tree.right != null)					    { solve(tree.right, R, T); }
+        if(tree.left == null && tree.right == null) { R.add(T); }
     }
 }

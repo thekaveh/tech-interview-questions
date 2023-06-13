@@ -9,7 +9,7 @@ class Solution2 {
         if(N == 0 || N == 1) { return A; }
 
         for(var hi = H; hi < N; hi++) {
-            for(var lo = hi; H <= lo && A[lo - H] > A[lo]; lo -= H) {
+            for(var lo = hi; H <= lo && A[lo] < A[lo - H]; lo -= H) {
                 swap(A, lo - H, lo);
             }
         }

@@ -1,7 +1,6 @@
 import java.util.*;
 
-class Program {
-
+class Solution2 {
     public int minimumWaitingTime(int[] Q) {
         var R = 0;
         var N = Q.length;

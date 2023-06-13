@@ -2,6 +2,8 @@ import java.util.*;
 
 class Solution2 {
     public static int getNthFib(int n) {
+        if(n == 1 || n == 2) { return n - 1; }
+        
         var M = new HashMap<Integer, Integer>();
         M.put(1, 0);
         M.put(2, 1);

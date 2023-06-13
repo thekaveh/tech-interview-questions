@@ -11,33 +11,26 @@ class Solution1 {
             this.left = null;
             this.right = null;
         }
+
+        boolean isLeaf() { return this.left == null && this.right == null; }
     }
 
     public static List<Integer> branchSums(BinaryTree root) {
-        var S = new Stack<Integer>();
         var R = new ArrayList<Integer>();
-
-        solve(root, S, R);
-
+    
+        solve(root, R, 0);
+    
         return R;
     }
-
-    private static void solve(BinaryTree node, Stack<Integer> S, List<Integer> R) {
+    
+    private static void solve(BinaryTree node, List<Integer> R, int r) {
         if(node == null) { return; }
 
-        S.push(node.value);
+        r += node.value;
 
-        if(node.left == null && node.right == null) {
-            var sum = 0;
-
-            for(var val : S) { sum += val; }
-
-            R.add(sum);
-        }
-
-        solve(node.left, S, R);
-        solve(node.right, S, R);
-
-        S.pop();
+        if(node.isLeaf()) { R.add(r); return; }
+    
+        solve(node.left, R, r);
+        solve(node.right, R, r);
     }
 }

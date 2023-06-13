@@ -8,7 +8,7 @@ class Solution3 {
     }
 
     private static int binarySearch(int[] A, int v, int lo, int hi) {
-        if(lo > hi) { return -1; }
+        if(hi < lo) { return -1; }
 
         var mid = lo + (hi - lo) / 2;
         var cmp = Integer.valueOf(v).compareTo(A[mid]);
