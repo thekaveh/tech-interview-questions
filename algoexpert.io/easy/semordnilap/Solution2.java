@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public ArrayList<ArrayList<String>> semordnilap(String[] words) {
         var R = new ArrayList<ArrayList<String>>();
         var M = new HashSet<String>(Arrays.asList(words));

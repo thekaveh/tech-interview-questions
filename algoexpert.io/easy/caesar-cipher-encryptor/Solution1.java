@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     private static final String R = "abcdefghijklmnopqrstuvwxyz";
 
     public static String caesarCypherEncryptor(String plain, int k) {

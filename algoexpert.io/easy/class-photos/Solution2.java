@@ -1,17 +1,17 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public boolean classPhotos(ArrayList<Integer> R, ArrayList<Integer> B) {
         var N = R.size();
 
         Collections.sort(R, (a, b) -> b - a);
         Collections.sort(B, (a, b) -> b - a);
 
-        var rFlag = R.get(0) > B.get(0);
+        var BR = (R.get(0) > B.get(0))  ? R : B;
+        var FR = (R.get(0) <= B.get(0)) ? R : B;
 
         for(var i = 0; i < N; i++) {
-            if(rFlag)   { if(B.get(i) >= R.get(i)) { return false; } }
-            else        { if(R.get(i) >= B.get(i)) { return false; } }
+            if(FR.get(i) >= BR.get(i)) { return false; }
         }
 
         return true;

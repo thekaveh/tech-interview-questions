@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public static String caesarCypherEncryptor(String plain, int k) {
         var R = new StringBuilder();
 

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public int tandemBicycle(int[] R, int[] B, boolean fastest) {
         var T = 0;
         var N = R.length;
