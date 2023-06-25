@@ -13,18 +13,18 @@ class Solution2 {
         }
     }
 
-    public static int findClosestValueInBst(BST tree, int target) {
+    public static int findClosestValueInBst(BST tree, int v) {
         var C = tree;
-        var R = tree.value;
+        var t = tree.value;
 
         while(C != null) {
-            if(Math.abs(target - C.value) < Math.abs(target - R)) { R = C.value; }
+            if(Math.abs(v - C.value) < Math.abs(v - t)) { t = C.value; }
 
-            if      (target < C.value)  { C = C.left; }
-            else if (C.value < target)  { C = C.right; }
-            else                        { break; }
+            if      (v < C.value)   { C = C.left; }
+            else if (C.value < v)   { C = C.right; }
+            else                    { break; }
         }
 
-        return R;
+        return t;
     }
 }

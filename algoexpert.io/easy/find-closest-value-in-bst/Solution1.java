@@ -11,19 +11,17 @@ class Solution1 {
         }
     }
 
-    public static int findClosestValueInBst(BST tree, int target) {
-        return solve(tree, target, tree.value);
+    public static int findClosestValueInBst(BST tree, int v) {
+        return solve(tree, v, tree.value);
     }
 
-    private static int solve(BST tree, int target, int candidate) {
-        if(tree == null) { return candidate; }
+    private static int solve(BST tree, int v, int t) {
+        if(tree == null) { return t; }
 
-        if(Math.abs(target - tree.value) < Math.abs(target - candidate)) {
-            candidate = tree.value;
-        }
+        if(Math.abs(v - tree.value) < Math.abs(v - t)) { t = tree.value; }
 
-        if      (target < tree.value)   { return solve(tree.left, target, candidate); }
-        else if (tree.value < target)   { return solve(tree.right, target, candidate); }
-        else                            { return candidate; }
+        if      (v < tree.value)    { return solve(tree.left, v, t); }
+        else if (tree.value < v)    { return solve(tree.right, v, t); }
+        else                        { return t; }
     }
 }

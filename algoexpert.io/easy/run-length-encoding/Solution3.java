@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution3 {
     public String runLengthEncoding(String input) {
         var i = 0;
         var N = input.length();

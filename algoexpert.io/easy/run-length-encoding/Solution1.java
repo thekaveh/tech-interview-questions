@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public String runLengthEncoding(String txt) {
         var N = txt.length();
         var cipher = new StringBuilder();
