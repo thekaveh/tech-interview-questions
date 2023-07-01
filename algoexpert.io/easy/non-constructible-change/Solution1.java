@@ -3,6 +3,9 @@ import java.util.*;
 class Solution1 {
     public int nonConstructibleChange(int[] coins) {
         var coinN = coins.length;
+
+        if(coinN == 0) { return 1; }
+
         var changeN = (1 << coinN);
 
         Arrays.sort(coins);
@@ -21,6 +24,6 @@ class Solution1 {
             }
         }
 
-        return (coinN == 0) ? 1 : changes[changeN - 1] + 1;
+        return changes[changeN - 1] + 1;
     }
 }
