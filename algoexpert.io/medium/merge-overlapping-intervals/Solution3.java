@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution3 {
     public int[][] mergeOverlappingIntervals(int[][] intervals) {
         var R = new ArrayList<int[]>();
         var minPQ = new PriorityQueue<int[]>((x, y) -> x[0] - y[0]);

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public char[] minimumCharactersForWords(String[] words) {
         var FREQ = new HashMap<Character, Integer>();
 

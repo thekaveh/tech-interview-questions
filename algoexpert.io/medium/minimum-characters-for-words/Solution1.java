@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public char[] minimumCharactersForWords(String[] W) {
         var maxFREQ = new HashMap<Character, Integer>();
 

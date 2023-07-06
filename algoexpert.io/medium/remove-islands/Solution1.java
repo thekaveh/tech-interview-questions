@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public int[][] removeIslands(int[][] A) {
         var R = A.length;
         var C = A[0].length;

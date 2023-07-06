@@ -4,7 +4,7 @@ import java.util.*;
 // the constructor and the createSet, find,
 // and union methods. Feel free to add new
 // properties and methods to the class.
-class Program {
+class Solution2 {
     static class UnionFind {
         private Map<Integer, Integer> sizes;
         private Map<Integer, Integer> parents;

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public int[][] mergeOverlappingIntervals(int[][] intervals) {
         var N = intervals.length;
         

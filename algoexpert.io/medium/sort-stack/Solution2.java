@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public ArrayList<Integer> sortStack(ArrayList<Integer> S) {
         var N = S.size();
 

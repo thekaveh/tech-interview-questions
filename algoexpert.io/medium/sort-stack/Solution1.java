@@ -1,11 +1,13 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public ArrayList<Integer> sortStack(ArrayList<Integer> S) {
         var N = S.size();
 
         for(var i = 0; i < N; i++) {
-            sortWith(S, S.remove(S.size() - 1));
+            var top = S.remove(N - 1 - i);
+
+            sortWith(S, top);
         }
 
         return S;
