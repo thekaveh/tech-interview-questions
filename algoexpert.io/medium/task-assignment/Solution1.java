@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public ArrayList<ArrayList<Integer>> taskAssignment(int k, ArrayList<Integer> tasks) {
         var N = tasks.size();
         var R = new ArrayList<ArrayList<Integer>>();
