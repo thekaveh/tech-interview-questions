@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public int[] nextGreaterElement(int[] A) {
         var N = A.length;
         var R = new int[N];
