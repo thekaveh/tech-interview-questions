@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public int minimumPassesOfMatrix(int[][] A) {
         var R = A.length;
         var C = A[0].length;

@@ -1,7 +1,7 @@
 import java.util.*;
 
 // T: O(N^4) | S: O(1)
-class Program {
+class Solution1 {
     public static List<Integer[]> fourNumberSum(int[] A, int S) {
         var N = A.length;
         var R = new ArrayList<Integer[]>();

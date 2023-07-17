@@ -1,7 +1,7 @@
 import java.util.*;
 
 // T: O(N^3) | S: O(1)
-class Program {
+class Solution2 {
     public static List<Integer[]> fourNumberSum(int[] A, int S) {
         var N = A.length;
         var R = new ArrayList<Integer[]>();
@@ -17,7 +17,7 @@ class Program {
                     var T = A[i] + A[j] + A[lo] + A[hi];
 
                     if      (T < S) { lo++; }
-                    else if (T > S) { hi--; }
+                    else if (S < T) { hi--; }
                     else            { R.add(new Integer[] { A[i], A[j], A[lo], A[hi] }); lo++; hi--; }
                 }
             }
