@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     private static final Map<Character, char[]> MNEMONICS = new HashMap<>() {{
         put('2', new char[]{'a', 'b', 'c'});
         put('3', new char[]{'d', 'e', 'f'});
@@ -12,28 +12,28 @@ class Program {
         put('9', new char[]{'w', 'x', 'y', 'z'});
     }};
 
-    public ArrayList<String> phoneNumberMnemonics(String P) {
-        var N = P.length();
+    public ArrayList<String> phoneNumberMnemonics(String number) {
+        var N = number.length();
         var Q = new LinkedList<String>();
 
-        Q.offer(P);
+        Q.offer(number);
 
         for(var i = 0; i < N; i++) {
-            var p = P.charAt(i);
+            var c = number.charAt(i);
 
-            if(Character.isLetter(p) || p == '0' || p == '1') { continue; }
+            if(c == '0' || c == '1') { continue; }
 
             var L = Q.size();
 
             for(var j = 0; j < L; j++) {
-                var T = Q.poll();
+                var v = Q.poll();
 
-                for(var mnemonic : MNEMONICS.get(p)) {
-                    var U = T.toCharArray();
+                for(var mnemonic : MNEMONICS.get(c)) {
+                    var w = v.toCharArray();
 
-                    U[i] = mnemonic;
+                    w[i] = mnemonic;
 
-                    Q.offer(String.valueOf(U));
+                    Q.offer(String.valueOf(w));
                 }
             }
         }
