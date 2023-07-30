@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public static List<Integer> topologicalSort(List<Integer> jobs, List<Integer[]> deps) {
         return new Topological(jobs, deps).order();
     }

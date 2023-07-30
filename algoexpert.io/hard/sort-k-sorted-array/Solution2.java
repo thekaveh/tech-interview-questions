@@ -1,7 +1,6 @@
 import java.util.*;
 
-class Program {
-
+class Solution2 {
     public int[] sortKSortedArray(int[] A, int k) {
         var N = A.length;
         var minPQ = new PriorityQueue<Integer>((a, b) -> a - b);

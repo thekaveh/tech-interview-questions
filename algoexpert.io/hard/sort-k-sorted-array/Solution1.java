@@ -1,7 +1,6 @@
 import java.util.*;
 
-class Program {
-
+class Solution1 {
     public int[] sortKSortedArray(int[] A, int k) {
         var N = A.length;
         

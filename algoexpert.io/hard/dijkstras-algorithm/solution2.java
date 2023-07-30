@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public int[] dijkstrasAlgorithm(int start, int[][][] edges) {
         int V = edges.length;
         

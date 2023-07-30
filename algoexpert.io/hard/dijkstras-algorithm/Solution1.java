@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public int[] dijkstrasAlgorithm(int s, int[][][] E) {
         var N = E.length;
         var D = new int[N];
@@ -17,12 +17,13 @@ class Program {
             for(var e : E[v]) {
                 var w = e[0];
                 var vw = e[1];
+
                 var altDw = D[v] + vw;
 
-                if(D[w] > altDw) {
-                    D[w] = altDw;
-                    minPQ.offer(w);
-                }
+                if(D[w] <= altDw) { continue; }
+
+                D[w] = altDw;
+                minPQ.offer(w);
             }
         }
 
