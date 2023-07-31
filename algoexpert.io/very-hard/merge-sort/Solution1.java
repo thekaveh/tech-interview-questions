@@ -1,9 +1,9 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     public static int[] mergeSort(int[] A) {
-        int N = A.length;
-        int[] X = new int[N];
+        var N = A.length;
+        var X = new int[N];
         
         sort(A, X, 0, N - 1);
         
@@ -26,9 +26,7 @@ class Program {
 
         for(int k = lo; k <= hi; k++) { X[k] = A[k]; }
         
-        int i = lo, j = mid + 1;
-        
-        for(int k = lo; k <= hi; k++) {
+        for(int i = lo, j = mid + 1, k = lo; k <= hi; k++) {
             if		(mid < i) 		{ A[k] = X[j++]; }
             else if	(hi < j) 	    { A[k] = X[i++]; }
             else if (X[j] < X[i])   { A[k] = X[j++]; }
