@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     public static int[] heapSort(int[] A) {
         int N = A.length;
         
