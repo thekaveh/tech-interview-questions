@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution3 {
     // T: O(H * S) - S: O(H)
     public int staircaseTraversal(int H, int S) {
         var M = new int[H + 1];

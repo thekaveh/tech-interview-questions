@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution1 {
     // T: O(S ^ H) - S: O(H)
     public int staircaseTraversal(int H, int S) {
         if(H <= 1) { return 1; }

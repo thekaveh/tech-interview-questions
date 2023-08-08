@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class Solution2 {
     // T: O(C * R) - S: O(C * R)
     public int numberOfWaysToTraverseGraph(int C, int R) {
         var M = new Integer[R + 1][C + 1];
