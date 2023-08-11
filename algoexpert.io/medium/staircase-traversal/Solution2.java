@@ -10,12 +10,12 @@ class Solution2 {
         if(H <= 1)          { return 1; }
         if(M[H] != null)    { return M[H]; }
 
-        var R = 0;
+        M[H] = 0;
         
         for(var s = 1; s <= Math.min(S, H); s++) {
-            R += solve(H - s, S, M);
+            M[H] += solve(H - s, S, M);
         }
 
-        return M[H] = R;
+        return M[H];
     }
 }
