@@ -18,7 +18,7 @@ class Solution1 {
 
             R.add(M.get(v.i).get(v.j));
 
-            if (v.j < M.get(v.i).size() - 1) { minPQ.offer(new Idx2D(v.i, v.j + 1)); }
+            if (v.j + 1 < M.get(v.i).size()) { minPQ.offer(new Idx2D(v.i, v.j + 1)); }
         }
 
         return R;
