@@ -1,24 +1,23 @@
 import java.util.*;
 
 class Solution1 {
-    static class Idx2D {
-        int x, y;
-        public Idx2D(int x, int y) { this.x = x; this.y = y;  }
+    static class Node {
+        int r, c;
+        public Node(int r, int c) { this.r = r; this.c = c;  }
 
-        public int[] toArray() { return new int[] { this.x, this.y }; }
-        public int heuristic(Idx2D that) { return Math.abs(that.x - this.x) + Math.abs(that.y - this.y); }
-        public int priority(Idx2D that, Map<Idx2D, Integer> D) { return D.get(this) + this.heuristic(that); }
+        public int[] toArray()                                          { return new int[] { this.r, this.c }; }
+        public int heuristicDistTo(Node that)                           { return Math.abs(that.r - this.r) + Math.abs(that.c - this.c); }
+        public int totalDistTo(Node that, Map<Node, Integer> srcDistTo) { return srcDistTo.get(this) + this.heuristicDistTo(that); }
 
-        @Override public int hashCode() { return Integer.hashCode(this.x) + 31 * Integer.hashCode(this.y); }
+        @Override public int hashCode()             { return Integer.hashCode(this.r) + 31 * Integer.hashCode(this.c); }    
+        @Override public boolean equals(Object o)   { var that = (Node) o; return this.r == that.r && this.c == that.c; }
 
-        @Override public boolean equals(Object o) { var that = (Idx2D) o; return this.x == that.x && this.y == that.y; }
-
-        public Idx2D[] adj() {
-            return new Idx2D[] {
-                new Idx2D(this.x - 1, this.y)
-                , new Idx2D(this.x, this.y - 1)
-                , new Idx2D(this.x + 1, this.y)
-                , new Idx2D(this.x, this.y + 1)
+        public Node[] adj() {
+            return new Node[] {
+                new Node(this.r - 1, this.c)
+                , new Node(this.r, this.c - 1)
+                , new Node(this.r + 1, this.c)
+                , new Node(this.r, this.c + 1)
             };
         }
 
@@ -26,37 +25,37 @@ class Solution1 {
             var R = G.length;
             var C = G[0].length;
 
-            if (this.x < 0 || R <= this.x)  { return false; }
-            if (this.y < 0 || C <= this.y)  { return false; }
-            if (G[this.x][this.y] == 1)     { return false; }
+            if (this.r < 0 || R <= this.r)  { return false; }
+            if (this.c < 0 || C <= this.c)  { return false; }
+            if (G[this.r][this.c] == 1)     { return false; }
 
             return true;
         }
     }
 
-    public int[][] aStarAlgorithm(int srcX, int srcY, int dstX, int dstY, int[][] G) {
+    public int[][] aStarAlgorithm(int srcR, int srcC, int dstR, int dstC, int[][] G) {
         var R = G.length;
         var C = G[0].length;
 
-        var nil = new Idx2D(-1, -1);
-        var src = new Idx2D(srcX, srcY);
-        var dst = new Idx2D(dstX, dstY);
+        var nil = new Node(-1, -1);
+        var src = new Node(srcR, srcC);
+        var dst = new Node(dstR, dstC);
 
-        var P = new HashMap<Idx2D, Idx2D>();
-        var D = new HashMap<Idx2D, Integer>();
-        var PQ = new PriorityQueue<Idx2D>((v, w) -> v.priority(dst, D) - w.priority(dst, D));
+        var pathTo = new HashMap<Node, Node>();
+        var srcDistTo = new HashMap<Node, Integer>();
+        var PQ = new PriorityQueue<Node>((v, w) -> v.totalDistTo(dst, srcDistTo) - w.totalDistTo(dst, srcDistTo));
 
         for (var r = 0; r < R; r++) {
             for (var c = 0; c < C; c++) {
-                var v = new Idx2D(r, c);
+                var v = new Node(r, c);
 
-                P.put(v, nil);
-                D.put(v, Integer.MAX_VALUE);
+                pathTo.put(v, nil);
+                srcDistTo.put(v, Integer.MAX_VALUE);
             }
         }
 
-        D.put(src, 0);
         PQ.offer(src);
+        srcDistTo.put(src, 0);
 
         while (!PQ.isEmpty()) {
             var v = PQ.poll();
@@ -66,19 +65,20 @@ class Solution1 {
             for (var w : v.adj()) {
                 if (!w.isValid(G)) { continue; }
 
-                if (D.get(v) + 1 < D.get(w)) {
-                    P.put(w, v);
+                var altSrcDistToW = srcDistTo.get(v) + 1;
+                if (altSrcDistToW < srcDistTo.get(w)) {
                     PQ.offer(w);
-                    D.put(w, D.get(v) + 1);
+                    pathTo.put(w, v);
+                    srcDistTo.put(w, altSrcDistToW);
                 }
             }
         }
 
-        var T = new ArrayList<int[]>();
-        for (var v = dst; !v.equals(nil); v = P.get(v)) { T.add(0, v.toArray()); }
+        var path = new LinkedList<Node>();
+        for (var v = dst; !v.equals(nil); v = pathTo.get(v)) { path.push(v); }
 
-        if (!Arrays.equals(T.get(0), src.toArray())) { return new int[0][2]; }
+        if (!path.peek().equals(src)) { return new int[0][2]; }
 
-        return T.toArray(new int[T.size()][2]);
+        return path.stream().map(node -> node.toArray()).toArray(n -> new int[n][2]);
     }
 }
