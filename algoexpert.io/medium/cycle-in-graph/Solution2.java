@@ -8,7 +8,7 @@ class Solution2 {
         int V() 				{ return this.E.length; }
         int[] adj(int v)		{ return this.E[v]; }
     }
-  
+
     static class DFS {
         boolean hasCycle = false;
 
