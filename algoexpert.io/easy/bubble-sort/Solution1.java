@@ -10,11 +10,10 @@ class Solution1 {
             var sorted = true;
 
             for(var lo = 0; lo < hi; lo++) {
-                if(A[lo + 1] < A[lo]) {
-                    swap(A, lo, lo + 1);
+                if(A[lo] <= A[lo + 1]) { continue; }
 
-                    sorted = false;
-                }
+				sorted = false;
+				swap(A, lo, lo + 1);
             }
 
             if(sorted) { break; }

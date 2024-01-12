@@ -6,7 +6,7 @@ class Solution1 {
 
         if(N == 0 || N == 1) { return A; }
 
-        for(var i = 0; i < N; i++) {
+        for(var i = 0; i < N - 1; i++) {
             var min = i;
 
             for(var j = i + 1; j < N; j++) {

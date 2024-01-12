@@ -14,7 +14,7 @@ class Solution1 {
             else if (A[at] == O[2]) { swap(A, at, gt--); }
         }
 
-        // post: { O[0]=A[0..lt-1], O[1]=A[lt..gt], O[2]=A[gt+1..N-1] }
+		// post: A = {O[0]=A[0..lt-1]} + {O[1]=A[lt..gt]} + {O[2]=A[gt+1..N-1]}
 
         return A;
     }

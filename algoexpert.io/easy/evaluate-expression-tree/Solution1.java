@@ -11,16 +11,19 @@ class Program {
         }
     }
 
-    public int evaluateExpressionTree(BinaryTree tree) {
-        if(tree == null) { return 0; }
+	public int evaluateExpressionTree(BinaryTree tree) {
+		if(tree == null) { return 0; }
 
-        if(tree.left == null && tree.right == null) { return tree.value; }
+		if(tree.left == null && tree.right == null) { return tree.value; }
 
-        if(tree.value == -1) { return evaluateExpressionTree(tree.left) + evaluateExpressionTree(tree.right); }
-        if(tree.value == -2) { return evaluateExpressionTree(tree.left) - evaluateExpressionTree(tree.right); }
-        if(tree.value == -3) { return evaluateExpressionTree(tree.left) / evaluateExpressionTree(tree.right); }
-        if(tree.value == -4) { return evaluateExpressionTree(tree.left) * evaluateExpressionTree(tree.right); }
+		var btLeft = evaluateExpressionTree(tree.left);
+		var btRight = evaluateExpressionTree(tree.right);
 
-        return -1;
-    }
+		if(tree.value == -1) { return btLeft + btRight; }
+		if(tree.value == -2) { return btLeft - btRight; }
+		if(tree.value == -3) { return btLeft / btRight; }
+		if(tree.value == -4) { return btLeft * btRight; }
+
+		return -1;
+	}
 }
