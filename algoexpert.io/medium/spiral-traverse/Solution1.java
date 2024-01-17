@@ -1,26 +1,26 @@
 import java.util.*;
 
 class Solution1 {
-    public static List<Integer> spiralTraverse(int[][] A) {
-        var M = A.length;
-        var N = A[0].length;
+	public static List<Integer> spiralTraverse(int[][] A) {
+		var R = A.length;
+		var C = A[0].length;
 
-        var R = new ArrayList<Integer>();
+		int loR = 0, hiR = R - 1;
+		int loC = 0, hiC = C - 1;
 
-        int rowLo = 0, rowHi = M - 1;
-        int colLo = 0, colHi = N - 1;
+		var S = new ArrayList<Integer>();
 
-        while(rowLo <= rowHi && colLo <= colHi) {
-            for(var i = colLo; i <= colHi; i++)     { R.add(A[rowLo][i]); }
-            for(var i = rowLo + 1; i < rowHi; i++)  { R.add(A[i][colHi]); }
+		while(loR <= hiR && loC <= hiC) {
+			for(var c = loC; c <= hiC; c++) 	{ S.add(A[loR][c]); }
+			for(var r = loR + 1; r < hiR; r++) 	{ S.add(A[r][hiC]); }
+			
+			for(var c = hiC; loC <= c && loR != hiR; c--) 		{ S.add(A[hiR][c]); }
+			for(var r = hiR - 1; loR < r && loC != hiC; r--) 	{ S.add(A[r][loC]); }
 
-            for(var i = colHi; rowLo != rowHi && i >= colLo; i--)     { R.add(A[rowHi][i]); }
-            for(var i = rowHi - 1; colLo != colHi && i > rowLo; i--)  { R.add(A[i][colLo]); }
+			loR++; hiR--;
+			loC++; hiC--;
+		}
 
-            rowLo++; rowHi--;
-            colLo++; colHi--;
-        }
-
-        return R;
-    }
+		return S;
+	}
 }

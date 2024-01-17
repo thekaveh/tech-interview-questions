@@ -10,10 +10,8 @@ class Solution2 {
 
             if(!isPeak) { continue; }
 
-            int lo = tip, hi = tip;
-
-            for(; 0 < lo && A[lo - 1] < A[lo]; lo--);
-            for(; hi < N - 1 && A[hi] > A[hi + 1]; hi++);
+            var lo = tip; for(; 0 < lo && A[lo - 1] < A[lo]; lo--);
+            var hi = tip; for(; hi < N - 1 && A[hi] > A[hi + 1]; hi++);
 
             var L = hi - lo + 1;
 
