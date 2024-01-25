@@ -1,19 +1,19 @@
 import java.util.*;
 
 class Solution1 {
-    public static List<List<Integer>> powerset(List<Integer> X) {
-        var nX = X.size();
-        var nP = 1 << nX;
+    public static List<List<Integer>> powerset(List<Integer> A) {
+        var nA = A.size();
+        var nP = 1 << nA;
 
         var P = new ArrayList<List<Integer>>();
 
-        for(var indP = 0; indP < nP; indP++) {
+        for(var idxP = 0; idxP < nP; idxP++) {
             var S = new ArrayList<Integer>();
 
-            for(var indX = 0; indX < nX; indX++) {
-                if ((indP & (1 << indX)) == 0) { continue; }
+            for(var idxA = 0; idxA < nA; idxA++) {
+                if ((idxP & (1 << idxA)) == 0) { continue; }
 
-                S.add(X.get(indX));
+                S.add(A.get(idxA));
             }
 
             P.add(S);

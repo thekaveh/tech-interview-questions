@@ -10,13 +10,13 @@ class Solution2 {
             var L = Q.size();
 
             for(var i = 0; i < L; i++) {
-                var T = Q.poll();
+                var V = Q.poll();
 
-                var U = new ArrayList<>(T);
-                U.add(a);
+                var W = new ArrayList<>(V);
+                W.add(a);
 
-                Q.offer(T);
-                Q.offer(U);
+                Q.offer(V);
+                Q.offer(W);
             }
         }
 
