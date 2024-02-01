@@ -29,7 +29,7 @@ class Solution1 {
             else                { at++; }
         }
         
-        // post: A[<v: lo..lt-1, v: lt..gt, >v: gt+1..hi]
+        // post: A[<v: lo..lt-1, =v: lt..gt, >v: gt+1..hi]
 
         quickSort(A, lo, lt - 1);
         quickSort(A, gt + 1, hi);

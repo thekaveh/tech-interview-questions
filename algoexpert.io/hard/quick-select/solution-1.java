@@ -14,6 +14,7 @@ class Program {
 
             var lt = lo;
             var gt = hi;
+
             var v = A[lo];
             var at = lo + 1;
 
@@ -21,11 +22,11 @@ class Program {
                 var cmp = Integer.valueOf(A[at]).compareTo(v);
 
                 if      (cmp < 0)   { swap(lt++, at++, A); }
-                else if (cmp > 0)   { swap(at, gt--, A); }
+                else if (0 < cmp)   { swap(at, gt--, A); }
                 else                { at++; }
             }
 
-            // post: A[<v: lo..lt-1, v: lt..gt, >v: gt+1..hi]
+            // post: A[<v: lo..lt-1, =v: lt..gt, >v: gt+1..hi]
 
             if      (k - 1 < lt)    { hi = lt - 1; }
             else if (gt < k - 1)    { lo = gt + 1; }

@@ -14,14 +14,14 @@ class Solution1 {
             var L = Q.size();
 
             for(var i = 0; i < L; i++) {
-                var T = Q.poll();
+                var V = Q.poll();
 
-                for(var j = 0; j <= T.size(); j++) {
-                    var U = new ArrayList<>(T);
+                for(var j = 0; j <= V.size(); j++) {
+                    var W = new ArrayList<>(V);
 
-                    U.add(j, a);
+                    W.add(j, a);
 
-                    Q.offer(U);
+                    Q.offer(W);
                 }
             }
         }
