@@ -14,27 +14,27 @@ class solution1 {
     }
 
     public static int nodeDepths(BinaryTree root) {
-        int R = 0, D = 0, L = 0;
-        Queue<BinaryTree> Q = new LinkedList<>();
-
-        Q.offer(root);
-
-        while(!Q.isEmpty()) {
-            L = Q.size();
-
-            for(var i = 0; i < L; i++) {
-                var node = Q.poll();
-
-                R += D;
-
-                for(var child : new BinaryTree[] { node.left, node.right }) {
-                    if(child != null) { Q.offer(child); }
-                }
-            }
-
-            D++;
-        }
-
-        return R;
+		int D = 0, R = 0;
+		var Q = new LinkedList<BinaryTree>();
+	
+		Q.offer(root);
+	
+		while(!Q.isEmpty()) {
+			for(var L = Q.size(); 0 < L; L--) {
+				var v = Q.poll();
+	
+				R += D;
+	
+				for(var w : new BinaryTree[] { v.left, v.right }) {
+					if(w == null) { continue; }
+					
+					Q.offer(w);
+				}
+			}
+			
+			D++;
+		}
+		
+		return R;
     }
 }

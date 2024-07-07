@@ -8,7 +8,7 @@ class Program {
             pattern.put(c, pattern.getOrDefault(c, 0) + 1);
         }
 
-        for(var c: document.toCharArray()) {
+        for(var c : document.toCharArray()) {
             if(!pattern.containsKey(c) || pattern.get(c) == 0) { return false; }
             
             pattern.put(c, pattern.get(c) - 1);

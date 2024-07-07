@@ -18,7 +18,7 @@ class Solution2 {
             
             visitDFS(this, S);
             
-            return new ArrayList<String>(S);
+            return new ArrayList<>(S);
         }
             
         private static void visitDFS(Node node, Stack<String> S) {
