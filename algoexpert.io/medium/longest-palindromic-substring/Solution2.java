@@ -1,41 +1,38 @@
 import java.util.*;
 
 class Solution2 {
-    public static String longestPalindromicSubstring(String txt) {
-        var N = txt.length();
-        var M = new TextInfo[N][N];
-        
-        var ret = solve(txt, 0, N - 1, M);
-        
-        return txt.substring(ret.idx, ret.idx + ret.len);
-    }
-	
-	private static TextInfo solve(String txt, int lo, int hi, TextInfo[][] M) {
-		if(lo > hi)             { return new TextInfo(-1, 0); }
-		if(lo == hi) 			{ return new TextInfo(lo, 1); }
-		if(M[lo][hi] != null)   { return M[lo][hi]; }
-		
-		if(txt.charAt(lo) == txt.charAt(hi)) {
-			var T = solve(txt, lo + 1, hi - 1, M);
-			
-			if(2 + T.len == hi - lo + 1) {
-				return M[lo][hi] = new TextInfo(lo, 2 + T.len);
-			}
+	public static String longestPalindromicSubstring(String txt) {
+		var N = txt.length();
+
+		if (N == 1) {
+			return txt;
 		}
-		
-		var altA = solve(txt, lo + 1, hi, M);
-		var altB = solve(txt, lo, hi - 1, M);
-		
-		return M[lo][hi] = (altA.len >= altB.len) ? altA : altB;
+
+		var longest = new int[] { 0, 1 };
+
+		for (var at = 1; at < N; at++) {
+			var odd = solve(txt, at - 1, at + 1);
+			var even = solve(txt, at - 1, at);
+
+			var longer = (odd[1] - odd[0] > even[1] - even[0]) ? odd : even;
+			longest = (longer[1] - longer[0] > longest[1] - longest[0]) ? longer : longest;
+		}
+
+		return txt.substring(longest[0], longest[1]);
 	}
-	
-	static class TextInfo {
-		int idx;
-		int len;
-		
-		TextInfo(int idx, int len) {
-			this.idx = idx;
-			this.len = len;
+
+	private static int[] solve(String txt, int lo, int hi) {
+		var N = txt.length();
+
+		while (0 <= lo && hi < N) {
+			if (txt.charAt(lo) != txt.charAt(hi)) {
+				break;
+			}
+
+			lo--;
+			hi++;
 		}
+
+		return new int[] { lo + 1, hi };
 	}
 }

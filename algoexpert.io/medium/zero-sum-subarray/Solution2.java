@@ -1,20 +1,22 @@
 import java.util.*;
 
 class Solution2 {
-    public boolean zeroSumSubarray(int[] A) {
-        var M = new HashSet<Integer>();
+	public boolean zeroSumSubarray(int[] A) {
+		var cumulativeSums = new HashSet<Integer>();
 
-        M.add(0);
-        var S = 0;
+		var runningSum = 0;
+		cumulativeSums.add(runningSum);
 
-        for (var a : A) {
-            S += a;
+		for (var a : A) {
+			runningSum += a;
 
-            if (M.contains(S)) { return true; }
+			if (cumulativeSums.contains(runningSum)) {
+				return true;
+			}
 
-            M.add(S);
-        }
+			cumulativeSums.add(runningSum);
+		}
 
-        return false;
-    }
+		return false;
+	}
 }
