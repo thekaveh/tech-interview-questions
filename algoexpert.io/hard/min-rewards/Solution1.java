@@ -1,26 +1,24 @@
 import java.util.*;
 
 class Solution1 {
-    public static int minRewards(int[] S) {
-        var N = S.length;
+	public static int minRewards(int[] A) {
+		var N = A.length;
+		var M = new int[N];
 
-        var M = new int[N];
-        Arrays.fill(M, 1);
+		Arrays.fill(M, 1);
 
-        for (var i = 1; i < N; i++) {
-            if (S[i - 1] < S[i]) {
-                M[i] = M[i - 1] + 1;
-            }
-        }
+		for (var at = 1; at < N; at++) {
+			if (A[at - 1] < A[at]) {
+				M[at] = M[at - 1] + 1;
+			}
+		}
 
-        for (var i = N - 2; 0 <= i; i--) {
-            if (S[i + 1] < S[i]) {
-                M[i] = Math.max(M[i], M[i + 1] + 1);
-            }
-        }
+		for (var at = N - 2; 0 <= at; at--) {
+			if (A[at + 1] < A[at]) {
+				M[at] = Math.max(M[at], M[at + 1] + 1);
+			}
+		}
 
-        var ret = 0;
-        for (var i = 0; i < N; i++) { ret += M[i]; }
-        return ret;
-    }
+		return Arrays.stream(M).sum();
+	}
 }
