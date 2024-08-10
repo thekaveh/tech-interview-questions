@@ -7,22 +7,22 @@ class Solution3 {
 		var R = new ArrayList<Integer[]>();
 		var M = new HashMap<Integer, List<Integer[]>>();
 
-		for (var i = 1; i < N - 1; i++) {
-			for (var j = i + 1; j < N; j++) {
-				var d = S - A[i] - A[j];
+		for (var mid = 1; mid < N - 1; mid++) {
+			for (var hi = mid + 1; hi < N; hi++) {
+				var delta = S - A[mid] - A[hi];
 
-				if (M.containsKey(d)) {
-					for (var pair : M.get(d)) {
-						R.add(new Integer[] { pair[0], pair[1], A[i], A[j] });
+				if (M.containsKey(delta)) {
+					for (var pair : M.get(delta)) {
+						R.add(new Integer[] { pair[0], pair[1], A[mid], A[hi] });
 					}
 				}
 			}
 
-			for (var k = 0; k < i; k++) {
-				var s = A[i] + A[k];
+			for (var lo = 0; lo < mid; lo++) {
+				var s = A[mid] + A[lo];
 
 				M.putIfAbsent(s, new ArrayList<>());
-				M.get(s).add(new Integer[] { A[k], A[i] });
+				M.get(s).add(new Integer[] { A[lo], A[mid] });
 			}
 		}
 

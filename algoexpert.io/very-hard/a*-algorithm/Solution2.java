@@ -1,13 +1,13 @@
 import java.util.*;
 
-class Program {
-	public int[][] aStarAlgorithm(int rSrc, int cSrc, int rDst, int cDst, int[][] G) {
+class Solution2 {
+	public int[][] aStarAlgorithm(int srcR, int srcC, int dstR, int dstC, int[][] G) {
 		var R = G.length;
 		var C = G[0].length;
 
 		var nil = new int[] { -1, -1 };
-		var src = new int[] { rSrc, cSrc };
-		var dst = new int[] { rDst, cDst };
+		var src = new int[] { srcR, srcC };
+		var dst = new int[] { dstR, dstC };
 
 		var P = new int[R][C][2];
 		var D = new int[R][C];
@@ -22,36 +22,36 @@ class Program {
 		}
 
 		minPQ.offer(src);
-		D[rSrc][cSrc] = 0;
+		D[srcR][srcC] = 0;
 
 		while (!minPQ.isEmpty()) {
 			var v = minPQ.poll();
 
-			var rV = v[0];
-			var cV = v[1];
+			var vR = v[0];
+			var vC = v[1];
 
 			if (Arrays.equals(v, dst)) {
 				break;
 			}
 
 			for (var w : adj(v)) {
-				var rW = w[0];
-				var cW = w[1];
+				var wR = w[0];
+				var wC = w[1];
 
-				if (rW < 0 || R <= rW) {
+				if (wR < 0 || R <= wR) {
 					continue;
 				}
-				if (cW < 0 || C <= cW) {
+				if (wC < 0 || C <= wC) {
 					continue;
 				}
-				if (G[rW][cW] == 1) {
+				if (G[wR][wC] == 1) {
 					continue;
 				}
 
-				var altDw = D[rV][cV] + 1;
-				if (altDw < D[rW][cW]) {
-					P[rW][cW] = Arrays.copyOf(v, v.length);
-					D[rW][cW] = altDw;
+				var altDw = D[vR][vC] + 1;
+				if (altDw < D[wR][wC]) {
+					P[wR][wC] = Arrays.copyOf(v, v.length);
+					D[wR][wC] = altDw;
 
 					minPQ.offer(w);
 				}

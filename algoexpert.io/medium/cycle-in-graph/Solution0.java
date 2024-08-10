@@ -7,9 +7,13 @@ class Solution0 {
 		var M = new boolean[N];
 		var R = new boolean[N];
 
-		for(var v = 0; v < N; v++) {
-			if(M[v]) 			{ continue; }
-			if(dfs(E, v, M, R)) { return true; }
+		for (var v = 0; v < N; v++) {
+			if (M[v]) {
+				continue;
+			}
+			if (dfs(E, v, M, R)) {
+				return true;
+			}
 		}
 
 		return false;
@@ -19,9 +23,16 @@ class Solution0 {
 		M[v] = true;
 		R[v] = true;
 
-		for(var w : E[v]) {
-			if(M[w])	{ if(R[w])          	{ return true; } }
-			else		{ if(dfs(E, w, M, R)) 	{ return true; } }
+		for (var w : E[v]) {
+			if (M[w]) {
+				if (R[w]) {
+					return true;
+				}
+			} else {
+				if (dfs(E, w, M, R)) {
+					return true;
+				}
+			}
 		}
 
 		R[v] = false;
