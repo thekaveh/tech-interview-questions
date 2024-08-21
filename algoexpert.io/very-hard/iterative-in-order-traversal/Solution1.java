@@ -11,11 +11,13 @@ class Solution1 {
 					x = x.left;
 				} else {
 					f.apply(x);
+
 					w = x;
 					x = (x.right != null) ? x.right : x.parent;
 				}
 			} else if (w == x.left) {
 				f.apply(x);
+
 				w = x;
 				x = (x.right != null) ? x.right : x.parent;
 			} else if (w == x.right) {
