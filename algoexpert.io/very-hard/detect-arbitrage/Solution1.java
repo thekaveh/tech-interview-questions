@@ -14,31 +14,26 @@ class Solution1 {
 		Arrays.fill(D, Double.MAX_VALUE);
 		D[0] = 0;
 
-		for (var v = 0; v < V; v++) {
-			if (!relax(G, D)) {
+		for (var pass = 0; pass < V; pass++) {
+			var updated = false;
+
+			for (var v = 0; v < V; v++) {
+				for (var w = 0; w < V; w++) {
+					var vw = G.get(v).get(w);
+					var altDw = D[v] + vw;
+
+					if (altDw < D[w]) {
+						D[w] = altDw;
+						updated = true;
+					}
+				}
+			}
+
+			if (!updated) {
 				return false;
 			}
 		}
 
 		return true;
-	}
-
-	private static boolean relax(ArrayList<ArrayList<Double>> G, double[] D) {
-		var V = G.size();
-		var updated = false;
-
-		for (var v = 0; v < V; v++) {
-			for (var w = 0; w < V; w++) {
-				var vw = G.get(v).get(w);
-				var altDw = D[v] + vw;
-
-				if (altDw < D[w]) {
-					D[w] = altDw;
-					updated = true;
-				}
-			}
-		}
-
-		return updated;
 	}
 }
