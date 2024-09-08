@@ -15,6 +15,7 @@ class Solution2 {
 	public boolean compareLeafTraversal(BinaryTree tree1, BinaryTree tree2) {
 		var S1 = new Stack<BinaryTree>();
 		S1.push(tree1);
+
 		var S2 = new Stack<BinaryTree>();
 		S2.push(tree2);
 
