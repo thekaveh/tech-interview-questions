@@ -4,40 +4,38 @@ class Program {
 	public static List<List<Integer>> maxSumIncreasingSubsequence(int[] A) {
 		var n = A.length;
 
-		var ats = new int[n];
-		Arrays.fill(ats, Integer.MIN_VALUE);
+		var IDX = new int[n];
+		Arrays.fill(IDX, Integer.MIN_VALUE);
 
-		var sums = A.clone();
+		var SUM = A.clone();
 
-		var atMax = 0;
+		var max = 0;
 		for (var hi = 0; hi < n; hi++) {
 			var hiNum = A[hi];
 
 			for (var lo = 0; lo < hi; lo++) {
 				var loNum = A[lo];
 
-				if (loNum < hiNum && sums[hi] <= sums[lo] + hiNum) {
-					sums[hi] = sums[lo] + hiNum;
-					ats[hi] = lo;
+				if (loNum < hiNum && SUM[hi] < SUM[lo] + hiNum) {
+					SUM[hi] = SUM[lo] + hiNum;
+					IDX[hi] = lo;
 				}
 
-				if (sums[atMax] <= sums[hi]) {
-					atMax = hi;
+				if (SUM[max] < SUM[hi]) {
+					max = hi;
 				}
 			}
 		}
 
-		var result = new ArrayList<List<Integer>>();
+		var R = new ArrayList<List<Integer>>();
+		R.add(List.of(SUM[max]));
+		R.add(new ArrayList<Integer>());
 
-		result.add(Arrays.asList(sums[atMax]));
-		result.add(new ArrayList<Integer>());
-
-		while (atMax != Integer.MIN_VALUE) {
-			result.get(1).add(0, A[atMax]);
-
-			atMax = ats[atMax];
+		while (max != Integer.MIN_VALUE) {
+			R.get(1).add(0, A[max]);
+			max = IDX[max];
 		}
 
-		return result;
+		return R;
 	}
 }
