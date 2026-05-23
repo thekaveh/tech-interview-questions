@@ -43,10 +43,26 @@ def problem_to_snake(name: str) -> str:
     return SPECIAL_PROBLEM_RENAMES.get(name, kebab_to_snake(name))
 
 
+def normalize_solution_filename(fname: str) -> str | None:
+    """Canonicalize a solution filename to `Solution{N}.java`.
+
+    The legacy tree mixes four naming styles for the same artifact:
+        Solution1.java, solution-1.java, solution1.java, solution4.java
+
+    Returns the canonical form, or None if the filename does not match any
+    known solution pattern (e.g. `Solution.java`, `README.md`).
+    """
+    m = re.fullmatch(r'(?:S|s)olution-?(\d+)\.java', fname)
+    if not m:
+        return None
+    return f'Solution{m.group(1)}.java'
+
+
 def new_path_for(src: Path) -> Path | None:
     """Map a legacy source path to its destination under JAVA_ROOT.
 
-    Returns None if the file is outside any known provider root.
+    Returns None if the file is outside any known provider root, has an
+    unexpected depth, or carries a filename the migrator cannot canonicalize.
     """
     try:
         rel = src.relative_to(REPO)
@@ -62,8 +78,11 @@ def new_path_for(src: Path) -> Path | None:
         mapped_tier = ALGOEXPERT_TIER.get(tier)
         if mapped_tier is None:
             return None
+        canonical = normalize_solution_filename(fname)
+        if canonical is None:
+            return None
         return (JAVA_ROOT / 'algoexpert' / mapped_tier
-                / problem_to_snake(problem) / fname)
+                / problem_to_snake(problem) / canonical)
     if parts[0] == 'codesignal.com':
         if len(parts) != 4:
             return None
@@ -71,18 +90,21 @@ def new_path_for(src: Path) -> Path | None:
         mapped_section = CODESIGNAL_SECTION.get(section)
         if mapped_section is None:
             return None
-        m = re.fullmatch(r'solution-(\d+)\.java', fname)
-        if m:
-            fname = f'Solution{m.group(1)}.java'
+        canonical = normalize_solution_filename(fname)
+        if canonical is None:
+            return None
         return (JAVA_ROOT / 'codesignal' / mapped_section
-                / problem_to_snake(problem) / fname)
+                / problem_to_snake(problem) / canonical)
     if parts[0] == 'educative.io':
         if len(parts) != 5:
             return None
         _, _, pattern, problem, fname = parts
+        canonical = normalize_solution_filename(fname)
+        if canonical is None:
+            return None
         return (JAVA_ROOT / 'educative' / 'patterns'
                 / problem_to_snake(pattern) / problem_to_snake(problem)
-                / fname)
+                / canonical)
     return None
 
 

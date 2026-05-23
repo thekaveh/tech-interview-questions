@@ -22,6 +22,40 @@ class TestPathTransforms(unittest.TestCase):
     def test_problem_to_snake_handles_a_star_algorithm(self):
         self.assertEqual(problem_to_snake('a*-algorithm'), 'a_star_algorithm')
 
+    def test_normalize_solution_filename_canonical_form(self):
+        from migrate import normalize_solution_filename
+        self.assertEqual(normalize_solution_filename('Solution1.java'), 'Solution1.java')
+        self.assertEqual(normalize_solution_filename('Solution12.java'), 'Solution12.java')
+
+    def test_normalize_solution_filename_legacy_variants(self):
+        from migrate import normalize_solution_filename
+        self.assertEqual(normalize_solution_filename('solution-1.java'), 'Solution1.java')
+        self.assertEqual(normalize_solution_filename('solution1.java'), 'Solution1.java')
+        self.assertEqual(normalize_solution_filename('solution-2.java'), 'Solution2.java')
+        self.assertEqual(normalize_solution_filename('solution4.java'), 'Solution4.java')
+
+    def test_normalize_solution_filename_rejects_non_solution_files(self):
+        from migrate import normalize_solution_filename
+        self.assertIsNone(normalize_solution_filename('README.md'))
+        self.assertIsNone(normalize_solution_filename('Helper.java'))
+        self.assertIsNone(normalize_solution_filename('Solution.java'))
+
+    def test_new_path_normalizes_lowercase_algoexpert_filename(self):
+        src = REPO / 'algoexpert.io' / 'easy' / 'product-sum' / 'solution-1.java'
+        dest = new_path_for(src)
+        self.assertEqual(
+            dest,
+            JAVA_ROOT / 'algoexpert' / 'easy' / 'product_sum' / 'Solution1.java',
+        )
+
+    def test_new_path_normalizes_concatenated_lowercase_algoexpert_filename(self):
+        src = REPO / 'algoexpert.io' / 'hard' / 'prims-algorithm' / 'solution1.java'
+        dest = new_path_for(src)
+        self.assertEqual(
+            dest,
+            JAVA_ROOT / 'algoexpert' / 'hard' / 'prims_algorithm' / 'Solution1.java',
+        )
+
     def test_new_path_algoexpert(self):
         src = REPO / 'algoexpert.io' / 'easy' / 'two-number-sum' / 'Solution1.java'
         dest = new_path_for(src)
