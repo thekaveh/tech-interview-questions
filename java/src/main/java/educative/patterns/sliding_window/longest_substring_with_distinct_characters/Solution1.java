@@ -1,6 +1,8 @@
+package educative.patterns.sliding_window.longest_substring_with_distinct_characters;
 import java.util.*;
 
-class NoRepeatSubstring {
+// Approach: TODO.
+class Solution1 {
 	public static int findLength(String txt) {
 		int N = txt.length(), lo = 0, L = 0;
 

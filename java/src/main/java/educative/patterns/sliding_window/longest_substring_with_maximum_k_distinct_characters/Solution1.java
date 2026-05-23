@@ -1,6 +1,8 @@
+package educative.patterns.sliding_window.longest_substring_with_maximum_k_distinct_characters;
 import java.util.*;
 
-class LongestSubstringKDistinct {
+// Approach: TODO.
+class Solution1 {
 	public static int findLength(String input, int k) {
 		if (input == null || input.length() == 0) {
 			throw new IllegalArgumentException();
@@ -28,8 +30,8 @@ class LongestSubstringKDistinct {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Length of the longest substring: " + LongestSubstringKDistinct.findLength("araaci", 2));
-		System.out.println("Length of the longest substring: " + LongestSubstringKDistinct.findLength("araaci", 1));
-		System.out.println("Length of the longest substring: " + LongestSubstringKDistinct.findLength("cbbebi", 3));
+		System.out.println("Length of the longest substring: " + Solution1.findLength("araaci", 2));
+		System.out.println("Length of the longest substring: " + Solution1.findLength("araaci", 1));
+		System.out.println("Length of the longest substring: " + Solution1.findLength("cbbebi", 3));
 	}
 }

@@ -1,4 +1,8 @@
-class MinSizeSubArraySum {
+package educative.patterns.sliding_window.smallest_subarray_with_a_greater_sum;
+import java.util.*;
+
+// Approach: TODO.
+class Solution1 {
 	public static int findMinSubArray(int S, int[] A) {
 		int N = A.length, lo = 0, hi = 0, s = 0, L = Integer.MAX_VALUE;
 
@@ -17,11 +21,11 @@ class MinSizeSubArraySum {
 	}
 
 	public static void main(String[] args) {
-		int result = MinSizeSubArraySum.findMinSubArray(7, new int[] { 2, 1, 5, 2, 3, 2 });
+		int result = Solution1.findMinSubArray(7, new int[] { 2, 1, 5, 2, 3, 2 });
 		System.out.println("Smallest subarray length: " + result);
-		result = MinSizeSubArraySum.findMinSubArray(7, new int[] { 2, 1, 5, 2, 8 });
+		result = Solution1.findMinSubArray(7, new int[] { 2, 1, 5, 2, 8 });
 		System.out.println("Smallest subarray length: " + result);
-		result = MinSizeSubArraySum.findMinSubArray(8, new int[] { 3, 4, 1, 1, 6 });
+		result = Solution1.findMinSubArray(8, new int[] { 3, 4, 1, 1, 6 });
 		System.out.println("Smallest subarray length: " + result);
 	}
 }

@@ -1,4 +1,8 @@
-class CharacterReplacement {
+package educative.patterns.sliding_window.longest_substring_with_same_letters_after_replacement;
+import java.util.*;
+
+// Approach: TODO.
+class Solution1 {
 	public static int findLength(String txt, int k) {
 		int N = txt.length();
 		int lo = 0;

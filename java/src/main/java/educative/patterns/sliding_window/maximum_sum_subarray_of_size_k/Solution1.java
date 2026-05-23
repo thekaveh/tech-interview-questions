@@ -1,4 +1,8 @@
-class MaxSumSubArrayOfSizeK {
+package educative.patterns.sliding_window.maximum_sum_subarray_of_size_k;
+import java.util.*;
+
+// Approach: TODO.
+class Solution1 {
 	public static int findMaxSumSubArray(int k, int[] A) {
 		int N = A.length;
 
@@ -21,8 +25,8 @@ class MaxSumSubArrayOfSizeK {
 
 	public static void main(String[] args) {
 		System.out.println("Maximum sum of a subarray of size K: "
-				+ MaxSumSubArrayOfSizeK.findMaxSumSubArray(3, new int[] { 2, 1, 5, 1, 3, 2 }));
+				+ Solution1.findMaxSumSubArray(3, new int[] { 2, 1, 5, 1, 3, 2 }));
 		System.out.println("Maximum sum of a subarray of size K: "
-				+ MaxSumSubArrayOfSizeK.findMaxSumSubArray(2, new int[] { 2, 3, 4, 1, 5 }));
+				+ Solution1.findMaxSumSubArray(2, new int[] { 2, 3, 4, 1, 5 }));
 	}
 }

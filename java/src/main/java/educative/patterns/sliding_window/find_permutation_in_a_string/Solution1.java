@@ -1,6 +1,8 @@
+package educative.patterns.sliding_window.find_permutation_in_a_string;
 import java.util.*;
 
-class StringPermutation {
+// Approach: TODO.
+class Solution1 {
 	public static boolean findPermutation(String txt, String pattern) {
 		int N = txt.length(), M = pattern.length(), lo = 0, matched = 0;
 

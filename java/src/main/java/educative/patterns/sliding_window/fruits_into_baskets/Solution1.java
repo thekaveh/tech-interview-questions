@@ -1,6 +1,8 @@
+package educative.patterns.sliding_window.fruits_into_baskets;
 import java.util.*;
 
-class MaxFruitCountOf2Types {
+// Approach: TODO.
+class Solution1 {
 	public static int findLength(char[] A) {
 		if (A == null || A.length == 0) {
 			return -1;
@@ -25,8 +27,8 @@ class MaxFruitCountOf2Types {
 
 	public static void main(String[] args) {
 		System.out.println("Maximum number of fruits: " +
-				MaxFruitCountOf2Types.findLength(new char[] { 'A', 'B', 'C', 'A', 'C' }));
+				Solution1.findLength(new char[] { 'A', 'B', 'C', 'A', 'C' }));
 		System.out.println("Maximum number of fruits: " +
-				MaxFruitCountOf2Types.findLength(new char[] { 'A', 'B', 'C', 'B', 'B', 'C' }));
+				Solution1.findLength(new char[] { 'A', 'B', 'C', 'B', 'B', 'C' }));
 	}
 }
