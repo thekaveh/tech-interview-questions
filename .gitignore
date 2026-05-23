@@ -4,3 +4,14 @@
 .vscode
 .metals
 .fake
+
+# maven
+target/
+
+# python migration tool
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+*.iml
