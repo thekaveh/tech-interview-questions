@@ -15,7 +15,7 @@
 
 ---
 
-## File Structure
+## 1. File Structure
 
 **New files created by this plan:**
 
@@ -51,7 +51,7 @@ Tests in `scripts/test_migrate.py` exercise each group with small fixtures; the 
 
 ---
 
-## Task 1: Bootstrap repo structure
+## 2. Task 1: Bootstrap repo structure
 
 **Files:**
 - Create: `LICENSE`
@@ -253,7 +253,7 @@ git commit -m "build: scaffold maven + ci + license"
 
 ---
 
-## Task 2: Migration script — path transforms and README generator
+## 3. Task 2: Migration script — path transforms and README generator
 
 **Files:**
 - Create: `scripts/migrate.py`
@@ -528,7 +528,7 @@ git commit -m "scripts: migration tool foundation (path transforms + readme)"
 
 ---
 
-## Task 3: Migration script — content transforms per provider
+## 4. Task 3: Migration script — content transforms per provider
 
 **Files:**
 - Modify: `scripts/migrate.py` (add three transform functions)
@@ -881,7 +881,7 @@ git commit -m "scripts: per-provider content transforms with unit tests"
 
 ---
 
-## Task 4: Migration script — orchestrator
+## 5. Task 4: Migration script — orchestrator
 
 **Files:**
 - Modify: `scripts/migrate.py` (add `migrate_provider` + CLI `main`)
@@ -1002,7 +1002,7 @@ git commit -m "scripts: orchestrator + CLI for migration tool"
 
 ---
 
-## Task 5: Dry-run all three providers and spot-check
+## 6. Task 5: Dry-run all three providers and spot-check
 
 **Files:**
 - (no modifications)
@@ -1055,7 +1055,7 @@ Expected: empty (no uncommitted changes). Dry-run does not modify files.
 
 ---
 
-## Task 6: Migrate AlgoExpert
+## 7. Task 6: Migrate AlgoExpert
 
 **Files:**
 - Move: `algoexpert.io/**/*.java` → `java/src/main/java/algoexpert/**/*.java`
@@ -1138,7 +1138,7 @@ git commit -m "refactor: migrate algoexpert solutions into java/src/main/java"
 
 ---
 
-## Task 7: Migrate CodeSignal
+## 8. Task 7: Migrate CodeSignal
 
 **Files:**
 - Move: `codesignal.com/**/*.java` → `java/src/main/java/codesignal/**/*.java`
@@ -1225,7 +1225,7 @@ git commit -m "refactor: migrate codesignal solutions into java/src/main/java"
 
 ---
 
-## Task 8: Migrate Educative
+## 9. Task 8: Migrate Educative
 
 **Files:**
 - Move: `educative.io/**/*.java` → `java/src/main/java/educative/patterns/**/*.java`
@@ -1293,7 +1293,7 @@ git commit -m "refactor: migrate educative solutions into java/src/main/java"
 
 ---
 
-## Task 9: Cleanup and finalize
+## 10. Task 9: Cleanup and finalize
 
 **Files:**
 - Delete: `algoexpert.io/`, `codesignal.com/`, `educative.io/` (empty after migration)
@@ -1440,7 +1440,7 @@ Then open `https://github.com/thekaveh/tech-interview-questions/actions` in a br
 
 ---
 
-## Self-review
+## 11. Self-review
 
 - ✅ **Spec coverage:** Every spec section (layout, file shape, pom.xml, CI, top-level README, LICENSE, attribution, migration mechanics) has at least one task that implements it. Out-of-scope items (tests per problem, content backfill, language-agnostic `problems/`) are not in the plan, matching the spec.
 - ✅ **No placeholders:** Every step has actual code or a concrete command. No "TODO" or "implement appropriately."

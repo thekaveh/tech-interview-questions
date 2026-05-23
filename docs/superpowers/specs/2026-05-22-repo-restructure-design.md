@@ -1,17 +1,17 @@
 # Repo Restructure Design
 
 **Date:** 2026-05-22
-**Status:** Draft for review
-**Author:** Kaveh Razavi (with Claude as collaborator)
+**Status:** Implemented
+**Author:** Kaveh Razavi
 
-## Goal
+## 1. Goal
 
 Restructure this personal interview-solutions repo from a flat collection of
 paste-ready snippets into a buildable, portfolio-credible Java project, while
 preserving the existing per-provider organization and leaving the door open
 for solutions in other languages.
 
-## Constraints (decided up front)
+## 2. Constraints (decided up front)
 
 - **Audience:** portfolio-credible to recruiters who land on it cold, but
   organized by provider because that mirrors how the solutions were actually
@@ -27,7 +27,7 @@ for solutions in other languages.
 - **No trivially-easy problems are removed.** They are labeled honestly via
   a difficulty badge in each problem's README instead.
 
-## Target directory layout
+## 3. Target directory layout
 
 ```
 tech-interview-questions/
@@ -60,7 +60,7 @@ tech-interview-questions/
 Each `<problem_snake>/` directory contains a `README.md` plus one or more
 `Solution{N}.java` files.
 
-### Naming transforms
+### 3.1. Naming transforms
 
 - Top-level `algoexpert.io/`, `codesignal.com/`, `educative.io/` lose their
   `.io`/`.com` suffix when they become Java packages.
@@ -75,9 +75,9 @@ Each `<problem_snake>/` directory contains a `README.md` plus one or more
 - The one camelCase outlier `codesignal.com/intro/isDigit/` becomes
   `codesignal/intro/is_digit/`.
 
-## Per-problem file shape
+## 4. Per-problem file shape
 
-### `README.md`
+### 4.1. `README.md`
 
 Compact stub, ~20 lines. Auto-generated with `TODO` placeholders that the
 author fills in over time. Filling them in is not a blocker for the
@@ -106,7 +106,7 @@ A = [3, 5, -4, 8, 11, 1, -1, 6], S = 10
 | Solution3 | Hash set, single pass | O(n) | O(n) |
 ```
 
-### Difficulty badge values
+### 4.2. Difficulty badge values
 
 - `warm-up` (green) — FizzBuzz-tier
 - `easy` (yellowgreen) — genuine easy
@@ -129,7 +129,7 @@ Default mapping at migration time:
 The default is a starting point; the author may override per problem when
 filling in the README.
 
-### `Solution{N}.java`
+### 4.3. `Solution{N}.java`
 
 Three additions to existing files:
 
@@ -145,7 +145,7 @@ Class names stay `Solution1`, `Solution2`, … Default (package-private)
 access. Package disambiguates across problems, so `Solution1` is fine to
 reuse in every problem's package.
 
-### Example: AlgoExpert solution immediately after migration
+### 4.4. Example: AlgoExpert solution immediately after migration
 
 The migration step inserts a `// Approach: TODO` placeholder. The author
 fills it in later.
@@ -170,7 +170,7 @@ class Solution1 {
 }
 ```
 
-### Example: AlgoExpert solution after the author fills in the placeholder
+### 4.5. Example: AlgoExpert solution after the author fills in the placeholder
 
 ```java
 package algoexpert.easy.two_number_sum;
@@ -192,7 +192,7 @@ class Solution1 {
 }
 ```
 
-### Example: CodeSignal solution immediately after migration
+### 4.6. Example: CodeSignal solution immediately after migration
 
 ```java
 package codesignal.intro.adjacent_elements_product;
@@ -212,7 +212,7 @@ class Solution1 {
 }
 ```
 
-## Maven build
+## 5. Maven build
 
 `java/pom.xml`:
 
@@ -252,7 +252,7 @@ Notes:
   short and readable (`algoexpert.easy.two_number_sum`, not
   `com.thekaveh.algoexpert.easy.two_number_sum`).
 
-## CI
+## 6. CI
 
 `.github/workflows/java-build.yml`:
 
@@ -280,7 +280,7 @@ jobs:
 
 A build-status badge is added to the top-level `README.md`.
 
-## Top-level README
+## 7. Top-level README
 
 Rewritten to be a concise landing page that does five things: states what
 the repo is, declares that solutions are the author's work and problem
@@ -321,11 +321,11 @@ verifies all solutions compile.
 [MIT](./LICENSE)
 ```
 
-## LICENSE
+## 8. LICENSE
 
 MIT license, 2026, holder "Kaveh Razavi."
 
-## Attribution policy
+## 9. Attribution policy
 
 - Provider directory names (`algoexpert/`, `codesignal/`, `educative/`) are
   retained as descriptive (nominative) trademark use.
@@ -335,7 +335,7 @@ MIT license, 2026, holder "Kaveh Razavi."
 - The top-level README's opening paragraph states the paraphrasing policy.
   No separate `NOTICE.md` is added.
 
-## Migration mechanics
+## 10. Migration mechanics
 
 The implementation will execute as a sequence of commits, each producing a
 working tree that still compiles (after the first commit that introduces
@@ -362,7 +362,7 @@ working tree that still compiles (after the first commit that introduces
 
 All migrations use `git mv` to preserve per-file history.
 
-## Out of scope (deferred)
+## 11. Out of scope (deferred)
 
 These were considered and explicitly excluded from this design:
 
@@ -381,7 +381,7 @@ These were considered and explicitly excluded from this design:
 - **Java linter / formatter.** Matches the existing "Java is not linted"
   stance. Trunk's `prettier` + `markdownlint` continue to handle markdown.
 
-## Open questions
+## 12. Open questions
 
 None at design time. Any deferred decisions (e.g., exact difficulty-badge
 override per problem) are intentionally individual judgment calls the
