@@ -7,7 +7,7 @@
 **Architecture:** A one-shot Python migration script (`scripts/migrate.py`) computes destination paths, uses `git mv` to preserve per-file history, applies per-provider content transforms (package declaration, class wrapping for bare CodeSignal functions, class renames for problem-named Educative classes), and emits a `README.md` template per problem directory. Migration runs in three separate commits — one per provider — so each diff is reviewable and each provider's `mvn -B compile` pass can be verified independently.
 
 **Tech Stack:**
-- Java 21 (LTS) compiled via Maven 3.9+
+- Java 17 (LTS) compiled via Maven 3.9+
 - Python 3.11+ (stdlib only — `pathlib`, `re`, `subprocess`, `unittest`) for the migration tool
 - GitHub Actions for CI
 
@@ -23,7 +23,7 @@
 |---|---|
 | `LICENSE` | MIT license, 2026, Kaveh Razavi |
 | `README.md` (rewrite) | Repo landing page: what it is, layout, build command, badge legend |
-| `java/pom.xml` | Maven build configuration; JDK 21, no dependencies |
+| `java/pom.xml` | Maven build configuration; JDK 17, no dependencies |
 | `.github/workflows/java-build.yml` | CI workflow running `mvn -B compile` on push/PR |
 | `.gitignore` (additions) | `target/`, `__pycache__/`, `.idea/` |
 | `scripts/migrate.py` | One-shot migration tool with per-provider transforms |
@@ -107,7 +107,7 @@ Create `java/pom.xml`:
   <packaging>jar</packaging>
 
   <properties>
-    <maven.compiler.release>21</maven.compiler.release>
+    <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -157,7 +157,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '21'
+          java-version: '17'
           cache: maven
       - run: mvn -B compile
 ```
@@ -215,7 +215,7 @@ cd java
 mvn -B compile
 ```
 
-Requires JDK 21+. There are no runtime dependencies; the build only verifies
+Requires JDK 17+. There are no runtime dependencies; the build only verifies
 that all solutions compile.
 
 ## Difficulty badges
@@ -1372,7 +1372,7 @@ From the repo root:
 cd java && mvn -B compile
 ```
 
-JDK 21+ is required. There are no runtime dependencies. CI runs the same
+JDK 17+ is required. There are no runtime dependencies. CI runs the same
 command on every push and PR.
 
 There are no tests in the repo; the build verifies compilation only.

@@ -225,7 +225,7 @@ class Solution1 {
   <packaging>jar</packaging>
 
   <properties>
-    <maven.compiler.release>21</maven.compiler.release>
+    <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -241,7 +241,7 @@ class Solution1 {
 ```
 
 Notes:
-- **JDK 21** — current LTS.
+- **JDK 17** — LTS, matches the local development environment.
 - **No dependencies.** Solutions are stdlib-only.
 - **`README.md` files alongside `.java` files are ignored by the build.**
   Maven compiles only `*.java` from `src/main/java/` and treats only
@@ -273,7 +273,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '21'
+          java-version: '17'
           cache: maven
       - run: mvn -B compile
 ```
@@ -309,7 +309,7 @@ Each `<problem>/` directory contains a `README.md` and one or more
 cd java
 mvn -B compile
 
-Requires JDK 21+. There are no runtime dependencies; the build only
+Requires JDK 17+. There are no runtime dependencies; the build only
 verifies all solutions compile.
 
 ## Difficulty badges

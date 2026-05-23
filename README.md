@@ -29,7 +29,7 @@ cd java
 mvn -B compile
 ```
 
-Requires JDK 21+. There are no runtime dependencies; the build only verifies
+Requires JDK 17+. There are no runtime dependencies; the build only verifies
 that all solutions compile.
 
 ## Difficulty badges
