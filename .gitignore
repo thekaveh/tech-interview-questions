@@ -1,17 +1,24 @@
 .DS_Store
 
-#vscode
+# editors / IDE state
 .vscode
 .metals
 .fake
+.idea/
+*.iml
+
+# trunk local state (linter runtime cache)
+.trunk/
+
+# claude code session state and notes
+.claude/
+
+# in-progress design or planning notes (kept local, never committed)
+docs/superpowers/
 
 # maven
 target/
 
-# python migration tool
+# python tooling
 __pycache__/
 *.pyc
-
-# IDE
-.idea/
-*.iml
