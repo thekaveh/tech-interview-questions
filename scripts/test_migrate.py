@@ -392,6 +392,20 @@ class TestTransformCodesignal(unittest.TestCase):
         self.assertIn('    static String solution(String txt) {', out)
         self.assertIn('    static String helper(String txt) {', out)
 
+    def test_makes_all_bare_top_level_functions_static(self):
+        src = """boolean solution(String[] A) {
+    return differByOne(A[0], A[1]);
+}
+
+boolean differByOne(String a, String b) {
+    return true;
+}
+"""
+        out = transform_codesignal(src, 'codesignal.intro.foo', 1)
+        # Both functions need static so the wrapped class compiles.
+        self.assertIn('    static boolean solution(String[] A) {', out)
+        self.assertIn('    static boolean differByOne(String a, String b) {', out)
+
 
 class TestTransformEducative(unittest.TestCase):
     def test_renames_class_and_adds_import(self):

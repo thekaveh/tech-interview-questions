@@ -304,10 +304,12 @@ def transform_codesignal(content: str, package: str, sol_num: int) -> str:
         indented = '\n'.join(('    ' + ln) if ln else ln
                              for ln in body.rstrip('\n').split('\n'))
         indented = re.sub(
-            r'^(    )(?!static\b)([A-Za-z_][\w\[\]<>]*\s+[A-Za-z_]\w*\s*\()',
+            r'^(    )(?!static\b)(?!public\s+static\b)'
+            r'((?:public\s+|private\s+|protected\s+)?'
+            r'[A-Za-z_][\w\[\]<>]*\s+[A-Za-z_]\w*\s*\()',
             r'\1static \2',
             indented,
-            count=1,
+            flags=re.MULTILINE,
         )
         new_body = f'class Solution{sol_num} {{\n{indented}\n}}\n'
 
