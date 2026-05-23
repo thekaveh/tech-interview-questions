@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a string containing words separated by non-alphabetic characters, return the longest word; if there is a tie, return the first one.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| solution-1.java | Two-pointer word extraction, track longest | O(n) | O(n) |
+| solution-2.java | Split on non-word characters, stream max by length | O(n) | O(n) |

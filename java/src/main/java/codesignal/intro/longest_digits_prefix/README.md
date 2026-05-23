@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a string, return the longest prefix that consists only of digit characters.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| solution-1.java | Linear scan until first non-digit, then substring | O(n) | O(n) |

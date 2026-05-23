@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given the positions of a bishop and a pawn on a chess board, determine whether the bishop can capture the pawn in one move (i.e., they share the same diagonal).
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| solution-1.java | Diagonal check via equal absolute row/column differences | O(1) | O(1) |

@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of integers, make it strictly increasing by incrementing elements as needed; return the total number of increments applied.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| solution-1.java | Single pass with carry-forward adjustments | O(n) | O(1) |

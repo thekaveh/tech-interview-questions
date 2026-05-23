@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of distinct integers, find how many numbers need to be added to make the values form a consecutive sequence.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| solution-1.java | Sort, sum gaps between adjacent elements | O(n log n) | O(1) |
+| solution-2.java | Sort, compute (max - min + 1) - n | O(n log n) | O(1) |

@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a rectangular grid of strings, surround the entire picture with a border of asterisks and return the resulting array.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| solution-1.java | Direct construction with StringBuilder border | O(n*m) | O(n*m) |
+| solution-2.java | Wrap rows then derive top/bottom via replaceAll | O(n*m) | O(n*m) |

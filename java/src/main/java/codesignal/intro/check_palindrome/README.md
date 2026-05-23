@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a string, determine whether it reads the same forwards and backwards.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| solution-1.java | Two-pointer inward scan | O(n) | O(1) |
+| solution-2.java | Compare with reversed string | O(n) | O(n) |

@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given obstacle positions on an integer number line, find the smallest integer jump size (≥ 2) such that every landing position avoids all obstacles.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| solution-1.java | Enumerate candidates, check divisibility | O(n * max) | O(n) |
+| solution-2.java | Stream filter over candidate jump sizes | O(n * max) | O(1) |

@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a string, determine whether it is a valid IPv4 address (four dot-separated decimal numbers each in the range 0–255, no leading zeros).
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| solution-1.java | Split on dot, validate each octet's format and range | O(1) | O(1) |

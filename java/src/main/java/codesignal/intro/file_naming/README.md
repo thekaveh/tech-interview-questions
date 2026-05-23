@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a list of file names to be created in order, resolve conflicts by appending "(k)" to duplicates, where k is the smallest positive integer that makes the name unique.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| solution-1.java | LinkedHashMap tracking next suffix per name, retry loop | O(n * conflicts) | O(n) |

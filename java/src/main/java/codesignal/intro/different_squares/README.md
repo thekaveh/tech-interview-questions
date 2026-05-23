@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a matrix of integers, count the number of distinct 2x2 squares that can be formed from adjacent cells.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| solution-1.java | HashSet of custom Square objects with manual equals/hashCode | O(R*C) | O(R*C) |
+| solution-2.java | HashSet of canonical string keys per 2x2 block | O(R*C) | O(R*C) |

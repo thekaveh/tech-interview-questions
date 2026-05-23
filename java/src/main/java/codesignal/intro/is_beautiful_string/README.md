@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+A string is "beautiful" if the frequency of each letter is greater than or equal to the frequency of the next letter in the alphabet; determine whether a given lowercase string meets this condition.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| solution-1.java | Frequency array, check non-increasing order | O(n) | O(1) |

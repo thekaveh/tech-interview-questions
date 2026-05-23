@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an initial deposit, an annual interest rate, and a target threshold, find how many years it takes for the deposit to reach or exceed the threshold with compound interest.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| solution-1.java | Iterative simulation year by year | O(years) | O(1) |
+| solution-2.java | Direct formula using logarithms | O(1) | O(1) |

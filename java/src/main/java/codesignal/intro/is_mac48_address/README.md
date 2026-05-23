@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a string, determine whether it is a valid MAC-48 address (six groups of exactly two uppercase hexadecimal digits separated by hyphens).
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| solution-1.java | Split on hyphen, validate each group by length and hex parsing | O(1) | O(1) |
+| solution-2.java | Single regex match | O(1) | O(1) |
