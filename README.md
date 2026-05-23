@@ -6,33 +6,43 @@ A personal collection of solved coding-interview problems from AlgoExpert,
 CodeSignal, and Educative. Solutions are my own work; problem statements in
 each `README.md` are paraphrased in my own words.
 
-## 1. Layout
+## 1. Counts
+
+| Provider | Problems | Solutions |
+|---|---:|---:|
+| AlgoExpert | 168 | 316 |
+| CodeSignal | 102 | 150 |
+| Educative | 8 | 9 |
+| **Total** | **278** | **475** |
+
+Full browsable index: [PROBLEMS.md](./PROBLEMS.md).
+
+## 2. Layout
 
 ```
 java/                              ← Java solutions (active)
   src/main/java/
-    algoexpert/{easy,medium,hard,veryhard}/<problem_snake>/
-    codesignal/{intro,thecore}/<problem_snake>/
-    educative/patterns/<pattern_snake>/<problem_snake>/
-python/                            ← reserved for future
+    algoexpert/{easy,medium,hard,veryhard}/<problem>/
+    codesignal/{intro,thecore}/<problem>/
+    educative/patterns/<pattern>/<problem>/
+python/                            ← stub for future Python ports
+scripts/                           ← end-state verification + index generator
 ```
 
-Each `<problem_snake>/` directory contains a `README.md` (problem summary,
-difficulty badge, complexity table) and one or more `SolutionN.java` files,
-where the number denotes attempt order. The `// Approach:` comment in each
-file names the technique used.
+Each `<problem>/` directory contains a `README.md` (problem summary,
+difficulty badge, complexity table) and one or more `SolutionN.java`
+files where the number denotes attempt order.
 
-## 2. Building
+## 3. Building
 
 ```
-cd java
-mvn -B compile
+cd java && mvn -B verify
 ```
 
-Requires JDK 17+. There are no runtime dependencies; the build only verifies
-that all solutions compile.
+Requires JDK 17+. The build compiles every solution and runs the JUnit
+smoke test that loads each `Solution{N}` class via reflection.
 
-## 3. Difficulty badges
+## 4. Difficulty badges
 
 - ![warmup](https://img.shields.io/badge/-warm--up-green) — elementary, FizzBuzz-tier
 - ![easy](https://img.shields.io/badge/-easy-yellowgreen)
@@ -40,20 +50,21 @@ that all solutions compile.
 - ![hard](https://img.shields.io/badge/-hard-orange)
 - ![very-hard](https://img.shields.io/badge/-very--hard-red)
 
-The badge value defaults from the source tier but is labeled honestly per
+The badge defaults from the source tier but is labeled honestly per
 problem — some "easy"-tier problems are really warm-ups.
 
-## 4. Migration tool
+## 5. Adding a problem
 
-`scripts/migrate.py` is the one-shot tool that reshaped the legacy
-provider-rooted snippet tree into the current Maven-based layout. It is
-kept in-tree as documentation of how the move was performed. Its unit
-tests live alongside it:
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the conventions, and
+[CLAUDE.md](./CLAUDE.md) for the full house-style reference.
 
-```
-python3 -m unittest discover -s scripts -p 'test_*.py'
-```
+## 6. Browse online
 
-## 5. License
+GitHub Pages is configured (`_config.yml` + `.github/workflows/pages.yml`).
+Enable it once in repo Settings → Pages → Source: **GitHub Actions**, then
+each push deploys a Jekyll site rendering this README and the per-problem
+catalog.
+
+## 7. License
 
 [MIT](./LICENSE)
