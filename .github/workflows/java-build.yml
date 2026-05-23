@@ -8,10 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
           cache: maven
-      - name: Compile and verify invariants
+      - name: Compile, test, and verify invariants
         run: bash scripts/verify_final.sh
+      - name: Trunk Check (markdown + secrets)
+        uses: trunk-io/trunk-action@v1
+        with:
+          check-mode: all

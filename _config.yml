@@ -1,0 +1,29 @@
+title: Tech Interview Questions
+description: A personal collection of solved coding-interview problems from AlgoExpert, CodeSignal, and Educative.
+theme: jekyll-theme-cayman
+show_downloads: false
+
+# Render markdown but skip code/tooling directories.
+exclude:
+  - .github/
+  - .gitignore
+  - .metals/
+  - .trunk/
+  - .vscode/
+  - CLAUDE.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - java/pom.xml
+  - java/target/
+  - "**/*.java"
+  - python/pyproject.toml
+  - python/**/__pycache__/
+  - scripts/
+  - vendor/
+
+# README.md and PROBLEMS.md become the entry points; per-problem READMEs
+# are linked from PROBLEMS.md and render on demand.
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
