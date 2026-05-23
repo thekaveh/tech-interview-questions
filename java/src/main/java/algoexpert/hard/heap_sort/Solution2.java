@@ -54,7 +54,7 @@ class Solution2 {
 
     private static void swap(int i, int j, int[] A) {
         int T = A[i];
-        A[i] 	= A[j];
-        A[j] 	= T;
+        A[i]    = A[j];
+        A[j]    = T;
     }
 }

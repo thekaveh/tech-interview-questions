@@ -24,12 +24,12 @@ class Solution1 {
             int cmp = Integer.valueOf(key).compareTo(tree.value);
             
             if (cmp < 0) {
-                if(tree.left != null) 	{ insert(tree.left, key); }
-                else 				    { tree.left = new BST(key); }
+                if(tree.left != null)   { insert(tree.left, key); }
+                else                    { tree.left = new BST(key); }
             }
-            else if	(0 <= cmp) {
-                if(tree.right != null) 	{ insert(tree.right, key); }
-                else 					{ tree.right = new BST(key);; }
+            else if (0 <= cmp) {
+                if(tree.right != null)  { insert(tree.right, key); }
+                else                    { tree.right = new BST(key);; }
             }
         }
 
@@ -43,8 +43,8 @@ class Solution1 {
             int cmp = Integer.valueOf(key).compareTo(tree.value);
             
             if      (cmp < 0)   { return contains(tree.left, key); }
-            else if	(0 < cmp)	{ return contains(tree.right, key); }
-            else 				{ return true; }
+            else if (0 < cmp)   { return contains(tree.right, key); }
+            else                { return true; }
         }
 
         public BST remove(int key) {
@@ -56,8 +56,8 @@ class Solution1 {
         private static void remove(BST tree, BST parent, int key) {
             int cmp = Integer.valueOf(key).compareTo(tree.value);
             
-            if		(cmp < 0)   { if(tree.left != null)  { remove(tree.left, tree, key); } }
-            else if	(0 < cmp)	{ if(tree.right != null) { remove(tree.right, tree, key); } }
+            if      (cmp < 0)   { if(tree.left != null)  { remove(tree.left, tree, key); } }
+            else if (0 < cmp)   { if(tree.right != null) { remove(tree.right, tree, key); } }
             else {
                 if(tree.left != null && tree.right != null) {
                     tree.value = tree.right.min();

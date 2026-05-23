@@ -13,9 +13,9 @@ class Solution3 {
         while(lo < hi) {
             var T = A[lo] + A[hi];
             
-            if		(T < S) { lo++; }
-            else if	(S < T)	{ hi--; }
-            else			{ return new int[] { A[lo], A[hi] }; }
+            if      (T < S) { lo++; }
+            else if (S < T) { hi--; }
+            else            { return new int[] { A[lo], A[hi] }; }
         }
         
         return new int[0];

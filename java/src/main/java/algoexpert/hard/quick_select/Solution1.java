@@ -39,8 +39,8 @@ class Solution1 {
     }
 
     private static void swap(int i, int j, int[] A) {
-		var T = A[i];
-		A[i] = A[j];
-		A[j] = T;
-	}
+        var T = A[i];
+        A[i] = A[j];
+        A[j] = T;
+    }
 }

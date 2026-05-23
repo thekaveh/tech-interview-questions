@@ -3,24 +3,24 @@ import java.util.*;
 
 // Approach: Try each city as start, simulate full circuit.
 class Solution1 {
-	public int validStartingCity(int[] distances, int[] fuels, int mpg) {
-		var N = distances.length;
+    public int validStartingCity(int[] distances, int[] fuels, int mpg) {
+        var N = distances.length;
 
-		for (var src = 0; src < N; src++) {
-			var currentRange = 0;
+        for (var src = 0; src < N; src++) {
+            var currentRange = 0;
 
-			for (var dst = src; dst < src + N && 0 <= currentRange; dst++) {
-				var idx = dst % N;
+            for (var dst = src; dst < src + N && 0 <= currentRange; dst++) {
+                var idx = dst % N;
 
-				currentRange += fuels[idx] * mpg;
-				currentRange -= distances[idx];
-			}
+                currentRange += fuels[idx] * mpg;
+                currentRange -= distances[idx];
+            }
 
-			if (0 <= currentRange) {
-				return src;
-			}
-		}
+            if (0 <= currentRange) {
+                return src;
+            }
+        }
 
-		return -1;
-	}
+        return -1;
+    }
 }

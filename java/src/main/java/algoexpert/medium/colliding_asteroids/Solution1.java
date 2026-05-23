@@ -3,41 +3,41 @@ import java.util.*;
 
 // Approach: Stack-based collision simulation.
 class Solution1 {
-	public int[] collidingAsteroids(int[] asteroids) {
-		var S = new Stack<Integer>();
+    public int[] collidingAsteroids(int[] asteroids) {
+        var S = new Stack<Integer>();
 
-		for (var asteroid : asteroids) {
-			if (S.isEmpty() || S.peek() < 0 || asteroid > 0) {
-				S.push(asteroid);
-				continue;
-			}
+        for (var asteroid : asteroids) {
+            if (S.isEmpty() || S.peek() < 0 || asteroid > 0) {
+                S.push(asteroid);
+                continue;
+            }
 
-			while (!S.isEmpty()) {
-				if (S.peek() < 0) {
-					S.push(asteroid);
-					break;
-				}
+            while (!S.isEmpty()) {
+                if (S.peek() < 0) {
+                    S.push(asteroid);
+                    break;
+                }
 
-				var asteroidSize = Math.abs(asteroid);
+                var asteroidSize = Math.abs(asteroid);
 
-				if (S.peek() > asteroidSize) {
-					break;
-				}
+                if (S.peek() > asteroidSize) {
+                    break;
+                }
 
-				if (S.peek() == asteroidSize) {
-					S.pop();
-					break;
-				}
+                if (S.peek() == asteroidSize) {
+                    S.pop();
+                    break;
+                }
 
-				S.pop();
+                S.pop();
 
-				if (S.isEmpty()) {
-					S.push(asteroid);
-					break;
-				}
-			}
-		}
+                if (S.isEmpty()) {
+                    S.push(asteroid);
+                    break;
+                }
+            }
+        }
 
-		return S.stream().mapToInt(i -> i).toArray();
-	}
+        return S.stream().mapToInt(i -> i).toArray();
+    }
 }

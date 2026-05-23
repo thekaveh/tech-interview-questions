@@ -3,22 +3,22 @@ import java.util.*;
 
 // Approach: Prefix sum set: repeated prefix sum implies zero-sum subarray.
 class Solution2 {
-	public boolean zeroSumSubarray(int[] A) {
-		var cumulativeSums = new HashSet<Integer>();
+    public boolean zeroSumSubarray(int[] A) {
+        var cumulativeSums = new HashSet<Integer>();
 
-		var runningSum = 0;
-		cumulativeSums.add(runningSum);
+        var runningSum = 0;
+        cumulativeSums.add(runningSum);
 
-		for (var a : A) {
-			runningSum += a;
+        for (var a : A) {
+            runningSum += a;
 
-			if (cumulativeSums.contains(runningSum)) {
-				return true;
-			}
+            if (cumulativeSums.contains(runningSum)) {
+                return true;
+            }
 
-			cumulativeSums.add(runningSum);
-		}
+            cumulativeSums.add(runningSum);
+        }
 
-		return false;
-	}
+        return false;
+    }
 }

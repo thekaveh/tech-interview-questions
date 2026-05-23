@@ -20,7 +20,7 @@ class Solution3 {
             R.append(runCount);
             R.append(runChar);
             
-            i++;		
+            i++;        
         } while(i < N);
 
         return R.toString();

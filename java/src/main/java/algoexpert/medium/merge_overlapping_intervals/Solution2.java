@@ -21,7 +21,7 @@ class Solution2 {
             var next = minPQ.poll();
                 
             if(top[1] < next[0])    { R.add(next); }
-            else 					{ top[1] = Math.max(top[1], next[1]); } 
+            else                    { top[1] = Math.max(top[1], next[1]); } 
         }
         
         return R.toArray(new int[R.size()][]);

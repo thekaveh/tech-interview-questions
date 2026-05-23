@@ -14,8 +14,8 @@ class Solution1 {
             for(var lo = 0; lo < hi; lo++) {
                 if(A[lo] <= A[lo + 1]) { continue; }
 
-				sorted = false;
-				swap(A, lo, lo + 1);
+                sorted = false;
+                swap(A, lo, lo + 1);
             }
 
             if(sorted) { break; }

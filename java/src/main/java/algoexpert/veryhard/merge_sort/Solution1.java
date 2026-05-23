@@ -29,10 +29,10 @@ class Solution1 {
         for(int k = lo; k <= hi; k++) { X[k] = A[k]; }
         
         for(int i = lo, j = mid + 1, k = lo; k <= hi; k++) {
-            if		(mid < i) 		{ A[k] = X[j++]; }
-            else if	(hi < j) 	    { A[k] = X[i++]; }
+            if      (mid < i)       { A[k] = X[j++]; }
+            else if (hi < j)        { A[k] = X[i++]; }
             else if (X[j] < X[i])   { A[k] = X[j++]; }
-            else 					{ A[k] = X[i++]; }
+            else                    { A[k] = X[i++]; }
         }
     }
 }

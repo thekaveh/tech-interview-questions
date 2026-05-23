@@ -26,8 +26,8 @@ class Solution2 {
     private static void solve(BinaryTree tree, List<Integer> R, int T) {
         T += tree.value;
         
-        if(tree.left != null) 					    { solve(tree.left, R, T); }
-        if(tree.right != null)					    { solve(tree.right, R, T); }
+        if(tree.left != null)                       { solve(tree.left, R, T); }
+        if(tree.right != null)                      { solve(tree.right, R, T); }
         if(tree.left == null && tree.right == null) { R.add(T); }
     }
 }

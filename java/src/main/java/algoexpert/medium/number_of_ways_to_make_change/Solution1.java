@@ -3,7 +3,7 @@ import java.util.*;
 
 // Approach: Naive recursion (include/exclude each denomination).
 class Solution1 {
-	// T: O(2 ^ (S + D)) | S: O(S + D)
+    // T: O(2 ^ (S + D)) | S: O(S + D)
     public static int numberOfWaysToMakeChange(int S, int[] D) {
         return solve(S, D, 0);
     }

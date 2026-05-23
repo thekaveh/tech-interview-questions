@@ -33,5 +33,5 @@ class Solution3 {
         var T = A.get(i);
         A.set(i, A.get(j));
         A.set(j, T);
-	}
+    }
 }

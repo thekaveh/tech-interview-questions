@@ -3,30 +3,30 @@ import java.util.*;
 
 // Approach: Sliding window with shrink-on-exceed.
 class Solution1 {
-	public int[] longestSubarrayWithSum(int[] A, int S) {
-		var N = A.length;
-		var R = new int[0];
+    public int[] longestSubarrayWithSum(int[] A, int S) {
+        var N = A.length;
+        var R = new int[0];
 
-		var T = 0;
-		var lo = 0;
-		var hi = 0;
+        var T = 0;
+        var lo = 0;
+        var hi = 0;
 
-		while (hi < N) {
-			T += A[hi];
+        while (hi < N) {
+            T += A[hi];
 
-			while (lo < hi && S < T) {
-				T -= A[lo++];
-			}
+            while (lo < hi && S < T) {
+                T -= A[lo++];
+            }
 
-			if (T == S) {
-				if (R.length == 0 || R[1] - R[0] < hi - lo) {
-					R = new int[] { lo, hi };
-				}
-			}
+            if (T == S) {
+                if (R.length == 0 || R[1] - R[0] < hi - lo) {
+                    R = new int[] { lo, hi };
+                }
+            }
 
-			hi++;
-		}
+            hi++;
+        }
 
-		return R;
-	}
+        return R;
+    }
 }

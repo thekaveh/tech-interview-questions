@@ -3,65 +3,65 @@ import java.util.*;
 
 // Approach: Trie with per-node child-count + prefix walk.
 class Solution1 {
-	public String[] shortestUniquePrefixes(String[] keys) {
-		int N = keys.length;
-		Trie trie = new Trie();
+    public String[] shortestUniquePrefixes(String[] keys) {
+        int N = keys.length;
+        Trie trie = new Trie();
 
-		for (String key : keys) {
-			trie.put(key);
-		}
+        for (String key : keys) {
+            trie.put(key);
+        }
 
-		var prefixes = new String[N];
-		for (int i = 0; i < N; i++) {
-			prefixes[i] = uniquePrefixOf(keys[i], trie);
-		}
+        var prefixes = new String[N];
+        for (int i = 0; i < N; i++) {
+            prefixes[i] = uniquePrefixOf(keys[i], trie);
+        }
 
-		return prefixes;
-	}
+        return prefixes;
+    }
 
-	private static String uniquePrefixOf(String key, Trie trie) {
-		var x = trie.root;
-		var prefix = new StringBuilder();
+    private static String uniquePrefixOf(String key, Trie trie) {
+        var x = trie.root;
+        var prefix = new StringBuilder();
 
-		for (char c : key.toCharArray()) {
-			prefix.append(c);
-			x = x.children.get(c);
+        for (char c : key.toCharArray()) {
+            prefix.append(c);
+            x = x.children.get(c);
 
-			if (x.size == 1) {
-				return prefix.toString();
-			}
-		}
+            if (x.size == 1) {
+                return prefix.toString();
+            }
+        }
 
-		return key;
-	}
+        return key;
+    }
 
-	static class Trie {
-		Node root;
+    static class Trie {
+        Node root;
 
-		public Trie() {
-			this.root = new Node();
-		}
+        public Trie() {
+            this.root = new Node();
+        }
 
-		public void put(String key) {
-			var x = this.root;
+        public void put(String key) {
+            var x = this.root;
 
-			for (char c : key.toCharArray()) {
-				x.size++;
-				x.children.putIfAbsent(c, new Node());
-				x = x.children.get(c);
-			}
+            for (char c : key.toCharArray()) {
+                x.size++;
+                x.children.putIfAbsent(c, new Node());
+                x = x.children.get(c);
+            }
 
-			x.size++;
-		}
+            x.size++;
+        }
 
-		static class Node {
-			int size;
-			Map<Character, Node> children;
+        static class Node {
+            int size;
+            Map<Character, Node> children;
 
-			public Node() {
-				this.size = 0;
-				this.children = new HashMap<>();
-			}
-		}
-	}
+            public Node() {
+                this.size = 0;
+                this.children = new HashMap<>();
+            }
+        }
+    }
 }

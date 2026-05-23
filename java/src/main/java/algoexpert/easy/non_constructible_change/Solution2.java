@@ -10,7 +10,7 @@ class Solution2 {
         
         for(var coin : coins) {
             if(change + 1 < coin)   { return change + 1; }
-            else				    { change += coin; }
+            else                    { change += coin; }
         }
         
         return change + 1;

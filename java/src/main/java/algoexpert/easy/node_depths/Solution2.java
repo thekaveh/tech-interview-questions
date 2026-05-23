@@ -4,9 +4,9 @@ import java.util.*;
 // Approach: Recursive DFS, pass depth down.
 class Solution2 {
     static class BinaryTree {
-		int value;
-		BinaryTree left;
-		BinaryTree right;
+        int value;
+        BinaryTree left;
+        BinaryTree right;
 
         public BinaryTree(int value) {
             this.value = value;

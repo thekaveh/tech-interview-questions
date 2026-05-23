@@ -20,10 +20,10 @@ class Solution1 {
 
         return A;
     }
-	
-	private static void swap(int[] A, int i, int j) {
-		int T = A[i];
-		A[i] = A[j];
-		A[j] = T;
-	}
+    
+    private static void swap(int[] A, int i, int j) {
+        int T = A[i];
+        A[i] = A[j];
+        A[j] = T;
+    }
 }

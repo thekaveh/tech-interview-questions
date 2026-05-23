@@ -16,8 +16,8 @@ class Solution2 {
             while(lo < hi) {
                 int T = A[i] + A[lo] + A[hi];
                 
-                if	    (T < S) { lo++; }
-                else if	(S < T) { hi--; }
+                if      (T < S) { lo++; }
+                else if (S < T) { hi--; }
                 else {
                     R.add(new Integer[] { A[i], A[lo], A[hi] });
                     

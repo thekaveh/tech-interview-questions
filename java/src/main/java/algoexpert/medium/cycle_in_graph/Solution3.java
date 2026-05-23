@@ -18,8 +18,8 @@ class Solution3 {
             }
         }
         
-        int V() 					{ return this.V; }
-        List<Integer> adj(int v) 	{ return this.adj.get(v); }
+        int V()                     { return this.V; }
+        List<Integer> adj(int v)    { return this.adj.get(v); }
     }
 
     static class DFS {

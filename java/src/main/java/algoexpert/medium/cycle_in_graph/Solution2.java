@@ -7,8 +7,8 @@ class Solution2 {
         private int[][] E;
 
         public Graph(int[][] E) { this.E = E; }
-        int V() 				{ return this.E.length; }
-        int[] adj(int v)		{ return this.E[v]; }
+        int V()                 { return this.E.length; }
+        int[] adj(int v)        { return this.E[v]; }
     }
 
     static class DFS {
@@ -41,7 +41,7 @@ class Solution2 {
             return true;
         }
     }
-	
+    
     public boolean cycleInGraph(int[][] E) {
         var G = new Graph(E);
         

@@ -11,7 +11,7 @@ class Solution4 {
 
         return R;
     }
-	
+    
     private static List<Boolean> getBitmask(int k, int n) {
         var bitmask = new ArrayList<Boolean>();
         

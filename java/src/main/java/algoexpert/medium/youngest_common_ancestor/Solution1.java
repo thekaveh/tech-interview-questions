@@ -28,7 +28,7 @@ class Solution1 {
         // This method is for testing only.
         void addAsAncestor(AncestralTree[] descendants) {
             for (AncestralTree descendant : descendants) {
-				descendant.ancestor = this;
+                descendant.ancestor = this;
             }
         }
     }

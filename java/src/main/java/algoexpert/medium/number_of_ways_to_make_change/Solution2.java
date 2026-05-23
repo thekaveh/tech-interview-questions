@@ -3,7 +3,7 @@ import java.util.*;
 
 // Approach: Top-down recursion with 2-D memoization.
 class Solution2 {
-	// T: O(S * D) | S: O(S * D)
+    // T: O(S * D) | S: O(S * D)
     public static int numberOfWaysToMakeChange(int S, int[] D) {
         var N = D.length;
         var M = new Integer[N][S + 1];
