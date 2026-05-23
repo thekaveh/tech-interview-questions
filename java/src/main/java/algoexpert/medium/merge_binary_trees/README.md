@@ -9,7 +9,7 @@ Given two binary trees, merge them into a new tree by summing the values of over
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive merge creating new nodes, treating null as 0 | O(n) | O(n) |
-| Solution2 | Recursive merge reusing existing nodes when one is null | O(n) | O(n) |
+| File      | Approach                                                | Time | Space |
+| --------- | ------------------------------------------------------- | ---- | ----- |
+| Solution1 | Recursive merge creating new nodes, treating null as 0  | O(n) | O(n)  |
+| Solution2 | Recursive merge reusing existing nodes when one is null | O(n) | O(n)  |

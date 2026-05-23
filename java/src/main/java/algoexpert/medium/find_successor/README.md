@@ -9,9 +9,9 @@ Given a binary tree where each node has a parent pointer, and a reference to a s
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Full in-order into queue, scan for node | O(n) | O(n) |
-| Solution2 | Reverse in-order into stack, pop to find node | O(n) | O(n) |
-| Solution3 | Reverse in-order with early stop at target | O(n) | O(n) |
-| Solution4 | Direct pointer traversal using parent links | O(h) | O(1) |
+| File      | Approach                                      | Time | Space |
+| --------- | --------------------------------------------- | ---- | ----- |
+| Solution1 | Full in-order into queue, scan for node       | O(n) | O(n)  |
+| Solution2 | Reverse in-order into stack, pop to find node | O(n) | O(n)  |
+| Solution3 | Reverse in-order with early stop at target    | O(n) | O(n)  |
+| Solution4 | Direct pointer traversal using parent links   | O(h) | O(1)  |

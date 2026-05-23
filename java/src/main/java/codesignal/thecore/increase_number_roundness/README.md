@@ -9,7 +9,7 @@ A number's "roundness" is defined by how many trailing zeros it has. Given an in
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                                                    | Time     | Space    |
+| --------- | --------------------------------------------------------------------------- | -------- | -------- |
 | Solution1 | Two-pointer scan trimming trailing zeros then checking for an interior zero | O(log n) | O(log n) |
-| Solution2 | Regex match for an interior zero followed by any non-zero suffix | O(log n) | O(log n) |
+| Solution2 | Regex match for an interior zero followed by any non-zero suffix            | O(log n) | O(log n) |

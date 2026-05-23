@@ -9,6 +9,6 @@ Given a binary tree, a target node value, and an integer k, return all node valu
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Parent-map DFS + BFS level-order | O(n) | O(n) |
+| File      | Approach                         | Time | Space |
+| --------- | -------------------------------- | ---- | ----- |
+| Solution1 | Parent-map DFS + BFS level-order | O(n) | O(n)  |

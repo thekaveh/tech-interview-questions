@@ -9,6 +9,6 @@ Assign a positive integer reward to each student based on their scores. Every st
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two-pass linear scan (left-to-right then right-to-left) | O(n) | O(n) |
+| File      | Approach                                                | Time | Space |
+| --------- | ------------------------------------------------------- | ---- | ----- |
+| Solution1 | Two-pass linear scan (left-to-right then right-to-left) | O(n) | O(n)  |

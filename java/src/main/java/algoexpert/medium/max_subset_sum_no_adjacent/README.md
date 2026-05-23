@@ -9,7 +9,7 @@ Given an array of non-negative integers, find the maximum sum of a subset of ele
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Dynamic programming with full DP array | O(n) | O(n) |
-| Solution2 | Dynamic programming with two rolling variables | O(n) | O(1) |
+| File      | Approach                                       | Time | Space |
+| --------- | ---------------------------------------------- | ---- | ----- |
+| Solution1 | Dynamic programming with full DP array         | O(n) | O(n)  |
+| Solution2 | Dynamic programming with two rolling variables | O(n) | O(1)  |

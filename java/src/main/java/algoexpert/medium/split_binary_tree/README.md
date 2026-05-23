@@ -9,6 +9,6 @@ Given a binary tree, determine whether it can be split into two subtrees of equa
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | DFS computing subtree sums, flag when half-sum is found | O(n) | O(h) |
+| File      | Approach                                                | Time | Space |
+| --------- | ------------------------------------------------------- | ---- | ----- |
+| Solution1 | DFS computing subtree sums, flag when half-sum is found | O(n) | O(h)  |

@@ -9,7 +9,7 @@ A cross-shaped figure is built by layering squares: layer 1 is a single cell, ea
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive summation of 4*(n-1) per layer | O(n) | O(n) |
-| Solution2 | Closed-form formula: n² + (n-1)² | O(1) | O(1) |
+| File      | Approach                                  | Time | Space |
+| --------- | ----------------------------------------- | ---- | ----- |
+| Solution1 | Recursive summation of 4\*(n-1) per layer | O(n) | O(n)  |
+| Solution2 | Closed-form formula: n² + (n-1)²          | O(1) | O(1)  |

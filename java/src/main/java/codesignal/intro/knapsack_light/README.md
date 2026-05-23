@@ -9,6 +9,6 @@ Given two items each with a value and weight, and a maximum carrying capacity, d
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Greedy: take higher-value item first, add second if weight allows | O(1) | O(1) |
+| File      | Approach                                                          | Time | Space |
+| --------- | ----------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Greedy: take higher-value item first, add second if weight allows | O(1) | O(1)  |

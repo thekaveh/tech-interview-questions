@@ -9,7 +9,7 @@ Given an array where each element represents the maximum jump length from that p
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Bottom-up DP (forward pass updating reachable cells) | O(n²) | O(n) |
-| Solution2 | Top-down memoized recursion | O(n²) | O(n) |
+| File      | Approach                                             | Time  | Space |
+| --------- | ---------------------------------------------------- | ----- | ----- |
+| Solution1 | Bottom-up DP (forward pass updating reachable cells) | O(n²) | O(n)  |
+| Solution2 | Top-down memoized recursion                          | O(n²) | O(n)  |

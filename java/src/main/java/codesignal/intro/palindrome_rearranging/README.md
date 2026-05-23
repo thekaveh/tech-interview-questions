@@ -9,7 +9,7 @@ Given a string, determine whether its characters can be rearranged to form a pal
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | HashMap frequency count, check odd-count characters | O(n) | O(k) |
-| Solution2 | Fixed-size frequency array, check odd counts | O(n) | O(1) |
+| File      | Approach                                            | Time | Space |
+| --------- | --------------------------------------------------- | ---- | ----- |
+| Solution1 | HashMap frequency count, check odd-count characters | O(n) | O(k)  |
+| Solution2 | Fixed-size frequency array, check odd counts        | O(n) | O(1)  |

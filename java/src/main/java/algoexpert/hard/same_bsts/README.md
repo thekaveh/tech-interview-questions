@@ -9,6 +9,6 @@ Given two arrays of integers, determine whether inserting the elements of each a
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive structural comparison with valid-range scanning | O(n²) | O(d) |
+| File      | Approach                                                  | Time  | Space |
+| --------- | --------------------------------------------------------- | ----- | ----- |
+| Solution1 | Recursive structural comparison with valid-range scanning | O(n²) | O(d)  |

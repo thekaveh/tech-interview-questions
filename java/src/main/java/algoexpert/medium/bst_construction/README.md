@@ -9,7 +9,7 @@ Implement a Binary Search Tree class supporting `insert`, `contains`, and `remov
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                             | Time                     | Space        |
+| --------- | ------------------------------------ | ------------------------ | ------------ |
 | Solution1 | Recursive insert / contains / remove | O(log n) avg, O(n) worst | O(log n) avg |
-| Solution2 | Iterative insert / contains / remove | O(log n) avg, O(n) worst | O(1) |
+| Solution2 | Iterative insert / contains / remove | O(log n) avg, O(n) worst | O(1)         |

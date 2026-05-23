@@ -9,6 +9,6 @@ Given an array of positive integers and a target sum S, find the length of the s
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Variable-size sliding window growing right until sum meets target, then shrinking left to minimize length | O(n) | O(1) |
+| File      | Approach                                                                                                  | Time | Space |
+| --------- | --------------------------------------------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Variable-size sliding window growing right until sum meets target, then shrinking left to minimize length | O(n) | O(1)  |

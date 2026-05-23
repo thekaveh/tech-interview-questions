@@ -9,7 +9,7 @@ An array of query durations is provided; determine the minimum total waiting tim
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sort, accumulate prefix sums | O(n log n) | O(1) |
-| Solution2 | Sort, multiply each by remaining count | O(n log n) | O(1) |
+| File      | Approach                               | Time       | Space |
+| --------- | -------------------------------------- | ---------- | ----- |
+| Solution1 | Sort, accumulate prefix sums           | O(n log n) | O(1)  |
+| Solution2 | Sort, multiply each by remaining count | O(n log n) | O(1)  |

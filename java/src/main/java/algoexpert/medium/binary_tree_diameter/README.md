@@ -9,6 +9,6 @@ Given a binary tree, return the length of its diameter — the longest path betw
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | DFS returning (height, diameter) pair | O(n) | O(h) |
+| File      | Approach                              | Time | Space |
+| --------- | ------------------------------------- | ---- | ----- |
+| Solution1 | DFS returning (height, diameter) pair | O(n) | O(h)  |

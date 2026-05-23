@@ -9,6 +9,6 @@ An array of strings is provided; find all characters that appear in every single
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Per-string dedup set, frequency map | O(n · m) | O(c) |
+| File      | Approach                            | Time     | Space |
+| --------- | ----------------------------------- | -------- | ----- |
+| Solution1 | Per-string dedup set, frequency map | O(n · m) | O(c)  |

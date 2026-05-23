@@ -9,6 +9,6 @@ Sort an integer array in ascending order in-place using the bubble sort algorith
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Bubble sort with early exit | O(n²) | O(1) |
+| File      | Approach                    | Time  | Space |
+| --------- | --------------------------- | ----- | ----- |
+| Solution1 | Bubble sort with early exit | O(n²) | O(1)  |

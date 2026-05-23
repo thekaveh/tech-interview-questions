@@ -9,6 +9,6 @@ Given a binary tree where each node has a parent pointer, perform an in-order tr
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Parent-pointer walk tracking previous node direction | O(n) | O(1) |
+| File      | Approach                                             | Time | Space |
+| --------- | ---------------------------------------------------- | ---- | ----- |
+| Solution1 | Parent-pointer walk tracking previous node direction | O(n) | O(1)  |

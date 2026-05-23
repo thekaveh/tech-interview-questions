@@ -9,7 +9,7 @@ Given D dice each with S sides (numbered 1 through S), count the number of ways 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Bottom-up 2-D DP (dice × target) | O(D·S·T) | O(D·T) |
+| File      | Approach                             | Time     | Space  |
+| --------- | ------------------------------------ | -------- | ------ |
+| Solution1 | Bottom-up 2-D DP (dice × target)     | O(D·S·T) | O(D·T) |
 | Solution2 | Bottom-up DP with bounded inner loop | O(D·S·T) | O(D·T) |

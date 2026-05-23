@@ -9,6 +9,6 @@ Given a list of 2D points, find the maximum number of points that lie on a singl
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | For each anchor point, hash normalized slopes to other points | O(n²) | O(n) |
+| File      | Approach                                                      | Time  | Space |
+| --------- | ------------------------------------------------------------- | ----- | ----- |
+| Solution1 | For each anchor point, hash normalized slopes to other points | O(n²) | O(n)  |

@@ -9,7 +9,7 @@ Given an array of integers where all values are between 1 and the length of the 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | HashSet membership tracking | O(n) | O(n) |
-| Solution2 | In-place sign marking as visited flag | O(n) | O(1) |
+| File      | Approach                              | Time | Space |
+| --------- | ------------------------------------- | ---- | ----- |
+| Solution1 | HashSet membership tracking           | O(n) | O(n)  |
+| Solution2 | In-place sign marking as visited flag | O(n) | O(1)  |

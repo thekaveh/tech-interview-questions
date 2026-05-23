@@ -9,6 +9,6 @@ Given an array of same-length strings, determine whether they can be arranged in
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Generate all permutations, check each for consecutive one-diff property | O(n! * n) | O(n!) |
+| File      | Approach                                                                | Time       | Space |
+| --------- | ----------------------------------------------------------------------- | ---------- | ----- |
+| Solution1 | Generate all permutations, check each for consecutive one-diff property | O(n! \* n) | O(n!) |

@@ -9,6 +9,6 @@ Sort an integer array in ascending order in-place using selection sort and retur
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Selection sort, min scan + swap | O(n²) | O(1) |
+| File      | Approach                        | Time  | Space |
+| --------- | ------------------------------- | ----- | ----- |
+| Solution1 | Selection sort, min scan + swap | O(n²) | O(1)  |

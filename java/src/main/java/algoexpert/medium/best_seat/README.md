@@ -9,6 +9,6 @@ Given a row of seats represented as an array of 0s (empty) and 1s (occupied), fi
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Linear scan of contiguous gaps | O(n) | O(1) |
+| File      | Approach                       | Time | Space |
+| --------- | ------------------------------ | ---- | ----- |
+| Solution1 | Linear scan of contiguous gaps | O(n) | O(1)  |

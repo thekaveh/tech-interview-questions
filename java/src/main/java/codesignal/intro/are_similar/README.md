@@ -9,6 +9,6 @@ Given two arrays of the same length, determine whether one can be made equal to 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two-pointer scan allowing at most one swap | O(n) | O(1) |
+| File      | Approach                                   | Time | Space |
+| --------- | ------------------------------------------ | ---- | ----- |
+| Solution1 | Two-pointer scan allowing at most one swap | O(n) | O(1)  |

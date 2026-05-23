@@ -9,8 +9,8 @@ Given a target amount and an array of distinct coin denominations, count the tot
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                            | Time       | Space    |
+| --------- | --------------------------------------------------- | ---------- | -------- |
 | Solution1 | Naive recursion (include/exclude each denomination) | O(2^(n+d)) | O(n + d) |
-| Solution2 | Top-down recursion with 2-D memoization | O(n · d) | O(n · d) |
-| Solution3 | Bottom-up DP table | O(n · d) | O(n · d) |
+| Solution2 | Top-down recursion with 2-D memoization             | O(n · d)   | O(n · d) |
+| Solution3 | Bottom-up DP table                                  | O(n · d)   | O(n · d) |

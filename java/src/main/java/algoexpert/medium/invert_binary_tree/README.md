@@ -9,7 +9,7 @@ Given a binary tree, invert it in place so that every node's left and right chil
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive post-order swap | O(n) | O(h) |
-| Solution2 | Iterative BFS level-order swap | O(n) | O(n) |
+| File      | Approach                       | Time | Space |
+| --------- | ------------------------------ | ---- | ----- |
+| Solution1 | Recursive post-order swap      | O(n) | O(h)  |
+| Solution2 | Iterative BFS level-order swap | O(n) | O(n)  |

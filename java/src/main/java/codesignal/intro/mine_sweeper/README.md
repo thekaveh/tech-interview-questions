@@ -9,6 +9,6 @@ Given a boolean matrix indicating mine positions, produce an integer matrix wher
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | For each mine, increment all valid neighbors | O(R*C) | O(R*C) |
+| File      | Approach                                     | Time    | Space   |
+| --------- | -------------------------------------------- | ------- | ------- |
+| Solution1 | For each mine, increment all valid neighbors | O(R\*C) | O(R\*C) |

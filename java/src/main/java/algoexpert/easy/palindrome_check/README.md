@@ -9,8 +9,8 @@ A string is provided; determine whether it reads the same forwards and backwards
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two-pointer from edges inward | O(n) | O(1) |
-| Solution2 | Two-pointer, simultaneous advance | O(n) | O(1) |
-| Solution3 | Recursive two-pointer | O(n) | O(n) |
+| File      | Approach                          | Time | Space |
+| --------- | --------------------------------- | ---- | ----- |
+| Solution1 | Two-pointer from edges inward     | O(n) | O(1)  |
+| Solution2 | Two-pointer, simultaneous advance | O(n) | O(1)  |
+| Solution3 | Recursive two-pointer             | O(n) | O(n)  |

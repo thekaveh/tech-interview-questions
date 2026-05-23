@@ -9,6 +9,6 @@ Given an array `prices` where `prices[i]` is the revenue for a bottle of exactly
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Bottom-up DP with split backtracking | O(n²) | O(n) |
+| File      | Approach                             | Time  | Space |
+| --------- | ------------------------------------ | ----- | ----- |
+| Solution1 | Bottom-up DP with split backtracking | O(n²) | O(n)  |

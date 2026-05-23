@@ -9,6 +9,6 @@ Given a list of strings, group all anagrams together and return the groups as a 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                  | Time           | Space    |
+| --------- | ------------------------- | -------------- | -------- |
 | Solution1 | Sort each word as map key | O(w · n log n) | O(w · n) |

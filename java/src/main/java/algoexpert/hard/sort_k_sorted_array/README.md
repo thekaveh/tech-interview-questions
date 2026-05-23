@@ -9,7 +9,7 @@ Given an array of integers where every element is at most k positions away from 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Min-heap of size k+1, streaming output | O(n log k) | O(k) |
-| Solution2 | Min-heap filling ahead then draining | O(n log k) | O(k) |
+| File      | Approach                               | Time       | Space |
+| --------- | -------------------------------------- | ---------- | ----- |
+| Solution1 | Min-heap of size k+1, streaming output | O(n log k) | O(k)  |
+| Solution2 | Min-heap filling ahead then draining   | O(n log k) | O(k)  |

@@ -9,7 +9,7 @@ Given a string of digits (2–9), return all possible letter combinations it cou
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Iterative BFS expansion with char-array substitution | O(4^n · n) | O(4^n · n) |
+| File      | Approach                                                | Time       | Space      |
+| --------- | ------------------------------------------------------- | ---------- | ---------- |
+| Solution1 | Iterative BFS expansion with char-array substitution    | O(4^n · n) | O(4^n · n) |
 | Solution2 | Iterative BFS expansion with StringBuilder substitution | O(4^n · n) | O(4^n · n) |

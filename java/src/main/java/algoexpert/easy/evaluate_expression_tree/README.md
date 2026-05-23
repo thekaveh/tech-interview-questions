@@ -9,6 +9,6 @@ A binary tree representing an arithmetic expression is provided; leaf nodes cont
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive post-order evaluation | O(n) | O(h) |
+| File      | Approach                        | Time | Space |
+| --------- | ------------------------------- | ---- | ----- |
+| Solution1 | Recursive post-order evaluation | O(n) | O(h)  |

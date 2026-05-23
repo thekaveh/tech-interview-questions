@@ -9,8 +9,8 @@ Given a binary tree, determine whether it satisfies the BST property: every node
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive with [min, max) range, combined condition | O(n) | O(h) |
-| Solution2 | Recursive with [min, max) range, early-exit condition | O(n) | O(h) |
-| Solution3 | Recursive with [min, max) range, sequential early exits | O(n) | O(h) |
+| File      | Approach                                                | Time | Space |
+| --------- | ------------------------------------------------------- | ---- | ----- |
+| Solution1 | Recursive with [min, max) range, combined condition     | O(n) | O(h)  |
+| Solution2 | Recursive with [min, max) range, early-exit condition   | O(n) | O(h)  |
+| Solution3 | Recursive with [min, max) range, sequential early exits | O(n) | O(h)  |

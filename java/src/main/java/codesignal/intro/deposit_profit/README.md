@@ -9,7 +9,7 @@ Given an initial deposit, an annual interest rate, and a target threshold, find 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Iterative simulation year by year | O(years) | O(1) |
-| Solution2 | Direct formula using logarithms | O(1) | O(1) |
+| File      | Approach                          | Time     | Space |
+| --------- | --------------------------------- | -------- | ----- |
+| Solution1 | Iterative simulation year by year | O(years) | O(1)  |
+| Solution2 | Direct formula using logarithms   | O(1)     | O(1)  |

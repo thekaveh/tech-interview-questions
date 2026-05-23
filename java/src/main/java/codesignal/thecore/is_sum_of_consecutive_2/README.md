@@ -9,6 +9,6 @@ Given a positive integer n, count how many ways it can be written as the sum of 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Nested loop trying all starting values and accumulating prefix sums | O(n²) | O(1) |
+| File      | Approach                                                            | Time  | Space |
+| --------- | ------------------------------------------------------------------- | ----- | ----- |
+| Solution1 | Nested loop trying all starting values and accumulating prefix sums | O(n²) | O(1)  |

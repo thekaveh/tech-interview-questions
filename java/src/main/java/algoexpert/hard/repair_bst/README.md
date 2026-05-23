@@ -9,6 +9,6 @@ A BST has had exactly two of its nodes swapped by mistake, breaking the BST prop
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | In-order traversal to detect two out-of-order nodes + value swap | O(n) | O(h) |
+| File      | Approach                                                         | Time | Space |
+| --------- | ---------------------------------------------------------------- | ---- | ----- |
+| Solution1 | In-order traversal to detect two out-of-order nodes + value swap | O(n) | O(h)  |

@@ -9,7 +9,7 @@ Given a hotel floor plan matrix where 0 indicates a room that cannot be used, su
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Row-major scan with per-column blocked flag | O(R*C) | O(C) |
-| Solution2 | Column-major scan, break on zero per column | O(R*C) | O(1) |
+| File      | Approach                                    | Time    | Space |
+| --------- | ------------------------------------------- | ------- | ----- |
+| Solution1 | Row-major scan with per-column blocked flag | O(R\*C) | O(C)  |
+| Solution2 | Column-major scan, break on zero per column | O(R\*C) | O(1)  |

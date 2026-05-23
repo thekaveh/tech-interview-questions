@@ -9,6 +9,6 @@ Given an array of building heights and a direction ("EAST" or "WEST"), return th
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single pass from horizon side, track running max | O(n) | O(n) |
+| File      | Approach                                         | Time | Space |
+| --------- | ------------------------------------------------ | ---- | ----- |
+| Solution1 | Single pass from horizon side, track running max | O(n) | O(n)  |

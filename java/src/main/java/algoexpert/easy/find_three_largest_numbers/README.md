@@ -9,7 +9,7 @@ An integer array with at least three elements is provided; return the three larg
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Min-heap of size 3 | O(n log 3) | O(1) |
-| Solution2 | Max-heap, extract top 3 | O(n log n) | O(n) |
+| File      | Approach                | Time       | Space |
+| --------- | ----------------------- | ---------- | ----- |
+| Solution1 | Min-heap of size 3      | O(n log 3) | O(1)  |
+| Solution2 | Max-heap, extract top 3 | O(n log n) | O(n)  |

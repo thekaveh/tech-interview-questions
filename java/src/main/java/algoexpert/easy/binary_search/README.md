@@ -9,8 +9,8 @@ A sorted array of distinct integers and a target value are provided; return the 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Iterative binary search | O(log n) | O(1) |
-| Solution2 | Iterative, compareTo-based | O(log n) | O(1) |
-| Solution3 | Recursive binary search | O(log n) | O(log n) |
+| File      | Approach                   | Time     | Space    |
+| --------- | -------------------------- | -------- | -------- |
+| Solution1 | Iterative binary search    | O(log n) | O(1)     |
+| Solution2 | Iterative, compareTo-based | O(log n) | O(1)     |
+| Solution3 | Recursive binary search    | O(log n) | O(log n) |

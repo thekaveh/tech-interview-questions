@@ -9,7 +9,7 @@ Given a two-digit integer n (10 ≤ n ≤ 99), return the sum of its two digits.
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Iterative digit extraction via modulo loop | O(1) | O(1) |
-| Solution2 | Direct arithmetic: tens digit plus units digit | O(1) | O(1) |
+| File      | Approach                                       | Time | Space |
+| --------- | ---------------------------------------------- | ---- | ----- |
+| Solution1 | Iterative digit extraction via modulo loop     | O(1) | O(1)  |
+| Solution2 | Direct arithmetic: tens digit plus units digit | O(1) | O(1)  |

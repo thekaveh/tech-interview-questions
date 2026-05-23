@@ -9,7 +9,7 @@ Given the left- and right-hand strengths of two people, determine whether they a
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sum check plus at least one hand match | O(1) | O(1) |
-| Solution2 | Direct two-way equality check | O(1) | O(1) |
+| File      | Approach                               | Time | Space |
+| --------- | -------------------------------------- | ---- | ----- |
+| Solution1 | Sum check plus at least one hand match | O(1) | O(1)  |
+| Solution2 | Direct two-way equality check          | O(1) | O(1)  |

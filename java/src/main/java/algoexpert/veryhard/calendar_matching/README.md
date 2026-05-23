@@ -9,6 +9,6 @@ Given two people's calendars (lists of busy intervals) and their daily availabil
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Merge all blocked intervals, then scan gaps for fit | O(n log n) | O(n) |
+| File      | Approach                                            | Time       | Space |
+| --------- | --------------------------------------------------- | ---------- | ----- |
+| Solution1 | Merge all blocked intervals, then scan gaps for fit | O(n log n) | O(n)  |

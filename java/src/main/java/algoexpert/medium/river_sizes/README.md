@@ -9,6 +9,6 @@ Given a 2-D matrix of 0s and 1s where 1s represent water (river cells) and 0s re
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                                 | Time   | Space  |
+| --------- | -------------------------------------------------------- | ------ | ------ |
 | Solution1 | DFS from each unvisited water cell, count component size | O(r·c) | O(r·c) |

@@ -9,7 +9,7 @@ Given a sorted array of unique integers, construct a BST with the minimum possib
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Divide and conquer with lo/hi index bounds | O(n) | O(n) |
-| Solution2 | Divide and conquer using subList slicing | O(n) | O(n) |
+| File      | Approach                                   | Time | Space |
+| --------- | ------------------------------------------ | ---- | ----- |
+| Solution1 | Divide and conquer with lo/hi index bounds | O(n) | O(n)  |
+| Solution2 | Divide and conquer using subList slicing   | O(n) | O(n)  |

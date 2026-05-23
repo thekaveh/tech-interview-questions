@@ -9,7 +9,7 @@ Given a list of sorted integer arrays, merge them all into a single sorted array
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Min-heap of (row, col) index pairs with Idx2D class | O(n log k) | O(k) |
-| Solution2 | Min-heap of int[] index pairs | O(n log k) | O(k) |
+| File      | Approach                                            | Time       | Space |
+| --------- | --------------------------------------------------- | ---------- | ----- |
+| Solution1 | Min-heap of (row, col) index pairs with Idx2D class | O(n log k) | O(k)  |
+| Solution2 | Min-heap of int[] index pairs                       | O(n log k) | O(k)  |

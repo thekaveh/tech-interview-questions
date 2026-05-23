@@ -9,7 +9,7 @@ Given an organizational hierarchy (a tree of OrgChart nodes), and two employee n
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Post-order DFS counting descendants found | O(n) | O(d) |
-| Solution2 | BFS parent map + depth-based LCA | O(n) | O(n) |
+| File      | Approach                                  | Time | Space |
+| --------- | ----------------------------------------- | ---- | ----- |
+| Solution1 | Post-order DFS counting descendants found | O(n) | O(d)  |
+| Solution2 | BFS parent map + depth-based LCA          | O(n) | O(n)  |

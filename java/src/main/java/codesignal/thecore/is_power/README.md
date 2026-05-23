@@ -9,6 +9,6 @@ Given a positive integer n, determine whether it can be expressed as a^b for int
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Brute-force search over all bases 2–20 and valid exponents | O(log²n) | O(1) |
+| File      | Approach                                                   | Time     | Space |
+| --------- | ---------------------------------------------------------- | -------- | ----- |
+| Solution1 | Brute-force search over all bases 2–20 and valid exponents | O(log²n) | O(1)  |

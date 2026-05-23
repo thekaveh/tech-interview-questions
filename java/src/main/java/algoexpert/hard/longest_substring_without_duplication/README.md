@@ -9,6 +9,6 @@ Given a string, find the longest substring that contains no repeated characters.
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sliding window with last-seen index map | O(n) | O(1) |
+| File      | Approach                                | Time | Space |
+| --------- | --------------------------------------- | ---- | ----- |
+| Solution1 | Sliding window with last-seen index map | O(n) | O(1)  |

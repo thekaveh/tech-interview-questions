@@ -9,6 +9,6 @@ Given n numbers arranged in a circle, find the number that sits exactly opposite
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Direct arithmetic modulo n | O(1) | O(1) |
+| File      | Approach                   | Time | Space |
+| --------- | -------------------------- | ---- | ----- |
+| Solution1 | Direct arithmetic modulo n | O(1) | O(1)  |

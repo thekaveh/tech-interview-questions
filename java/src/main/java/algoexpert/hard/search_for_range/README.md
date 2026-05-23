@@ -9,7 +9,7 @@ Given a sorted array of integers that may contain duplicates and a target value,
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two binary searches (iterative) biased left and right | O(log n) | O(1) |
+| File      | Approach                                              | Time     | Space    |
+| --------- | ----------------------------------------------------- | -------- | -------- |
+| Solution1 | Two binary searches (iterative) biased left and right | O(log n) | O(1)     |
 | Solution2 | Two binary searches (recursive) biased left and right | O(log n) | O(log n) |

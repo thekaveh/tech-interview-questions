@@ -9,6 +9,6 @@ Apply a box blur to an image matrix: replace each interior cell with the floor o
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Nested loops with explicit 3x3 neighbor enumeration | O(R*C) | O(R*C) |
+| File      | Approach                                            | Time    | Space   |
+| --------- | --------------------------------------------------- | ------- | ------- |
+| Solution1 | Nested loops with explicit 3x3 neighbor enumeration | O(R\*C) | O(R\*C) |

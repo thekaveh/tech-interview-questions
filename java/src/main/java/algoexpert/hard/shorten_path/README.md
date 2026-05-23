@@ -9,6 +9,6 @@ Given an absolute or relative Unix-style file path, simplify it by resolving `.`
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Stack-based token processing | O(n) | O(n) |
+| File      | Approach                     | Time | Space |
+| --------- | ---------------------------- | ---- | ----- |
+| Solution1 | Stack-based token processing | O(n) | O(n)  |

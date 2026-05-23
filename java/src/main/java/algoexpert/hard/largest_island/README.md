@@ -9,6 +9,6 @@ Given a binary matrix where 0 represents water and 1 represents land, find the s
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                        | Time   | Space  |
+| --------- | ----------------------------------------------- | ------ | ------ |
 | Solution1 | DFS island labeling + water-cell neighbor union | O(r·c) | O(r·c) |

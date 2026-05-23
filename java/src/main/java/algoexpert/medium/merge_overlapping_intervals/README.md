@@ -9,8 +9,8 @@ Given an array of intervals, each represented as a pair `[start, end]`, merge al
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | MinPQ sort + pairwise merge with re-offer | O(n log n) | O(n) |
-| Solution2 | MinPQ sort + extend last result interval in place | O(n log n) | O(n) |
-| Solution3 | MinPQ sort + merge by peeking next before polling | O(n log n) | O(n) |
+| File      | Approach                                          | Time       | Space |
+| --------- | ------------------------------------------------- | ---------- | ----- |
+| Solution1 | MinPQ sort + pairwise merge with re-offer         | O(n log n) | O(n)  |
+| Solution2 | MinPQ sort + extend last result interval in place | O(n log n) | O(n)  |
+| Solution3 | MinPQ sort + merge by peeking next before polling | O(n log n) | O(n)  |

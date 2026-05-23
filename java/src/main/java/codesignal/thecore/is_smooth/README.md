@@ -9,6 +9,6 @@ An array is "smooth" if its first and last elements are equal, and the middle el
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Direct index checks on first, last, and middle element(s) | O(1) | O(1) |
+| File      | Approach                                                  | Time | Space |
+| --------- | --------------------------------------------------------- | ---- | ----- |
+| Solution1 | Direct index checks on first, last, and middle element(s) | O(1) | O(1)  |

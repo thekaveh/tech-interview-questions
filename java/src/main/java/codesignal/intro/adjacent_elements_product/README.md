@@ -9,7 +9,7 @@ Given an array of integers, find the largest product of any two adjacent element
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single pass max tracking | O(n) | O(1) |
-| Solution2 | Streams with IntStream.range | O(n) | O(1) |
+| File      | Approach                     | Time | Space |
+| --------- | ---------------------------- | ---- | ----- |
+| Solution1 | Single pass max tracking     | O(n) | O(1)  |
+| Solution2 | Streams with IntStream.range | O(n) | O(1)  |

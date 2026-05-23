@@ -9,6 +9,6 @@ There are n children and m candies. Distribute candies so every child receives t
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Subtract remainder: m − (m mod n) | O(1) | O(1) |
+| File      | Approach                          | Time | Space |
+| --------- | --------------------------------- | ---- | ----- |
+| Solution1 | Subtract remainder: m − (m mod n) | O(1) | O(1)  |

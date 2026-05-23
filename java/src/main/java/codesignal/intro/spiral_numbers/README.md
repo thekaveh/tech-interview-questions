@@ -9,6 +9,6 @@ Fill an N x N matrix with the numbers 1 through N² in clockwise spiral order st
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                                  | Time  | Space |
+| --------- | --------------------------------------------------------- | ----- | ----- |
 | Solution1 | Boundary-shrinking spiral fill (top, right, bottom, left) | O(N²) | O(N²) |

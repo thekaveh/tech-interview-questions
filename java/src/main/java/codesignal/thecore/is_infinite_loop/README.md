@@ -9,6 +9,6 @@ A loop starts at value a and increments by 2 on each step. Determine whether the
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Check: loop is infinite if a > b or (b − a) is odd | O(1) | O(1) |
+| File      | Approach                                           | Time | Space |
+| --------- | -------------------------------------------------- | ---- | ----- |
+| Solution1 | Check: loop is infinite if a > b or (b − a) is odd | O(1) | O(1)  |

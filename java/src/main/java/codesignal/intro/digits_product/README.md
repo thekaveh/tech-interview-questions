@@ -9,6 +9,6 @@ Given an integer product, find the smallest positive integer whose digits multip
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Linear scan checking digit product of each candidate | O(n * d) | O(1) |
+| File      | Approach                                             | Time      | Space |
+| --------- | ---------------------------------------------------- | --------- | ----- |
+| Solution1 | Linear scan checking digit product of each candidate | O(n \* d) | O(1)  |

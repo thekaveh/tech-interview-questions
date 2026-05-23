@@ -9,6 +9,6 @@ Given a list of items each with a value and a weight, and a knapsack with a maxi
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                | Time   | Space  |
+| --------- | --------------------------------------- | ------ | ------ |
 | Solution1 | Bottom-up 2-D DP with item backtracking | O(n·c) | O(n·c) |

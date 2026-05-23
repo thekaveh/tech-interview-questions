@@ -9,8 +9,8 @@ Implement a suffix trie that, given a string, inserts every suffix into a trie s
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive insertion and lookup | O(n²) build, O(m) query | O(n²) |
-| Solution2 | Iterative insertion and lookup | O(n²) build, O(m) query | O(n²) |
+| File      | Approach                                             | Time                    | Space |
+| --------- | ---------------------------------------------------- | ----------------------- | ----- |
+| Solution1 | Recursive insertion and lookup                       | O(n²) build, O(m) query | O(n²) |
+| Solution2 | Iterative insertion and lookup                       | O(n²) build, O(m) query | O(n²) |
 | Solution3 | Recursive insertion and lookup (alternate base case) | O(n²) build, O(m) query | O(n²) |

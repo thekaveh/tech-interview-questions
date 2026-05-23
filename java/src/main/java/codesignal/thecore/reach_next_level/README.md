@@ -9,6 +9,6 @@ You are playing a game and currently have some experience points. A level-up req
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single comparison: experience + reward >= threshold | O(1) | O(1) |
+| File      | Approach                                            | Time | Space |
+| --------- | --------------------------------------------------- | ---- | ----- |
+| Solution1 | Single comparison: experience + reward >= threshold | O(1) | O(1)  |

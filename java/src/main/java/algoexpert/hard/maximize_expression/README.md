@@ -9,7 +9,7 @@ Given an array of integers, find the maximum value of the expression A[i] - A[j]
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Four nested loops brute force | O(n⁴) | O(1) |
-| Solution2 | Four DP passes (prefix max for each term) | O(n) | O(n) |
+| File      | Approach                                  | Time  | Space |
+| --------- | ----------------------------------------- | ----- | ----- |
+| Solution1 | Four nested loops brute force             | O(n⁴) | O(1)  |
+| Solution2 | Four DP passes (prefix max for each term) | O(n)  | O(n)  |

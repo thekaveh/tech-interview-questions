@@ -9,7 +9,7 @@ Given an integer array and two values fromElem and toElem, replace every occurre
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | In-place linear scan with conditional assignment | O(n) | O(1) |
-| Solution2 | Stream map replacing matching elements, collecting to new array | O(n) | O(n) |
+| File      | Approach                                                        | Time | Space |
+| --------- | --------------------------------------------------------------- | ---- | ----- |
+| Solution1 | In-place linear scan with conditional assignment                | O(n) | O(1)  |
+| Solution2 | Stream map replacing matching elements, collecting to new array | O(n) | O(n)  |

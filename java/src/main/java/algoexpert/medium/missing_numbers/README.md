@@ -9,8 +9,8 @@ Given an array of `n` integers where every value in [1, n+2] appears exactly onc
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | HashSet membership scan | O(n) | O(n) |
-| Solution2 | Sum-based partition into two halves | O(n) | O(1) |
-| Solution3 | XOR to isolate two missing values via LSB | O(n) | O(1) |
+| File      | Approach                                  | Time | Space |
+| --------- | ----------------------------------------- | ---- | ----- |
+| Solution1 | HashSet membership scan                   | O(n) | O(n)  |
+| Solution2 | Sum-based partition into two halves       | O(n) | O(1)  |
+| Solution3 | XOR to isolate two missing values via LSB | O(n) | O(1)  |

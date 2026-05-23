@@ -9,8 +9,8 @@ Implement a stack that supports `push`, `pop`, `peek`, `getMin`, and `getMax`, a
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Parallel int arrays for values, mins, maxs | O(1) all ops | O(n) |
-| Solution2 | Parallel ArrayList for values, mins, maxs | O(1) all ops | O(n) |
-| Solution3 | Intrusive linked list where each node carries its min/max | O(1) all ops | O(n) |
+| File      | Approach                                                  | Time         | Space |
+| --------- | --------------------------------------------------------- | ------------ | ----- |
+| Solution1 | Parallel int arrays for values, mins, maxs                | O(1) all ops | O(n)  |
+| Solution2 | Parallel ArrayList for values, mins, maxs                 | O(1) all ops | O(n)  |
+| Solution3 | Intrusive linked list where each node carries its min/max | O(1) all ops | O(n)  |

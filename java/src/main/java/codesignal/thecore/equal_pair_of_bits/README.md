@@ -9,7 +9,7 @@ Given two integers n and m, find the position value of the rightmost bit where t
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Bitwise: lowest set bit of NOT(n XOR m) using complement and AND | O(1) | O(1) |
-| Solution2 | Integer.lowestOneBit applied to bitwise NOT of (n XOR m) | O(1) | O(1) |
+| File      | Approach                                                         | Time | Space |
+| --------- | ---------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Bitwise: lowest set bit of NOT(n XOR m) using complement and AND | O(1) | O(1)  |
+| Solution2 | Integer.lowestOneBit applied to bitwise NOT of (n XOR m)         | O(1) | O(1)  |

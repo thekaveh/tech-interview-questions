@@ -9,7 +9,7 @@ Given a pre-order traversal sequence of a BST (Node–Left–Right), reconstruct
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive with lo/hi index bounds | O(n²) worst | O(n) |
-| Solution2 | Recursive using subList slicing | O(n²) worst | O(n) |
+| File      | Approach                          | Time        | Space |
+| --------- | --------------------------------- | ----------- | ----- |
+| Solution1 | Recursive with lo/hi index bounds | O(n²) worst | O(n)  |
+| Solution2 | Recursive using subList slicing   | O(n²) worst | O(n)  |

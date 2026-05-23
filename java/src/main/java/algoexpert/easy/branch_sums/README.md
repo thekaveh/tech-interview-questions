@@ -9,7 +9,7 @@ A binary tree is provided; compute the sum of node values along every root-to-le
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive DFS, isLeaf helper | O(n) | O(n) |
-| Solution2 | Recursive DFS, inline leaf check | O(n) | O(n) |
+| File      | Approach                         | Time | Space |
+| --------- | -------------------------------- | ---- | ----- |
+| Solution1 | Recursive DFS, isLeaf helper     | O(n) | O(n)  |
+| Solution2 | Recursive DFS, inline leaf check | O(n) | O(n)  |

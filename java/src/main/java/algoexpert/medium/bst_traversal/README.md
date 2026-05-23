@@ -9,7 +9,7 @@ Given a BST and an accumulator list, implement three traversal methods: in-order
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive traversal with null guard | O(n) | O(n) |
-| Solution2 | Recursive traversal with explicit child checks | O(n) | O(n) |
+| File      | Approach                                       | Time | Space |
+| --------- | ---------------------------------------------- | ---- | ----- |
+| Solution1 | Recursive traversal with null guard            | O(n) | O(n)  |
+| Solution2 | Recursive traversal with explicit child checks | O(n) | O(n)  |

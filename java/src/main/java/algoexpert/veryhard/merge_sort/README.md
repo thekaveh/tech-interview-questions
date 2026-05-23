@@ -9,6 +9,6 @@ Sort an array of integers using the merge sort algorithm. The implementation mus
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive merge sort with single auxiliary array | O(n log n) | O(n) |
+| File      | Approach                                         | Time       | Space |
+| --------- | ------------------------------------------------ | ---------- | ----- |
+| Solution1 | Recursive merge sort with single auxiliary array | O(n log n) | O(n)  |

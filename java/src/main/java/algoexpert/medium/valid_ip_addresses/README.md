@@ -9,7 +9,7 @@ Given a string of digits, return all valid IPv4 addresses that can be formed by 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Triple nested loop over split points, validate each part | O(1) bounded | O(1) bounded |
+| File      | Approach                                                                             | Time         | Space        |
+| --------- | ------------------------------------------------------------------------------------ | ------------ | ------------ |
+| Solution1 | Triple nested loop over split points, validate each part                             | O(1) bounded | O(1) bounded |
 | Solution2 | Same triple loop with alternative validity check (no leading zeros via re-stringify) | O(1) bounded | O(1) bounded |

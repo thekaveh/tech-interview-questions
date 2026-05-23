@@ -9,6 +9,6 @@ Given an array of distinct strings, find for each string the shortest prefix tha
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                     | Time   | Space  |
+| --------- | -------------------------------------------- | ------ | ------ |
 | Solution1 | Trie with per-node child-count + prefix walk | O(n·m) | O(n·m) |

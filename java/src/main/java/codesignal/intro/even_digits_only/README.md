@@ -9,7 +9,7 @@ Given an integer, determine whether all of its digits are even.
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Extract digits via modulo, check each for evenness | O(d) | O(1) |
-| Solution2 | Convert to string and match regex of even digits | O(d) | O(d) |
+| File      | Approach                                           | Time | Space |
+| --------- | -------------------------------------------------- | ---- | ----- |
+| Solution1 | Extract digits via modulo, check each for evenness | O(d) | O(1)  |
+| Solution2 | Convert to string and match regex of even digits   | O(d) | O(d)  |

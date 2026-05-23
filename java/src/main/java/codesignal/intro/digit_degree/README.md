@@ -9,6 +9,6 @@ Find the number of times you must repeatedly sum a number's digits until you rea
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Iterative digit-sum reduction, count steps | O(d * steps) | O(1) |
+| File      | Approach                                   | Time          | Space |
+| --------- | ------------------------------------------ | ------------- | ----- |
+| Solution1 | Iterative digit-sum reduction, count steps | O(d \* steps) | O(1)  |

@@ -9,6 +9,6 @@ A string of lowercase letters is provided; return the index of the first charact
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Frequency map, linear scan | O(n) | O(1) |
+| File      | Approach                   | Time | Space |
+| --------- | -------------------------- | ---- | ----- |
+| Solution1 | Frequency map, linear scan | O(n) | O(1)  |

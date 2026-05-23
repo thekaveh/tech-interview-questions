@@ -9,7 +9,7 @@ Given an array of dish "flavor scores" (negative = sweet, positive = savory) and
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                          | Time        | Space |
+| --------- | ------------------------------------------------- | ----------- | ----- |
 | Solution1 | Sort + brute-force all pairs with min-PQ for best | O(n² log n) | O(n²) |
-| Solution2 | Sort + two-pointer from both ends toward target | O(n log n) | O(1) |
+| Solution2 | Sort + two-pointer from both ends toward target   | O(n log n)  | O(1)  |

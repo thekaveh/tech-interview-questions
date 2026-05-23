@@ -9,7 +9,7 @@ Given two strings, compute the minimum number of single-character edits (inserti
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                                     | Time     | Space    |
+| --------- | ------------------------------------------------------------ | -------- | -------- |
 | Solution1 | Top-down recursion with 2-D memoization (shrinking suffixes) | O(a · b) | O(a · b) |
-| Solution2 | Bottom-up DP table (growing prefixes) | O(a · b) | O(a · b) |
+| Solution2 | Bottom-up DP table (growing prefixes)                        | O(a · b) | O(a · b) |

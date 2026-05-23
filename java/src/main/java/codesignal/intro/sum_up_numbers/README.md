@@ -9,7 +9,7 @@ Given a string containing both letters and numbers, extract all embedded integer
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two-pointer scan to isolate digit runs, accumulate | O(n) | O(n) |
-| Solution2 | Split on non-digits, filter, parse, reduce | O(n) | O(n) |
+| File      | Approach                                           | Time | Space |
+| --------- | -------------------------------------------------- | ---- | ----- |
+| Solution1 | Two-pointer scan to isolate digit runs, accumulate | O(n) | O(n)  |
+| Solution2 | Split on non-digits, filter, parse, reduce         | O(n) | O(n)  |

@@ -9,6 +9,6 @@ Given a 2D matrix, return all its elements in zigzag (diagonal) order: traverse 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                                  | Time   | Space  |
+| --------- | --------------------------------------------------------- | ------ | ------ |
 | Solution1 | BFS diagonal-by-diagonal with alternating insertion order | O(r·c) | O(r·c) |

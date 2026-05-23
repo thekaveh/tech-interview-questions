@@ -9,6 +9,6 @@ Given a minesweeper board represented as a string matrix (where "H" is hidden, "
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                   | Time   | Space  |
+| --------- | ------------------------------------------ | ------ | ------ |
 | Solution1 | Recursive DFS flood-fill from clicked cell | O(r·c) | O(r·c) |

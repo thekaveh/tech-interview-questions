@@ -9,7 +9,7 @@ Given three nodes from a BST, determine whether one of the outer nodes is an anc
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | BST-guided descendant search (iterative) | O(h) | O(1) |
-| Solution2 | BST-guided descendant search (recursive) | O(h) | O(h) |
+| File      | Approach                                 | Time | Space |
+| --------- | ---------------------------------------- | ---- | ----- |
+| Solution1 | BST-guided descendant search (iterative) | O(h) | O(1)  |
+| Solution2 | BST-guided descendant search (recursive) | O(h) | O(h)  |

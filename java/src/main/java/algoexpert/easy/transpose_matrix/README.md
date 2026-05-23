@@ -9,6 +9,6 @@ A 2D integer matrix (which may be non-square) is provided; return its transpose 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                              | Time     | Space    |
+| --------- | ------------------------------------- | -------- | -------- |
 | Solution1 | Allocate new matrix, nested loop fill | O(r · c) | O(r · c) |

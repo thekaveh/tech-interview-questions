@@ -9,7 +9,7 @@ Two groups of students (red shirts and blue shirts) of equal size need to be arr
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sort descending, compare pairwise with flag | O(n log n) | O(1) |
-| Solution2 | Sort descending, assign front/back row | O(n log n) | O(1) |
+| File      | Approach                                    | Time       | Space |
+| --------- | ------------------------------------------- | ---------- | ----- |
+| Solution1 | Sort descending, compare pairwise with flag | O(n log n) | O(1)  |
+| Solution2 | Sort descending, assign front/back row      | O(n log n) | O(1)  |

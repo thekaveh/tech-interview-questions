@@ -9,9 +9,9 @@ A non-empty string is provided; encode it using run-length encoding, where each 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single pass, inner while extends run | O(n) | O(n) |
-| Solution2 | Two-index single pass, inner for extends run | O(n) | O(n) |
-| Solution3 | do-while loop, inner while extends run | O(n) | O(n) |
-| Solution4 | Single pass, count then emit on boundary | O(n) | O(n) |
+| File      | Approach                                     | Time | Space |
+| --------- | -------------------------------------------- | ---- | ----- |
+| Solution1 | Single pass, inner while extends run         | O(n) | O(n)  |
+| Solution2 | Two-index single pass, inner for extends run | O(n) | O(n)  |
+| Solution3 | do-while loop, inner while extends run       | O(n) | O(n)  |
+| Solution4 | Single pass, count then emit on boundary     | O(n) | O(n)  |

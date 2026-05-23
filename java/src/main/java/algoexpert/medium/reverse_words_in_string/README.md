@@ -9,7 +9,7 @@ Given a string of words separated by spaces, return a new string with the words 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Reverse whole string, then reverse each word in-place | O(n) | O(n) |
-| Solution2 | Same two-pass reverse with slightly different loop structure | O(n) | O(n) |
+| File      | Approach                                                     | Time | Space |
+| --------- | ------------------------------------------------------------ | ---- | ----- |
+| Solution1 | Reverse whole string, then reverse each word in-place        | O(n) | O(n)  |
+| Solution2 | Same two-pass reverse with slightly different loop structure | O(n) | O(n)  |

@@ -9,7 +9,7 @@ Given a node in a directed acyclic graph where each node has a name and a list o
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | BFS with ArrayDeque | O(v + e) | O(v) |
-| Solution2 | BFS with LinkedList Queue | O(v + e) | O(v) |
+| File      | Approach                  | Time     | Space |
+| --------- | ------------------------- | -------- | ----- |
+| Solution1 | BFS with ArrayDeque       | O(v + e) | O(v)  |
+| Solution2 | BFS with LinkedList Queue | O(v + e) | O(v)  |

@@ -9,9 +9,9 @@ An integer n is provided; return the nth number in the Fibonacci sequence, where
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Naive recursion | O(2^n) | O(n) |
-| Solution2 | Recursive memoization, HashMap | O(n) | O(n) |
-| Solution3 | Recursive memoization, array | O(n) | O(n) |
-| Solution4 | Iterative, two-variable rolling window | O(n) | O(1) |
+| File      | Approach                               | Time   | Space |
+| --------- | -------------------------------------- | ------ | ----- |
+| Solution1 | Naive recursion                        | O(2^n) | O(n)  |
+| Solution2 | Recursive memoization, HashMap         | O(n)   | O(n)  |
+| Solution3 | Recursive memoization, array           | O(n)   | O(n)  |
+| Solution4 | Iterative, two-variable rolling window | O(n)   | O(1)  |

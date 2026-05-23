@@ -9,6 +9,6 @@ Given integers n, l, and r, count the number of ways to write n as a sum of two 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two-pointer converging from l and r, counting pairs that sum to n | O(r−l) | O(1) |
+| File      | Approach                                                          | Time   | Space |
+| --------- | ----------------------------------------------------------------- | ------ | ----- |
+| Solution1 | Two-pointer converging from l and r, counting pairs that sum to n | O(r−l) | O(1)  |

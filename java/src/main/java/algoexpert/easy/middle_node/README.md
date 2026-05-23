@@ -9,7 +9,7 @@ A singly linked list is provided; return the node at the middle of the list. Whe
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Count length, advance to midpoint | O(n) | O(1) |
-| Solution2 | Slow and fast pointer | O(n) | O(1) |
+| File      | Approach                          | Time | Space |
+| --------- | --------------------------------- | ---- | ----- |
+| Solution1 | Count length, advance to midpoint | O(n) | O(1)  |
+| Solution2 | Slow and fast pointer             | O(n) | O(1)  |

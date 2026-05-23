@@ -9,6 +9,6 @@ Numbers 0 through n-1 are placed at equal intervals around a circle. Given n (ev
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Modular arithmetic: (firstNumber + n/2) mod n | O(1) | O(1) |
+| File      | Approach                                      | Time | Space |
+| --------- | --------------------------------------------- | ---- | ----- |
+| Solution1 | Modular arithmetic: (firstNumber + n/2) mod n | O(1) | O(1)  |

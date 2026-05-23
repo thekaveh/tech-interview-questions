@@ -9,6 +9,6 @@ Given a large text string and an array of search keys, determine for each key wh
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Suffix trie of text + membership check per key | O(|text|² + Σ|key|) | O(|text|²) |
+| File      | Approach                                       | Time | Space |
+| --------- | ---------------------------------------------- | ---- | ----- | ----- | --- | --- | --- | ---- | --- |
+| Solution1 | Suffix trie of text + membership check per key | O(   | text  | ² + Σ | key | )   | O(  | text | ²)  |

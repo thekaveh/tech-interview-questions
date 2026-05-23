@@ -9,7 +9,7 @@ Given obstacle positions on an integer number line, find the smallest integer ju
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Enumerate candidates, check divisibility | O(n * max) | O(n) |
-| Solution2 | Stream filter over candidate jump sizes | O(n * max) | O(1) |
+| File      | Approach                                 | Time        | Space |
+| --------- | ---------------------------------------- | ----------- | ----- |
+| Solution1 | Enumerate candidates, check divisibility | O(n \* max) | O(n)  |
+| Solution2 | Stream filter over candidate jump sizes  | O(n \* max) | O(1)  |

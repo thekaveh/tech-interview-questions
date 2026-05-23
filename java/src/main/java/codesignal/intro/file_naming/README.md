@@ -9,6 +9,6 @@ Given a list of file names to be created in order, resolve conflicts by appendin
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | LinkedHashMap tracking next suffix per name, retry loop | O(n * conflicts) | O(n) |
+| File      | Approach                                                | Time              | Space |
+| --------- | ------------------------------------------------------- | ----------------- | ----- |
+| Solution1 | LinkedHashMap tracking next suffix per name, retry loop | O(n \* conflicts) | O(n)  |

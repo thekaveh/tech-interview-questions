@@ -9,7 +9,7 @@ A bag of characters and a target document string are provided; determine whether
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Frequency map, decrement on match | O(n + m) | O(c) |
-| Solution2 | Frequency map, remove on exhaustion | O(n + m) | O(c) |
+| File      | Approach                            | Time     | Space |
+| --------- | ----------------------------------- | -------- | ----- |
+| Solution1 | Frequency map, decrement on match   | O(n + m) | O(c)  |
+| Solution2 | Frequency map, remove on exhaustion | O(n + m) | O(c)  |

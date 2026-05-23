@@ -9,6 +9,6 @@ Determine whether a person will accept a marriage proposal based on three boolea
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single boolean expression encoding both acceptance conditions | O(1) | O(1) |
+| File      | Approach                                                      | Time | Space |
+| --------- | ------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Single boolean expression encoding both acceptance conditions | O(1) | O(1)  |

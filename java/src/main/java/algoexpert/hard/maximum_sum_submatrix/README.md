@@ -9,7 +9,7 @@ Given an integer matrix and a side length `size`, find the contiguous square sub
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Brute force sliding window over all positions | O(r·c·size²) | O(1) |
-| Solution2 | 2-D prefix sums for O(1) sub-matrix queries | O(r·c) | O(r·c) |
+| File      | Approach                                      | Time         | Space  |
+| --------- | --------------------------------------------- | ------------ | ------ |
+| Solution1 | Brute force sliding window over all positions | O(r·c·size²) | O(1)   |
+| Solution2 | 2-D prefix sums for O(1) sub-matrix queries   | O(r·c)       | O(r·c) |

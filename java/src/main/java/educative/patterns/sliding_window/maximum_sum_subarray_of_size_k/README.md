@@ -9,6 +9,6 @@ Given an array of integers and a positive integer k, find the maximum sum of any
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Fixed-size sliding window maintaining a running sum, sliding by subtracting the element leaving the window | O(n) | O(1) |
+| File      | Approach                                                                                                   | Time | Space |
+| --------- | ---------------------------------------------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Fixed-size sliding window maintaining a running sum, sliding by subtracting the element leaving the window | O(n) | O(1)  |

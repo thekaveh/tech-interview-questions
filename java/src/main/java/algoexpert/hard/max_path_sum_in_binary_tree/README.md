@@ -9,6 +9,6 @@ Given a binary tree where nodes may hold negative values, find the maximum sum o
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Post-order DFS tracking branch-includable and global max | O(n) | O(h) |
+| File      | Approach                                                 | Time | Space |
+| --------- | -------------------------------------------------------- | ---- | ----- |
+| Solution1 | Post-order DFS tracking branch-includable and global max | O(n) | O(h)  |

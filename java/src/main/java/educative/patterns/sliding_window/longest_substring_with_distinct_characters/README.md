@@ -9,6 +9,6 @@ Given a string, find the length of the longest substring in which every characte
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Variable-size sliding window with a map storing each character's last-seen index; jump left pointer on repeat | O(n) | O(k) |
+| File      | Approach                                                                                                      | Time | Space |
+| --------- | ------------------------------------------------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Variable-size sliding window with a map storing each character's last-seen index; jump left pointer on repeat | O(n) | O(k)  |

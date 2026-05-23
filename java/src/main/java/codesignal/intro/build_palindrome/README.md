@@ -9,7 +9,7 @@ Given a string, find the shortest palindrome that can be formed by appending cha
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Shrink prefix until suffix is palindrome, then prepend | O(n²) | O(n) |
-| Solution2 | Grow suffix boundary until palindrome, then append reversed prefix | O(n²) | O(n) |
+| File      | Approach                                                           | Time  | Space |
+| --------- | ------------------------------------------------------------------ | ----- | ----- |
+| Solution1 | Shrink prefix until suffix is palindrome, then prepend             | O(n²) | O(n)  |
+| Solution2 | Grow suffix boundary until palindrome, then append reversed prefix | O(n²) | O(n)  |

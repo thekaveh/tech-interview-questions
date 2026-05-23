@@ -9,6 +9,6 @@ Given the heads of two sorted singly linked lists, merge them into a single sort
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Iterative two-pointer merge | O(n+m) | O(1) |
+| File      | Approach                    | Time   | Space |
+| --------- | --------------------------- | ------ | ----- |
+| Solution1 | Iterative two-pointer merge | O(n+m) | O(1)  |

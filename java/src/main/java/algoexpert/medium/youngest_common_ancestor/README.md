@@ -9,6 +9,6 @@ Given an ancestral tree where each node has a parent pointer, a root node, and t
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Compute depths, equalize, then walk up together | O(d) | O(1) |
+| File      | Approach                                        | Time | Space |
+| --------- | ----------------------------------------------- | ---- | ----- |
+| Solution1 | Compute depths, equalize, then walk up together | O(d) | O(1)  |

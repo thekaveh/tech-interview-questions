@@ -9,6 +9,6 @@ Given a list of points (x, y) in a 2D plane, count the total number of squares t
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Point-set lookup with perpendicular midpoint | O(n²) | O(n) |
+| File      | Approach                                     | Time  | Space |
+| --------- | -------------------------------------------- | ----- | ----- |
+| Solution1 | Point-set lookup with perpendicular midpoint | O(n²) | O(n)  |

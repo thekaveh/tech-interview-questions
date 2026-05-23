@@ -9,8 +9,8 @@ Shift every lowercase letter in a string forward by a given integer key, wrappin
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Alphabet string indexOf lookup | O(n) | O(n) |
-| Solution2 | Arithmetic modulo 26, char cast | O(n) | O(n) |
-| Solution3 | Arithmetic modulo 26 | O(n) | O(n) |
+| File      | Approach                        | Time | Space |
+| --------- | ------------------------------- | ---- | ----- |
+| Solution1 | Alphabet string indexOf lookup  | O(n) | O(n)  |
+| Solution2 | Arithmetic modulo 26, char cast | O(n) | O(n)  |
+| Solution3 | Arithmetic modulo 26            | O(n) | O(n)  |

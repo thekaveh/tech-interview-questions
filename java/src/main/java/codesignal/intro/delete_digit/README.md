@@ -9,6 +9,6 @@ Given an integer n, delete exactly one of its digits to produce the largest poss
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Try deleting each digit position, track maximum | O(d²) | O(d) |
+| File      | Approach                                        | Time  | Space |
+| --------- | ----------------------------------------------- | ----- | ----- |
+| Solution1 | Try deleting each digit position, track maximum | O(d²) | O(d)  |

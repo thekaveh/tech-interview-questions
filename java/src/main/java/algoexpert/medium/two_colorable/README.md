@@ -9,7 +9,7 @@ Given a directed graph as an adjacency list, determine whether it is two-colorab
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive DFS graph coloring | O(v + e) | O(v) |
-| Solution2 | Iterative DFS graph coloring with stack | O(v + e) | O(v) |
+| File      | Approach                                | Time     | Space |
+| --------- | --------------------------------------- | -------- | ----- |
+| Solution1 | Recursive DFS graph coloring            | O(v + e) | O(v)  |
+| Solution2 | Iterative DFS graph coloring with stack | O(v + e) | O(v)  |

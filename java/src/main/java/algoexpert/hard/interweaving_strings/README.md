@@ -9,7 +9,7 @@ Given three strings A, B, and C, determine whether C can be formed by interleavi
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Bottom-up 2-D DP | O(|A|·|B|) | O(|A|·|B|) |
-| Solution2 | Top-down recursion with memoization | O(|A|·|B|) | O(|A|·|B|) |
+| File      | Approach                            | Time | Space |
+| --------- | ----------------------------------- | ---- | ----- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Solution1 | Bottom-up 2-D DP                    | O(   | A     | ·   | B   | )   | O(  | A   | ·   | B   | )   |
+| Solution2 | Top-down recursion with memoization | O(   | A     | ·   | B   | )   | O(  | A   | ·   | B   | )   |

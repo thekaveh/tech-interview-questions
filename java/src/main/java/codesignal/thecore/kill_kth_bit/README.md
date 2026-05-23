@@ -9,6 +9,6 @@ Given an integer n and a 1-indexed bit position k, clear (set to 0) the k-th bit
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Bitwise AND with the complement of a shifted mask: n & ~(1 << (k−1)) | O(1) | O(1) |
+| File      | Approach                                                             | Time | Space |
+| --------- | -------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Bitwise AND with the complement of a shifted mask: n & ~(1 << (k−1)) | O(1) | O(1)  |

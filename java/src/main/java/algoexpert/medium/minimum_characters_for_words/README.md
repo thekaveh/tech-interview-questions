@@ -9,7 +9,7 @@ Given an array of words, return the smallest array of characters that, when arra
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Per-word freq map merged into global max-freq map | O(n · w) | O(c) |
-| Solution2 | Same logic with cleaner per-word map merging | O(n · w) | O(c) |
+| File      | Approach                                          | Time     | Space |
+| --------- | ------------------------------------------------- | -------- | ----- |
+| Solution1 | Per-word freq map merged into global max-freq map | O(n · w) | O(c)  |
+| Solution2 | Same logic with cleaner per-word map merging      | O(n · w) | O(c)  |

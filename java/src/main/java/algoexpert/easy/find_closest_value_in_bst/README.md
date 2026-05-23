@@ -9,7 +9,7 @@ A binary search tree and a target integer are provided; find the value in the tr
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                               | Time         | Space        |
+| --------- | -------------------------------------- | ------------ | ------------ |
 | Solution1 | Recursive BST traversal, track closest | O(log n) avg | O(log n) avg |
-| Solution2 | Iterative BST traversal, track closest | O(log n) avg | O(1) |
+| Solution2 | Iterative BST traversal, track closest | O(log n) avg | O(1)         |

@@ -9,7 +9,7 @@ Given an array of non-zero integers where each value represents a jump offset (p
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Iterative jump simulation with early-exit check | O(n) | O(1) |
-| Solution2 | Recursive jump simulation with jump counter | O(n) | O(n) |
+| File      | Approach                                        | Time | Space |
+| --------- | ----------------------------------------------- | ---- | ----- |
+| Solution1 | Iterative jump simulation with early-exit check | O(n) | O(1)  |
+| Solution2 | Recursive jump simulation with jump counter     | O(n) | O(n)  |

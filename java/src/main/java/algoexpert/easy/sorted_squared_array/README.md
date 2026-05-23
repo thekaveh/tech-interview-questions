@@ -9,8 +9,8 @@ A sorted array of integers (which may include negative values) is provided; retu
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two-pointer, fill output right to left | O(n) | O(n) |
-| Solution2 | Two-pointer, compact loop header | O(n) | O(n) |
-| Solution3 | Two-pointer, for-loop k decrement | O(n) | O(n) |
+| File      | Approach                               | Time | Space |
+| --------- | -------------------------------------- | ---- | ----- |
+| Solution1 | Two-pointer, fill output right to left | O(n) | O(n)  |
+| Solution2 | Two-pointer, compact loop header       | O(n) | O(n)  |
+| Solution3 | Two-pointer, for-loop k decrement      | O(n) | O(n)  |

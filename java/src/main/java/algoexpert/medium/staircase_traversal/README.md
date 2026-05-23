@@ -9,8 +9,8 @@ Given a staircase with `H` steps and a maximum jump size `S`, count the number o
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Naive recursion | O(S^H) | O(H) |
-| Solution2 | Top-down recursion with memoization | O(H · S) | O(H) |
-| Solution3 | Bottom-up DP table | O(H · S) | O(H) |
+| File      | Approach                            | Time     | Space |
+| --------- | ----------------------------------- | -------- | ----- |
+| Solution1 | Naive recursion                     | O(S^H)   | O(H)  |
+| Solution2 | Top-down recursion with memoization | O(H · S) | O(H)  |
+| Solution3 | Bottom-up DP table                  | O(H · S) | O(H)  |

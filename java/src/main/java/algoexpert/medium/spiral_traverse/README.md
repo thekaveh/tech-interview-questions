@@ -9,7 +9,7 @@ Given a 2-D matrix of integers, return all elements in spiral order — starting
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                              | Time   | Space  |
+| --------- | ----------------------------------------------------- | ------ | ------ |
 | Solution1 | Iterative shrinking boundary with four-edge traversal | O(r·c) | O(r·c) |
-| Solution2 | Recursive shrinking boundary | O(r·c) | O(r·c) |
+| Solution2 | Recursive shrinking boundary                          | O(r·c) | O(r·c) |

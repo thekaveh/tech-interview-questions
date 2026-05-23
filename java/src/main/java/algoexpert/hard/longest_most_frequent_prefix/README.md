@@ -9,6 +9,6 @@ Given an array of strings, find the longest prefix that is shared by the greates
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                           | Time   | Space  |
+| --------- | ---------------------------------- | ------ | ------ |
 | Solution1 | Trie with per-node frequency count | O(n·m) | O(n·m) |

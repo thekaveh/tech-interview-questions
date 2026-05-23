@@ -9,6 +9,6 @@ Given a partially filled 9×9 Sudoku board (0 represents empty cells), fill in t
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Backtracking with row/column/box validity checks | O(9^m) where m = empty cells | O(m) |
+| File      | Approach                                         | Time                         | Space |
+| --------- | ------------------------------------------------ | ---------------------------- | ----- |
+| Solution1 | Backtracking with row/column/box validity checks | O(9^m) where m = empty cells | O(m)  |

@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: "17"
           cache: maven
       - name: Compile, test, and verify invariants
         run: bash scripts/verify_final.sh

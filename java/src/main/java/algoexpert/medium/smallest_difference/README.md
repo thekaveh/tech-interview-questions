@@ -9,9 +9,9 @@ Given two arrays of integers, find the pair of values (one from each array) whos
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | MinPQ over all pairs, extract minimum | O(m·n log(m·n)) | O(m·n) |
-| Solution2 | MaxPQ keeping only the best pair seen | O(m·n log 1) | O(1) |
-| Solution3 | Sort both, two-pointer with tracked best indices | O(m log m + n log n) | O(1) |
-| Solution4 | Sort both, two-pointer with tracked best pair values | O(m log m + n log n) | O(1) |
+| File      | Approach                                             | Time                 | Space  |
+| --------- | ---------------------------------------------------- | -------------------- | ------ |
+| Solution1 | MinPQ over all pairs, extract minimum                | O(m·n log(m·n))      | O(m·n) |
+| Solution2 | MaxPQ keeping only the best pair seen                | O(m·n log 1)         | O(1)   |
+| Solution3 | Sort both, two-pointer with tracked best indices     | O(m log m + n log n) | O(1)   |
+| Solution4 | Sort both, two-pointer with tracked best pair values | O(m log m + n log n) | O(1)   |

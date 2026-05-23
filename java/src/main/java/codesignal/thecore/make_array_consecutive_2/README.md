@@ -9,7 +9,7 @@ Given an array of distinct integers, return how many numbers you would need to a
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sort then sum the gaps between adjacent elements | O(n log n) | O(1) |
-| Solution2 | Sort then return (max − min + 1 − n) directly | O(n log n) | O(1) |
+| File      | Approach                                         | Time       | Space |
+| --------- | ------------------------------------------------ | ---------- | ----- |
+| Solution1 | Sort then sum the gaps between adjacent elements | O(n log n) | O(1)  |
+| Solution2 | Sort then return (max − min + 1 − n) directly    | O(n log n) | O(1)  |

@@ -9,6 +9,6 @@ A straight line is drawn on an n×m grid from the bottom-left to the top-right c
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Formula: n + m + gcd(n,m) − 2, derived from inclusion-exclusion on row/column crossings | O(log(min(n,m))) | O(1) |
+| File      | Approach                                                                                | Time             | Space |
+| --------- | --------------------------------------------------------------------------------------- | ---------------- | ----- |
+| Solution1 | Formula: n + m + gcd(n,m) − 2, derived from inclusion-exclusion on row/column crossings | O(log(min(n,m))) | O(1)  |

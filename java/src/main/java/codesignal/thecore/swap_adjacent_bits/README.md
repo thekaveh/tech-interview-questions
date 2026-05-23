@@ -9,7 +9,7 @@ Given a 32-bit integer, swap every pair of adjacent bits — bit 0 with bit 1, b
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Shift odd-position bits left and even-position bits right using alternating bitmasks | O(1) | O(1) |
-| Solution2 | Mask odd and even bit groups separately, then shift and OR to combine | O(1) | O(1) |
+| File      | Approach                                                                             | Time | Space |
+| --------- | ------------------------------------------------------------------------------------ | ---- | ----- |
+| Solution1 | Shift odd-position bits left and even-position bits right using alternating bitmasks | O(1) | O(1)  |
+| Solution2 | Mask odd and even bit groups separately, then shift and OR to combine                | O(1) | O(1)  |

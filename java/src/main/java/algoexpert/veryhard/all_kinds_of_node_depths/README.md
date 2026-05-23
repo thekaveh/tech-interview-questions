@@ -9,8 +9,8 @@ Given a binary tree, compute the sum over all nodes of the sum of depths of all 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Iterative DFS per node computing subtree depth sums | O(n log n) | O(h) |
-| Solution2 | Recursive: for each node, add its subtree depth sum | O(n log n) | O(h) |
-| Solution3 | Single-pass DFS accumulating running depth sum | O(n) | O(h) |
+| File      | Approach                                            | Time       | Space |
+| --------- | --------------------------------------------------- | ---------- | ----- |
+| Solution1 | Iterative DFS per node computing subtree depth sums | O(n log n) | O(h)  |
+| Solution2 | Recursive: for each node, add its subtree depth sum | O(n log n) | O(h)  |
+| Solution3 | Single-pass DFS accumulating running depth sum      | O(n)       | O(h)  |

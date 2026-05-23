@@ -9,6 +9,6 @@ Given arrays of city-to-city distances and fuel amounts at each city, and a fuel
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Try each city as start, simulate full circuit | O(n²) | O(1) |
+| File      | Approach                                      | Time  | Space |
+| --------- | --------------------------------------------- | ----- | ----- |
+| Solution1 | Try each city as start, simulate full circuit | O(n²) | O(1)  |

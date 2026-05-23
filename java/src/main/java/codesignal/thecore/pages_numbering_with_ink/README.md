@@ -9,6 +9,6 @@ You are printing page numbers starting from a given page, and you have a limited
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Simulate printing pages, deducting digit count until ink runs out | O(n · log n) | O(1) |
+| File      | Approach                                                          | Time         | Space |
+| --------- | ----------------------------------------------------------------- | ------------ | ----- |
+| Solution1 | Simulate printing pages, deducting digit count until ink runs out | O(n · log n) | O(1)  |

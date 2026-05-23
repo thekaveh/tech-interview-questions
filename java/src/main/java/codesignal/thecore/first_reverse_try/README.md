@@ -9,6 +9,6 @@ Given an array, swap only the first and last elements and return the result. All
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single swap of indices 0 and N-1 using a temp variable | O(1) | O(1) |
+| File      | Approach                                               | Time | Space |
+| --------- | ------------------------------------------------------ | ---- | ----- |
+| Solution1 | Single swap of indices 0 and N-1 using a temp variable | O(1) | O(1)  |

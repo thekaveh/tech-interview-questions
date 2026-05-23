@@ -9,7 +9,7 @@ Given an array of integers representing weights, split them into two teams by al
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single pass with two accumulators | O(n) | O(1) |
-| Solution2 | Single pass using index parity into two-element result | O(n) | O(1) |
+| File      | Approach                                               | Time | Space |
+| --------- | ------------------------------------------------------ | ---- | ----- |
+| Solution1 | Single pass with two accumulators                      | O(n) | O(1)  |
+| Solution2 | Single pass using index parity into two-element result | O(n) | O(1)  |

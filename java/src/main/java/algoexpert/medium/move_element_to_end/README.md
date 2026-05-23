@@ -9,6 +9,6 @@ Given a list of integers and a target value `v`, move all occurrences of `v` to 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two-pointer swap (front and tail) | O(n) | O(1) |
+| File      | Approach                          | Time | Space |
+| --------- | --------------------------------- | ---- | ----- |
+| Solution1 | Two-pointer swap (front and tail) | O(n) | O(1)  |

@@ -9,8 +9,8 @@ Given an array of integers (which may include negative numbers), find the maximu
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Brute force triple nested loop | O(n³) | O(1) |
-| Solution2 | Kadane's single-pass running max | O(n) | O(1) |
-| Solution3 | Kadane's with two-element array state | O(n) | O(1) |
+| File      | Approach                              | Time  | Space |
+| --------- | ------------------------------------- | ----- | ----- |
+| Solution1 | Brute force triple nested loop        | O(n³) | O(1)  |
+| Solution2 | Kadane's single-pass running max      | O(n)  | O(1)  |
+| Solution3 | Kadane's with two-element array state | O(n)  | O(1)  |

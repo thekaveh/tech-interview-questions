@@ -9,6 +9,6 @@ Given an array of integers, find the maximum absolute difference between any two
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single pass max tracking | O(n) | O(1) |
+| File      | Approach                 | Time | Space |
+| --------- | ------------------------ | ---- | ----- |
+| Solution1 | Single pass max tracking | O(n) | O(1)  |

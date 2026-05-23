@@ -9,7 +9,7 @@ Sort an array of integers in ascending order in-place using the heap sort algori
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | In-place max-heap with sink (while-loop) | O(n log n) | O(1) |
-| Solution2 | In-place max-heap with sink (for-loop, OOO child helper) | O(n log n) | O(1) |
+| File      | Approach                                                 | Time       | Space |
+| --------- | -------------------------------------------------------- | ---------- | ----- |
+| Solution1 | In-place max-heap with sink (while-loop)                 | O(n log n) | O(1)  |
+| Solution2 | In-place max-heap with sink (for-loop, OOO child helper) | O(n log n) | O(1)  |

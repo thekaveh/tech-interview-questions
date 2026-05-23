@@ -9,6 +9,6 @@ Given an array of non-negative integers and a target sum S, find the longest con
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sliding window with shrink-on-exceed | O(n) | O(1) |
+| File      | Approach                             | Time | Space |
+| --------- | ------------------------------------ | ---- | ----- |
+| Solution1 | Sliding window with shrink-on-exceed | O(n) | O(1)  |

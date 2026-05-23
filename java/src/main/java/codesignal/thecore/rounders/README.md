@@ -9,7 +9,7 @@ Round an integer to the nearest power of 10 by repeatedly rounding its last digi
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive digit-by-digit rounding with carry propagation | O(log n) | O(log n) |
-| Solution2 | Iterative peel-and-round loop tracking accumulated trailing factor | O(log n) | O(1) |
+| File      | Approach                                                           | Time     | Space    |
+| --------- | ------------------------------------------------------------------ | -------- | -------- |
+| Solution1 | Recursive digit-by-digit rounding with carry propagation           | O(log n) | O(log n) |
+| Solution2 | Iterative peel-and-round loop tracking accumulated trailing factor | O(log n) | O(1)     |

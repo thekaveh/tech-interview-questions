@@ -9,6 +9,6 @@ Given an array of non-negative integers representing the heights of walls at eac
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Precompute left-max and right-max arrays, then accumulate water | O(n) | O(n) |
+| File      | Approach                                                        | Time | Space |
+| --------- | --------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Precompute left-max and right-max arrays, then accumulate water | O(n) | O(n)  |

@@ -9,7 +9,7 @@ Sort an integer array in ascending order in-place using insertion sort and retur
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Insertion sort, break on sorted | O(n²) | O(1) |
-| Solution2 | Insertion sort, condition in loop head | O(n²) | O(1) |
+| File      | Approach                               | Time  | Space |
+| --------- | -------------------------------------- | ----- | ----- |
+| Solution1 | Insertion sort, break on sorted        | O(n²) | O(1)  |
+| Solution2 | Insertion sort, condition in loop head | O(n²) | O(1)  |

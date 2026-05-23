@@ -9,6 +9,6 @@ Given a binary tree, transform it in-place so that each node's right pointer poi
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | BFS level-order traversal with null sentinels | O(n) | O(n) |
+| File      | Approach                                      | Time | Space |
+| --------- | --------------------------------------------- | ---- | ----- |
+| Solution1 | BFS level-order traversal with null sentinels | O(n) | O(n)  |

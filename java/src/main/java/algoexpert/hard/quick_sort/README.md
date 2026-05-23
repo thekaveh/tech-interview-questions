@@ -9,6 +9,6 @@ Sort an array of integers in ascending order in-place using the quicksort algori
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                              | Time                        | Space        |
+| --------- | ------------------------------------- | --------------------------- | ------------ |
 | Solution1 | 3-way partition quicksort (recursive) | O(n log n) avg, O(n²) worst | O(log n) avg |

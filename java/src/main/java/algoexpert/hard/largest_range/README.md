@@ -9,6 +9,6 @@ Given an array of integers, find the longest sequence of consecutive integers (n
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Hash set + BFS expansion from unvisited elements | O(n) | O(n) |
+| File      | Approach                                         | Time | Space |
+| --------- | ------------------------------------------------ | ---- | ----- |
+| Solution1 | Hash set + BFS expansion from unvisited elements | O(n) | O(n)  |

@@ -9,6 +9,6 @@ Given a list of interns and a list of teams, each with ranked preferences for th
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                 | Time  | Space |
+| --------- | ---------------------------------------- | ----- | ----- |
 | Solution1 | Gale-Shapley (intern-proposes) algorithm | O(n²) | O(n²) |

@@ -9,7 +9,7 @@ Given an array of integers and two values, replace every occurrence of the first
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single pass in-place replacement | O(n) | O(1) |
-| Solution2 | Stream map with ternary | O(n) | O(n) |
+| File      | Approach                         | Time | Space |
+| --------- | -------------------------------- | ---- | ----- |
+| Solution1 | Single pass in-place replacement | O(n) | O(1)  |
+| Solution2 | Stream map with ternary          | O(n) | O(n)  |

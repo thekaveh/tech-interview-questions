@@ -9,7 +9,7 @@ Given a divisor and an upper bound, find the largest integer that is both a mult
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Linear scan from bound downward to find first multiple | O(divisor) | O(1) |
-| Solution2 | Direct formula: floor(bound / divisor) * divisor | O(1) | O(1) |
+| File      | Approach                                               | Time       | Space |
+| --------- | ------------------------------------------------------ | ---------- | ----- |
+| Solution1 | Linear scan from bound downward to find first multiple | O(divisor) | O(1)  |
+| Solution2 | Direct formula: floor(bound / divisor) \* divisor      | O(1)       | O(1)  |

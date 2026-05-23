@@ -8,18 +8,18 @@ each `README.md` are paraphrased in my own words.
 
 ## 1. Counts
 
-| Provider | Problems | Solutions |
-|---|---:|---:|
-| AlgoExpert | 168 | 316 |
-| CodeSignal | 102 | 150 |
-| Educative | 8 | 9 |
-| **Total** | **278** | **475** |
+| Provider   | Problems | Solutions |
+| ---------- | -------: | --------: |
+| AlgoExpert |      168 |       316 |
+| CodeSignal |      102 |       150 |
+| Educative  |        8 |         9 |
+| **Total**  |  **278** |   **475** |
 
 Full browsable index: [PROBLEMS.md](./PROBLEMS.md).
 
 ## 2. Layout
 
-```
+```text
 java/                              ← Java solutions (active)
   src/main/java/
     algoexpert/{easy,medium,hard,veryhard}/<problem>/
@@ -35,7 +35,7 @@ files where the number denotes attempt order.
 
 ## 3. Building
 
-```
+```bash
 cd java && mvn -B verify
 ```
 

@@ -9,7 +9,7 @@ Implement a min-heap data structure backed by a list, supporting `buildHeap` (he
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | siftDown / siftUp with explicit child/parent index helpers | O(n) build, O(log n) insert/remove | O(n) |
-| Solution2 | siftDown / siftUp using out-of-order child/parent index finders | O(n) build, O(log n) insert/remove | O(n) |
+| File      | Approach                                                        | Time                               | Space |
+| --------- | --------------------------------------------------------------- | ---------------------------------- | ----- |
+| Solution1 | siftDown / siftUp with explicit child/parent index helpers      | O(n) build, O(log n) insert/remove | O(n)  |
+| Solution2 | siftDown / siftUp using out-of-order child/parent index finders | O(n) build, O(log n) insert/remove | O(n)  |

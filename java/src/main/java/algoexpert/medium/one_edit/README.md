@@ -9,6 +9,6 @@ Given two strings, determine whether they are at most one edit apart. A single e
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two-pointer with edit-count flag | O(n) | O(1) |
+| File      | Approach                         | Time | Space |
+| --------- | -------------------------------- | ---- | ----- |
+| Solution1 | Two-pointer with edit-count flag | O(n) | O(1)  |

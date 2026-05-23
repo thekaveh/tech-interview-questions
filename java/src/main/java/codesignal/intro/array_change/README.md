@@ -9,6 +9,6 @@ Given an array of integers, make it strictly increasing by incrementing elements
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single pass with carry-forward adjustments | O(n) | O(1) |
+| File      | Approach                                   | Time | Space |
+| --------- | ------------------------------------------ | ---- | ----- |
+| Solution1 | Single pass with carry-forward adjustments | O(n) | O(1)  |

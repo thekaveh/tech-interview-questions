@@ -9,8 +9,8 @@ Implement a Union-Find (Disjoint Set Union) data structure supporting `createSet
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Basic Union-Find with HashMap parents, no rank | O(n) find/union | O(n) |
-| Solution2 | Union by size (weighted union) with HashMap | O(log n) find/union | O(n) |
-| Solution3 | Union by size with path compression (path halving) | O(α(n)) find/union | O(n) |
+| File      | Approach                                           | Time                | Space |
+| --------- | -------------------------------------------------- | ------------------- | ----- |
+| Solution1 | Basic Union-Find with HashMap parents, no rank     | O(n) find/union     | O(n)  |
+| Solution2 | Union by size (weighted union) with HashMap        | O(log n) find/union | O(n)  |
+| Solution3 | Union by size with path compression (path halving) | O(α(n)) find/union  | O(n)  |

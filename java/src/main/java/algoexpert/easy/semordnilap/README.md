@@ -9,7 +9,7 @@ An array of unique lowercase strings is provided; find all pairs of distinct wor
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                 | Time     | Space    |
+| --------- | ---------------------------------------- | -------- | -------- |
 | Solution1 | HashMap groups words with their reverses | O(n · m) | O(n · m) |
-| Solution2 | HashSet, remove on match | O(n · m) | O(n · m) |
+| Solution2 | HashSet, remove on match                 | O(n · m) | O(n · m) |

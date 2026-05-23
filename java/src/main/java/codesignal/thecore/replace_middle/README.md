@@ -9,6 +9,6 @@ Given an even-length array, replace the two middle elements with their sum, prod
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Build new array copying all elements, summing the two middle positions | O(n) | O(n) |
+| File      | Approach                                                               | Time | Space |
+| --------- | ---------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Build new array copying all elements, summing the two middle positions | O(n) | O(n)  |

@@ -9,7 +9,7 @@ Given a string, determine whether it is a valid MAC-48 address (six groups of ex
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Split on hyphen, validate each group by length and hex parsing | O(1) | O(1) |
-| Solution2 | Single regex match | O(1) | O(1) |
+| File      | Approach                                                       | Time | Space |
+| --------- | -------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Split on hyphen, validate each group by length and hex parsing | O(1) | O(1)  |
+| Solution2 | Single regex match                                             | O(1) | O(1)  |

@@ -9,6 +9,6 @@ Given an email address, extract and return the domain (everything after the last
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | lastIndexOf('@') then substring | O(n) | O(n) |
+| File      | Approach                        | Time | Space |
+| --------- | ------------------------------- | ---- | ----- |
+| Solution1 | lastIndexOf('@') then substring | O(n) | O(n)  |

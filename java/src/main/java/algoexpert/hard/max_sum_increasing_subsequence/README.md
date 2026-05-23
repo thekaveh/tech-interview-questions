@@ -9,6 +9,6 @@ Given an array of integers, find the increasing subsequence (elements in order, 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | DP (LIS-style sums) with predecessor backtracking | O(n²) | O(n) |
+| File      | Approach                                          | Time  | Space |
+| --------- | ------------------------------------------------- | ----- | ----- |
+| Solution1 | DP (LIS-style sums) with predecessor backtracking | O(n²) | O(n)  |

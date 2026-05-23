@@ -9,6 +9,6 @@ Given the positions of a bishop and a pawn on a chess board, determine whether t
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Diagonal check via equal absolute row/column differences | O(1) | O(1) |
+| File      | Approach                                                 | Time | Space |
+| --------- | -------------------------------------------------------- | ---- | ----- |
+| Solution1 | Diagonal check via equal absolute row/column differences | O(1) | O(1)  |

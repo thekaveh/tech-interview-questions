@@ -9,7 +9,7 @@ Given a list of jobs (vertices) and a list of dependency pairs (directed edges m
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                        | Time   | Space  |
+| --------- | ----------------------------------------------- | ------ | ------ |
 | Solution1 | DFS-based topological sort with cycle detection | O(V+E) | O(V+E) |
 | Solution2 | DFS on explicit Graph class with adjacency list | O(V+E) | O(V+E) |

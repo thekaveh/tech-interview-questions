@@ -9,8 +9,8 @@ A list of head-to-head competition pairs and a corresponding list of result indi
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Score map (+3 per win), linear scan for max | O(n) | O(k) |
-| Solution2 | Score map (+3 per win), track max during scan | O(n) | O(k) |
-| Solution3 | Score map (+1 per win), track max during scan | O(n) | O(k) |
+| File      | Approach                                      | Time | Space |
+| --------- | --------------------------------------------- | ---- | ----- |
+| Solution1 | Score map (+3 per win), linear scan for max   | O(n) | O(k)  |
+| Solution2 | Score map (+3 per win), track max during scan | O(n) | O(k)  |
+| Solution3 | Score map (+1 per win), track max during scan | O(n) | O(k)  |

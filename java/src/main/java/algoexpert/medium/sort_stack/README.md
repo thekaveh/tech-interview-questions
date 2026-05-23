@@ -9,7 +9,7 @@ Given a stack (represented as an ArrayList), sort it in ascending order with the
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Iterative: extract each element and insert in sorted order | O(n²) | O(n) |
-| Solution2 | Recursive: pop top, sort remainder, insert at correct position | O(n²) | O(n) |
+| File      | Approach                                                       | Time  | Space |
+| --------- | -------------------------------------------------------------- | ----- | ----- |
+| Solution1 | Iterative: extract each element and insert in sorted order     | O(n²) | O(n)  |
+| Solution2 | Recursive: pop top, sort remainder, insert at correct position | O(n²) | O(n)  |

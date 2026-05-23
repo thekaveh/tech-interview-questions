@@ -9,6 +9,6 @@ A special array is provided that may contain integers and nested arrays to arbit
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive DFS with depth coefficient | O(n) | O(d) |
+| File      | Approach                             | Time | Space |
+| --------- | ------------------------------------ | ---- | ----- |
+| Solution1 | Recursive DFS with depth coefficient | O(n) | O(d)  |

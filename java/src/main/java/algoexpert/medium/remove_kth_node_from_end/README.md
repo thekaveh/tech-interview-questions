@@ -9,6 +9,6 @@ Given the head of a singly linked list and a positive integer `k`, remove the k-
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two-pointer: advance tail k steps, then march both | O(n) | O(1) |
+| File      | Approach                                           | Time | Space |
+| --------- | -------------------------------------------------- | ---- | ----- |
+| Solution1 | Two-pointer: advance tail k steps, then march both | O(n) | O(1)  |

@@ -9,7 +9,7 @@ Given a circular array of integers, return an array where each index holds the n
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Brute force double-pass circular scan per element | O(n²) | O(n) |
-| Solution2 | Monotone stack with backwards double-pass | O(n) | O(n) |
+| File      | Approach                                          | Time  | Space |
+| --------- | ------------------------------------------------- | ----- | ----- |
+| Solution1 | Brute force double-pass circular scan per element | O(n²) | O(n)  |
+| Solution2 | Monotone stack with backwards double-pass         | O(n)  | O(n)  |

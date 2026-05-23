@@ -9,7 +9,7 @@ Given a string that may contain brackets (`(`, `)`, `[`, `]`, `{`, `}`), determi
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Stack with List membership check | O(n) | O(n) |
-| Solution2 | Stack with String index lookup | O(n) | O(n) |
+| File      | Approach                         | Time | Space |
+| --------- | -------------------------------- | ---- | ----- |
+| Solution1 | Stack with List membership check | O(n) | O(n)  |
+| Solution2 | Stack with String index lookup   | O(n) | O(n)  |

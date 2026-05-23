@@ -9,6 +9,6 @@ Given two singly linked lists where each node represents one digit of a non-nega
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                      | Time         | Space        |
+| --------- | --------------------------------------------- | ------------ | ------------ |
 | Solution1 | Simultaneous traversal with carry propagation | O(max(m, n)) | O(max(m, n)) |

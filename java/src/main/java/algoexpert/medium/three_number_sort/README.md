@@ -9,6 +9,6 @@ Given an array of integers containing only three distinct values (specified by a
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Three-pointer Dutch National Flag partition | O(n) | O(1) |
+| File      | Approach                                    | Time | Space |
+| --------- | ------------------------------------------- | ---- | ----- |
+| Solution1 | Three-pointer Dutch National Flag partition | O(n) | O(1)  |

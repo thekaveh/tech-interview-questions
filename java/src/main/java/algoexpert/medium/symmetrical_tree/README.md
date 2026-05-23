@@ -9,8 +9,8 @@ Given a binary tree, determine whether it is symmetric (a mirror image of itself
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Iterative BFS: compare mirrored node pairs each level | O(n) | O(n) |
-| Solution2 | Recursive: compare left subtree with mirrored right subtree | O(n) | O(h) |
-| Solution3 | Recursive with explicit null checks before value comparison | O(n) | O(h) |
+| File      | Approach                                                    | Time | Space |
+| --------- | ----------------------------------------------------------- | ---- | ----- |
+| Solution1 | Iterative BFS: compare mirrored node pairs each level       | O(n) | O(n)  |
+| Solution2 | Recursive: compare left subtree with mirrored right subtree | O(n) | O(h)  |
+| Solution3 | Recursive with explicit null checks before value comparison | O(n) | O(h)  |

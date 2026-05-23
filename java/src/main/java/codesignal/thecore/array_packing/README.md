@@ -9,6 +9,6 @@ Given an array of up to 4 non-negative integers each fitting in one byte (0–25
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Shift each element into its byte lane and OR into accumulator | O(n) | O(1) |
+| File      | Approach                                                      | Time | Space |
+| --------- | ------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Shift each element into its byte lane and OR into accumulator | O(n) | O(1)  |

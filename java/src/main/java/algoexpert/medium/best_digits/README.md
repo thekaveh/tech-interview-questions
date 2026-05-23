@@ -9,6 +9,6 @@ Given a string representing a large non-negative integer and an integer `numDigi
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Monotone decreasing stack | O(n) | O(n) |
+| File      | Approach                  | Time | Space |
+| --------- | ------------------------- | ---- | ----- |
+| Solution1 | Monotone decreasing stack | O(n) | O(n)  |

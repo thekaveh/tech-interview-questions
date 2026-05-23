@@ -9,8 +9,8 @@ Given an integer grid of width `C` and height `R`, count the number of distinct 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Naive recursion | O(2^(C+R)) | O(C + R) |
-| Solution2 | Top-down recursion with 2-D memoization | O(C · R) | O(C · R) |
-| Solution3 | Bottom-up DP table | O(C · R) | O(C · R) |
+| File      | Approach                                | Time       | Space    |
+| --------- | --------------------------------------- | ---------- | -------- |
+| Solution1 | Naive recursion                         | O(2^(C+R)) | O(C + R) |
+| Solution2 | Top-down recursion with 2-D memoization | O(C · R)   | O(C · R) |
+| Solution3 | Bottom-up DP table                      | O(C · R)   | O(C · R) |

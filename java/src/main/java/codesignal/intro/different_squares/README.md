@@ -9,7 +9,7 @@ Given a matrix of integers, count the number of distinct 2x2 squares that can be
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | HashSet of custom Square objects with manual equals/hashCode | O(R*C) | O(R*C) |
-| Solution2 | HashSet of canonical string keys per 2x2 block | O(R*C) | O(R*C) |
+| File      | Approach                                                     | Time    | Space   |
+| --------- | ------------------------------------------------------------ | ------- | ------- |
+| Solution1 | HashSet of custom Square objects with manual equals/hashCode | O(R\*C) | O(R\*C) |
+| Solution2 | HashSet of canonical string keys per 2x2 block               | O(R\*C) | O(R\*C) |

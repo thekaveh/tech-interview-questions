@@ -9,7 +9,7 @@ Given an array of integers, return a new array where each element at index `i` i
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Left-pass then right-pass products | O(n) | O(n) |
-| Solution2 | Left-pass then right-pass, fill-initialized | O(n) | O(n) |
+| File      | Approach                                    | Time | Space |
+| --------- | ------------------------------------------- | ---- | ----- |
+| Solution1 | Left-pass then right-pass products          | O(n) | O(n)  |
+| Solution2 | Left-pass then right-pass, fill-initialized | O(n) | O(n)  |

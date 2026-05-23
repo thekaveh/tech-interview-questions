@@ -9,6 +9,6 @@ Given a positive integer N, create and return an array of length N where every e
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Allocate array and fill with Arrays.fill | O(n) | O(n) |
+| File      | Approach                                 | Time | Space |
+| --------- | ---------------------------------------- | ---- | ----- |
+| Solution1 | Allocate array and fill with Arrays.fill | O(n) | O(n)  |

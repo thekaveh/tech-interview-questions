@@ -9,6 +9,6 @@ Implement a doubly linked list class supporting `setHead`, `setTail`, `insertBef
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Direct pointer manipulation with remove-before-insert | O(1) per op (O(n) for insertAtPosition) | O(1) |
+| File      | Approach                                              | Time                                    | Space |
+| --------- | ----------------------------------------------------- | --------------------------------------- | ----- |
+| Solution1 | Direct pointer manipulation with remove-before-insert | O(1) per op (O(n) for insertAtPosition) | O(1)  |

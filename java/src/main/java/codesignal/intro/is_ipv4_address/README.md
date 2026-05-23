@@ -9,6 +9,6 @@ Given a string, determine whether it is a valid IPv4 address (four dot-separated
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Split on dot, validate each octet's format and range | O(1) | O(1) |
+| File      | Approach                                             | Time | Space |
+| --------- | ---------------------------------------------------- | ---- | ----- |
+| Solution1 | Split on dot, validate each octet's format and range | O(1) | O(1)  |

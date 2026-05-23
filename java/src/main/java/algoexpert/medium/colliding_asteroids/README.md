@@ -9,6 +9,6 @@ Given an array of integers where positive values represent asteroids moving righ
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Stack-based collision simulation | O(n) | O(n) |
+| File      | Approach                         | Time | Space |
+| --------- | -------------------------------- | ---- | ----- |
+| Solution1 | Stack-based collision simulation | O(n) | O(n)  |

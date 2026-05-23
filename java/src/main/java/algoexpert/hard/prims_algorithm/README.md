@@ -9,7 +9,7 @@ Given a weighted undirected graph, find its minimum spanning tree using Prim's a
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Eager Prim with min-heap of crossing edges | O(E log E) | O(V+E) |
-| Solution2 | Lazy Prim tracking cheapest edge per vertex | O(E log V) | O(V) |
+| File      | Approach                                    | Time       | Space  |
+| --------- | ------------------------------------------- | ---------- | ------ |
+| Solution1 | Eager Prim with min-heap of crossing edges  | O(E log E) | O(V+E) |
+| Solution2 | Lazy Prim tracking cheapest edge per vertex | O(E log V) | O(V)   |

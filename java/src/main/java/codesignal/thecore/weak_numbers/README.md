@@ -9,6 +9,6 @@ A number's "weakness" is the count of preceding numbers that have strictly more 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Compute divisor count for each number 1–n, then compute weakness by scanning all prior numbers | O(n² · √n) | O(1) |
+| File      | Approach                                                                                       | Time       | Space |
+| --------- | ---------------------------------------------------------------------------------------------- | ---------- | ----- |
+| Solution1 | Compute divisor count for each number 1–n, then compute weakness by scanning all prior numbers | O(n² · √n) | O(1)  |

@@ -9,7 +9,7 @@ Given a sorted array of distinct integers, find the leftmost index i such that A
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Binary search (iterative, leftmost bias) | O(log n) | O(1) |
+| File      | Approach                                 | Time     | Space    |
+| --------- | ---------------------------------------- | -------- | -------- |
+| Solution1 | Binary search (iterative, leftmost bias) | O(log n) | O(1)     |
 | Solution2 | Binary search (recursive, leftmost bias) | O(log n) | O(log n) |

@@ -9,6 +9,6 @@ Given a target score and a starting hand value, compute the probability of busti
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                            | Time      | Space     |
+| --------- | ----------------------------------- | --------- | --------- |
 | Solution1 | Top-down recursion with memoization | O(target) | O(target) |

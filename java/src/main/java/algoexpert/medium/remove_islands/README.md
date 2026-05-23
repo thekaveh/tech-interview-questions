@@ -9,6 +9,6 @@ Given a 2-D matrix of 0s and 1s, remove all "islands" — connected components o
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                                           | Time   | Space  |
+| --------- | ------------------------------------------------------------------ | ------ | ------ |
 | Solution1 | DFS to label connected components, then zero non-border components | O(r·c) | O(r·c) |

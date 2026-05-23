@@ -9,8 +9,8 @@ Given an integer matrix containing positive, negative, and zero values, return t
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                         | Time      | Space  |
+| --------- | ------------------------------------------------ | --------- | ------ |
 | Solution1 | Naive: repeatedly scan for convertible negatives | O((r·c)²) | O(r·c) |
-| Solution2 | Multi-source BFS seeded from all positive cells | O(r·c) | O(r·c) |
-| Solution3 | Multi-source BFS, alternate list/queue form | O(r·c) | O(r·c) |
+| Solution2 | Multi-source BFS seeded from all positive cells  | O(r·c)    | O(r·c) |
+| Solution3 | Multi-source BFS, alternate list/queue form      | O(r·c)    | O(r·c) |

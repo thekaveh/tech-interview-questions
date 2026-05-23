@@ -9,6 +9,6 @@ Given a list of 2D coordinates, count the number of axis-aligned rectangles that
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Point-set lookup: for each ordered pair of non-collinear points check opposite corners | O(n²) | O(n) |
+| File      | Approach                                                                               | Time  | Space |
+| --------- | -------------------------------------------------------------------------------------- | ----- | ----- |
+| Solution1 | Point-set lookup: for each ordered pair of non-collinear points check opposite corners | O(n²) | O(n)  |

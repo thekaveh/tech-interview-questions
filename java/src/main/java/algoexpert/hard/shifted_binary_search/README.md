@@ -9,6 +9,6 @@ Given a sorted array of distinct integers that has been rotated at an unknown pi
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Modified binary search distinguishing sorted half | O(log n) | O(1) |
+| File      | Approach                                          | Time     | Space |
+| --------- | ------------------------------------------------- | -------- | ----- |
+| Solution1 | Modified binary search distinguishing sorted half | O(log n) | O(1)  |

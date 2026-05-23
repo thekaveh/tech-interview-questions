@@ -9,6 +9,6 @@ In a theater with nCols columns and nRows rows, you are sitting at position (col
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Formula: (nCols − col + 1) * (nRows − row) | O(1) | O(1) |
+| File      | Approach                                    | Time | Space |
+| --------- | ------------------------------------------- | ---- | ----- |
+| Solution1 | Formula: (nCols − col + 1) \* (nRows − row) | O(1) | O(1)  |

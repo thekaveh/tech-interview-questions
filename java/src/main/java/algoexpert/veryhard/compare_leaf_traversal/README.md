@@ -9,7 +9,7 @@ Given two binary trees, determine whether the sequence of leaf node values (read
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Collect all leaves from each tree then compare lists | O(n+m) | O(n+m) |
+| File      | Approach                                                    | Time   | Space    |
+| --------- | ----------------------------------------------------------- | ------ | -------- |
+| Solution1 | Collect all leaves from each tree then compare lists        | O(n+m) | O(n+m)   |
 | Solution2 | Two synchronized iterative DFS stacks, compare leaf by leaf | O(n+m) | O(h1+h2) |

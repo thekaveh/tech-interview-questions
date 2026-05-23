@@ -9,7 +9,7 @@ Given a lowercase string, shift each letter one position forward in the alphabet
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single pass with modular arithmetic | O(n) | O(n) |
-| Solution2 | Stream chars with map | O(n) | O(n) |
+| File      | Approach                            | Time | Space |
+| --------- | ----------------------------------- | ---- | ----- |
+| Solution1 | Single pass with modular arithmetic | O(n) | O(n)  |
+| Solution2 | Stream chars with map               | O(n) | O(n)  |

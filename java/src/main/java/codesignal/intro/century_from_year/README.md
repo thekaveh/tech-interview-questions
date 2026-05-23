@@ -9,7 +9,7 @@ Given a year, return which century it falls in (e.g., year 1 through 100 is the 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Integer division with remainder bump | O(1) | O(1) |
-| Solution2 | Direct arithmetic via (year - 1) / 100 + 1 | O(1) | O(1) |
+| File      | Approach                                   | Time | Space |
+| --------- | ------------------------------------------ | ---- | ----- |
+| Solution1 | Integer division with remainder bump       | O(1) | O(1)  |
+| Solution2 | Direct arithmetic via (year - 1) / 100 + 1 | O(1) | O(1)  |

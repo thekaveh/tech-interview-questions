@@ -9,7 +9,7 @@ A phone plan charges min1 cents for the first minute, min2_10 cents for minutes 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Simulation subtracting per-minute costs until balance is exhausted | O(t) | O(1) |
-| Solution2 | Direct formula: compute breakpoints for reaching minutes 1, 10, and 11+ | O(1) | O(1) |
+| File      | Approach                                                                | Time | Space |
+| --------- | ----------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Simulation subtracting per-minute costs until balance is exhausted      | O(t) | O(1)  |
+| Solution2 | Direct formula: compute breakpoints for reaching minutes 1, 10, and 11+ | O(1) | O(1)  |

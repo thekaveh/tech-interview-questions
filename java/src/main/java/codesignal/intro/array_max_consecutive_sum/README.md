@@ -9,6 +9,6 @@ Given an array of integers and a window size k, find the maximum sum of any k co
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sliding window | O(n) | O(1) |
+| File      | Approach       | Time | Space |
+| --------- | -------------- | ---- | ----- |
+| Solution1 | Sliding window | O(n) | O(1)  |

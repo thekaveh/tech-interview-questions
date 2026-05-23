@@ -9,6 +9,6 @@ Given a string, determine whether it represents a valid 24-hour clock time in "H
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Split on colon, parse each component, validate ranges | O(1) | O(1) |
+| File      | Approach                                              | Time | Space |
+| --------- | ----------------------------------------------------- | ---- | ----- |
+| Solution1 | Split on colon, parse each component, validate ranges | O(1) | O(1)  |

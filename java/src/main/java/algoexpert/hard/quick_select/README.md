@@ -9,8 +9,8 @@ Given an array of distinct integers and a position k (1-indexed), find the k-th 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | 3-way partition quickselect (iterative) | O(n) avg, O(n²) worst | O(1) |
-| Solution2 | 3-way partition quickselect (recursive) | O(n) avg, O(n²) worst | O(log n) avg |
-| Solution3 | 3-way partition quickselect (iterative, while-true) | O(n) avg, O(n²) worst | O(1) |
+| File      | Approach                                            | Time                  | Space        |
+| --------- | --------------------------------------------------- | --------------------- | ------------ |
+| Solution1 | 3-way partition quickselect (iterative)             | O(n) avg, O(n²) worst | O(1)         |
+| Solution2 | 3-way partition quickselect (recursive)             | O(n) avg, O(n²) worst | O(log n) avg |
+| Solution3 | 3-way partition quickselect (iterative, while-true) | O(n) avg, O(n²) worst | O(1)         |

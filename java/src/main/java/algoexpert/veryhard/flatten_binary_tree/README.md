@@ -9,7 +9,7 @@ Given a binary tree, flatten it into a doubly linked list using the tree's left 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Collect in-order nodes then wire left/right pointers | O(n) | O(n) |
-| Solution2 | Recursive divide-and-conquer returning [head, tail] pairs | O(n) | O(h) |
+| File      | Approach                                                  | Time | Space |
+| --------- | --------------------------------------------------------- | ---- | ----- |
+| Solution1 | Collect in-order nodes then wire left/right pointers      | O(n) | O(n)  |
+| Solution2 | Recursive divide-and-conquer returning [head, tail] pairs | O(n) | O(h)  |

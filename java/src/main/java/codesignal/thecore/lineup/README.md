@@ -9,6 +9,6 @@ A person starts facing north and receives a string of commands: 'L' turns them l
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Simulate direction state, count forward steps taken while facing north | O(n) | O(1) |
+| File      | Approach                                                               | Time | Space |
+| --------- | ---------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Simulate direction state, count forward steps taken while facing north | O(n) | O(1)  |

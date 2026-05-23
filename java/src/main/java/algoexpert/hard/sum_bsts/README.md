@@ -9,6 +9,6 @@ Given a binary tree, find the sum of all nodes that belong to a BST subtree of s
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Post-order DFS tracking BST validity, range, size, and subtree sums | O(n) | O(h) |
+| File      | Approach                                                            | Time | Space |
+| --------- | ------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Post-order DFS tracking BST validity, range, size, and subtree sums | O(n) | O(h)  |

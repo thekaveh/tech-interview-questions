@@ -9,7 +9,7 @@ Given a weighted undirected graph, find its minimum spanning tree using Kruskal'
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sort edges + Union-Find (via Map.entry) | O(E log E) | O(V+E) |
+| File      | Approach                                      | Time       | Space  |
+| --------- | --------------------------------------------- | ---------- | ------ |
+| Solution1 | Sort edges + Union-Find (via Map.entry)       | O(E log E) | O(V+E) |
 | Solution2 | Sort edges + Union-Find (flattened edge list) | O(E log E) | O(V+E) |

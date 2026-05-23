@@ -9,6 +9,6 @@ Given two strings, find the longest common subsequence — the longest sequence 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Bottom-up 2-D DP with backtracking | O(|A|·|B|) | O(|A|·|B|) |
+| File      | Approach                           | Time | Space |
+| --------- | ---------------------------------- | ---- | ----- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Solution1 | Bottom-up 2-D DP with backtracking | O(   | A     | ·   | B   | )   | O(  | A   | ·   | B   | )   |

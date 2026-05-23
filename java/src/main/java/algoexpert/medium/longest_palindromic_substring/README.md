@@ -9,8 +9,8 @@ Given a string, return the longest substring that reads the same forwards and ba
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Brute force check all substrings | O(n³) | O(n) |
-| Solution2 | Expand around each center (odd and even) | O(n²) | O(n) |
+| File      | Approach                                       | Time  | Space |
+| --------- | ---------------------------------------------- | ----- | ----- |
+| Solution1 | Brute force check all substrings               | O(n³) | O(n)  |
+| Solution2 | Expand around each center (odd and even)       | O(n²) | O(n)  |
 | Solution3 | Top-down DP memoization on (lo, hi) substrings | O(n²) | O(n²) |

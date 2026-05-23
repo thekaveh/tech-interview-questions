@@ -9,6 +9,6 @@ Design a data structure that supports inserting integers one at a time and query
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two heaps (max-heap lower + min-heap upper) | O(log n) insert, O(1) query | O(n) |
+| File      | Approach                                    | Time                        | Space |
+| --------- | ------------------------------------------- | --------------------------- | ----- |
+| Solution1 | Two heaps (max-heap lower + min-heap upper) | O(log n) insert, O(1) query | O(n)  |

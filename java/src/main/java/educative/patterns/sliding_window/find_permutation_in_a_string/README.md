@@ -9,6 +9,6 @@ Given a string txt and a pattern string, determine whether any permutation of th
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Fixed-size sliding window with character frequency map and matched-count tracking | O(n + m) | O(m) |
+| File      | Approach                                                                          | Time     | Space |
+| --------- | --------------------------------------------------------------------------------- | -------- | ----- |
+| Solution1 | Fixed-size sliding window with character frequency map and matched-count tracking | O(n + m) | O(m)  |

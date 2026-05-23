@@ -9,7 +9,7 @@ Given a sorted array of integers, find the element that minimizes the total sum 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Direct median index (ceiling) | O(1) | O(1) |
-| Solution2 | Direct median index (floor of midpoint) | O(1) | O(1) |
+| File      | Approach                                | Time | Space |
+| --------- | --------------------------------------- | ---- | ----- |
+| Solution1 | Direct median index (ceiling)           | O(1) | O(1)  |
+| Solution2 | Direct median index (floor of midpoint) | O(1) | O(1)  |

@@ -9,6 +9,6 @@ Given two players' game scores in a tennis set, determine whether the score refl
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Check equality first (invalid), then validate the two legal completion conditions | O(1) | O(1) |
+| File      | Approach                                                                          | Time | Space |
+| --------- | --------------------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Check equality first (invalid), then validate the two legal completion conditions | O(1) | O(1)  |

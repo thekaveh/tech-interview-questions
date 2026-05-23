@@ -9,6 +9,6 @@ Given two squares A and B on an infinite chess board, find the minimum number of
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Bidirectional BFS | O(n) where n = distance² | O(n) |
+| File      | Approach          | Time                     | Space |
+| --------- | ----------------- | ------------------------ | ----- |
+| Solution1 | Bidirectional BFS | O(n) where n = distance² | O(n)  |

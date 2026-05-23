@@ -9,6 +9,6 @@ A string is "beautiful" if the frequency of each letter is greater than or equal
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Frequency array, check non-increasing order | O(n) | O(1) |
+| File      | Approach                                    | Time | Space |
+| --------- | ------------------------------------------- | ---- | ----- |
+| Solution1 | Frequency array, check non-increasing order | O(n) | O(1)  |

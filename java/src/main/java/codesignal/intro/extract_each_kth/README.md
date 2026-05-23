@@ -9,7 +9,7 @@ Given an array and an integer k, return a new array with every k-th element (1-i
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single pass skipping every k-th index | O(n) | O(n) |
-| Solution2 | Stream filter by index | O(n) | O(n) |
+| File      | Approach                              | Time | Space |
+| --------- | ------------------------------------- | ---- | ----- |
+| Solution1 | Single pass skipping every k-th index | O(n) | O(n)  |
+| Solution2 | Stream filter by index                | O(n) | O(n)  |

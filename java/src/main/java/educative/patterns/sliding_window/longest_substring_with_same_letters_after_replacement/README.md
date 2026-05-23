@@ -9,6 +9,6 @@ Given a string and an integer k, find the length of the longest substring contai
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sliding window + character count; shrink when (window size − max frequency) exceeds k | O(n) | O(1) |
+| File      | Approach                                                                              | Time | Space |
+| --------- | ------------------------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Sliding window + character count; shrink when (window size − max frequency) exceeds k | O(n) | O(1)  |

@@ -9,8 +9,8 @@ Given a list of rental time intervals [start, end], determine the minimum number
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sort by start + min-heap of end times | O(n log n) | O(n) |
-| Solution2 | Sort by start + min-heap of full intervals | O(n log n) | O(n) |
-| Solution3 | Pre-load min-heap then sweep by start time | O(n log n) | O(n) |
+| File      | Approach                                   | Time       | Space |
+| --------- | ------------------------------------------ | ---------- | ----- |
+| Solution1 | Sort by start + min-heap of end times      | O(n log n) | O(n)  |
+| Solution2 | Sort by start + min-heap of full intervals | O(n log n) | O(n)  |
+| Solution3 | Pre-load min-heap then sweep by start time | O(n log n) | O(n)  |

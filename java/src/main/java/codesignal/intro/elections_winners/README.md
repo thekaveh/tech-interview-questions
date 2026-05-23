@@ -9,6 +9,6 @@ Given vote counts and remaining votes k available to one candidate, determine ho
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Find current max, then count candidates beatable with k extra votes | O(n) | O(1) |
+| File      | Approach                                                            | Time | Space |
+| --------- | ------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Find current max, then count candidates beatable with k extra votes | O(n) | O(1)  |

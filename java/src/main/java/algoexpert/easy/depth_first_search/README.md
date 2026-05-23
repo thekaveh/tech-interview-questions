@@ -9,8 +9,8 @@ A named graph node is provided where each node holds a string name and a list of
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Recursive DFS, pre-order | O(v + e) | O(v) |
-| Solution2 | Recursive DFS via stack accumulation | O(v + e) | O(v) |
-| Solution3 | Iterative DFS with explicit stack | O(v + e) | O(v) |
+| File      | Approach                             | Time     | Space |
+| --------- | ------------------------------------ | -------- | ----- |
+| Solution1 | Recursive DFS, pre-order             | O(v + e) | O(v)  |
+| Solution2 | Recursive DFS via stack accumulation | O(v + e) | O(v)  |
+| Solution3 | Iterative DFS with explicit stack    | O(v + e) | O(v)  |

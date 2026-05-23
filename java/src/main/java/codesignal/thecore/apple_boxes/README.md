@@ -9,7 +9,7 @@ You have k rows of boxes numbered 1 through k. Red boxes occupy even-numbered ro
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Loop accumulating alternating +/- squared row sums | O(k) | O(1) |
-| Solution2 | Closed-form formula using sign(-1)^k and triangular number identity | O(1) | O(1) |
+| File      | Approach                                                            | Time | Space |
+| --------- | ------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Loop accumulating alternating +/- squared row sums                  | O(k) | O(1)  |
+| Solution2 | Closed-form formula using sign(-1)^k and triangular number identity | O(1) | O(1)  |

@@ -9,6 +9,6 @@ Given `k` workers and a list of `2k` tasks with durations, assign exactly two ta
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sort by duration, pair shortest with longest | O(n log n) | O(n) |
+| File      | Approach                                     | Time       | Space |
+| --------- | -------------------------------------------- | ---------- | ----- |
+| Solution1 | Sort by duration, pair shortest with longest | O(n log n) | O(n)  |

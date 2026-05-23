@@ -9,6 +9,6 @@ Given a string and a pattern substring, wrap every occurrence of the pattern in 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                                                     | Time       | Space  |
+| --------- | ------------------------------------------------------------ | ---------- | ------ |
 | Solution1 | Find all match intervals, merge overlaps, insert underscores | O(n·m + k) | O(n+k) |

@@ -9,6 +9,6 @@ Apply run-length encoding to a string: replace each run of consecutive identical
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single pass run-length scan | O(n) | O(n) |
+| File      | Approach                    | Time | Space |
+| --------- | --------------------------- | ---- | ----- |
+| Solution1 | Single pass run-length scan | O(n) | O(n)  |

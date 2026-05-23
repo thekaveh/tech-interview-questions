@@ -9,6 +9,6 @@ Determine whether an array can be made strictly increasing by removing at most o
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Single pass with one-violation tracking | O(n) | O(1) |
+| File      | Approach                                | Time | Space |
+| --------- | --------------------------------------- | ---- | ----- |
+| Solution1 | Single pass with one-violation tracking | O(n) | O(1)  |

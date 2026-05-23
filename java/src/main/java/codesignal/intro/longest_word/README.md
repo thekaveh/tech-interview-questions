@@ -9,7 +9,7 @@ Given a string containing words separated by non-alphabetic characters, return t
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Two-pointer word extraction, track longest | O(n) | O(n) |
-| Solution2 | Split on non-word characters, stream max by length | O(n) | O(n) |
+| File      | Approach                                           | Time | Space |
+| --------- | -------------------------------------------------- | ---- | ----- |
+| Solution1 | Two-pointer word extraction, track longest         | O(n) | O(n)  |
+| Solution2 | Split on non-word characters, stream max by length | O(n) | O(n)  |

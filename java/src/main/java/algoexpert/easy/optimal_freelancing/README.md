@@ -9,6 +9,6 @@ An array of freelance jobs is provided, each with a payment amount and a deadlin
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Greedy max-heap, schedule latest slot | O(n log n) | O(n) |
+| File      | Approach                              | Time       | Space |
+| --------- | ------------------------------------- | ---------- | ----- |
+| Solution1 | Greedy max-heap, schedule latest slot | O(n log n) | O(n)  |

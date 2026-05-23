@@ -9,7 +9,7 @@ Given a string, determine whether it is a valid programming variable name (start
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Character-by-character validation with position check | O(n) | O(1) |
-| Solution2 | Single regex match | O(n) | O(1) |
+| File      | Approach                                              | Time | Space |
+| --------- | ----------------------------------------------------- | ---- | ----- |
+| Solution1 | Character-by-character validation with position check | O(n) | O(1)  |
+| Solution2 | Single regex match                                    | O(n) | O(1)  |

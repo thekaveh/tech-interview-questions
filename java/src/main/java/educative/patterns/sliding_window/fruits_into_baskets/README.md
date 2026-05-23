@@ -9,7 +9,7 @@ Given an array of characters representing fruit trees in a row, find the length 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Variable-size sliding window with a HashSet shrinking left when distinct count exceeds 2 | O(n) | O(1) |
-| Solution2 | Variable-size sliding window with a frequency map shrinking left and removing zero-count entries | O(n) | O(1) |
+| File      | Approach                                                                                         | Time | Space |
+| --------- | ------------------------------------------------------------------------------------------------ | ---- | ----- |
+| Solution1 | Variable-size sliding window with a HashSet shrinking left when distinct count exceeds 2         | O(n) | O(1)  |
+| Solution2 | Variable-size sliding window with a frequency map shrinking left and removing zero-count entries | O(n) | O(1)  |

@@ -9,7 +9,7 @@ Given an array of integers, determine whether any contiguous subarray sums to ze
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Brute force: try all (lo, hi) pairs | O(n²) | O(1) |
-| Solution2 | Prefix sum set: repeated prefix sum implies zero-sum subarray | O(n) | O(n) |
+| File      | Approach                                                      | Time  | Space |
+| --------- | ------------------------------------------------------------- | ----- | ----- |
+| Solution1 | Brute force: try all (lo, hi) pairs                           | O(n²) | O(1)  |
+| Solution2 | Prefix sum set: repeated prefix sum implies zero-sum subarray | O(n)  | O(n)  |

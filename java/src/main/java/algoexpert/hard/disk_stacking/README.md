@@ -9,6 +9,6 @@ Given a list of disks each described by width, depth, and height, find the talle
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Sort by height + LIS-style DP with path reconstruction | O(n²) | O(n) |
+| File      | Approach                                               | Time  | Space |
+| --------- | ------------------------------------------------------ | ----- | ----- |
+| Solution1 | Sort by height + LIS-style DP with path reconstruction | O(n²) | O(n)  |

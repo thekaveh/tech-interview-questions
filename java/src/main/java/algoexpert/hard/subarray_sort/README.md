@@ -9,6 +9,6 @@ Given an array of integers, find the smallest subarray that, when sorted, makes 
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Find out-of-order min/max, then expand to correct bounds | O(n) | O(1) |
+| File      | Approach                                                 | Time | Space |
+| --------- | -------------------------------------------------------- | ---- | ----- |
+| Solution1 | Find out-of-order min/max, then expand to correct bounds | O(n) | O(1)  |

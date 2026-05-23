@@ -9,6 +9,6 @@ Given a 2D board of characters and a list of words, find all words from the list
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
+| File      | Approach                | Time             | Space        |
+| --------- | ----------------------- | ---------------- | ------------ |
 | Solution1 | Trie + backtracking DFS | O(w·m + r·c·8^m) | O(w·m + r·c) |

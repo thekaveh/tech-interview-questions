@@ -9,6 +9,6 @@ Starting from a0, repeatedly replace the current number with the sum of the squa
 
 ## 2. Solutions
 
-| File | Approach | Time | Space |
-|---|---|---|---|
-| Solution1 | Simulate with a HashSet tracking visited values; stop on first repeat | O(n) | O(n) |
+| File      | Approach                                                              | Time | Space |
+| --------- | --------------------------------------------------------------------- | ---- | ----- |
+| Solution1 | Simulate with a HashSet tracking visited values; stop on first repeat | O(n) | O(n)  |
