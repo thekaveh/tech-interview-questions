@@ -189,6 +189,8 @@ CODESIGNAL_BARE_INPUT = """int solution(int[] A) {
 
 CODESIGNAL_BARE_EXPECTED = """package codesignal.intro.adj.product;
 import java.util.*;
+import java.util.stream.*;
+import java.math.*;
 
 // Approach: TODO.
 class Solution1 {
@@ -209,6 +211,8 @@ CODESIGNAL_CLASS_INPUT = """class Solution {
 
 CODESIGNAL_CLASS_EXPECTED = """package codesignal.thecore.add_two;
 import java.util.*;
+import java.util.stream.*;
+import java.math.*;
 
 // Approach: TODO.
 class Solution1 {
@@ -231,6 +235,8 @@ class SOlution {
 CODESIGNAL_TYPO_EXPECTED = """package codesignal.thecore.count_sum;
 import javax.lang.model.util.ElementScanner6;
 import java.util.*;
+import java.util.stream.*;
+import java.math.*;
 
 // Approach: TODO.
 class Solution1 {
@@ -369,6 +375,22 @@ class TestTransformCodesignal(unittest.TestCase):
         out = transform_codesignal(CODESIGNAL_TYPO_INPUT,
                                    'codesignal.thecore.count_sum', 1)
         self.assertEqual(out, CODESIGNAL_TYPO_EXPECTED)
+
+    def test_makes_all_class_methods_static_not_just_solution(self):
+        src = """class Solution {
+    String solution(String txt) {
+        return helper(txt);
+    }
+
+    String helper(String txt) {
+        return txt;
+    }
+}
+"""
+        out = transform_codesignal(src, 'codesignal.intro.foo', 1)
+        # Both solution and helper must end up static.
+        self.assertIn('    static String solution(String txt) {', out)
+        self.assertIn('    static String helper(String txt) {', out)
 
 
 class TestTransformEducative(unittest.TestCase):

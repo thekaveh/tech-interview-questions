@@ -254,13 +254,32 @@ def _ensure_java_util_import(imports: list[str]) -> list[str]:
     return imports + ['import java.util.*;']
 
 
+def _ensure_codesignal_imports(imports: list[str]) -> list[str]:
+    """CodeSignal solutions are pasted into a web IDE that auto-imports
+    common packages. To compile standalone, we ensure java.util, the
+    stream package, and java.math are available — covers IntStream,
+    Collectors, BigInteger uses that appear in a handful of solutions."""
+    needed = [
+        ('java.util.*', 'import java.util.*;'),
+        ('java.util.stream.*', 'import java.util.stream.*;'),
+        ('java.math.*', 'import java.math.*;'),
+    ]
+    result = list(imports)
+    for marker, line in needed:
+        if not any(marker in imp for imp in result):
+            result.append(line)
+    return result
+
+
 def transform_codesignal(content: str, package: str, sol_num: int) -> str:
     """CodeSignal files come in two shapes:
        (a) bare function at top level: `int solution(...) { ... }`
        (b) already wrapped: `class Solution { int solution(...) {...} }`
-    Some have imports; some have the class-name typo `SOlution`."""
+    Some have imports; some have the class-name typo `SOlution`. The web
+    IDE auto-imports the stream and math packages, so we add them here
+    too — a few solutions reference IntStream and BigInteger directly."""
     imports, body = _split_imports(content)
-    imports = _ensure_java_util_import(imports)
+    imports = _ensure_codesignal_imports(imports)
     body = body.rstrip() + '\n'
 
     has_class = bool(re.search(r'^class [A-Za-z_]\w*\s*\{', body, re.MULTILINE))
@@ -278,7 +297,6 @@ def transform_codesignal(content: str, package: str, sol_num: int) -> str:
             r'[A-Za-z_][\w\[\]<>]*\s+[A-Za-z_]\w*\s*\()',
             r'\1static \2',
             body,
-            count=1,
             flags=re.MULTILINE,
         )
         new_body = body
