@@ -275,3 +275,81 @@ def transform_educative(content: str, package: str, sol_num: int) -> str:
         f'{APPROACH_LINE}\n'
         f'{body}'
     )
+
+
+# --- Orchestrator ----------------------------------------------------
+
+PROVIDER_ROOTS = {
+    'algoexpert': 'algoexpert.io',
+    'codesignal': 'codesignal.com',
+    'educative':  'educative.io',
+}
+
+
+def _transform_for(provider: str, content: str, package: str, sol_num: int) -> str:
+    if provider == 'algoexpert':
+        return transform_algoexpert(content, package)
+    if provider == 'codesignal':
+        return transform_codesignal(content, package, sol_num)
+    if provider == 'educative':
+        return transform_educative(content, package, sol_num)
+    raise ValueError(f'unknown provider: {provider}')
+
+
+def migrate_provider(provider: str, dry_run: bool = False) -> None:
+    legacy_root = REPO / PROVIDER_ROOTS[provider]
+    if not legacy_root.exists():
+        print(f'no legacy directory for {provider} at {legacy_root}',
+              file=sys.stderr)
+        return
+
+    java_files = sorted(legacy_root.rglob('*.java'))
+    print(f'{provider}: {len(java_files)} file(s) to migrate')
+
+    moves: list[tuple[Path, Path]] = []
+    for src in java_files:
+        dest = new_path_for(src)
+        if dest is None:
+            print(f'  SKIP (no mapping): {src}', file=sys.stderr)
+            continue
+        moves.append((src, dest))
+
+    if dry_run:
+        for src, dest in moves:
+            print(f'  {src.relative_to(REPO)} -> {dest.relative_to(REPO)}')
+        return
+
+    for src, dest in moves:
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(['git', 'mv', str(src), str(dest)],
+                       check=True, cwd=REPO)
+        content = dest.read_text()
+        package = package_for(dest)
+        sol_num = solution_number(dest.name)
+        new_content = _transform_for(provider, content, package, sol_num)
+        dest.write_text(new_content)
+
+    provider_java_root = JAVA_ROOT / provider
+    for problem_dir in provider_java_root.rglob('*'):
+        if not problem_dir.is_dir():
+            continue
+        if not any(problem_dir.glob('Solution*.java')):
+            continue
+        readme = problem_dir / 'README.md'
+        if not readme.exists():
+            readme.write_text(readme_for(problem_dir))
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--provider', required=True,
+                    choices=['algoexpert', 'codesignal', 'educative'])
+    ap.add_argument('--dry-run', action='store_true',
+                    help='Print planned moves; do not modify the working tree.')
+    args = ap.parse_args()
+    migrate_provider(args.provider, dry_run=args.dry_run)
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
