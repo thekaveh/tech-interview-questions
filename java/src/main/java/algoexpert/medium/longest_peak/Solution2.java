@@ -1,7 +1,7 @@
 package algoexpert.medium.longest_peak;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Scan for peaks, then expand each peak outward.
 class Solution2 {
     public static int longestPeak(int[] A) {
         var R = 0;

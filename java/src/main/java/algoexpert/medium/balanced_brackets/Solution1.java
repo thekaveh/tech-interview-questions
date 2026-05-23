@@ -1,7 +1,7 @@
 package algoexpert.medium.balanced_brackets;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Stack with List membership check.
 class Solution1 {
     private static final List<Character> OPENING_BRACKETS = Arrays.asList('(', '[', '{');
     private static final List<Character> CLOSING_BRACKETS = Arrays.asList(')', ']', '}');

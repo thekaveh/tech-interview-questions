@@ -1,7 +1,7 @@
 package algoexpert.medium.find_successor;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Reverse in-order with early stop at target.
 class Solution3 {
     // This is an input class. Do not edit.
     static class BinaryTree {

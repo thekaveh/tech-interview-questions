@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of non-negative integers, find the maximum sum of a subset of elements such that no two selected elements are adjacent in the original array. The subset may be empty (returning 0).
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Dynamic programming with full DP array | O(n) | O(n) |
+| Solution2 | Dynamic programming with two rolling variables | O(n) | O(1) |

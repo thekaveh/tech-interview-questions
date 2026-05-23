@@ -1,7 +1,7 @@
 package algoexpert.medium.binary_tree_diameter;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS returning (height, diameter) pair.
 class Solution1 {
     // This is an input class. Do not edit.
     static class BinaryTree {

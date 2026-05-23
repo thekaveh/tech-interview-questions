@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an ancestral tree where each node has a parent pointer, a root node, and two target nodes, find and return the youngest (deepest) common ancestor of the two targets. The ancestor is guaranteed to exist since all nodes share the same root.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Compute depths, equalize, then walk up together | O(d) | O(1) |

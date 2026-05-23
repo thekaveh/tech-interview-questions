@@ -1,7 +1,7 @@
 package algoexpert.medium.find_kth_largest_value_in_bst;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Reverse in-order with early stop at k elements.
 class Solution2 {
     // This is an input class. Do not edit.
     static class BST {

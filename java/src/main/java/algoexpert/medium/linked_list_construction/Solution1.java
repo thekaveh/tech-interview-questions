@@ -1,7 +1,7 @@
 package algoexpert.medium.linked_list_construction;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Direct pointer manipulation with remove-before-insert.
 class Solution1 {
     static class DoublyLinkedList {
         public Node head;

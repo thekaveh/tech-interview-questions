@@ -1,7 +1,7 @@
 package algoexpert.medium.majority_element;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bit-level vote: check each of 32 bits.
 class Solution1 {
     public int majorityElement(int[] A) {
         var N = A.length;

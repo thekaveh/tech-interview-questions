@@ -1,7 +1,7 @@
 package algoexpert.medium.bst_construction;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative insert / contains / remove.
 class Solution2 {
     static class BST {
         public int value;

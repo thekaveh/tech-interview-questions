@@ -1,7 +1,7 @@
 package algoexpert.medium.cycle_in_graph;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS wrapped in a class, HashMap-based state.
 class Solution1 {
     public boolean cycleInGraph(int[][] E) {
         return new DFS(E).hasCycle();

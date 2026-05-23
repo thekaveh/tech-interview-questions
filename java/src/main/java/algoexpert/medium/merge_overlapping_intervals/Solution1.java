@@ -1,7 +1,7 @@
 package algoexpert.medium.merge_overlapping_intervals;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: MinPQ sort + pairwise merge with re-offer.
 class Solution1 {
     public int[][] mergeOverlappingIntervals(int[][] intervals) {
         var N = intervals.length;

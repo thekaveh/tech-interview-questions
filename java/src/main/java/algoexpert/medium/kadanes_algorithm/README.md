@@ -1,14 +1,16 @@
-# Kadanes Algorithm
+# Kadane's Algorithm
 
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of integers (which may include negative numbers), find the maximum sum of any contiguous subarray. The array is guaranteed to have at least one element, and the subarray must contain at least one element.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
-| Solution3 | TODO | TODO | TODO |
+| Solution1 | Brute force triple nested loop | O(n³) | O(1) |
+| Solution2 | Kadane's single-pass running max | O(n) | O(1) |
+| Solution3 | Kadane's with two-element array state | O(n) | O(1) |

@@ -1,7 +1,7 @@
 package algoexpert.medium.height_balanced_binary_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Naive recursive: check balance and recompute height separately.
 class Solution1 {
     // This is an input class. Do not edit.
     static class BinaryTree {

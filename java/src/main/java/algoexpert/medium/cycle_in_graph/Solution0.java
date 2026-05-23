@@ -1,7 +1,7 @@
 package algoexpert.medium.cycle_in_graph;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS with boolean visited + recursion-stack arrays.
 class Solution0 {
 	public boolean cycleInGraph(int[][] E) {
 		var N = E.length;

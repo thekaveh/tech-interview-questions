@@ -3,12 +3,14 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of intervals, each represented as a pair `[start, end]`, merge all overlapping intervals and return the resulting array of non-overlapping intervals sorted by start time. Two intervals overlap when one's start is less than or equal to the other's end.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
-| Solution3 | TODO | TODO | TODO |
+| Solution1 | MinPQ sort + pairwise merge with re-offer | O(n log n) | O(n) |
+| Solution2 | MinPQ sort + extend last result interval in place | O(n log n) | O(n) |
+| Solution3 | MinPQ sort + merge by peeking next before polling | O(n log n) | O(n) |

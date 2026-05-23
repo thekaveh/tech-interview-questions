@@ -1,7 +1,7 @@
 package algoexpert.medium.min_heap_construction;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: siftDown / siftUp using out-of-order child/parent index finders.
 class Solution2 {
     static class MinHeap {
         List<Integer> heap = new ArrayList<Integer>();

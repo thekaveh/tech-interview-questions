@@ -3,12 +3,14 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an integer matrix containing positive, negative, and zero values, return the minimum number of passes needed to convert all negatives to positives by multiplying adjacent (up/down/left/right) negative cells by a neighboring positive. Return -1 if it is impossible to eliminate all negatives.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
-| Solution3 | TODO | TODO | TODO |
+| Solution1 | Naive: repeatedly scan for convertible negatives | O((r·c)²) | O(r·c) |
+| Solution2 | Multi-source BFS seeded from all positive cells | O(r·c) | O(r·c) |
+| Solution3 | Multi-source BFS, alternate list/queue form | O(r·c) | O(r·c) |

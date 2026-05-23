@@ -1,7 +1,7 @@
 package algoexpert.medium.cycle_in_graph;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS with Graph class using adjacency HashMap.
 class Solution3 {
     static class Graph {
         int V;

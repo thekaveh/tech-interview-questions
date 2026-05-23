@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a binary tree, determine whether it can be split into two subtrees of equal sum by removing exactly one edge. If such a split is possible, return the target sum (half the total); otherwise return 0. The total sum must be even for a valid split to exist.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | DFS computing subtree sums, flag when half-sum is found | O(n) | O(h) |

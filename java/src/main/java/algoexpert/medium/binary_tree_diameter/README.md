@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a binary tree, return the length of its diameter — the longest path between any two nodes measured in number of edges. The path does not need to pass through the root; it can pass through any node as a turning point.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | DFS returning (height, diameter) pair | O(n) | O(h) |

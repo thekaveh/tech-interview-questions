@@ -1,7 +1,7 @@
 package algoexpert.medium.balanced_brackets;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Stack with String index lookup.
 class Solution2 {
 	private static final String OPENING_BRACKETS = "([{";
 	private static final String CLOSING_BRACKETS = ")]}";

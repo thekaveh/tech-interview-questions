@@ -1,7 +1,7 @@
 package algoexpert.medium.longest_palindromic_substring;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Top-down DP memoization on (lo, hi) substrings.
 class Solution3 {
 	public static String longestPalindromicSubstring(String txt) {
 		var N = txt.length();

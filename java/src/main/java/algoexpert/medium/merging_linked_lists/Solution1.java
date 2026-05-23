@@ -1,7 +1,7 @@
 package algoexpert.medium.merging_linked_lists;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: HashSet of nodes from list A, scan list B.
 class Solution1 {
     // This is an input class. Do not edit.
     public static class LinkedList {

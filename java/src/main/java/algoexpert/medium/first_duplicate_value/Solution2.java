@@ -1,7 +1,7 @@
 package algoexpert.medium.first_duplicate_value;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: In-place sign marking as visited flag.
 class Solution2 {
     public int firstDuplicateValue(int[] A) {
         for(var a : A) {

@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of integers where all values are between 1 and the length of the array (inclusive), return the first value that appears twice when scanning left to right. If no duplicate exists, return -1.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | HashSet membership tracking | O(n) | O(n) |
+| Solution2 | In-place sign marking as visited flag | O(n) | O(1) |

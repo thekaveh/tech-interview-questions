@@ -1,7 +1,7 @@
 package algoexpert.medium.find_successor;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Direct pointer traversal using parent links.
 class Solution4 {
     // This is an input class. Do not edit.
     static class BinaryTree {

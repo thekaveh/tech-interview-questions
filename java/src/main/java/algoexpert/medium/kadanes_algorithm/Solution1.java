@@ -1,7 +1,7 @@
 package algoexpert.medium.kadanes_algorithm;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Brute force triple nested loop.
 class Solution1 {
     public static int kadanesAlgorithm(int[] A) {
         var N = A.length;

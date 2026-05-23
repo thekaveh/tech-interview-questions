@@ -1,7 +1,7 @@
 package algoexpert.medium.levenshtein_distance;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Top-down recursion with 2-D memoization (shrinking suffixes).
 class Solution1 {
 	// T: O(A * B) | S: O(A * B)
 	public static int levenshteinDistance(String strA, String strB) {

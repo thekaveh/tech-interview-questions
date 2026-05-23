@@ -1,7 +1,7 @@
 package algoexpert.medium.longest_palindromic_substring;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Expand around each center (odd and even).
 class Solution2 {
 	public static String longestPalindromicSubstring(String txt) {
 		var N = txt.length();

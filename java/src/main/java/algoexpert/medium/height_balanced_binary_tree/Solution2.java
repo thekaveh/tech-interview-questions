@@ -1,7 +1,7 @@
 package algoexpert.medium.height_balanced_binary_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Single-pass DFS with TreeInfo record (height + balanced flag).
 class Solution2 {
     // This is an input class. Do not edit.
     static class BinaryTree {

@@ -1,7 +1,7 @@
 package algoexpert.medium.merge_binary_trees;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive merge reusing existing nodes when one is null.
 class Solution2 {
     // This is an input class. Do not edit.
     static class BinaryTree {

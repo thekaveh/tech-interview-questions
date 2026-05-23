@@ -1,7 +1,7 @@
 package algoexpert.medium.colliding_asteroids;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Stack-based collision simulation.
 class Solution1 {
 	public int[] collidingAsteroids(int[] asteroids) {
 		var S = new Stack<Integer>();

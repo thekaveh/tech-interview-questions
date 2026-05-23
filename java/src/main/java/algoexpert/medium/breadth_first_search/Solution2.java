@@ -1,7 +1,7 @@
 package algoexpert.medium.breadth_first_search;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: BFS with LinkedList Queue.
 class Solution2 {
     // Do not edit the class below except
     // for the breadthFirstSearch method.

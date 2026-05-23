@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a list of integers and a target value `v`, move all occurrences of `v` to the end of the list without changing the relative order of the other elements. The operation must be done in place and should return the modified list.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Two-pointer swap (front and tail) | O(n) | O(1) |

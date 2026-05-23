@@ -1,7 +1,7 @@
 package algoexpert.medium.blackjack_probability;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Top-down recursion with memoization.
 class Solution1 {
     public float blackjackProbability(int target, int startingHand) {
         var M = new HashMap<Integer, Float>();

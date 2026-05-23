@@ -1,7 +1,7 @@
 package algoexpert.medium.kadanes_algorithm;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Kadane's with two-element array state.
 class Solution3 {
 	public static int kadanesAlgorithm(int[] A) {
 		var N = A.length;

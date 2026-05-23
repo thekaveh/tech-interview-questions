@@ -1,7 +1,7 @@
 package algoexpert.medium.array_of_products;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Left-pass then right-pass, fill-initialized.
 class Solution2 {
     public int[] arrayOfProducts(int[] A) {
         var N = A.length;

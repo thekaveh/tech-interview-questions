@@ -1,7 +1,7 @@
 package algoexpert.medium.best_seat;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Linear scan of contiguous gaps.
 class Solution1 {
     public int bestSeat(int[] A) {
         var N = A.length;

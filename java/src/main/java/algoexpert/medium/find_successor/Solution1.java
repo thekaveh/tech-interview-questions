@@ -1,7 +1,7 @@
 package algoexpert.medium.find_successor;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Full in-order into queue, scan for node.
 class Solution1 {
     // This is an input class. Do not edit.
     static class BinaryTree {

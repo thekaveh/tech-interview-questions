@@ -1,7 +1,7 @@
 package algoexpert.medium.invert_binary_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative BFS level-order swap.
 class Solution2 {
     public static void invertBinaryTree(BinaryTree tree) {
         Queue<BinaryTree> Q = new LinkedList<>();

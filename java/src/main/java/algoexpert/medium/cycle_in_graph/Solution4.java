@@ -1,7 +1,7 @@
 package algoexpert.medium.cycle_in_graph;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS with Graph class and keyset iteration.
 class Solution4 {
     public boolean cycleInGraph(int[][] edges) {
         return new DFS(new Graph(edges)).hasCycle();

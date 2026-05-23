@@ -1,7 +1,7 @@
 package algoexpert.medium.group_anagrams;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort each word as map key.
 class Solution1 {
     // O(W * N * log(N)) time | O(W * N) space
     public static List<List<String>> groupAnagrams(List<String> words) {

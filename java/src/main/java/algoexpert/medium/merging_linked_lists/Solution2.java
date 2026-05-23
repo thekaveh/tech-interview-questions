@@ -1,7 +1,7 @@
 package algoexpert.medium.merging_linked_lists;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Length-equalize pointers then advance in tandem.
 class Solution2 {
     // This is an input class. Do not edit.
     public static class LinkedList {

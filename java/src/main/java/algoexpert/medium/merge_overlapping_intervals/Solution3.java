@@ -1,7 +1,7 @@
 package algoexpert.medium.merge_overlapping_intervals;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: MinPQ sort + merge by peeking next before polling.
 class Solution3 {
     public int[][] mergeOverlappingIntervals(int[][] intervals) {
         var R = new ArrayList<int[]>();

@@ -1,7 +1,7 @@
 package algoexpert.medium.invert_binary_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive post-order swap.
 class Solution1 {
     public static void invertBinaryTree(BinaryTree tree) {
         if(tree == null) { return; }

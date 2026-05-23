@@ -1,7 +1,7 @@
 package algoexpert.medium.cycle_in_graph;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS with Graph/DFS classes, boolean arrays.
 class Solution2 {
     static class Graph {
         private int[][] E;

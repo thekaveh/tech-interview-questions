@@ -1,7 +1,7 @@
 package algoexpert.medium.find_successor;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Reverse in-order into stack, pop to find node.
 class Solution2 {
     // This is an input class. Do not edit.
     static class BinaryTree {

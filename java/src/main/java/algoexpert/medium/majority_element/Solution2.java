@@ -1,7 +1,7 @@
 package algoexpert.medium.majority_element;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Boyer-Moore voting algorithm.
 class Solution2 {
     public int majorityElement(int[] A) {
         var n = 0;

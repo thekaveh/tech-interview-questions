@@ -1,7 +1,7 @@
 package algoexpert.medium.best_digits;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Monotone decreasing stack.
 class Solution1 {
     public String bestDigits(String number, int numDigits) {
         var S = new LinkedList<Character>();

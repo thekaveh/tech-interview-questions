@@ -1,7 +1,7 @@
 package algoexpert.medium.longest_peak;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Brute force: enumerate all (lo, tip, hi) triples.
 class Solution1 {
 	public static int longestPeak(int[] A) {
 		var R = 0;

@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of string tokens representing an arithmetic expression in Reverse Polish Notation (postfix), evaluate and return the integer result. Tokens are either integer operands or operators (+, -, *, /); integer division truncates toward zero.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Stack-based postfix evaluation | O(n) | O(n) |

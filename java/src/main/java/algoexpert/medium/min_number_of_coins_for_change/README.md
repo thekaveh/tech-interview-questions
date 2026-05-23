@@ -3,12 +3,14 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a target amount `n` and an array of coin denominations, return the minimum number of coins needed to make exact change for `n`. You may use each denomination an unlimited number of times; return -1 if no combination can produce the exact amount.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
-| Solution3 | TODO | TODO | TODO |
+| Solution1 | Naive recursion (include/exclude each denomination) | O(2^(n+d)) | O(n + d) |
+| Solution2 | Top-down recursion with 2-D memoization | O(n · d) | O(n · d) |
+| Solution3 | Bottom-up DP table | O(n · d) | O(n · d) |

@@ -1,7 +1,7 @@
 package algoexpert.medium.bst_traversal;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive traversal with null guard.
 class Solution1 {
     public static List<Integer> inOrderTraverse(BST tree, List<Integer> Q) {
         if(tree == null) { return Q; }

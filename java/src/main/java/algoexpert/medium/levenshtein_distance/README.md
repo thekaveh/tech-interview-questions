@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given two strings, compute the minimum number of single-character edits (insertions, deletions, or substitutions) required to transform one string into the other. This is the classic edit distance (Levenshtein distance) problem.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Top-down recursion with 2-D memoization (shrinking suffixes) | O(a · b) | O(a · b) |
+| Solution2 | Bottom-up DP table (growing prefixes) | O(a · b) | O(a · b) |

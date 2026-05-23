@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an n×m matrix where each row and each column is sorted in ascending order, and a target value, return the [row, col] position of the target. Return [-1, -1] if the target is not present.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Row-by-row linear scan with early break | O(n·m) | O(1) |
+| Solution2 | Start top-right, eliminate row or column each step | O(n + m) | O(1) |

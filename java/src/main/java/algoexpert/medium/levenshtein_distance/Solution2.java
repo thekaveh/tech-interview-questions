@@ -1,7 +1,7 @@
 package algoexpert.medium.levenshtein_distance;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bottom-up DP table (growing prefixes).
 class Solution2 {
 	public static int levenshteinDistance(String strA, String strB) {
 		var A = strA.length();

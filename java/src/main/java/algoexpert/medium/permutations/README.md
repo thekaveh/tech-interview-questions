@@ -3,12 +3,14 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-medium-yellow)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a list of unique integers, generate and return all permutations of those integers. Every possible ordering of all elements must appear exactly once in the output; the order of the permutations themselves does not matter.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
-| Solution3 | TODO | TODO | TODO |
+| Solution1 | Iterative insertion into each position of growing permutations | O(n · n!) | O(n · n!) |
+| Solution2 | Backtracking: pick-and-remove each element | O(n · n!) | O(n · n!) |
+| Solution3 | Backtracking: in-place swap at each position | O(n · n!) | O(n · n!) |

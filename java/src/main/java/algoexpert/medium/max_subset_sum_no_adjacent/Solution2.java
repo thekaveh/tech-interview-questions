@@ -1,7 +1,7 @@
 package algoexpert.medium.max_subset_sum_no_adjacent;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Dynamic programming with two rolling variables.
 class Solution2 {
 	public static int maxSubsetSumNoAdjacent(int[] A) {
 		var N = A.length;
