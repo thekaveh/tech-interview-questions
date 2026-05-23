@@ -290,10 +290,68 @@ class TestSolutionNumber(unittest.TestCase):
         self.assertEqual(solution_number('Solution12.java'), 12)
 
 
+ALGOEXPERT_CLASS_PROGRAM_INPUT = """import java.util.*;
+
+class Program {
+    public boolean generateDocument(String chars, String doc) {
+        return true;
+    }
+}
+"""
+
+ALGOEXPERT_CLASS_PROGRAM_EXPECTED = """package algoexpert.easy.generate_document;
+import java.util.*;
+
+// Approach: TODO.
+class Solution2 {
+    public boolean generateDocument(String chars, String doc) {
+        return true;
+    }
+}
+"""
+
+
+ALGOEXPERT_MISMATCHED_NUMBER_INPUT = """import java.util.*;
+
+class Solution2 {
+    public int[] missingNumbers(int[] A) {
+        return new int[0];
+    }
+}
+"""
+
+ALGOEXPERT_MISMATCHED_NUMBER_EXPECTED = """package algoexpert.medium.missing_numbers;
+import java.util.*;
+
+// Approach: TODO.
+class Solution3 {
+    public int[] missingNumbers(int[] A) {
+        return new int[0];
+    }
+}
+"""
+
+
 class TestTransformAlgoexpert(unittest.TestCase):
     def test_prepends_package_and_approach_line(self):
-        out = transform_algoexpert(ALGOEXPERT_INPUT, 'algoexpert.easy.two_number_sum')
+        out = transform_algoexpert(ALGOEXPERT_INPUT, 'algoexpert.easy.two_number_sum', 1)
         self.assertEqual(out, ALGOEXPERT_EXPECTED)
+
+    def test_renames_class_program_to_solution_n(self):
+        out = transform_algoexpert(
+            ALGOEXPERT_CLASS_PROGRAM_INPUT,
+            'algoexpert.easy.generate_document',
+            2,
+        )
+        self.assertEqual(out, ALGOEXPERT_CLASS_PROGRAM_EXPECTED)
+
+    def test_fixes_mismatched_class_number(self):
+        out = transform_algoexpert(
+            ALGOEXPERT_MISMATCHED_NUMBER_INPUT,
+            'algoexpert.medium.missing_numbers',
+            3,
+        )
+        self.assertEqual(out, ALGOEXPERT_MISMATCHED_NUMBER_EXPECTED)
 
 
 class TestTransformCodesignal(unittest.TestCase):

@@ -183,20 +183,46 @@ def solution_number(fname: str) -> int:
     return int(m.group(1))
 
 
-def transform_algoexpert(content: str, package: str) -> str:
-    """AlgoExpert: prepend `package`; insert Approach line above the class.
+def transform_algoexpert(content: str, package: str, sol_num: int) -> str:
+    """AlgoExpert: prepend `package`, ensure `import java.util.*;`, rename
+    whatever top-level class name the file currently has to Solution{N},
+    and insert the Approach line above it.
 
-    AlgoExpert files reliably start with `import java.util.*;` and contain
-    `class SolutionN { ... }`. No class rename or import injection needed.
+    The original-tree class names are inconsistent: most use `class
+    SolutionN`, but a substantial minority use `class Program`, mismatch
+    the filename's number (e.g. `class Solution2` inside Solution3.java),
+    or contain manual-edit corruption (`class ProgSolution2ram`). The
+    rename normalizes all of these to the filename-derived `Solution{N}`.
     """
-    body = content
+    return _transform_simple(content, package, sol_num)
+
+
+def _transform_simple(content: str, package: str, sol_num: int) -> str:
+    """Shared transform for AlgoExpert and Educative files.
+
+    Both providers have files that already contain a class declaration
+    (with varying names) and need: package prepended, java.util.* ensured,
+    class renamed to Solution{N}, and an Approach placeholder inserted.
+    """
+    imports, body = _split_imports(content)
+    imports = _ensure_java_util_import(imports)
+    body = body.rstrip() + '\n'
+
     body = re.sub(
-        r'(\nclass Solution\d+ \{)',
-        f'\n{APPROACH_LINE}\\1',
+        r'^class [A-Za-z_]\w*\s*\{',
+        f'class Solution{sol_num} {{',
         body,
         count=1,
+        flags=re.MULTILINE,
     )
-    return f'package {package};\n{body}'
+
+    imports_block = '\n'.join(imports)
+    return (
+        f'package {package};\n'
+        f'{imports_block}\n\n'
+        f'{APPROACH_LINE}\n'
+        f'{body}'
+    )
 
 
 def _split_imports(content: str) -> tuple[list[str], str]:
@@ -279,25 +305,7 @@ def transform_codesignal(content: str, package: str, sol_num: int) -> str:
 def transform_educative(content: str, package: str, sol_num: int) -> str:
     """Educative: prepend package, ensure `import java.util.*;`, rename the
     problem-specific class to SolutionN, insert Approach line."""
-    imports, body = _split_imports(content)
-    imports = _ensure_java_util_import(imports)
-    body = body.rstrip() + '\n'
-
-    body = re.sub(
-        r'^class [A-Za-z_]\w*\s*\{',
-        f'class Solution{sol_num} {{',
-        body,
-        count=1,
-        flags=re.MULTILINE,
-    )
-
-    imports_block = '\n'.join(imports)
-    return (
-        f'package {package};\n'
-        f'{imports_block}\n\n'
-        f'{APPROACH_LINE}\n'
-        f'{body}'
-    )
+    return _transform_simple(content, package, sol_num)
 
 
 # --- Orchestrator ----------------------------------------------------
@@ -311,7 +319,7 @@ PROVIDER_ROOTS = {
 
 def _transform_for(provider: str, content: str, package: str, sol_num: int) -> str:
     if provider == 'algoexpert':
-        return transform_algoexpert(content, package)
+        return transform_algoexpert(content, package, sol_num)
     if provider == 'codesignal':
         return transform_codesignal(content, package, sol_num)
     if provider == 'educative':
