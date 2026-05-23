@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an absolute or relative Unix-style file path, simplify it by resolving `.` (current directory) and `..` (parent directory) tokens. Return the shortest equivalent path, preserving whether it is absolute or relative.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Stack-based token processing | O(n) | O(n) |

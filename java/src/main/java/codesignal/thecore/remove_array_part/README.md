@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array and two indices lo and hi (inclusive), remove all elements between those indices and return the shortened array with the remaining elements preserving their original order.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Manually copy elements before lo and after hi into a new array | O(n) | O(n) |
+| Solution2 | IntStream filter keeping only indices outside [lo, hi] | O(n) | O(n) |

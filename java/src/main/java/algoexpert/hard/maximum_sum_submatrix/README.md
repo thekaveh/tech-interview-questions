@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an integer matrix and a side length `size`, find the contiguous square sub-matrix of that size whose elements have the greatest sum. Return that sum.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Brute force sliding window over all positions | O(r·c·size²) | O(1) |
+| Solution2 | 2-D prefix sums for O(1) sub-matrix queries | O(r·c) | O(r·c) |

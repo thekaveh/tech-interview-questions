@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a weighted undirected graph, find its minimum spanning tree using Kruskal's algorithm. Return the MST as an adjacency list with the same format as the input, containing only the edges selected for the tree.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Sort edges + Union-Find (via Map.entry) | O(E log E) | O(V+E) |
+| Solution2 | Sort edges + Union-Find (flattened edge list) | O(E log E) | O(V+E) |

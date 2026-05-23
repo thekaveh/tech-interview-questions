@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given three integers where two of them are equal and one is unique, return the unique (extra) number.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Conditional equality checks to identify the odd one out | O(1) | O(1) |
+| Solution2 | XOR of all three values; the pair cancels leaving the unique number | O(1) | O(1) |

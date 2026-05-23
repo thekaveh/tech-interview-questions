@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of non-negative integers and a target sum S, find the longest contiguous subarray whose elements sum to exactly S. Return the start and end indices of that subarray, or an empty array if none exists.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Sliding window with shrink-on-exceed | O(n) | O(1) |

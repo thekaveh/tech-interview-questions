@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** Educative
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of characters representing fruit trees in a row, find the length of the longest contiguous subarray containing at most 2 distinct fruit types. You can only carry 2 baskets and each basket holds one type of fruit.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Variable-size sliding window with a HashSet shrinking left when distinct count exceeds 2 | O(n) | O(1) |
+| Solution2 | Variable-size sliding window with a frequency map shrinking left and removing zero-count entries | O(n) | O(1) |

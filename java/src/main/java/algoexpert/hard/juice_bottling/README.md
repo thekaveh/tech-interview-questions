@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array `prices` where `prices[i]` is the revenue for a bottle of exactly `i` units of juice, find the sizes of bottles you should fill to maximize total revenue when starting with `prices.length - 1` units. Return the chosen bottle sizes (order does not matter).
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Bottom-up DP with split backtracking | O(n²) | O(n) |

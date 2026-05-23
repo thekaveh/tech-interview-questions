@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a positive integer N, create and return an array of length N where every element is 1.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Allocate array and fill with Arrays.fill | O(n) | O(n) |

@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a 2D board of characters and a list of words, find all words from the list that can be formed by tracing a path through adjacent (including diagonal) cells on the board. Each cell may be used at most once per word. Return the list of found words.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Trie + backtracking DFS | O(w·m + r·c·8^m) | O(w·m + r·c) |

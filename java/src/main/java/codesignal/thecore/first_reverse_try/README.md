@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array, swap only the first and last elements and return the result. All other elements remain in their original positions.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Single swap of indices 0 and N-1 using a temp variable | O(1) | O(1) |

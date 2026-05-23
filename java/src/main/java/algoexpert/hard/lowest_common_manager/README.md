@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an organizational hierarchy (a tree of OrgChart nodes), and two employee nodes, find the lowest-level manager who directly or indirectly manages both employees. The top manager is always an ancestor of both.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Post-order DFS counting descendants found | O(n) | O(d) |
+| Solution2 | BFS parent map + depth-based LCA | O(n) | O(n) |

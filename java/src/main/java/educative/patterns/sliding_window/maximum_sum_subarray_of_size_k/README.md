@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** Educative
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of integers and a positive integer k, find the maximum sum of any contiguous subarray of exactly k elements.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Fixed-size sliding window maintaining a running sum, sliding by subtracting the element leaving the window | O(n) | O(1) |

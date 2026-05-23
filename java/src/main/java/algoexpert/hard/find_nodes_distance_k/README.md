@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a binary tree, a target node value, and an integer k, return all node values that are exactly k edges away from the target node. Movement can go through parent or child edges.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Parent-map DFS + BFS level-order | O(n) | O(n) |

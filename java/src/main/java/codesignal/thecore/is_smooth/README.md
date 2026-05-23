@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+An array is "smooth" if its first and last elements are equal, and the middle element (or the sum of the two middle elements for even-length arrays) also equals the first element. Determine whether a given array is smooth.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Direct index checks on first, last, and middle element(s) | O(1) | O(1) |

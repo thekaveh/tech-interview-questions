@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a list of points (x, y) in a 2D plane, count the total number of squares that can be formed using any four of those points as vertices. Squares may be axis-aligned or rotated at any angle.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Point-set lookup with perpendicular midpoint | O(n²) | O(n) |

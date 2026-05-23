@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-very--hard-red)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given a binary tree, transform it in-place so that each node's right pointer points to its right sibling at the same level (the next node to its right on the same depth). Nodes with no right sibling should have their right pointer set to null. Return the root.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | BFS level-order traversal with null sentinels | O(n) | O(n) |

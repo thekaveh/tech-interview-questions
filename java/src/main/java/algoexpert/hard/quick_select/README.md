@@ -3,12 +3,14 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of distinct integers and a position k (1-indexed), find the k-th smallest element without fully sorting the array. The solution should be efficient on average by using a partitioning strategy.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
-| Solution3 | TODO | TODO | TODO |
+| Solution1 | 3-way partition quickselect (iterative) | O(n) avg, O(n²) worst | O(1) |
+| Solution2 | 3-way partition quickselect (recursive) | O(n) avg, O(n²) worst | O(log n) avg |
+| Solution3 | 3-way partition quickselect (iterative, while-true) | O(n) avg, O(n²) worst | O(1) |

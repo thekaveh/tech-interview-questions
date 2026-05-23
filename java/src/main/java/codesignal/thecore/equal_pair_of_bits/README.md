@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given two integers n and m, find the position value of the rightmost bit where they are equal (both 0 or both 1). Return the power of two corresponding to that bit position.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Bitwise: lowest set bit of NOT(n XOR m) using complement and AND | O(1) | O(1) |
+| Solution2 | Integer.lowestOneBit applied to bitwise NOT of (n XOR m) | O(1) | O(1) |

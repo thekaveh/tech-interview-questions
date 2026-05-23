@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+A loop starts at value a and increments by 2 on each step. Determine whether the loop will ever reach value b exactly — it cannot if a > b or if the step size of 2 means the parity of a and b differs.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Check: loop is infinite if a > b or (b − a) is odd | O(1) | O(1) |

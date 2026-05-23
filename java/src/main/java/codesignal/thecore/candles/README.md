@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+You start with a supply of candles that can be burned down completely. Once you accumulate makeNew spent stubs, you can recycle them into one new candle. Given the initial count and the recycling threshold, return the total number of candles you will ever burn.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Simulation loop tracking stubs and accumulating total burned | O(log n) | O(1) |
+| Solution2 | Closed-form: initial + floor((initial − 1) / (makeNew − 1)) | O(1) | O(1) |

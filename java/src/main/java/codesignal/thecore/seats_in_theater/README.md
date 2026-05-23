@@ -3,10 +3,12 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+In a theater with nCols columns and nRows rows, you are sitting at position (col, row). Count how many seats have a worse (further back and further right) view than yours — those in higher-numbered rows and higher-numbered columns.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
+| Solution1 | Formula: (nCols − col + 1) * (nRows − row) | O(1) | O(1) |

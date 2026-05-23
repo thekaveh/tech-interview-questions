@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an array of distinct integers, return how many numbers you would need to add so that the array forms a consecutive sequence from its minimum to its maximum value.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Sort then sum the gaps between adjacent elements | O(n log n) | O(1) |
+| Solution2 | Sort then return (max − min + 1 − n) directly | O(n log n) | O(1) |

@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-easy-yellowgreen)
 **Source:** CodeSignal
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Given an integer array and two values fromElem and toElem, replace every occurrence of fromElem in the array with toElem and return the modified array.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | In-place linear scan with conditional assignment | O(n) | O(1) |
+| Solution2 | Stream map replacing matching elements, collecting to new array | O(n) | O(n) |
