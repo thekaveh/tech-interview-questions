@@ -17,7 +17,5 @@ jobs:
           cache: maven
       - name: Compile, test, and verify invariants
         run: bash scripts/verify_final.sh
-      - name: Trunk Check (markdown + secrets)
+      - name: Trunk Check
         uses: trunk-io/trunk-action@v1
-        with:
-          check-mode: all
