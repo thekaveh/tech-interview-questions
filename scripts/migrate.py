@@ -146,3 +146,132 @@ def readme_for(problem_dir: Path) -> str:
         '|---|---|---|---|\n'
         f'{rows}\n'
     )
+
+
+# --- Source file transforms ------------------------------------------
+
+APPROACH_LINE = '// Approach: TODO.'
+
+
+def solution_number(fname: str) -> int:
+    m = re.fullmatch(r'Solution(\d+)\.java', fname)
+    if not m:
+        raise ValueError(f'unexpected filename: {fname}')
+    return int(m.group(1))
+
+
+def transform_algoexpert(content: str, package: str) -> str:
+    """AlgoExpert: prepend `package`; insert Approach line above the class.
+
+    AlgoExpert files reliably start with `import java.util.*;` and contain
+    `class SolutionN { ... }`. No class rename or import injection needed.
+    """
+    body = content
+    body = re.sub(
+        r'(\nclass Solution\d+ \{)',
+        f'\n{APPROACH_LINE}\\1',
+        body,
+        count=1,
+    )
+    return f'package {package};\n{body}'
+
+
+def _split_imports(content: str) -> tuple[list[str], str]:
+    """Strip leading import lines from content. Return (imports, rest).
+
+    Blank lines between/after imports are dropped. The first non-blank,
+    non-import line marks the start of `rest`.
+    """
+    lines = content.split('\n')
+    imports: list[str] = []
+    i = 0
+    while i < len(lines):
+        s = lines[i].strip()
+        if s.startswith('import '):
+            imports.append(lines[i])
+            i += 1
+        elif s == '':
+            i += 1
+            continue
+        else:
+            break
+    rest = '\n'.join(lines[i:])
+    return imports, rest
+
+
+def _ensure_java_util_import(imports: list[str]) -> list[str]:
+    if any('java.util.*' in imp for imp in imports):
+        return imports
+    return imports + ['import java.util.*;']
+
+
+def transform_codesignal(content: str, package: str, sol_num: int) -> str:
+    """CodeSignal files come in two shapes:
+       (a) bare function at top level: `int solution(...) { ... }`
+       (b) already wrapped: `class Solution { int solution(...) {...} }`
+    Some have imports; some have the class-name typo `SOlution`."""
+    imports, body = _split_imports(content)
+    imports = _ensure_java_util_import(imports)
+    body = body.rstrip() + '\n'
+
+    has_class = bool(re.search(r'^class [A-Za-z_]\w*\s*\{', body, re.MULTILINE))
+    if has_class:
+        body = re.sub(
+            r'^class [A-Za-z_]\w*\s*\{',
+            f'class Solution{sol_num} {{',
+            body,
+            count=1,
+            flags=re.MULTILINE,
+        )
+        body = re.sub(
+            r'^(    )(?!static\b)(?!public\s+static\b)'
+            r'((?:public\s+|private\s+|protected\s+)?'
+            r'[A-Za-z_][\w\[\]<>]*\s+[A-Za-z_]\w*\s*\()',
+            r'\1static \2',
+            body,
+            count=1,
+            flags=re.MULTILINE,
+        )
+        new_body = body
+    else:
+        indented = '\n'.join(('    ' + ln) if ln else ln
+                             for ln in body.rstrip('\n').split('\n'))
+        indented = re.sub(
+            r'^(    )(?!static\b)([A-Za-z_][\w\[\]<>]*\s+[A-Za-z_]\w*\s*\()',
+            r'\1static \2',
+            indented,
+            count=1,
+        )
+        new_body = f'class Solution{sol_num} {{\n{indented}\n}}\n'
+
+    imports_block = '\n'.join(imports)
+    return (
+        f'package {package};\n'
+        f'{imports_block}\n\n'
+        f'{APPROACH_LINE}\n'
+        f'{new_body}'
+    )
+
+
+def transform_educative(content: str, package: str, sol_num: int) -> str:
+    """Educative: prepend package, ensure `import java.util.*;`, rename the
+    problem-specific class to SolutionN, insert Approach line."""
+    imports, body = _split_imports(content)
+    imports = _ensure_java_util_import(imports)
+    body = body.rstrip() + '\n'
+
+    body = re.sub(
+        r'^class [A-Za-z_]\w*\s*\{',
+        f'class Solution{sol_num} {{',
+        body,
+        count=1,
+        flags=re.MULTILINE,
+    )
+
+    imports_block = '\n'.join(imports)
+    return (
+        f'package {package};\n'
+        f'{imports_block}\n\n'
+        f'{APPROACH_LINE}\n'
+        f'{body}'
+    )
