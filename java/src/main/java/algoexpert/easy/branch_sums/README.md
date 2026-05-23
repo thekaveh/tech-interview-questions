@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+A binary tree is provided; compute the sum of node values along every root-to-leaf path and return those sums as a list ordered from leftmost to rightmost branch. Each path starts at the root and ends at a leaf node. The tree may be unbalanced, and each node holds a single integer value.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Recursive DFS, isLeaf helper | O(n) | O(n) |
+| Solution2 | Recursive DFS, inline leaf check | O(n) | O(n) |

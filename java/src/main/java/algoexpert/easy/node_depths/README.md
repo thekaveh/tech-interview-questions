@@ -3,13 +3,15 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+A binary tree is provided; compute the sum of the depths of every node, where depth is defined as the distance (in edges) from the root. The root has depth 0, its children depth 1, and so on. Return the total as a single integer.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
-| Solution3 | TODO | TODO | TODO |
-| Solution4 | TODO | TODO | TODO |
+| Solution1 | BFS level-order, accumulate depth per level | O(n) | O(n) |
+| Solution2 | Recursive DFS, pass depth down | O(n) | O(h) |
+| Solution3 | Iterative DFS, custom Pair node+depth | O(n) | O(n) |
+| Solution4 | Iterative DFS, Map.Entry node+depth | O(n) | O(n) |

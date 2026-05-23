@@ -3,11 +3,13 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+Sort an integer array in ascending order in-place using insertion sort and return it. Each element is shifted left until it reaches its correct position among the already-sorted prefix. The array may contain duplicate or negative values.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
+| Solution1 | Insertion sort, break on sorted | O(n²) | O(1) |
+| Solution2 | Insertion sort, condition in loop head | O(n²) | O(1) |

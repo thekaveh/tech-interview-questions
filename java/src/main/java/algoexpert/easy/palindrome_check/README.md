@@ -3,12 +3,14 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+A string is provided; determine whether it reads the same forwards and backwards and return a boolean result. Only the exact character sequence matters — no case normalization or punctuation stripping is applied. An empty string or a single character is considered a palindrome.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
-| Solution3 | TODO | TODO | TODO |
+| Solution1 | Two-pointer from edges inward | O(n) | O(1) |
+| Solution2 | Two-pointer, simultaneous advance | O(n) | O(1) |
+| Solution3 | Recursive two-pointer | O(n) | O(n) |

@@ -3,12 +3,14 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+An array of distinct integers and a target sum are provided; find the two numbers that add up to the target and return them as a two-element array, or return an empty array if no such pair exists. Each number may only be used once. Negative integers may appear in the input.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
-| Solution3 | TODO | TODO | TODO |
+| Solution1 | Brute force nested loop | O(n²) | O(1) |
+| Solution2 | Sort + binary search for complement | O(n log n) | O(1) |
+| Solution3 | Sort + two pointers | O(n log n) | O(1) |

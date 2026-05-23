@@ -3,12 +3,14 @@
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** AlgoExpert
 
-<!-- TODO: paraphrase the problem in your own words. -->
+## 1. Problem
 
-**Solutions**
+A main sequence array and a candidate subsequence array are provided; determine whether every element of the subsequence appears in the main sequence in the same relative order (not necessarily contiguously) and return a boolean. Elements are matched by value and the subsequence pointer advances only on a match. The subsequence may be longer than the main sequence, in which case the answer is false.
+
+## 2. Solutions
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution1 | TODO | TODO | TODO |
-| Solution2 | TODO | TODO | TODO |
-| Solution3 | TODO | TODO | TODO |
+| Solution1 | Single pass, subsequence pointer j | O(n) | O(1) |
+| Solution2 | Single pass, dual index for-loop | O(n) | O(1) |
+| Solution3 | Single pass while-loop, index i and j | O(n) | O(1) |
