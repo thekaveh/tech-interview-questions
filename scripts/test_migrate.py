@@ -19,6 +19,9 @@ class TestPathTransforms(unittest.TestCase):
         self.assertEqual(problem_to_snake('isDigit'), 'is_digit')
         self.assertEqual(problem_to_snake('two-number-sum'), 'two_number_sum')
 
+    def test_problem_to_snake_handles_a_star_algorithm(self):
+        self.assertEqual(problem_to_snake('a*-algorithm'), 'a_star_algorithm')
+
     def test_new_path_algoexpert(self):
         src = REPO / 'algoexpert.io' / 'easy' / 'two-number-sum' / 'Solution1.java'
         dest = new_path_for(src)

@@ -31,6 +31,7 @@ CODESIGNAL_SECTION = {
 
 SPECIAL_PROBLEM_RENAMES = {
     'isDigit': 'is_digit',
+    'a*-algorithm': 'a_star_algorithm',
 }
 
 
