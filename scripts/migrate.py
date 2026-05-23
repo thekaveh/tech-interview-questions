@@ -55,17 +55,29 @@ def new_path_for(src: Path) -> Path | None:
     if not parts:
         return None
     if parts[0] == 'algoexpert.io':
+        if len(parts) != 4:
+            return None
         _, tier, problem, fname = parts
-        return (JAVA_ROOT / 'algoexpert' / ALGOEXPERT_TIER[tier]
+        mapped_tier = ALGOEXPERT_TIER.get(tier)
+        if mapped_tier is None:
+            return None
+        return (JAVA_ROOT / 'algoexpert' / mapped_tier
                 / problem_to_snake(problem) / fname)
     if parts[0] == 'codesignal.com':
+        if len(parts) != 4:
+            return None
         _, section, problem, fname = parts
+        mapped_section = CODESIGNAL_SECTION.get(section)
+        if mapped_section is None:
+            return None
         m = re.fullmatch(r'solution-(\d+)\.java', fname)
         if m:
             fname = f'Solution{m.group(1)}.java'
-        return (JAVA_ROOT / 'codesignal' / CODESIGNAL_SECTION[section]
+        return (JAVA_ROOT / 'codesignal' / mapped_section
                 / problem_to_snake(problem) / fname)
     if parts[0] == 'educative.io':
+        if len(parts) != 5:
+            return None
         _, _, pattern, problem, fname = parts
         return (JAVA_ROOT / 'educative' / 'patterns'
                 / problem_to_snake(pattern) / problem_to_snake(problem)
@@ -112,7 +124,14 @@ def readme_for(problem_dir: Path) -> str:
     difficulty, color = DIFFICULTY_DEFAULT[(provider, tier_key)]
     source = SOURCE_LABEL[provider]
 
-    sol_files = sorted(f.name for f in problem_dir.glob('Solution*.java'))
+    def _solution_index(name: str) -> int:
+        m = re.search(r'\d+', name)
+        return int(m.group()) if m else 0
+
+    sol_files = sorted(
+        (f.name for f in problem_dir.glob('Solution*.java')),
+        key=_solution_index,
+    )
     rows = '\n'.join(
         f'| {f.replace(".java", "")} | TODO | TODO | TODO |' for f in sol_files
     ) or '| Solution1 | TODO | TODO | TODO |'

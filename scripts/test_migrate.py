@@ -1,5 +1,8 @@
+import tempfile
 import unittest
 from pathlib import Path
+
+import migrate
 from migrate import (
     kebab_to_snake, problem_to_snake, new_path_for, package_for,
     title_from_problem, readme_for, REPO, JAVA_ROOT,
@@ -75,15 +78,12 @@ class TestReadmeGenerator(unittest.TestCase):
         self.assertEqual(title_from_problem('two_number_sum'), 'Two Number Sum')
         self.assertEqual(title_from_problem('is_digit'), 'Is Digit')
 
-    def test_readme_for_algoexpert_easy(self, tmp_root=None):
-        import tempfile, os
+    def test_readme_for_algoexpert_easy(self):
         with tempfile.TemporaryDirectory() as tmp:
             problem_dir = Path(tmp) / 'java' / 'src' / 'main' / 'java' / 'algoexpert' / 'easy' / 'two_number_sum'
             problem_dir.mkdir(parents=True)
             (problem_dir / 'Solution1.java').write_text('')
             (problem_dir / 'Solution2.java').write_text('')
-            # patch JAVA_ROOT for the test
-            import migrate
             original = migrate.JAVA_ROOT
             migrate.JAVA_ROOT = Path(tmp) / 'java' / 'src' / 'main' / 'java'
             try:
@@ -95,6 +95,26 @@ class TestReadmeGenerator(unittest.TestCase):
         self.assertIn('**Source:** AlgoExpert', out)
         self.assertIn('| Solution1 | TODO | TODO | TODO |', out)
         self.assertIn('| Solution2 | TODO | TODO | TODO |', out)
+
+    def test_readme_solution_files_sorted_numerically(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            problem_dir = Path(tmp) / 'java' / 'src' / 'main' / 'java' / 'algoexpert' / 'medium' / 'big_problem'
+            problem_dir.mkdir(parents=True)
+            for n in (1, 2, 10, 11):
+                (problem_dir / f'Solution{n}.java').write_text('')
+            original = migrate.JAVA_ROOT
+            migrate.JAVA_ROOT = Path(tmp) / 'java' / 'src' / 'main' / 'java'
+            try:
+                out = readme_for(problem_dir)
+            finally:
+                migrate.JAVA_ROOT = original
+        sol1 = out.index('| Solution1 |')
+        sol2 = out.index('| Solution2 |')
+        sol10 = out.index('| Solution10 |')
+        sol11 = out.index('| Solution11 |')
+        self.assertLess(sol1, sol2)
+        self.assertLess(sol2, sol10)
+        self.assertLess(sol10, sol11)
 
 
 if __name__ == '__main__':
