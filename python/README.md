@@ -10,7 +10,7 @@ Python idioms.
 
 ## 1. Layout
 
-```
+```text
 python/
   pyproject.toml
   src/<provider>/<tier>/<problem_snake>/solution_<N>.py
@@ -21,7 +21,7 @@ python/
 
 From this directory:
 
-```
+```bash
 python3 -m pytest
 ```
 

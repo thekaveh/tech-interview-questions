@@ -29,11 +29,11 @@ scheme.
    difficulty badge, `**Source:**` line, then `## 1. Problem` and
    `## 2. Solutions`.
 4. Regenerate the top-level problem index:
-   ```
+   ```bash
    python3 scripts/generate_problem_index.py
    ```
 5. Run the invariants check:
-   ```
+   ```bash
    bash scripts/verify_final.sh
    ```
 
