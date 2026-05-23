@@ -1,0 +1,17 @@
+[project]
+name = "tech-interview-questions-python"
+version = "0.1.0"
+description = "Python ports of selected interview-prep problem solutions"
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]
