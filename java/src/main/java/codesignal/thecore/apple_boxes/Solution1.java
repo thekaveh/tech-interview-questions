@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Loop accumulating alternating +/- squared row sums.
 class Solution1 {
     static int solution(int k) {
         var ret = 0;

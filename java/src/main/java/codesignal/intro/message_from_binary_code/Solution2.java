@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: BigInteger binary parse, convert to byte array.
 class Solution2 {
     static String solution(String code) {
         return new String(new BigInteger(code, 2).toByteArray());

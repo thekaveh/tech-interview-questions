@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Linear scan from bound downward to find first multiple.
 class Solution1 {
     static int solution(int divisor, int bound) {
         for(var n = bound; n > 0; n--) {

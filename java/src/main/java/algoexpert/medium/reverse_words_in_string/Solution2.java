@@ -1,7 +1,7 @@
 package algoexpert.medium.reverse_words_in_string;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Same two-pass reverse with slightly different loop structure.
 class Solution2 {
     public String reverseWordsInString(String text) {
         var N = text.length();

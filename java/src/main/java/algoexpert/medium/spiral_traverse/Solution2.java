@@ -1,7 +1,7 @@
 package algoexpert.medium.spiral_traverse;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive shrinking boundary.
 class Solution2 {
 	public static List<Integer> spiralTraverse(int[][] A) {
 		List<Integer> aux = new ArrayList<Integer>();

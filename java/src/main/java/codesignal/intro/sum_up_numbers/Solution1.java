@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Two-pointer scan to isolate digit runs, accumulate.
 class Solution1 {
     static int solution(String txt) {
         var sum = 0;

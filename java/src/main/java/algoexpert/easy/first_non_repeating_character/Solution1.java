@@ -1,7 +1,7 @@
 package algoexpert.easy.first_non_repeating_character;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Frequency map, linear scan.
 class Solution1 {
 
     public int firstNonRepeatingCharacter(String txt) {

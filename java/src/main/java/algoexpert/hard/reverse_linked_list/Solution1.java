@@ -1,7 +1,7 @@
 package algoexpert.hard.reverse_linked_list;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative three-pointer reversal.
 class Solution1 {
 	public static LinkedList reverseLinkedList(LinkedList head) {
 		LinkedList prev = null, curr = head;

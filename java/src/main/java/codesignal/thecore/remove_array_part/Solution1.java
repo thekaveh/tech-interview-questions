@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Manually copy elements before lo and after hi into a new array.
 class Solution1 {
     static int[] solution(int[] A, int lo, int hi) {
         var M = A.length;

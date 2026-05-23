@@ -1,7 +1,7 @@
 package algoexpert.medium.union_find;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Basic Union-Find with HashMap parents, no rank.
 // Do not edit the class below except for
 // the constructor and the createSet, find,
 // and union methods. Feel free to add new

@@ -1,7 +1,7 @@
 package algoexpert.easy.depth_first_search;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative DFS with explicit stack.
 class Solution3 {
     // Do not edit the class below except
     // for the depthFirstSearch method.

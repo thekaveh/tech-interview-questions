@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Compute successive factorials starting from 1! until the result reaches n.
 class Solution1 {
     static int solution(int n) {
         var ret = 1;

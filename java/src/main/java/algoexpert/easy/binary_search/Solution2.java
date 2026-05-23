@@ -1,7 +1,7 @@
 package algoexpert.easy.binary_search;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative, compareTo-based.
 class Solution2 {
     public static int binarySearch(int[] A, int v) {
         var N = A.length;

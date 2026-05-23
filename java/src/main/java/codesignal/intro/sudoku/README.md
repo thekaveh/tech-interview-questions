@@ -11,4 +11,4 @@ Given a completed 9x9 Sudoku grid, verify that it is valid: each row, each colum
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Check all rows, columns, and 3x3 boxes with presence maps | O(1) | O(1) |
+| Solution1 | Check all rows, columns, and 3x3 boxes with presence maps | O(1) | O(1) |

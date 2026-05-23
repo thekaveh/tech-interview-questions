@@ -1,7 +1,7 @@
 package algoexpert.medium.split_binary_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS computing subtree sums, flag when half-sum is found.
 class Solution1 {
 	// This is an input class. Do not edit.
 	static class BinaryTree {

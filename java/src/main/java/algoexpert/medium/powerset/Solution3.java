@@ -1,7 +1,7 @@
 package algoexpert.medium.powerset;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative doubling: append new element to all existing subsets.
 class Solution3 {
     public static List<List<Integer>> powerset(List<Integer> A) {
         var R = new ArrayList<List<Integer>>();

@@ -1,7 +1,7 @@
 package algoexpert.medium.powerset;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative BFS: for each element expand existing subsets.
 class Solution2 {
     public static List<List<Integer>> powerset(List<Integer> A) {
         var Q = new LinkedList<List<Integer>>();

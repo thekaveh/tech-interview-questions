@@ -1,7 +1,7 @@
 package algoexpert.easy.validate_subsequence;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Single pass, subsequence pointer j.
 class Solution1 {
     public static boolean isValidSubsequence(List<Integer> A, List<Integer> S) {
         var M = A.size();

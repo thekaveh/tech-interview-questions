@@ -1,7 +1,7 @@
 package algoexpert.medium.staircase_traversal;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Top-down recursion with memoization.
 class Solution2 {
     // T: O(H * S) - S: O(H)
     public int staircaseTraversal(int H, int S) {

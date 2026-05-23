@@ -1,7 +1,7 @@
 package algoexpert.veryhard.calendar_matching;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Merge all blocked intervals, then scan gaps for fit.
 class Solution1 {
 	public static List<StringMeeting> calendarMatching(
 			List<StringMeeting> calendar1,

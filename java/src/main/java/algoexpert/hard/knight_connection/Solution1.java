@@ -1,7 +1,7 @@
 package algoexpert.hard.knight_connection;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bidirectional BFS.
 class Solution1 {
 	public int knightConnection(int[] A, int[] B) {
 		var M = new HashSet<String>();

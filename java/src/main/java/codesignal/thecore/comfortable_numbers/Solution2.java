@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Brute-force pair enumeration using stream-based digit-sum computation.
 class Solution2 {
     static int solution(int l, int r) {
         int total = 0;

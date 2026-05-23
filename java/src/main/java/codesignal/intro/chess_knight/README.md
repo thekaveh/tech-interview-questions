@@ -11,4 +11,4 @@ Given a knight's position on a chessboard, count how many of its up-to-eight pos
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Enumerate all 8 candidate moves, count in-bounds | O(1) | O(1) |
+| Solution1 | Enumerate all 8 candidate moves, count in-bounds | O(1) | O(1) |

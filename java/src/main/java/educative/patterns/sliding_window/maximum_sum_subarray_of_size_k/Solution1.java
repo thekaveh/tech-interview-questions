@@ -1,7 +1,7 @@
 package educative.patterns.sliding_window.maximum_sum_subarray_of_size_k;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Fixed-size sliding window maintaining a running sum, sliding by subtracting the element leaving the window.
 class Solution1 {
 	public static int findMaxSumSubArray(int k, int[] A) {
 		int N = A.length;

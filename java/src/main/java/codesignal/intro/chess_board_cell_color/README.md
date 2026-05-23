@@ -11,5 +11,5 @@ Given two chess board cell coordinates, determine whether both cells share the s
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Simulate color by toggling from top-left corner | O(1) | O(1) |
-| solution-2.java | Parity check: same color when row- and column-distance parities match | O(1) | O(1) |
+| Solution1 | Simulate color by toggling from top-left corner | O(1) | O(1) |
+| Solution2 | Parity check: same color when row- and column-distance parities match | O(1) | O(1) |

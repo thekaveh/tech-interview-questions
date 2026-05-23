@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Conditional equality checks to identify the odd one out.
 class Solution1 {
     static int solution(int a, int b, int c) {
         if(a == b) { return c; }

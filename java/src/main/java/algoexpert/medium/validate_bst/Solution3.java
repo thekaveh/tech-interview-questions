@@ -1,7 +1,7 @@
 package algoexpert.medium.validate_bst;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive with [min, max) range, sequential early exits.
 class Solution3 {
     public static boolean validateBst(BST tree) {
         return solve(tree, Integer.MIN_VALUE, Integer.MAX_VALUE);

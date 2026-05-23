@@ -1,7 +1,7 @@
 package algoexpert.veryhard.a_star_algorithm;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: A* with Manhattan heuristic using int[] coordinates.
 class Solution2 {
 	public int[][] aStarAlgorithm(int srcR, int srcC, int dstR, int dstC, int[][] G) {
 		var R = G.length;

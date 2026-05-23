@@ -1,7 +1,7 @@
 package algoexpert.medium.three_number_sum;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort + outer loop with inner two-pointer (combined loop vars).
 class Solution3 {
     public static List<Integer[]> threeNumberSum(int[] A, int S) {
         var N = A.length;

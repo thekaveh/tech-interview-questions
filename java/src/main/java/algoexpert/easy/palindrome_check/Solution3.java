@@ -1,7 +1,7 @@
 package algoexpert.easy.palindrome_check;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive two-pointer.
 class Solution3 {
     public static boolean isPalindrome(String S) {
         return isPalindrome(S, 0);

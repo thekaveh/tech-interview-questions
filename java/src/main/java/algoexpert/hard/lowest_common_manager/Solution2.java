@@ -1,7 +1,7 @@
 package algoexpert.hard.lowest_common_manager;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: BFS parent map + depth-based LCA.
 class Solution2 {
 	public static OrgChart getLowestCommonManager(OrgChart R, OrgChart A, OrgChart B) {
 		var P = new HashMap<Character, OrgChart>();

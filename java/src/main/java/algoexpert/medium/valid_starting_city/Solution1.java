@@ -1,7 +1,7 @@
 package algoexpert.medium.valid_starting_city;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Try each city as start, simulate full circuit.
 class Solution1 {
 	public int validStartingCity(int[] distances, int[] fuels, int mpg) {
 		var N = distances.length;

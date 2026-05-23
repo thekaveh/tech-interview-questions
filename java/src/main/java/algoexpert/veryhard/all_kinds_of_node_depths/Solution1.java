@@ -1,7 +1,7 @@
 package algoexpert.veryhard.all_kinds_of_node_depths;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative DFS per node computing subtree depth sums.
 class Solution1 {
 	// O(n.log(n)) time | O(h) space
 	public static int allKindsOfNodeDepths(BinaryTree root) {

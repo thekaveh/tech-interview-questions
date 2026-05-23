@@ -1,7 +1,7 @@
 package algoexpert.hard.lowest_common_manager;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Post-order DFS counting descendants found.
 class Solution1 {
 	public static OrgChart getLowestCommonManager(OrgChart topManager, OrgChart repA, OrgChart repB) {
 		return getLCM(topManager, repA, repB).first;

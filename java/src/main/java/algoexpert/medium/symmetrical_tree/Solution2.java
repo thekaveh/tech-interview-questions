@@ -1,7 +1,7 @@
 package algoexpert.medium.symmetrical_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive: compare left subtree with mirrored right subtree.
 class Solution2 {
     // This is an input class. Do not edit.
     static class BinaryTree {

@@ -1,7 +1,7 @@
 package algoexpert.veryhard.merge_sorted_arrays;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Min-heap of (row, col) index pairs with Idx2D class.
 class Solution1 {
     private static class Idx2D {
         int r, c;

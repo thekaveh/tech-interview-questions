@@ -1,7 +1,7 @@
 package algoexpert.medium.youngest_common_ancestor;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Compute depths, equalize, then walk up together.
 class Solution1 {
     public static AncestralTree getYoungestCommonAncestor(AncestralTree R, AncestralTree A, AncestralTree B) {
         int dA = 0, dB = 0;

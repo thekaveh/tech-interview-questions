@@ -1,7 +1,7 @@
 package algoexpert.easy.find_three_largest_numbers;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Min-heap of size 3.
 class Solution1 {
     public static int[] findThreeLargestNumbers(int[] A) {
         var minPQ = new PriorityQueue<Integer>((a, b) -> a - b);

@@ -1,7 +1,7 @@
 package algoexpert.medium.suffix_trie_construction;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive insertion and lookup.
 class Solution1 {
     // Do not edit the class below except for the
     // populateSuffixTrieFrom and contains methods.

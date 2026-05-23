@@ -1,7 +1,7 @@
 package algoexpert.easy.tournament_winner;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Score map (+1 per win), track max during scan.
 class Solution3 {
     public String tournamentWinner(ArrayList<ArrayList<String>> competitions, ArrayList<Integer> results) {
         var N = competitions.size();

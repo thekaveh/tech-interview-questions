@@ -1,7 +1,7 @@
 package algoexpert.easy.caesar_cipher_encryptor;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Alphabet string indexOf lookup.
 class Solution1 {
     private static final String R = "abcdefghijklmnopqrstuvwxyz";
 

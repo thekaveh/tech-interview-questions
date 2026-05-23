@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Nested loops with explicit 3x3 neighbor enumeration.
 class Solution1 {
     static int[][] solution(int[][] A) {
         var R = A.length;

@@ -11,5 +11,5 @@ Given a matrix of integers, count the number of distinct 2x2 squares that can be
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | HashSet of custom Square objects with manual equals/hashCode | O(R*C) | O(R*C) |
-| solution-2.java | HashSet of canonical string keys per 2x2 block | O(R*C) | O(R*C) |
+| Solution1 | HashSet of custom Square objects with manual equals/hashCode | O(R*C) | O(R*C) |
+| Solution2 | HashSet of canonical string keys per 2x2 block | O(R*C) | O(R*C) |

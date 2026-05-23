@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Closed-form: 10^n − 1.
 class Solution2 {
     static int solution(int n) {
         return (int) Math.pow(10, n) - 1;

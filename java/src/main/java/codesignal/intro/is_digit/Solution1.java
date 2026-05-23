@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Offset arithmetic against '0'.
 class Solution1 {
     static boolean solution(char symbol) {
         var offset = symbol - '0';

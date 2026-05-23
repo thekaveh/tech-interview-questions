@@ -1,7 +1,7 @@
 package algoexpert.veryhard.compare_leaf_traversal;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Collect all leaves from each tree then compare lists.
 class Solution1 {
 	// This is an input class. Do not edit.
 	static class BinaryTree {

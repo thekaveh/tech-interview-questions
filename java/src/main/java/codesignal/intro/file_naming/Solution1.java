@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: LinkedHashMap tracking next suffix per name, retry loop.
 class Solution1 {
     static String[] solution(String[] names) {
         var M = new LinkedHashMap<String, Integer>();

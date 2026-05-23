@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Iterative peel-and-round loop tracking accumulated trailing factor.
 class Solution2 {
     static int solution(int n) {
         var trail = 1;

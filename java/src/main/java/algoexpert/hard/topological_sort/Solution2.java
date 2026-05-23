@@ -1,7 +1,7 @@
 package algoexpert.hard.topological_sort;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS on explicit Graph class with adjacency list.
 class Solution2 {
     public static List<Integer> topologicalSort(List<Integer> jobs, List<Integer[]> deps) {
         return new Topological(new Graph(jobs, deps)).order();

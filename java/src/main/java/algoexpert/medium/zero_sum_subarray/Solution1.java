@@ -1,7 +1,7 @@
 package algoexpert.medium.zero_sum_subarray;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Brute force: try all (lo, hi) pairs.
 class Solution1 {
     public boolean zeroSumSubarray(int[] A) {
         var N = A.length;

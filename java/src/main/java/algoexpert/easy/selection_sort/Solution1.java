@@ -1,7 +1,7 @@
 package algoexpert.easy.selection_sort;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Selection sort, min scan + swap.
 class Solution1 {
     public static int[] selectionSort(int[] A) {
         var N = A.length;

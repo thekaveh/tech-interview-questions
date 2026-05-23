@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Brute-force pair enumeration with extracted digit-sum helper.
 class Solution1 {
     static int solution(int l, int r) {
         var count = 0;

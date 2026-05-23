@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Direct index checks on first, last, and middle element(s).
 class Solution1 {
     static boolean solution(int[] A) {
         var N = A.length;

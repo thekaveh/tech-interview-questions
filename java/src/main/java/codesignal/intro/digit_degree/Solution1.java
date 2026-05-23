@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Iterative digit-sum reduction, count steps.
 class Solution1 {
     static int solution(int n) {
         var deg = 0;

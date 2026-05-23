@@ -11,5 +11,5 @@ Given a string, count the number of distinct characters it contains.
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | HashSet accumulation | O(n) | O(k) |
-| solution-2.java | Stream distinct count | O(n) | O(k) |
+| Solution1 | HashSet accumulation | O(n) | O(k) |
+| Solution2 | Stream distinct count | O(n) | O(k) |

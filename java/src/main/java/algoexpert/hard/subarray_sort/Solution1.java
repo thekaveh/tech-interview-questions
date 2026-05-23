@@ -1,7 +1,7 @@
 package algoexpert.hard.subarray_sort;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Find out-of-order min/max, then expand to correct bounds.
 class Solution1 {
 	public static int[] subarraySort(int[] A) {
 		var N = A.length;

@@ -1,7 +1,7 @@
 package algoexpert.medium.symmetrical_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative BFS: compare mirrored node pairs each level.
 class Solution1 {
     // This is an input class. Do not edit.
     static class BinaryTree {

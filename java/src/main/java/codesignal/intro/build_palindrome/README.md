@@ -11,5 +11,5 @@ Given a string, find the shortest palindrome that can be formed by appending cha
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Shrink prefix until suffix is palindrome, then prepend | O(n²) | O(n) |
-| solution-2.java | Grow suffix boundary until palindrome, then append reversed prefix | O(n²) | O(n) |
+| Solution1 | Shrink prefix until suffix is palindrome, then prepend | O(n²) | O(n) |
+| Solution2 | Grow suffix boundary until palindrome, then append reversed prefix | O(n²) | O(n) |

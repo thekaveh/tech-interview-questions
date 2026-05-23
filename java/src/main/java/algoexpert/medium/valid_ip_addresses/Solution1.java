@@ -1,7 +1,7 @@
 package algoexpert.medium.valid_ip_addresses;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Triple nested loop over split points, validate each part.
 class Solution1 {
     public ArrayList<String> validIPAddresses(String composite) {
         var N = composite.length();

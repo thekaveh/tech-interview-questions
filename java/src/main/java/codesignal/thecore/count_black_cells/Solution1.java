@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Formula: n + m + gcd(n,m) − 2, derived from inclusion-exclusion on row/column crossings.
 class Solution1 {
     static int solution(int n, int m) {
         return n + m + gcd(n, m) - 2;

@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Parity check: same color when row- and column-distance parities match.
 class Solution2 {
     static boolean solution(String cellA, String cellB) {
         var black = true;

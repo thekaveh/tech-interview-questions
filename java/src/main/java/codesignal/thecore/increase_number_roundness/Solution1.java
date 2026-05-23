@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Two-pointer scan trimming trailing zeros then checking for an interior zero.
 class Solution1 {
     static boolean solution(int n) {
         var str = Integer.toString(n);

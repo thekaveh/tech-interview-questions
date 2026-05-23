@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: IntStream.range mapping each draw index to its product, then summing.
 class Solution2 {
     static int solution(int a, int b, int n) {
         return IntStream.range(0, n)

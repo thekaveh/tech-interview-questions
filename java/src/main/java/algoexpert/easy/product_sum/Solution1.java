@@ -1,7 +1,7 @@
 package algoexpert.easy.product_sum;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive DFS with depth coefficient.
 class Solution1 {
     // Tip: You can use `element instanceof ArrayList` to check whether an item
     // is an array or an integer.

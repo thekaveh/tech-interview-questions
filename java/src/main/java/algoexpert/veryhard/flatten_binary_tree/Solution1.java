@@ -1,7 +1,7 @@
 package algoexpert.veryhard.flatten_binary_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Collect in-order nodes then wire left/right pointers.
 class Solution1 {
     public static BinaryTree flattenBinaryTree(BinaryTree root) {
         var M = new ArrayList<BinaryTree>();

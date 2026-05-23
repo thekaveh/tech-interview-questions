@@ -1,7 +1,7 @@
 package algoexpert.medium.missing_numbers;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sum-based partition into two halves.
 class Solution2 {
     // Time: O(n) | Space: O(1)
     public int[] missingNumbers(int[] A) {

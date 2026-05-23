@@ -1,7 +1,7 @@
 package algoexpert.medium.sum_of_linked_lists;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Simultaneous traversal with carry propagation.
 class Solution1 {
     // This is an input class. Do not edit.
     public static class LinkedList {

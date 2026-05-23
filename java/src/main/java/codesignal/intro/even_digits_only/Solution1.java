@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Extract digits via modulo, check each for evenness.
 class Solution1 {
     static boolean solution(int n) {
         while(n > 0) {

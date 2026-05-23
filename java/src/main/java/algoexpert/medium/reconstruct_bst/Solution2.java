@@ -1,7 +1,7 @@
 package algoexpert.medium.reconstruct_bst;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive using subList slicing.
 class Solution2 {
     // This is an input class. Do not edit.
     static class BST {

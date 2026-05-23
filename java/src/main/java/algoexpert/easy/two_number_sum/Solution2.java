@@ -1,7 +1,7 @@
 package algoexpert.easy.two_number_sum;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort + binary search for complement.
 class Solution2 {
     public static int[] twoNumberSum(int[] A, int S) {
         int N = A.length;

@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Explicit check of all four operations with exact-division guard.
 class Solution1 {
     static boolean solution(int a, int b, int c) {
         if(a + b == c) { return true; }

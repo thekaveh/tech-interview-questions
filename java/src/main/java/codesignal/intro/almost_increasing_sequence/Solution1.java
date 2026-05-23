@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Single pass with one-violation tracking.
 class Solution1 {
     static boolean solution(int[] A) {
         var N = A.length;

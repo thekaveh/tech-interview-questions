@@ -1,7 +1,7 @@
 package algoexpert.hard.largest_range;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Hash set + BFS expansion from unvisited elements.
 class Solution1 {
 	public static int[] largestRange(int[] A) {
 		var rKey = 0;

@@ -1,7 +1,7 @@
 package algoexpert.hard.find_loop;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Floyd's cycle detection (two-pointer).
 class Solution1 {
 	public static LinkedList findLoop(LinkedList head) {
 		var pA = head.next;

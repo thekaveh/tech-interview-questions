@@ -11,4 +11,4 @@ Given a string, return the longest prefix that consists only of digit characters
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Linear scan until first non-digit, then substring | O(n) | O(n) |
+| Solution1 | Linear scan until first non-digit, then substring | O(n) | O(n) |

@@ -1,7 +1,7 @@
 package algoexpert.easy.palindrome_check;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Two-pointer from edges inward.
 class Solution1 {
     public static boolean isPalindrome(String S) {
         var N = S.length();

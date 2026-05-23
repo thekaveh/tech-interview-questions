@@ -1,7 +1,7 @@
 package algoexpert.hard.max_sum_increasing_subsequence;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DP (LIS-style sums) with predecessor backtracking.
 class Solution1 {
 	public static List<List<Integer>> maxSumIncreasingSubsequence(int[] A) {
 		var n = A.length;

@@ -1,7 +1,7 @@
 package algoexpert.hard.knapsack_problem;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bottom-up 2-D DP with item backtracking.
 class Solution1 {
 	public static List<List<Integer>> knapsackProblem(int[][] items, int capacity) {
 		var n = items.length;

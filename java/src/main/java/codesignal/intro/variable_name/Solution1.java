@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Character-by-character validation with position check.
 class Solution1 {
     static boolean solution(String name) {
         var N = name.length();

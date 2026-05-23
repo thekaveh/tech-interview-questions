@@ -1,7 +1,7 @@
 package algoexpert.easy.evaluate_expression_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive post-order evaluation.
 class Solution1 {
     static class BinaryTree {
         public int value;

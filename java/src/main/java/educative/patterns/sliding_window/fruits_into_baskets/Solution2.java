@@ -1,7 +1,7 @@
 package educative.patterns.sliding_window.fruits_into_baskets;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Variable-size sliding window with a frequency map shrinking left and removing zero-count entries.
 class Solution2 {
 	public static int findLength(char[] A) {
 		int N = A.length, lo = 0, L = 0;

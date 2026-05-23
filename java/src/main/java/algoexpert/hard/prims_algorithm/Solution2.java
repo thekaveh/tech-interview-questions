@@ -1,7 +1,7 @@
 package algoexpert.hard.prims_algorithm;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Lazy Prim tracking cheapest edge per vertex.
 class Solution2 {
 	public int[][][] primsAlgorithm(int[][][] G) {
 		var V = G.length;

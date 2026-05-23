@@ -11,5 +11,5 @@ Given an array of integers and two values, replace every occurrence of the first
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Single pass in-place replacement | O(n) | O(1) |
-| solution-2.java | Stream map with ternary | O(n) | O(n) |
+| Solution1 | Single pass in-place replacement | O(n) | O(1) |
+| Solution2 | Stream map with ternary | O(n) | O(n) |

@@ -1,7 +1,7 @@
 package algoexpert.hard.multi_string_search;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Suffix trie of text + membership check per key.
 class Solution1 {
     public static List<Boolean> multiStringSearch(String txt, String[] keys) {
         var M = new SuffixTrie(txt);

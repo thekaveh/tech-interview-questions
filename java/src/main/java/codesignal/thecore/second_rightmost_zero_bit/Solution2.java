@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Bit manipulation: skip first zero group with (n \.
 class Solution2 {
     static int solution(int n) {
         return ~(n | (n + 1)) & ((n | (n + 1)) + 1);

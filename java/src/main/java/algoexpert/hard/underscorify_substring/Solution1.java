@@ -1,7 +1,7 @@
 package algoexpert.hard.underscorify_substring;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Find all match intervals, merge overlaps, insert underscores.
 class Solution1 {
 	public static String underscorifySubstring(String text, String substring) {
 		var N = text.length();

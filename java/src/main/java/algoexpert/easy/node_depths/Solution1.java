@@ -1,7 +1,7 @@
 package algoexpert.easy.node_depths;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: BFS level-order, accumulate depth per level.
 class Solution1 {
     static class BinaryTree {
 		int value;

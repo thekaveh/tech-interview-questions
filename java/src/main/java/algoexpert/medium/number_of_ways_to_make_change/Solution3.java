@@ -1,7 +1,7 @@
 package algoexpert.medium.number_of_ways_to_make_change;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bottom-up DP table.
 class Solution3 {
     // T: O(S * D) | S: O(S * D)
     public static int numberOfWaysToMakeChange(int S, int[] D) {

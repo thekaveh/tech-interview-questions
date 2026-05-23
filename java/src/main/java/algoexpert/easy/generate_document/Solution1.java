@@ -1,7 +1,7 @@
 package algoexpert.easy.generate_document;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Frequency map, decrement on match.
 class Solution1 {
     public boolean generateDocument(String characters, String document) {
         var pattern = new HashMap<Character, Integer>();

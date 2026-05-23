@@ -11,5 +11,5 @@ Given a year, return which century it falls in (e.g., year 1 through 100 is the 
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Integer division with remainder bump | O(1) | O(1) |
-| solution-2.java | Direct arithmetic via (year - 1) / 100 + 1 | O(1) | O(1) |
+| Solution1 | Integer division with remainder bump | O(1) | O(1) |
+| Solution2 | Direct arithmetic via (year - 1) / 100 + 1 | O(1) | O(1) |

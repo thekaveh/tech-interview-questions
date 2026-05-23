@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: HashMap frequency count, check odd-count characters.
 class Solution1 {
     static boolean solution(String txt) {
         var FREQ = new HashMap<Character, Integer>();

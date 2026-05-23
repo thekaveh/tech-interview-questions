@@ -1,7 +1,7 @@
 package algoexpert.medium.minimum_passes_of_matrix;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Multi-source BFS seeded from all positive cells.
 class Solution2 {
     public int minimumPassesOfMatrix(int[][] A) {
         var R = A.length;

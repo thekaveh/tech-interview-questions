@@ -11,4 +11,4 @@ Given a boolean matrix indicating mine positions, produce an integer matrix wher
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | For each mine, increment all valid neighbors | O(R*C) | O(R*C) |
+| Solution1 | For each mine, increment all valid neighbors | O(R*C) | O(R*C) |

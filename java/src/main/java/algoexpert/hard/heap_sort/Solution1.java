@@ -1,7 +1,7 @@
 package algoexpert.hard.heap_sort;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: In-place max-heap with sink (while-loop).
 class Solution1 {
     public static int[] heapSort(int[] A) {
         var N = A.length;

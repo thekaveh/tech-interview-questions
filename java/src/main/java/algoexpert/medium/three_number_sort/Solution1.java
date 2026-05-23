@@ -1,7 +1,7 @@
 package algoexpert.medium.three_number_sort;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Three-pointer Dutch National Flag partition.
 class Solution1 {
     public int[] threeNumberSort(int[] A, int[] O) {
         var N = A.length;

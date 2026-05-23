@@ -11,5 +11,5 @@ Given the left- and right-hand strengths of two people, determine whether they a
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Sum check plus at least one hand match | O(1) | O(1) |
-| solution-2.java | Direct two-way equality check | O(1) | O(1) |
+| Solution1 | Sum check plus at least one hand match | O(1) | O(1) |
+| Solution2 | Direct two-way equality check | O(1) | O(1) |

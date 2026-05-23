@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Sum check plus at least one hand match.
 class Solution1 {
     static boolean solution(int yourLeft, int yourRight, int friendsLeft, int friendsRight) {
         return ((yourLeft + yourRight) == (friendsLeft + friendsRight))

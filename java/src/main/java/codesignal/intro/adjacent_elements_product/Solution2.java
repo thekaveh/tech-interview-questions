@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Streams with IntStream.range.
 class Solution2 {
     static int solution(int[] A) {
         var N = A.length;

@@ -11,4 +11,4 @@ Given n numbers arranged in a circle, find the number that sits exactly opposite
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Direct arithmetic modulo n | O(1) | O(1) |
+| Solution1 | Direct arithmetic modulo n | O(1) | O(1) |

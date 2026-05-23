@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Sort then sum the gaps between adjacent elements.
 class Solution1 {
     static int solution(int[] A) {
         var ret = 0;

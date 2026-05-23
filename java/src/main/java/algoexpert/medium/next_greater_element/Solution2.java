@@ -1,7 +1,7 @@
 package algoexpert.medium.next_greater_element;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Monotone stack with backwards double-pass.
 class Solution2 {
     public int[] nextGreaterElement(int[] A) {
         var N = A.length;

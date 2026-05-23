@@ -4,8 +4,11 @@ from pathlib import Path
 
 import migrate
 from migrate import (
-    kebab_to_snake, problem_to_snake, new_path_for, package_for,
-    title_from_problem, readme_for, REPO, JAVA_ROOT,
+    kebab_to_snake, problem_to_snake, normalize_solution_filename,
+    new_path_for, package_for, title_from_problem, readme_for,
+    solution_number,
+    transform_algoexpert, transform_codesignal, transform_educative,
+    REPO, JAVA_ROOT,
 )
 
 
@@ -23,19 +26,16 @@ class TestPathTransforms(unittest.TestCase):
         self.assertEqual(problem_to_snake('a*-algorithm'), 'a_star_algorithm')
 
     def test_normalize_solution_filename_canonical_form(self):
-        from migrate import normalize_solution_filename
         self.assertEqual(normalize_solution_filename('Solution1.java'), 'Solution1.java')
         self.assertEqual(normalize_solution_filename('Solution12.java'), 'Solution12.java')
 
     def test_normalize_solution_filename_legacy_variants(self):
-        from migrate import normalize_solution_filename
         self.assertEqual(normalize_solution_filename('solution-1.java'), 'Solution1.java')
         self.assertEqual(normalize_solution_filename('solution1.java'), 'Solution1.java')
         self.assertEqual(normalize_solution_filename('solution-2.java'), 'Solution2.java')
         self.assertEqual(normalize_solution_filename('solution4.java'), 'Solution4.java')
 
     def test_normalize_solution_filename_rejects_non_solution_files(self):
-        from migrate import normalize_solution_filename
         self.assertIsNone(normalize_solution_filename('README.md'))
         self.assertIsNone(normalize_solution_filename('Helper.java'))
         self.assertIsNone(normalize_solution_filename('Solution.java'))
@@ -130,6 +130,8 @@ class TestReadmeGenerator(unittest.TestCase):
         self.assertIn('# Two Number Sum', out)
         self.assertIn('difficulty-warm--up-green', out)
         self.assertIn('**Source:** AlgoExpert', out)
+        self.assertIn('## 1. Problem', out)
+        self.assertIn('## 2. Solutions', out)
         self.assertIn('| Solution1 | TODO | TODO | TODO |', out)
         self.assertIn('| Solution2 | TODO | TODO | TODO |', out)
 
@@ -152,12 +154,6 @@ class TestReadmeGenerator(unittest.TestCase):
         self.assertLess(sol1, sol2)
         self.assertLess(sol2, sol10)
         self.assertLess(sol10, sol11)
-
-
-from migrate import (
-    transform_algoexpert, transform_codesignal, transform_educative,
-    solution_number,
-)
 
 
 ALGOEXPERT_INPUT = """import java.util.*;

@@ -2,7 +2,7 @@ package algoexpert.easy.find_closest_value_in_bst;
 import java.util.*;
 import javax.lang.model.util.ElementScanner6;
 
-// Approach: TODO.
+// Approach: Iterative BST traversal, track closest.
 class Solution2 {
     static class BST {
         public int value;

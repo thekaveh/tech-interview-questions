@@ -11,4 +11,4 @@ Apply a box blur to an image matrix: replace each interior cell with the floor o
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Nested loops with explicit 3x3 neighbor enumeration | O(R*C) | O(R*C) |
+| Solution1 | Nested loops with explicit 3x3 neighbor enumeration | O(R*C) | O(R*C) |

@@ -11,4 +11,4 @@ Given an array of integers, make it strictly increasing by incrementing elements
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Single pass with carry-forward adjustments | O(n) | O(1) |
+| Solution1 | Single pass with carry-forward adjustments | O(n) | O(1) |

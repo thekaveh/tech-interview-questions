@@ -1,7 +1,7 @@
 package algoexpert.hard.prims_algorithm;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Eager Prim with min-heap of crossing edges.
 class Solution1 {
 	public int[][][] primsAlgorithm(int[][][] G) {
 		var V = G.length;

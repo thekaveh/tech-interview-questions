@@ -1,7 +1,7 @@
 package algoexpert.medium.sweet_and_savory;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort + two-pointer from both ends toward target.
 class Solution2 {
     public int[] sweetAndSavory(int[] dishes, int target) {
         var N = dishes.length;

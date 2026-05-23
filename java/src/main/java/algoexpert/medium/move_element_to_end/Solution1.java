@@ -1,7 +1,7 @@
 package algoexpert.medium.move_element_to_end;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Two-pointer swap (front and tail).
 class Solution1 {
     private static void swap(List<Integer> A, int i, int j) {
         var T = A.get(i);

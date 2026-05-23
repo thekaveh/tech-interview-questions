@@ -1,7 +1,7 @@
 package algoexpert.medium.search_in_sorted_matrix;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Start top-right, eliminate row or column each step.
 class Solution2 {
     public static int[] searchInSortedMatrix(int[][] M, int v) {
         var R = M.length;

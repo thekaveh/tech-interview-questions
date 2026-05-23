@@ -1,7 +1,7 @@
 package algoexpert.hard.four_number_sum;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Hash map of pair sums.
 class Solution3 {
 	public static List<Integer[]> fourNumberSum(int[] A, int S) {
 		var N = A.length;

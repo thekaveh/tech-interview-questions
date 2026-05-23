@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Two-pointer converging from l and r, counting pairs that sum to n.
 class Solution1 {
     static int solution(int n, int l, int r) {
         var ret = 0;

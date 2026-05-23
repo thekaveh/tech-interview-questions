@@ -1,7 +1,7 @@
 package algoexpert.medium.task_assignment;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort by duration, pair shortest with longest.
 class Solution1 {
     public ArrayList<ArrayList<Integer>> taskAssignment(int k, ArrayList<Integer> tasks) {
         var N = tasks.size();

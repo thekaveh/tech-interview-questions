@@ -1,7 +1,7 @@
 package algoexpert.easy.middle_node;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Count length, advance to midpoint.
 class Solution1 {
     public static class LinkedList {
         public int value;

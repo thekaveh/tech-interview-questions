@@ -1,7 +1,7 @@
 package algoexpert.hard.find_loop;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Floyd's cycle detection (compact for-loop form).
 class Solution2 {
 	public static LinkedList findLoop(LinkedList head) {
 		LinkedList pA, pB;

@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Stream filter by index.
 class Solution2 {
     static int[] solution(int[] A, int k) {
         var N = A.length;

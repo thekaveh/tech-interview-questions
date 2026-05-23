@@ -1,7 +1,7 @@
 package algoexpert.easy.binary_search;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive binary search.
 class Solution3 {
     public static int binarySearch(int[] A, int v) {
         var N = A.length;

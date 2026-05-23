@@ -1,7 +1,7 @@
 package algoexpert.medium.minimum_passes_of_matrix;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Naive: repeatedly scan for convertible negatives.
 class Solution1 {
     public int minimumPassesOfMatrix(int[][] A) {
         var passes = 0;

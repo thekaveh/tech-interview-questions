@@ -1,7 +1,7 @@
 package algoexpert.veryhard.detect_arbitrage;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bellman-Ford on -log(rate) graph to detect negative cycles.
 class Solution1 {
 	public boolean detectArbitrage(ArrayList<ArrayList<Double>> G) {
 		var V = G.size();

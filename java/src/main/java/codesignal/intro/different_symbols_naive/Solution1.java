@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: HashSet accumulation.
 class Solution1 {
     static int solution(String txt) {
         var M = new HashSet<Character>();

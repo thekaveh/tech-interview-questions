@@ -1,7 +1,7 @@
 package algoexpert.hard.maximum_sum_submatrix;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Brute force sliding window over all positions.
 class Solution1 {
 	public int maximumSumSubmatrix(int[][] M, int size) {
 		var R = M.length;

@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Column-major scan, break on zero per column.
 class Solution2 {
     static int solution(int[][] M) {
         var R = M.length;

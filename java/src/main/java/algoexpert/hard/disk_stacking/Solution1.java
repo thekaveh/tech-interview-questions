@@ -1,7 +1,7 @@
 package algoexpert.hard.disk_stacking;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort by height + LIS-style DP with path reconstruction.
 class Solution1 {
 	public static List<Integer[]> diskStacking(List<Integer[]> disks) {
 		var N = disks.size();

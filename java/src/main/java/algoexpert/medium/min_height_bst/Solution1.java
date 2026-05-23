@@ -1,7 +1,7 @@
 package algoexpert.medium.min_height_bst;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Divide and conquer with lo/hi index bounds.
 class Solution1 {
     static class BST {
         public int value;

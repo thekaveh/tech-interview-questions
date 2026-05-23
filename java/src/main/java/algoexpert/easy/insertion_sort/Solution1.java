@@ -1,7 +1,7 @@
 package algoexpert.easy.insertion_sort;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Insertion sort, break on sorted.
 class Solution1 {
     private static final int H = 1;
 

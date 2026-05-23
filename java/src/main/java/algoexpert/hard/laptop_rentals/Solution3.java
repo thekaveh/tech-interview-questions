@@ -1,7 +1,7 @@
 package algoexpert.hard.laptop_rentals;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Pre-load min-heap then sweep by start time.
 class Solution3 {
 	public int laptopRentals(ArrayList<ArrayList<Integer>> times) {
 		var N = times.size();

@@ -1,7 +1,7 @@
 package algoexpert.hard.search_for_range;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Two binary searches (recursive) biased left and right.
 class Solution2 {
     private static final boolean LEFT = false, RIGHT = true;
 

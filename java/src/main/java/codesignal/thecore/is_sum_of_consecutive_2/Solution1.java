@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Nested loop trying all starting values and accumulating prefix sums.
 class Solution1 {
     static int solution(int n) {
         int ret = 0;

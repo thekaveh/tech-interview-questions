@@ -1,7 +1,7 @@
 package algoexpert.medium.sort_stack;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative: extract each element and insert in sorted order.
 class Solution1 {
     public ArrayList<Integer> sortStack(ArrayList<Integer> S) {
         var N = S.size();

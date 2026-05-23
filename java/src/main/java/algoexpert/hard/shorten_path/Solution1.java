@@ -1,7 +1,7 @@
 package algoexpert.hard.shorten_path;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Stack-based token processing.
 class Solution1 {
     public static String shortenPath(String path) {
         var S = new Stack<String>();

@@ -1,7 +1,7 @@
 package educative.patterns.sliding_window.longest_substring_with_distinct_characters;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Variable-size sliding window with a map storing each character's last-seen index; jump left pointer on repeat.
 class Solution1 {
 	public static int findLength(String txt) {
 		int N = txt.length(), lo = 0, L = 0;

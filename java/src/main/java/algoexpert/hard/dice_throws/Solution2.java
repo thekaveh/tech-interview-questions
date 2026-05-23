@@ -1,7 +1,7 @@
 package algoexpert.hard.dice_throws;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bottom-up DP with bounded inner loop.
 class Solution2 {
 	public int diceThrows(int D, int S, int T) {
 		if (T < D || D * S < T) {

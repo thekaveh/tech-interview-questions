@@ -11,4 +11,4 @@ Given the positions of a bishop and a pawn on a chess board, determine whether t
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Diagonal check via equal absolute row/column differences | O(1) | O(1) |
+| Solution1 | Diagonal check via equal absolute row/column differences | O(1) | O(1) |

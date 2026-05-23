@@ -1,7 +1,7 @@
 package algoexpert.veryhard.merge_sort;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive merge sort with single auxiliary array.
 class Solution1 {
     public static int[] mergeSort(int[] A) {
         var N = A.length;

@@ -1,7 +1,7 @@
 package algoexpert.easy.sorted_squared_array;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Two-pointer, for-loop k decrement.
 class Solution3 {
     public int[] sortedSquaredArray(int[] A) {
         var N = A.length;

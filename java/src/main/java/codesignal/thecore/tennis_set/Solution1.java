@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Check equality first (invalid), then validate the two legal completion conditions.
 class Solution1 {
     static boolean solution(int score1, int score2) {
         if(score1 == score2) { return false; }

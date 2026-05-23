@@ -1,7 +1,7 @@
 package algoexpert.hard.juice_bottling;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bottom-up DP with split backtracking.
 class Solution1 {
 	public static List<Integer> juiceBottling(int[] prices) {
 		int n = prices.length - 1;

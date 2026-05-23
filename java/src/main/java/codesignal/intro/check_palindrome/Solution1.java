@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Two-pointer inward scan.
 class Solution1 {
     static boolean solution(String txt) {
         var N = txt.length();

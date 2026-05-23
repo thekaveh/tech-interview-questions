@@ -11,5 +11,5 @@ Given an array of distinct integers, find how many numbers need to be added to m
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Sort, sum gaps between adjacent elements | O(n log n) | O(1) |
-| solution-2.java | Sort, compute (max - min + 1) - n | O(n log n) | O(1) |
+| Solution1 | Sort, sum gaps between adjacent elements | O(n log n) | O(1) |
+| Solution2 | Sort, compute (max - min + 1) - n | O(n log n) | O(1) |

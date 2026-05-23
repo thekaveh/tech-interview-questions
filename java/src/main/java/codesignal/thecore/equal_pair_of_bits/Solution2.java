@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Integer.lowestOneBit applied to bitwise NOT of (n XOR m).
 class Solution2 {
     static int solution(int n, int m) {
         return Integer.lowestOneBit(~(n ^ m));

@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Simulate color by toggling from top-left corner.
 class Solution1 {
     static boolean solution(String cellA, String cellB) {
         var black = true;

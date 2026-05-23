@@ -11,4 +11,4 @@ Determine whether an array can be made strictly increasing by removing at most o
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Single pass with one-violation tracking | O(n) | O(1) |
+| Solution1 | Single pass with one-violation tracking | O(n) | O(1) |

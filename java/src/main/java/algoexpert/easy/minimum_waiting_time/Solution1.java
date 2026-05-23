@@ -1,7 +1,7 @@
 package algoexpert.easy.minimum_waiting_time;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort, accumulate prefix sums.
 class Solution1 {
     public int minimumWaitingTime(int[] Q) {
         int T = 0, R = 0;

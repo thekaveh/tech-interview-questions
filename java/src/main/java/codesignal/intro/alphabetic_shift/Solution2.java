@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Stream chars with map.
 class Solution2 {
     static String solution(String txt) {
         return new String(

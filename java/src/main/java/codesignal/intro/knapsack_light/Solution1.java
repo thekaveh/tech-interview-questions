@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Greedy: take higher-value item first, add second if weight allows.
 class Solution1 {
     static int solution(int v1, int w1, int v2, int w2, int maxW) {
         var maxV = 0;

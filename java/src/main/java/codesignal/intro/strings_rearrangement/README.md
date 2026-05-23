@@ -11,4 +11,4 @@ Given an array of same-length strings, determine whether they can be arranged in
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Generate all permutations, check each for consecutive one-diff property | O(n! * n) | O(n!) |
+| Solution1 | Generate all permutations, check each for consecutive one-diff property | O(n! * n) | O(n!) |

@@ -1,7 +1,7 @@
 package algoexpert.hard.maximum_sum_submatrix;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: 2-D prefix sums for O(1) sub-matrix queries.
 class Solution2 {
 	public int maximumSumSubmatrix(int[][] M, int D) {
 		var R = M.length;

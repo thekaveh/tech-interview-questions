@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Simulation subtracting per-minute costs until balance is exhausted.
 class Solution1 {
     static int solution(int min1, int min2_10, int min11, int s) {
         var t = 0;

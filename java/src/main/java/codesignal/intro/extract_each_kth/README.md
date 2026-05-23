@@ -11,5 +11,5 @@ Given an array and an integer k, return a new array with every k-th element (1-i
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Single pass skipping every k-th index | O(n) | O(n) |
-| solution-2.java | Stream filter by index | O(n) | O(n) |
+| Solution1 | Single pass skipping every k-th index | O(n) | O(n) |
+| Solution2 | Stream filter by index | O(n) | O(n) |

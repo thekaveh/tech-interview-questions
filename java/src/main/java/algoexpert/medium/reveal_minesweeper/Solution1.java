@@ -1,7 +1,7 @@
 package algoexpert.medium.reveal_minesweeper;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive DFS flood-fill from clicked cell.
 class Solution1 {
 	public String[][] revealMinesweeper(String[][] board, int row, int column) {
 		if (board[row][column].equals("M")) {

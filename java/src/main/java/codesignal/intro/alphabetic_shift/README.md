@@ -11,5 +11,5 @@ Given a lowercase string, shift each letter one position forward in the alphabet
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Single pass with modular arithmetic | O(n) | O(n) |
-| solution-2.java | Stream chars with map | O(n) | O(n) |
+| Solution1 | Single pass with modular arithmetic | O(n) | O(n) |
+| Solution2 | Stream chars with map | O(n) | O(n) |

@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Split on non-digits, filter, parse, reduce.
 class Solution2 {
     static int solution(String txt) {
         return Arrays.stream(txt.split("\\D+"))

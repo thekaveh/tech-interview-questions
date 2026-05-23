@@ -11,5 +11,5 @@ Given an array of integers, find the largest product of any two adjacent element
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Single pass max tracking | O(n) | O(1) |
-| solution-2.java | Streams with IntStream.range | O(n) | O(1) |
+| Solution1 | Single pass max tracking | O(n) | O(1) |
+| Solution2 | Streams with IntStream.range | O(n) | O(1) |

@@ -1,7 +1,7 @@
 package algoexpert.hard.longest_most_frequent_prefix;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Trie with per-node frequency count.
 class Solution1 {
 	public String longestMostFrequentPrefix(String[] keys) {
 		int N = keys.length;

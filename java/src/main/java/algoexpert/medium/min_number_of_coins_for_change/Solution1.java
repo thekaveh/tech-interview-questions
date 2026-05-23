@@ -1,7 +1,7 @@
 package algoexpert.medium.min_number_of_coins_for_change;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Naive recursion (include/exclude each denomination).
 class Solution1 {
     public static int minNumberOfCoinsForChange(int S, int[] D) {
         var t = solve(S, D, 0);

@@ -1,7 +1,7 @@
 package algoexpert.hard.topological_sort;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS-based topological sort with cycle detection.
 class Solution1 {
     public static List<Integer> topologicalSort(List<Integer> jobs, List<Integer[]> deps) {
         return new Topological(jobs, deps).order();

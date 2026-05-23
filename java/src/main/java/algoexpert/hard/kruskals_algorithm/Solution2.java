@@ -1,7 +1,7 @@
 package algoexpert.hard.kruskals_algorithm;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort edges + Union-Find (flattened edge list).
 class Solution2 {
 	static class UF {
 		int[] id;

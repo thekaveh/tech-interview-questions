@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Split on colon, parse each component, validate ranges.
 class Solution1 {
     static boolean solution(String time) {
         var N = time.length();

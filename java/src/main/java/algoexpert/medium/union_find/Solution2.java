@@ -1,7 +1,7 @@
 package algoexpert.medium.union_find;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Union by size (weighted union) with HashMap.
 // Do not edit the class below except for
 // the constructor and the createSet, find,
 // and union methods. Feel free to add new

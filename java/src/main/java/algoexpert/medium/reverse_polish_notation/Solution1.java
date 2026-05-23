@@ -1,7 +1,7 @@
 package algoexpert.medium.reverse_polish_notation;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Stack-based postfix evaluation.
 class Solution1 {
     public int reversePolishNotation(String[] tokens) {
         var S = new Stack<String>();

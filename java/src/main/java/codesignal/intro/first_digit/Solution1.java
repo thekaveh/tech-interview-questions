@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Linear scan with Character.isDigit.
 class Solution1 {
     static char solution(String txt) {
         for(var c : txt.toCharArray()) {

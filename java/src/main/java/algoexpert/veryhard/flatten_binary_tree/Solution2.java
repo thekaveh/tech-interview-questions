@@ -1,7 +1,7 @@
 package algoexpert.veryhard.flatten_binary_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive divide-and-conquer returning [head, tail] pairs.
 class Solution2 {
     public static BinaryTree flattenBinaryTree(BinaryTree root) {
         return flatten(root)[0];

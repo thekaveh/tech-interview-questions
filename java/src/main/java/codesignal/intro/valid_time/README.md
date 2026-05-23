@@ -11,4 +11,4 @@ Given a string, determine whether it represents a valid 24-hour clock time in "H
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Split on colon, parse each component, validate ranges | O(1) | O(1) |
+| Solution1 | Split on colon, parse each component, validate ranges | O(1) | O(1) |

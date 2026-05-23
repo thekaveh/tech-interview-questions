@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Iterative digit extraction via modulo loop.
 class Solution1 {
     static int solution(int n) {
         var S = 0;

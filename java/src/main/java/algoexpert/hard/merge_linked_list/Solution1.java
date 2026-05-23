@@ -1,7 +1,7 @@
 package algoexpert.hard.merge_linked_list;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative two-pointer merge.
 class Solution1 {
     // This is an input class. Do not edit.
     public static class LinkedList {

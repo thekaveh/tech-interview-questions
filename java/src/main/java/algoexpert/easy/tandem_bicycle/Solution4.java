@@ -1,7 +1,7 @@
 package algoexpert.easy.tandem_bicycle;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort, compute mirrored index via variable.
 class Solution4 {
     public int tandemBicycle(int[] R, int[] B, boolean fastest) {
         var N = R.length;

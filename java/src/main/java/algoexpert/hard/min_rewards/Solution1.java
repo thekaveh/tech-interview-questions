@@ -1,7 +1,7 @@
 package algoexpert.hard.min_rewards;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Two-pass linear scan (left-to-right then right-to-left).
 class Solution1 {
 	public static int minRewards(int[] A) {
 		var N = A.length;

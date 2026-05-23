@@ -11,4 +11,4 @@ Find the number of times you must repeatedly sum a number's digits until you rea
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Iterative digit-sum reduction, count steps | O(d * steps) | O(1) |
+| Solution1 | Iterative digit-sum reduction, count steps | O(d * steps) | O(1) |

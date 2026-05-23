@@ -1,7 +1,7 @@
 package algoexpert.easy.remove_duplicates_from_linked_list;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Single pointer, inner while skip.
 class Solution3 {
     public static class LinkedList {
         public int value;

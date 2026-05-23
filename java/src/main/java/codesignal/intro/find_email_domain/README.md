@@ -11,4 +11,4 @@ Given an email address, extract and return the domain (everything after the last
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | lastIndexOf('@') then substring | O(n) | O(n) |
+| Solution1 | lastIndexOf('@') then substring | O(n) | O(n) |

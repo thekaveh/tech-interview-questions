@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Direct two-way equality check.
 class Solution2 {
     static boolean solution(int yourLeft, int yourRight, int friendsLeft, int friendsRight) {
         return yourLeft == friendsLeft && yourRight == friendsRight

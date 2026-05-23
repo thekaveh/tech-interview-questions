@@ -1,7 +1,7 @@
 package algoexpert.easy.sorted_squared_array;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Two-pointer, compact loop header.
 class Solution2 {
     public int[] sortedSquaredArray(int[] A) {
         var N = A.length;

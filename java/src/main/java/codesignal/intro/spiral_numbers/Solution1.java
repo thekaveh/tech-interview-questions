@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Boundary-shrinking spiral fill (top, right, bottom, left).
 class Solution1 {
     static int[][] solution(int N) {
         var R = new int[N][N];

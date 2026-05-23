@@ -1,7 +1,7 @@
 package algoexpert.medium.smallest_difference;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort both, two-pointer with tracked best pair values.
 class Solution4 {
     public static int[] smallestDifference(int[] A, int[] B) {
         var M = A.length;

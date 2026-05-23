@@ -11,4 +11,4 @@ Given an array of integers, find the maximum absolute difference between any two
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Single pass max tracking | O(n) | O(1) |
+| Solution1 | Single pass max tracking | O(n) | O(1) |

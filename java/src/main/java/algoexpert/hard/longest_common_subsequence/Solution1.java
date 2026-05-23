@@ -1,7 +1,7 @@
 package algoexpert.hard.longest_common_subsequence;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bottom-up 2-D DP with backtracking.
 class Solution1 {
 	public static List<Character> longestCommonSubsequence(String strA, String strB) {
 		var nA = strA.length();

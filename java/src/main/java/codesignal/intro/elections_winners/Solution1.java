@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Find current max, then count candidates beatable with k extra votes.
 class Solution1 {
     static int solution(int[] votes, int k) {
         var max = 0;

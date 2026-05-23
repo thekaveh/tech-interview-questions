@@ -1,7 +1,7 @@
 package algoexpert.medium.spiral_traverse;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative shrinking boundary with four-edge traversal.
 class Solution1 {
 	public static List<Integer> spiralTraverse(int[][] A) {
 		var R = A.length;

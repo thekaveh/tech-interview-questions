@@ -1,7 +1,7 @@
 package algoexpert.medium.staircase_traversal;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Naive recursion.
 class Solution1 {
     // T: O(S ^ H) - S: O(H)
     public int staircaseTraversal(int H, int S) {

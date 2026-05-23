@@ -1,7 +1,7 @@
 package algoexpert.medium.number_of_ways_to_make_change;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Naive recursion (include/exclude each denomination).
 class Solution1 {
 	// T: O(2 ^ (S + D)) | S: O(S + D)
     public static int numberOfWaysToMakeChange(int S, int[] D) {

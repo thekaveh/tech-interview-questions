@@ -1,7 +1,7 @@
 package educative.patterns.sliding_window.longest_subarray_with_ones_after_replacement;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Variable-size sliding window tracking max ones seen; shrink when zeros in window exceed k.
 class Solution1 {
 	public static int findLength(int[] A, int k) {
 		int N = A.length;

@@ -1,7 +1,7 @@
 package algoexpert.hard.zigzag_traverse;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: BFS diagonal-by-diagonal with alternating insertion order.
 class Solution1 {
     public static List<Integer> zigzagTraverse(List<List<Integer>> A) {
         var R = A.size();

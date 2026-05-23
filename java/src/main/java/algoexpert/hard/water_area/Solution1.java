@@ -1,7 +1,7 @@
 package algoexpert.hard.water_area;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Precompute left-max and right-max arrays, then accumulate water.
 class Solution1 {
 	public static int waterArea(int[] H) {
 		var N = H.length;

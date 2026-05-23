@@ -1,7 +1,7 @@
 package educative.patterns.sliding_window.longest_substring_with_maximum_k_distinct_characters;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Variable-size sliding window with hash map; shrink left while distinct character count exceeds k.
 class Solution1 {
 	public static int findLength(String input, int k) {
 		if (input == null || input.length() == 0) {

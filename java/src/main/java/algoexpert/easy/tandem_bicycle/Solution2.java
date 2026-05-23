@@ -1,7 +1,7 @@
 package algoexpert.easy.tandem_bicycle;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort both, ternary index selection.
 class Solution2 {
     public int tandemBicycle(int[] A, int[] B, boolean fastest) {
         var N = A.length;

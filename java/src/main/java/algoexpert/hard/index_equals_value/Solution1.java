@@ -1,7 +1,7 @@
 package algoexpert.hard.index_equals_value;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Binary search (iterative, leftmost bias).
 class Solution1 {
     public int indexEqualsValue(int[] A) {
         var N = A.length;

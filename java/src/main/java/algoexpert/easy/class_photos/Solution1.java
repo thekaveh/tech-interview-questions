@@ -1,7 +1,7 @@
 package algoexpert.easy.class_photos;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort descending, compare pairwise with flag.
 class Solution1 {
     public boolean classPhotos(ArrayList<Integer> R, ArrayList<Integer> B) {
         var N = R.size();

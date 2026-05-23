@@ -11,4 +11,4 @@ Given an array of integers and a window size k, find the maximum sum of any k co
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Sliding window | O(n) | O(1) |
+| Solution1 | Sliding window | O(n) | O(1) |

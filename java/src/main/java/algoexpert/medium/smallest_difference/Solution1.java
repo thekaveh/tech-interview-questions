@@ -1,7 +1,7 @@
 package algoexpert.medium.smallest_difference;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: MinPQ over all pairs, extract minimum.
 class Solution1 {
     private static class Index {
         private final int a, b;

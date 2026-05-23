@@ -11,5 +11,5 @@ Given a string containing words separated by non-alphabetic characters, return t
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Two-pointer word extraction, track longest | O(n) | O(n) |
-| solution-2.java | Split on non-word characters, stream max by length | O(n) | O(n) |
+| Solution1 | Two-pointer word extraction, track longest | O(n) | O(n) |
+| Solution2 | Split on non-word characters, stream max by length | O(n) | O(n) |

@@ -1,7 +1,7 @@
 package algoexpert.veryhard.merge_sorted_arrays;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Min-heap of int[] index pairs.
 class Solution2 {
 	public static List<Integer> mergeSortedArrays(List<List<Integer>> A) {
 		var R = new ArrayList<Integer>();

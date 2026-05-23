@@ -1,7 +1,7 @@
 package algoexpert.easy.middle_node;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Slow and fast pointer.
 class Solution2 {
     // This is an input class. Do not edit.
     public static class LinkedList {

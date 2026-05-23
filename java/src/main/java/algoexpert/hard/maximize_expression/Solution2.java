@@ -1,7 +1,7 @@
 package algoexpert.hard.maximize_expression;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Four DP passes (prefix max for each term).
 class Solution2 {
 	public int maximizeExpression(int[] A) {
 		var N = A.length;

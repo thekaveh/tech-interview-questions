@@ -1,7 +1,7 @@
 package algoexpert.medium.permutations;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Backtracking: pick-and-remove each element.
 class Solution2 {
     public static List<List<Integer>> getPermutations(List<Integer> A) {
         var R = new ArrayList<List<Integer>>();

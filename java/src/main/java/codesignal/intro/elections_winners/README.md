@@ -11,4 +11,4 @@ Given vote counts and remaining votes k available to one candidate, determine ho
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Find current max, then count candidates beatable with k extra votes | O(n) | O(1) |
+| Solution1 | Find current max, then count candidates beatable with k extra votes | O(n) | O(1) |

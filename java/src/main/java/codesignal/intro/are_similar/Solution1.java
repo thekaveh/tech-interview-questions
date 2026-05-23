@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Two-pointer scan allowing at most one swap.
 class Solution1 {
     static boolean solution(int[] A, int[] B) {
         var N = A.length;

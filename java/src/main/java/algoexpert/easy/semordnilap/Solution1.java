@@ -2,7 +2,7 @@ package algoexpert.easy.semordnilap;
 import java.util.*;
 import java.util.stream.Collectors;
 
-// Approach: TODO.
+// Approach: HashMap groups words with their reverses.
 class Solution1 {
     public ArrayList<ArrayList<String>> semordnilap(String[] words) {
         var M = new HashMap<String, ArrayList<String>>();

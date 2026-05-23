@@ -11,4 +11,4 @@ Given two arrays of the same length, determine whether one can be made equal to 
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Two-pointer scan allowing at most one swap | O(n) | O(1) |
+| Solution1 | Two-pointer scan allowing at most one swap | O(n) | O(1) |

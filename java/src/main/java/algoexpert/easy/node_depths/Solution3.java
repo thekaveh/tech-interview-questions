@@ -1,7 +1,7 @@
 package algoexpert.easy.node_depths;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative DFS, custom Pair node+depth.
 class Solution3 {
     static class BinaryTree {
         int value;

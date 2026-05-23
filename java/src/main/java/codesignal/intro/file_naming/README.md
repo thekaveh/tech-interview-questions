@@ -11,4 +11,4 @@ Given a list of file names to be created in order, resolve conflicts by appendin
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | LinkedHashMap tracking next suffix per name, retry loop | O(n * conflicts) | O(n) |
+| Solution1 | LinkedHashMap tracking next suffix per name, retry loop | O(n * conflicts) | O(n) |

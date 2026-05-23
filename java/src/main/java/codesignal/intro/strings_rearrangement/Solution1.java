@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Generate all permutations, check each for consecutive one-diff property.
 class Solution1 {
     static boolean solution(String[] A) {
         var N = A.length;

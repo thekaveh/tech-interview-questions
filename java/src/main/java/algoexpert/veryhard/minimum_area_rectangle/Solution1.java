@@ -1,7 +1,7 @@
 package algoexpert.veryhard.minimum_area_rectangle;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Point-set lookup: for each diagonal pair check the other two corners.
 class Solution1 {
 	public int minimumAreaRectangle(int[][] points) {
 		var result = Integer.MAX_VALUE;

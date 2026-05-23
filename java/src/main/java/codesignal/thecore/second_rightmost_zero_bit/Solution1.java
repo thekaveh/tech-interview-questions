@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Convert to binary string, find second '0' index via two indexOf calls.
 class Solution1 {
     static int solution(int n) {
         var rev = new StringBuilder(Integer.toBinaryString(n)).reverse();

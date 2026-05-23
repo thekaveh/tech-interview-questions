@@ -1,7 +1,7 @@
 package algoexpert.hard.sort_k_sorted_array;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Min-heap of size k+1, streaming output.
 class Solution1 {
     public int[] sortKSortedArray(int[] A, int k) {
         var N = A.length;

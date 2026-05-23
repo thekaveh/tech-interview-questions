@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Recursive summation of 4*(n-1) per layer.
 class Solution1 {
     static int solution(int n) {
         if(n == 1) { return 1; }

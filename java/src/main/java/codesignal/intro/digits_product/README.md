@@ -11,4 +11,4 @@ Given an integer product, find the smallest positive integer whose digits multip
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Linear scan checking digit product of each candidate | O(n * d) | O(1) |
+| Solution1 | Linear scan checking digit product of each candidate | O(n * d) | O(1) |

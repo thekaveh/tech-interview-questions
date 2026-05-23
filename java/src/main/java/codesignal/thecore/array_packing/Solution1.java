@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Shift each element into its byte lane and OR into accumulator.
 class Solution1 {
     static int solution(int[] A) {
         var N = A.length;

@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Day-by-day simulation.
 class Solution1 {
     static int solution(int upSpeed, int downSpeed, int desiredHeight) {
         var days = 0;

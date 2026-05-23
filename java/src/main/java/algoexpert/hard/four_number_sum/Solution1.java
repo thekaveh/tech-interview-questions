@@ -1,7 +1,7 @@
 package algoexpert.hard.four_number_sum;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Four nested loops brute force.
 // T: O(N^4) | S: O(1)
 class Solution1 {
     public static List<Integer[]> fourNumberSum(int[] A, int S) {

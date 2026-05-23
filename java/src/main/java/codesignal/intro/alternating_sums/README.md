@@ -11,5 +11,5 @@ Given an array of integers representing weights, split them into two teams by al
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Single pass with two accumulators | O(n) | O(1) |
-| solution-2.java | Single pass using index parity into two-element result | O(n) | O(1) |
+| Solution1 | Single pass with two accumulators | O(n) | O(1) |
+| Solution2 | Single pass using index parity into two-element result | O(n) | O(1) |

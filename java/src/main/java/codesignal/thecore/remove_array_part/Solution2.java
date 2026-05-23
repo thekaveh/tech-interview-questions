@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: IntStream filter keeping only indices outside [lo, hi].
 class Solution2 {
     static int[] solution(int[] A, int lo, int hi) {
         var N = A.length;

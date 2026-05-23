@@ -1,7 +1,7 @@
 package algoexpert.medium.min_max_stack_construction;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Parallel int arrays for values, mins, maxs.
 class Solution1 {
     // Feel free to add new properties and methods to the class.
     static class MinMaxStack {

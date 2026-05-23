@@ -11,5 +11,5 @@ Given obstacle positions on an integer number line, find the smallest integer ju
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Enumerate candidates, check divisibility | O(n * max) | O(n) |
-| solution-2.java | Stream filter over candidate jump sizes | O(n * max) | O(1) |
+| Solution1 | Enumerate candidates, check divisibility | O(n * max) | O(n) |
+| Solution2 | Stream filter over candidate jump sizes | O(n * max) | O(1) |

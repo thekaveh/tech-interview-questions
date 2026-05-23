@@ -1,7 +1,7 @@
 package algoexpert.easy.tandem_bicycle;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort, reverse one array if fastest, then pair.
 class Solution3 {
     public int tandemBicycle(int[] R, int[] B, boolean fastest) {
         var T = 0;

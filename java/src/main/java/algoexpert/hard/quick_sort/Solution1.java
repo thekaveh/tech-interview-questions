@@ -1,7 +1,7 @@
 package algoexpert.hard.quick_sort;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: 3-way partition quicksort (recursive).
 class Solution1 {
     public static int[] quickSort(int[] A) {
         var N = A.length;

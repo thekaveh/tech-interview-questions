@@ -1,7 +1,7 @@
 package algoexpert.medium.powerset;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bitmask enumeration: each integer selects a subset.
 class Solution1 {
     public static List<List<Integer>> powerset(List<Integer> A) {
         var nA = A.size();

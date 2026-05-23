@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Manual index-tracked loop copying A then B into result array.
 class Solution1 {
     static int[] solution(int[] A, int[] B) {
         var M = A.length;

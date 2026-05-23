@@ -1,7 +1,7 @@
 package algoexpert.veryhard.a_star_algorithm;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: A* with Manhattan heuristic using Node objects and HashMap.
 class Solution1 {
 	static class Node {
 		int r, c;

@@ -1,7 +1,7 @@
 package algoexpert.hard.laptop_rentals;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort by start + min-heap of full intervals.
 class Solution2 {
 	public int laptopRentals(ArrayList<ArrayList<Integer>> times) {
 		var N = times.size();

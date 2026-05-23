@@ -1,7 +1,7 @@
 package algoexpert.easy.depth_first_search;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive DFS via stack accumulation.
 class Solution2 {
     // Do not edit the class below except
     // for the depthFirstSearch method.

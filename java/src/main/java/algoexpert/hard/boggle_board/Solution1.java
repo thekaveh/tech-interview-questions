@@ -1,7 +1,7 @@
 package algoexpert.hard.boggle_board;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Trie + backtracking DFS.
 class Solution1 {
 	public static List<String> boggleBoard(char[][] board, String[] words) {
 		int R = board.length, C = board[0].length;

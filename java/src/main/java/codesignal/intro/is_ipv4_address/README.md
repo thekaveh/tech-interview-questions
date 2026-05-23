@@ -11,4 +11,4 @@ Given a string, determine whether it is a valid IPv4 address (four dot-separated
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Split on dot, validate each octet's format and range | O(1) | O(1) |
+| Solution1 | Split on dot, validate each octet's format and range | O(1) | O(1) |

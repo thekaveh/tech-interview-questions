@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Iterate over each number in [a,b] and count its set bits via bit-shift loop.
 class Solution1 {
     static int solution(int a, int b) {
         var s = 0;

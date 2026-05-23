@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Sliding window.
 class Solution1 {
     static int solution(int[] A, int k) {
         var N = A.length;

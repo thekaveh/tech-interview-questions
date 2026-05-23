@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Single pass in-place replacement.
 class Solution1 {
     static int[] solution(int[] A, int from, int to) {
         var N = A.length;

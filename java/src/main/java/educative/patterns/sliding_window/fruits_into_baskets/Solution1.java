@@ -1,7 +1,7 @@
 package educative.patterns.sliding_window.fruits_into_baskets;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Variable-size sliding window with a HashSet shrinking left when distinct count exceeds 2.
 class Solution1 {
 	public static int findLength(char[] A) {
 		if (A == null || A.length == 0) {

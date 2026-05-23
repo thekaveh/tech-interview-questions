@@ -1,7 +1,7 @@
 package algoexpert.easy.run_length_encoding;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: do-while loop, inner while extends run.
 class Solution3 {
     public String runLengthEncoding(String input) {
         var i = 0;

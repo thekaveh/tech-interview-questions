@@ -1,7 +1,7 @@
 package algoexpert.veryhard.right_sibling_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: BFS level-order traversal with null sentinels.
 class Solution1 {
 	public static BinaryTree rightSiblingTree(BinaryTree root) {
 		var nil = new BinaryTree(-1);

@@ -1,7 +1,7 @@
 package algoexpert.easy.transpose_matrix;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Allocate new matrix, nested loop fill.
 class Solution1 {
     public int[][] transposeMatrix(int[][] A) {
         var R = A.length;

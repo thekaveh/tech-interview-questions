@@ -1,7 +1,7 @@
 package algoexpert.easy.semordnilap;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: HashSet, remove on match.
 class Solution2 {
     public ArrayList<ArrayList<String>> semordnilap(String[] words) {
         var R = new ArrayList<ArrayList<String>>();

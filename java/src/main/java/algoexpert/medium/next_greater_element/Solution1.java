@@ -1,7 +1,7 @@
 package algoexpert.medium.next_greater_element;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Brute force double-pass circular scan per element.
 class Solution1 {
     public int[] nextGreaterElement(int[] A) {
         var N = A.length;

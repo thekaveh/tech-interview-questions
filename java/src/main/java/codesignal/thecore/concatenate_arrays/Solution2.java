@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: System.arraycopy for each segment in bulk.
 class Solution2 {
     static int[] solution(int[] A, int[] B) {
         var M = A.length;

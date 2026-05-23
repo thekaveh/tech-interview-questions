@@ -1,7 +1,7 @@
 package algoexpert.easy.nth_fibonacci;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative, two-variable rolling window.
 class Solution4 {
     public static int getNthFib(int n) {
         if(n == 1 || n == 2) { return n - 1; }

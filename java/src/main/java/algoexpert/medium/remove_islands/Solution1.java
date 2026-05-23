@@ -1,7 +1,7 @@
 package algoexpert.medium.remove_islands;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS to label connected components, then zero non-border components.
 class Solution1 {
     public int[][] removeIslands(int[][] A) {
         var R = A.length;

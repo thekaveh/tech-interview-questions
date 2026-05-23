@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Iterative simulation year by year.
 class Solution1 {
     static int solution(int deposit, int rate, int threshold) {
         var years = 0;

@@ -1,7 +1,7 @@
 package algoexpert.medium.two_colorable;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive DFS graph coloring.
 class Solution1 {
     public boolean twoColorable(int[][] E) {
         var V = E.length;

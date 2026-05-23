@@ -1,7 +1,7 @@
 package algoexpert.easy.caesar_cipher_encryptor;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Arithmetic modulo 26, char cast.
 class Solution2 {
     public static String caesarCypherEncryptor(String plain, int k) {
         var R = new StringBuilder();

@@ -1,7 +1,7 @@
 package algoexpert.medium.river_sizes;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS from each unvisited water cell, count component size.
 class Solution1 {
     public static List<Integer> riverSizes(int[][] M) {
         var R = M.length;

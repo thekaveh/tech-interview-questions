@@ -1,7 +1,7 @@
 package algoexpert.easy.find_closest_value_in_bst;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive BST traversal, track closest.
 class Solution1 {
     static class BST {
         public int value;

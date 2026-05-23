@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Sort, compute (max - min + 1) - n.
 class Solution2 {
     static int solution(int[] A) {
         var M = A.length;

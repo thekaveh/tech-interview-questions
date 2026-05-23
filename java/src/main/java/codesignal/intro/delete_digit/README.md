@@ -11,4 +11,4 @@ Given an integer n, delete exactly one of its digits to produce the largest poss
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Try deleting each digit position, track maximum | O(d²) | O(d) |
+| Solution1 | Try deleting each digit position, track maximum | O(d²) | O(d) |

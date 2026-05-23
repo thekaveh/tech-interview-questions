@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Stream map with ternary.
 class Solution2 {
     static int[] solution(int[] A, int from, int to) {
         return Arrays.stream(A)

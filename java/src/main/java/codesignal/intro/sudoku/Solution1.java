@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Check all rows, columns, and 3x3 boxes with presence maps.
 class Solution1 {
     static boolean solution(int[][] M) {
         var pattern = new HashMap<Integer, Integer>();

@@ -1,7 +1,7 @@
 package algoexpert.hard.validate_three_nodes;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: BST-guided descendant search (iterative).
 class Solution1 {
 	// This is an input class. Do not edit.
 	static class BST {

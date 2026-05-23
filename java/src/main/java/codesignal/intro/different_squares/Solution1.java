@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: HashSet of custom Square objects with manual equals/hashCode.
 class Solution1 {
     static int solution(int[][] M) {
         var R = M.length;

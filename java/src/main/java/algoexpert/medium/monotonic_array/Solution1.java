@@ -1,7 +1,7 @@
 package algoexpert.medium.monotonic_array;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Single pass tracking both trend flags.
 class Solution1 {
     public static boolean isMonotonic(int[] A) {
         var N = A.length;

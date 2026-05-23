@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Split on hyphen, validate each group by length and hex parsing.
 class Solution1 {
     static boolean solution(String composite) {
         if(composite == null

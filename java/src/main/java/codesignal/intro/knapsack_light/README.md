@@ -11,4 +11,4 @@ Given two items each with a value and weight, and a maximum carrying capacity, d
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Greedy: take higher-value item first, add second if weight allows | O(1) | O(1) |
+| Solution1 | Greedy: take higher-value item first, add second if weight allows | O(1) | O(1) |

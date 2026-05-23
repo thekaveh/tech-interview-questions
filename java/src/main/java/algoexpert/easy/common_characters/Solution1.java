@@ -1,7 +1,7 @@
 package algoexpert.easy.common_characters;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Per-string dedup set, frequency map.
 class Solution1 {
     public String[] commonCharacters(String[] A) {
         var N = A.length;

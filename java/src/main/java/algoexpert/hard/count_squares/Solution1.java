@@ -1,7 +1,7 @@
 package algoexpert.hard.count_squares;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Point-set lookup with perpendicular midpoint.
 class Solution1 {
 	public int countSquares(int[][] points) {
 		var count = 0;

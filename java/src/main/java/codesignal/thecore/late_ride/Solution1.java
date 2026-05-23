@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Compute hours and minutes, then sum digits of each via a while loop.
 class Solution1 {
     static int solution(int n) {
         var h = n / 60;

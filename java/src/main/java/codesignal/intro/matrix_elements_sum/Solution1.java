@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Row-major scan with per-column blocked flag.
 class Solution1 {
     static int solution(int[][] M) {
         var R = M.length;

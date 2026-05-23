@@ -1,7 +1,7 @@
 package algoexpert.hard.quick_select;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: 3-way partition quickselect (iterative).
 class Solution1 {
     public static int quickselect(int[] A, int k) {
         var N = A.length;

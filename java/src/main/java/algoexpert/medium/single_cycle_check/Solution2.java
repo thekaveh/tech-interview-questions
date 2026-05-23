@@ -1,7 +1,7 @@
 package algoexpert.medium.single_cycle_check;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive jump simulation with jump counter.
 class Solution2 {
     public static boolean hasSingleCycle(int[] A) {
         return hasSingleCycle(A, 0, 0);

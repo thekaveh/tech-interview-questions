@@ -1,7 +1,7 @@
 package algoexpert.easy.insertion_sort;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Insertion sort, condition in loop head.
 class Solution2 {
     private static final int H = 1;
 

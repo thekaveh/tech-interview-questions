@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Simulate printing pages, deducting digit count until ink runs out.
 class Solution1 {
     static int solution(int current, int remainingDigits) {
         while(numOfDigits(current) <= remainingDigits) {

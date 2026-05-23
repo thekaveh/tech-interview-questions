@@ -1,7 +1,7 @@
 package algoexpert.easy.branch_sums;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive DFS, inline leaf check.
 class Solution2 {
     public static class BinaryTree {
         int value;

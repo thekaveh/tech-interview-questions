@@ -1,7 +1,7 @@
 package algoexpert.medium.minimum_characters_for_words;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Per-word freq map merged into global max-freq map.
 class Solution1 {
     public char[] minimumCharactersForWords(String[] W) {
         var maxFREQ = new HashMap<Character, Integer>();

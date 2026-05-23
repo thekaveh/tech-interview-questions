@@ -1,7 +1,7 @@
 package algoexpert.medium.two_colorable;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative DFS graph coloring with stack.
 class Solution2 {
     public boolean twoColorable(int[][] E) {
         var V = E.length;

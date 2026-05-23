@@ -11,5 +11,5 @@ Given a rectangular grid of strings, surround the entire picture with a border o
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Direct construction with StringBuilder border | O(n*m) | O(n*m) |
-| solution-2.java | Wrap rows then derive top/bottom via replaceAll | O(n*m) | O(n*m) |
+| Solution1 | Direct construction with StringBuilder border | O(n*m) | O(n*m) |
+| Solution2 | Wrap rows then derive top/bottom via replaceAll | O(n*m) | O(n*m) |

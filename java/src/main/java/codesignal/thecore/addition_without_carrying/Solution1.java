@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Iterative digit-by-digit assembly building result string.
 class Solution1 {
     static int solution(int param1, int param2) {
         if(param1 == 0 || param2 == 0) { return param1 + param2; }

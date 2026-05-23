@@ -1,7 +1,7 @@
 package algoexpert.easy.minimum_waiting_time;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort, multiply each by remaining count.
 class Solution2 {
     public int minimumWaitingTime(int[] Q) {
         var R = 0;

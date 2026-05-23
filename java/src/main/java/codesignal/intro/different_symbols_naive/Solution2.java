@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Stream distinct count.
 class Solution2 {
     static int solution(String txt)
     {

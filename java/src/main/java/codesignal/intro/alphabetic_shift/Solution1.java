@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Single pass with modular arithmetic.
 class Solution1 {
     static String solution(String txt) {
         var R = new StringBuilder();

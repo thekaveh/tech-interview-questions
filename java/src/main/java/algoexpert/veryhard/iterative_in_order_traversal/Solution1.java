@@ -2,7 +2,7 @@ package algoexpert.veryhard.iterative_in_order_traversal;
 import java.util.function.Function;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Parent-pointer walk tracking previous node direction.
 class Solution1 {
 	public static void iterativeInOrderTraversal(BinaryTree tree, Function<BinaryTree, Void> f) {
 		BinaryTree x = tree, w = null;

@@ -1,7 +1,7 @@
 package algoexpert.medium.remove_kth_node_from_end;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Two-pointer: advance tail k steps, then march both.
 class Solution1 {
     public static void removeKthNodeFromEnd(LinkedList head, int k) {
         LinkedList pre = null, cur = head, tail = head;

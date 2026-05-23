@@ -1,7 +1,7 @@
 package algoexpert.hard.shifted_binary_search;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Modified binary search distinguishing sorted half.
 class Solution1 {
     public static int shiftedBinarySearch(int[] A, int v) {
         var N = A.length;

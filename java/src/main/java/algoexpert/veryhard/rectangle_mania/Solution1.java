@@ -1,7 +1,7 @@
 package algoexpert.veryhard.rectangle_mania;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Point-set lookup: for each ordered pair of non-collinear points check opposite corners.
 class Solution1 {
 	public static int rectangleMania(List<Integer[]> coords) {
 		var M = new HashSet<String>();

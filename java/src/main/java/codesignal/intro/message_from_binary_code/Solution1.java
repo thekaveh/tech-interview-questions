@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Slice 8-bit chunks, parse each as binary int, cast to char.
 class Solution1 {
     static String solution(String txt) {
         var N = txt.length();

@@ -1,7 +1,7 @@
 package algoexpert.medium.symmetrical_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive with explicit null checks before value comparison.
 class Solution3 {
 	// This is an input class. Do not edit.
 	static class BinaryTree {

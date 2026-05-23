@@ -1,7 +1,7 @@
 package algoexpert.medium.sweet_and_savory;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort + brute-force all pairs with min-PQ for best.
 class Solution1 {
 
     public int[] sweetAndSavory(int[] dishes, int target) {

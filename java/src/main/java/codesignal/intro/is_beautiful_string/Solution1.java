@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Frequency array, check non-increasing order.
 class Solution1 {
     static boolean solution(String txt) {
         var FREQ = new int[26];

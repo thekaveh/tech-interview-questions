@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Linear scan checking digit product of each candidate.
 class Solution1 {
     static int solution(int product) {
         for(var num = 1; num < 65522; num++) {

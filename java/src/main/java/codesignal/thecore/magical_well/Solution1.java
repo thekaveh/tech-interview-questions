@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Iterative sum incrementing a and b each round.
 class Solution1 {
     static int solution(int a, int b, int n) {
         var ret = 0;

@@ -11,5 +11,5 @@ Given a sorted array of integers, find the element that minimizes the total sum 
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Direct median index (ceiling) | O(1) | O(1) |
-| solution-2.java | Direct median index (floor of midpoint) | O(1) | O(1) |
+| Solution1 | Direct median index (ceiling) | O(1) | O(1) |
+| Solution2 | Direct median index (floor of midpoint) | O(1) | O(1) |

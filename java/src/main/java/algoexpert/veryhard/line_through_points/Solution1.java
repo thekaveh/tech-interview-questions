@@ -1,7 +1,7 @@
 package algoexpert.veryhard.line_through_points;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: For each anchor point, hash normalized slopes to other points.
 class Solution1 {
 	public int lineThroughPoints(int[][] points) {
 		var max = 1;

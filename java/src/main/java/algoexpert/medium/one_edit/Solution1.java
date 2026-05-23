@@ -1,7 +1,7 @@
 package algoexpert.medium.one_edit;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Two-pointer with edit-count flag.
 class Solution1 {
     public boolean oneEdit(String txtA, String txtB) {
         int idxA = 0, M = txtA.length();

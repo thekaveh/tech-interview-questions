@@ -1,7 +1,7 @@
 package algoexpert.medium.search_in_sorted_matrix;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Row-by-row linear scan with early break.
 class Solution1 {
     public static int[] searchInSortedMatrix(int[][] M, int v) {
         var R = M.length;

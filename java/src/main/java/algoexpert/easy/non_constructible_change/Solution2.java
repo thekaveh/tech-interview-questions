@@ -1,7 +1,7 @@
 package algoexpert.easy.non_constructible_change;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort, greedy reachability scan.
 class Solution2 {
     public int nonConstructibleChange(int[] coins) {
         Arrays.sort(coins);

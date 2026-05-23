@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Recursive digit-by-digit rounding with carry propagation.
 class Solution1 {
     static int solution(int n) {
         var str = Integer.toString(n);

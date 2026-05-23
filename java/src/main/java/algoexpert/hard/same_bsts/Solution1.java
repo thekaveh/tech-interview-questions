@@ -1,7 +1,7 @@
 package algoexpert.hard.same_bsts;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive structural comparison with valid-range scanning.
 class Solution1 {
 	public static boolean sameBsts(List<Integer> A, List<Integer> B) {
 		return solve(A, B, 0, 0, Integer.MIN_VALUE, Integer.MAX_VALUE);

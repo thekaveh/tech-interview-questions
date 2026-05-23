@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Fixed-size frequency array, check odd counts.
 class Solution2 {
     static boolean solution(String txt) {
         var FREQ = new int[26];

@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Simulation loop tracking stubs and accumulating total burned.
 class Solution1 {
     static int solution(int candlesNumber, int makeNew) {
         var ret = 0;

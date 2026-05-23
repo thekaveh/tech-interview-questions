@@ -1,7 +1,7 @@
 package algoexpert.hard.longest_subarray_with_sum;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sliding window with shrink-on-exceed.
 class Solution1 {
 	public int[] longestSubarrayWithSum(int[] A, int S) {
 		var N = A.length;

@@ -1,7 +1,7 @@
 package algoexpert.medium.number_of_ways_to_traverse_graph;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Top-down recursion with 2-D memoization.
 class Solution2 {
     // T: O(C * R) - S: O(C * R)
     public int numberOfWaysToTraverseGraph(int C, int R) {

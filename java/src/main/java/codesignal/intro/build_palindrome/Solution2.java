@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Grow suffix boundary until palindrome, then append reversed prefix.
 class Solution2 {
     static String solution(String txt) {
         var N = txt.length();

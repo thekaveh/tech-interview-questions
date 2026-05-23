@@ -11,5 +11,5 @@ Given a string, determine whether it is a valid programming variable name (start
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Character-by-character validation with position check | O(n) | O(1) |
-| solution-2.java | Single regex match | O(n) | O(1) |
+| Solution1 | Character-by-character validation with position check | O(n) | O(1) |
+| Solution2 | Single regex match | O(n) | O(1) |

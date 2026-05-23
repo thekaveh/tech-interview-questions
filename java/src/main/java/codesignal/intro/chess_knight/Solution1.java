@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Enumerate all 8 candidate moves, count in-bounds.
 class Solution1 {
     static int solution(String cell) {
         var r = cell.charAt(1) - '1' + 1;

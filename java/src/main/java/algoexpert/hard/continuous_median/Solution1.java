@@ -1,7 +1,7 @@
 package algoexpert.hard.continuous_median;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Two heaps (max-heap lower + min-heap upper).
 // Do not edit the class below except for
 // the insert method. Feel free to add new
 // properties and methods to the class.

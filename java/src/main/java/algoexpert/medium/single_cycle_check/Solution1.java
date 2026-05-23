@@ -1,7 +1,7 @@
 package algoexpert.medium.single_cycle_check;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative jump simulation with early-exit check.
 class Solution1 {
     public static boolean hasSingleCycle(int[] A) {
         var N = A.length;

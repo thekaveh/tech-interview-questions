@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Linear scan until first non-digit, then substring.
 class Solution1 {
     static String solution(String txt) {
         var N = txt.length();

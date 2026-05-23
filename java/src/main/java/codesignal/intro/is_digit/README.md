@@ -11,4 +11,4 @@ Given a single character, determine whether it is a decimal digit ('0'–'9').
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Offset arithmetic against '0' | O(1) | O(1) |
+| Solution1 | Offset arithmetic against '0' | O(1) | O(1) |

@@ -1,7 +1,7 @@
 package algoexpert.easy.node_depths;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive DFS, pass depth down.
 class Solution2 {
     static class BinaryTree {
 		int value;

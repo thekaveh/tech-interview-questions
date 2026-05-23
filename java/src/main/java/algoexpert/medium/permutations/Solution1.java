@@ -1,7 +1,7 @@
 package algoexpert.medium.permutations;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative insertion into each position of growing permutations.
 class Solution1 {
     public static List<List<Integer>> getPermutations(List<Integer> A) {
         var N = A.size();

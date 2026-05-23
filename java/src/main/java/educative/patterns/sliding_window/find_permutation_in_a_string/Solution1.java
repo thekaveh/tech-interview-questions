@@ -1,7 +1,7 @@
 package educative.patterns.sliding_window.find_permutation_in_a_string;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Fixed-size sliding window with character frequency map and matched-count tracking.
 class Solution1 {
 	public static boolean findPermutation(String txt, String pattern) {
 		int N = txt.length(), M = pattern.length(), lo = 0, matched = 0;

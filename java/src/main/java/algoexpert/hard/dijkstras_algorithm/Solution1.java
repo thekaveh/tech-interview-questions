@@ -1,7 +1,7 @@
 package algoexpert.hard.dijkstras_algorithm;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Min-heap Dijkstra (lazy, duplicate entries).
 class Solution1 {
     public int[] dijkstrasAlgorithm(int s, int[][][] E) {
         var N = E.length;

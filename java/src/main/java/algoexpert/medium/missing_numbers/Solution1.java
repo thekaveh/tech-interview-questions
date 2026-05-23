@@ -1,7 +1,7 @@
 package algoexpert.medium.missing_numbers;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: HashSet membership scan.
 class Solution1 {
     // Time: O(n) | Space: O(n)
     public int[] missingNumbers(int[] A) {

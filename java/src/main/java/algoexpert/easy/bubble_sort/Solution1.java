@@ -1,7 +1,7 @@
 package algoexpert.easy.bubble_sort;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bubble sort with early exit.
 class Solution1 {
     public static int[] bubbleSort(int[] A) {
         var N = A.length;

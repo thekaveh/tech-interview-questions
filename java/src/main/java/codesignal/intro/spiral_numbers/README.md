@@ -11,4 +11,4 @@ Fill an N x N matrix with the numbers 1 through N² in clockwise spiral order st
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Boundary-shrinking spiral fill (top, right, bottom, left) | O(N²) | O(N²) |
+| Solution1 | Boundary-shrinking spiral fill (top, right, bottom, left) | O(N²) | O(N²) |

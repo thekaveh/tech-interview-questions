@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Diagonal check via equal absolute row/column differences.
 class Solution1 {
     static boolean solution(String bishop, String pawn) {
         var bishopR = Integer.valueOf(bishop.charAt(1));

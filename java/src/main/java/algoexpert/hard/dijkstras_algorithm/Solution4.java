@@ -1,7 +1,7 @@
 package algoexpert.hard.dijkstras_algorithm;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Min-heap Dijkstra with VertexInfo wrapper.
 class Solution4 {
 	public int[] dijkstrasAlgorithm(int start, int[][][] edges) {
 		int V = edges.length;

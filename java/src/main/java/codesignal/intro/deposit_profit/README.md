@@ -11,5 +11,5 @@ Given an initial deposit, an annual interest rate, and a target threshold, find 
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Iterative simulation year by year | O(years) | O(1) |
-| solution-2.java | Direct formula using logarithms | O(1) | O(1) |
+| Solution1 | Iterative simulation year by year | O(years) | O(1) |
+| Solution2 | Direct formula using logarithms | O(1) | O(1) |

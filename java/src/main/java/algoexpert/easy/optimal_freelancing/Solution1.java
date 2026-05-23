@@ -1,7 +1,7 @@
 package algoexpert.easy.optimal_freelancing;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Greedy max-heap, schedule latest slot.
 class Solution1 {
     public int optimalFreelancing(Map<String, Integer>[] jobs) {
         var N = 7;

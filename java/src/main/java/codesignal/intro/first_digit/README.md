@@ -11,4 +11,4 @@ Given a string, find and return the first digit character it contains.
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Linear scan with Character.isDigit | O(n) | O(1) |
+| Solution1 | Linear scan with Character.isDigit | O(n) | O(1) |

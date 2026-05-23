@@ -1,7 +1,7 @@
 package algoexpert.hard.shortest_unique_prefixes;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Trie with per-node child-count + prefix walk.
 class Solution1 {
 	public String[] shortestUniquePrefixes(String[] keys) {
 		int N = keys.length;

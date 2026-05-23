@@ -1,7 +1,7 @@
 package algoexpert.medium.minimum_passes_of_matrix;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Multi-source BFS, alternate list/queue form.
 class Solution3 {
 
     public int minimumPassesOfMatrix(int[][] A) {

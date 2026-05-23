@@ -1,7 +1,7 @@
 package algoexpert.medium.smallest_difference;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: MaxPQ keeping only the best pair seen.
 class Solution2 {
     private static class Tuple {
         private final int a, b;

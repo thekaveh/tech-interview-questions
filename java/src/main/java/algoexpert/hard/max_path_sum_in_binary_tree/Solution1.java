@@ -1,7 +1,7 @@
 package algoexpert.hard.max_path_sum_in_binary_tree;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Post-order DFS tracking branch-includable and global max.
 class Solution1 {
     public static int maxPathSum(BinaryTree tree) {
         var ret = solve(tree);

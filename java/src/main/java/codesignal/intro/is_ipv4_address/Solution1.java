@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Split on dot, validate each octet's format and range.
 class Solution1 {
     static boolean solution(String composite) {
         if(composite.indexOf('.') == -1) { return false; }

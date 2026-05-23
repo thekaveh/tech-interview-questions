@@ -1,7 +1,7 @@
 package algoexpert.easy.non_constructible_change;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bitmask enumeration of subsets.
 class Solution1 {
     public int nonConstructibleChange(int[] coins) {
         var coinN = coins.length;

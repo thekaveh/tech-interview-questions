@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Single pass skipping every k-th index.
 class Solution1 {
     static int[] solution(int[] A, int k) {
         var M = A.length;

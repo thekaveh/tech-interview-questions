@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Simulate with a HashSet tracking visited values; stop on first repeat.
 class Solution1 {
     static int solution(int a0) {
         var a = a0;

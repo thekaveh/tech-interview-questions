@@ -11,4 +11,4 @@ Apply run-length encoding to a string: replace each run of consecutive identical
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Single pass run-length scan | O(n) | O(n) |
+| Solution1 | Single pass run-length scan | O(n) | O(n) |

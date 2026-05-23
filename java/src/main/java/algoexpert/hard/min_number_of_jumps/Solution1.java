@@ -1,7 +1,7 @@
 package algoexpert.hard.min_number_of_jumps;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bottom-up DP (forward pass updating reachable cells).
 class Solution1 {
 	public static int minNumberOfJumps(int[] A) {
 		int N = A.length;

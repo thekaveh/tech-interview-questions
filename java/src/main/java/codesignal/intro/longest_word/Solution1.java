@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Two-pointer word extraction, track longest.
 class Solution1 {
     static String solution(String txt) {
         var N = txt.length();

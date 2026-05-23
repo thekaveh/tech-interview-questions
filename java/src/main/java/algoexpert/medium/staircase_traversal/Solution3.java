@@ -1,7 +1,7 @@
 package algoexpert.medium.staircase_traversal;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bottom-up DP table.
 class Solution3 {
     // T: O(H * S) - S: O(H)
     public int staircaseTraversal(int H, int S) {

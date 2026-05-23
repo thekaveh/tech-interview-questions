@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Direct construction with StringBuilder border.
 class Solution1 {
     static String[] solution(String[] picture) {
         var M = picture.length;

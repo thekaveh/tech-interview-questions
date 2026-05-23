@@ -1,7 +1,7 @@
 package algoexpert.easy.validate_subsequence;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Single pass, dual index for-loop.
 class Solution2 {
     public static boolean isValidSubsequence(List<Integer> A, List<Integer> B) {
         int i = 0, M = A.size();

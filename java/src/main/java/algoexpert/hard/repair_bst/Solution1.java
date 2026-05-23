@@ -1,7 +1,7 @@
 package algoexpert.hard.repair_bst;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: In-order traversal to detect two out-of-order nodes + value swap.
 class Solution1 {
 	// This is an input class. Do not edit.
 	static class BST {

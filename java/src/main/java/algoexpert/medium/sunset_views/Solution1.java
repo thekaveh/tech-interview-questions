@@ -1,7 +1,7 @@
 package algoexpert.medium.sunset_views;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Single pass from horizon side, track running max.
 class Solution1 {
     public ArrayList<Integer> sunsetViews(int[] B, String direction) {
         var maxIdx = -1;

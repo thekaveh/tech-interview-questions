@@ -1,7 +1,7 @@
 package algoexpert.medium.stable_internship;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Gale-Shapley (intern-proposes) algorithm.
 class Solution1 {
 	public int[][] stableInternships(int[][] interns, int[][] teams) {
 		var N = interns.length;

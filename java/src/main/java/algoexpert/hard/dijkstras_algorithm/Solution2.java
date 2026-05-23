@@ -1,7 +1,7 @@
 package algoexpert.hard.dijkstras_algorithm;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Min-heap Dijkstra with explicit remove.
 class Solution2 {
 	public int[] dijkstrasAlgorithm(int s, int[][][] E) {
 		int N = E.length;

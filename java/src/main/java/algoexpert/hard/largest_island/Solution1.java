@@ -1,7 +1,7 @@
 package algoexpert.hard.largest_island;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: DFS island labeling + water-cell neighbor union.
 class Solution1 {
 	public int largestIsland(int[][] A) {
 		var R = A.length;

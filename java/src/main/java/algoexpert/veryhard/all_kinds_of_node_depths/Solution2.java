@@ -1,7 +1,7 @@
 package algoexpert.veryhard.all_kinds_of_node_depths;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive: for each node, add its subtree depth sum.
 class Solution2 {
 	// O(n.log(n)) time | O(h) space
 	public static int allKindsOfNodeDepths(BinaryTree root) {

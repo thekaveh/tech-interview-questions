@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Single comparison: experience + reward >= threshold.
 class Solution1 {
     static boolean solution(int experience, int threshold, int reward) {
         return experience + reward >= threshold;

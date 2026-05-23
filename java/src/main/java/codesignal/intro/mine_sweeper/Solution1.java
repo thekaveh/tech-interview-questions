@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: For each mine, increment all valid neighbors.
 class Solution1 {
     static int[][] solution(boolean[][] A) {
         var R = A.length;

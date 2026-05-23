@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Enumerate integer points in bounding box and test each against the rotated rectangle inequalities.
 class Solution1 {
     static int solution(int a, int b) {
         var ret = 0;

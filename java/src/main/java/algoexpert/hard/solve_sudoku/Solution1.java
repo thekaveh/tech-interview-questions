@@ -1,7 +1,7 @@
 package algoexpert.hard.solve_sudoku;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Backtracking with row/column/box validity checks.
 class Solution1 {
 	public ArrayList<ArrayList<Integer>> solveSudoku(ArrayList<ArrayList<Integer>> B) {
 		solve(0, 0, B);

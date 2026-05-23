@@ -1,7 +1,7 @@
 package algoexpert.medium.three_number_sum;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort + brute force triple nested loop.
 class Solution1 {
     public static List<Integer[]> threeNumberSum(int[] A, int S) {
         var N = A.length;

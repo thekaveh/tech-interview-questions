@@ -1,7 +1,7 @@
 package educative.patterns.sliding_window.longest_substring_with_same_letters_after_replacement;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sliding window + character count; shrink when (window size − max frequency) exceeds k.
 class Solution1 {
 	public static int findLength(String txt, int k) {
 		int N = txt.length();

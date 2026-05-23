@@ -1,7 +1,7 @@
 package algoexpert.medium.missing_numbers;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: XOR to isolate two missing values via LSB.
 class Solution3 {
     // Time: O(n) | Space: O(1)
     public int[] missingNumbers(int[] A) {

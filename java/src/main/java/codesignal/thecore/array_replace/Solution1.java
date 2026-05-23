@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: In-place linear scan with conditional assignment.
 class Solution1 {
     static int[] solution(int[] A, int fromElem, int toElem) {
         var N = A.length;

@@ -1,7 +1,7 @@
 package algoexpert.medium.sort_stack;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive: pop top, sort remainder, insert at correct position.
 class Solution2 {
     public ArrayList<Integer> sortStack(ArrayList<Integer> S) {
         var N = S.size();

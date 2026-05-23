@@ -1,7 +1,7 @@
 package algoexpert.medium.powerset;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Bitmask with explicit boolean bitmask helper.
 class Solution4 {
     public static List<List<Integer>> powerset(List<Integer> A) {
         int N = A.size();

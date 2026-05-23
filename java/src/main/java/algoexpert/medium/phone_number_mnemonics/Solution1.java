@@ -1,7 +1,7 @@
 package algoexpert.medium.phone_number_mnemonics;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Iterative BFS expansion with char-array substitution.
 class Solution1 {
     private static final Map<Character, char[]> MNEMONICS = new HashMap<>() {{
         put('2', new char[]{'a', 'b', 'c'});

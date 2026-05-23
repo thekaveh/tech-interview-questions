@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Direct formula: compute breakpoints for reaching minutes 1, 10, and 11+.
 class Solution2 {
     static int solution(int min1, int min2_10, int min11, int s) {
         var t1 = min1 + min2_10 * 9;

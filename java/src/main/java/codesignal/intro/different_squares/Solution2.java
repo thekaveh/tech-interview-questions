@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: HashSet of canonical string keys per 2x2 block.
 class Solution2 {
     static int solution(int[][] M) {
         var R = M.length;

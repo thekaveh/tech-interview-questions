@@ -11,5 +11,5 @@ Given a string containing both letters and numbers, extract all embedded integer
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Two-pointer scan to isolate digit runs, accumulate | O(n) | O(n) |
-| solution-2.java | Split on non-digits, filter, parse, reduce | O(n) | O(n) |
+| Solution1 | Two-pointer scan to isolate digit runs, accumulate | O(n) | O(n) |
+| Solution2 | Split on non-digits, filter, parse, reduce | O(n) | O(n) |

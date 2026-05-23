@@ -1,7 +1,7 @@
 package algoexpert.medium.valid_ip_addresses;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Same triple loop with alternative validity check (no leading zeros via re-stringify).
 class Solution2 {
     public ArrayList<String> validIPAddresses(String composite) {
         var N = composite.length();

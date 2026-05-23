@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Wrap rows then derive top/bottom via replaceAll.
 class Solution2 {
     static String[] solution(String[] picture) {
         var M = picture.length;

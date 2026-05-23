@@ -1,7 +1,7 @@
 package algoexpert.easy.run_length_encoding;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Two-index single pass, inner for extends run.
 class Solution2 {
     public String runLengthEncoding(String txt) {
         var N = txt.length();

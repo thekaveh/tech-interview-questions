@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Try deleting each digit position, track maximum.
 class Solution1 {
     static int solution(int n) {
         var digits = new StringBuilder();

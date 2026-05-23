@@ -1,7 +1,7 @@
 package algoexpert.medium.number_of_ways_to_traverse_graph;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Naive recursion.
 class Solution1 {
     // T: O(2^(C + R)) - S: O(C + R)
     public int numberOfWaysToTraverseGraph(int C, int R) {

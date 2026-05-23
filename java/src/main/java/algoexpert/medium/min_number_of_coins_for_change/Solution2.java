@@ -1,7 +1,7 @@
 package algoexpert.medium.min_number_of_coins_for_change;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Top-down recursion with 2-D memoization.
 class Solution2 {
     public static int minNumberOfCoinsForChange(int S, int[] D) {
         var N = D.length;

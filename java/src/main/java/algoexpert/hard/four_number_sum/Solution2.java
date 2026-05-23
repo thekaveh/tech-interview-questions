@@ -1,7 +1,7 @@
 package algoexpert.hard.four_number_sum;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort + two outer loops + two pointers.
 // T: O(N^3) | S: O(1)
 class Solution2 {
     public static List<Integer[]> fourNumberSum(int[] A, int S) {

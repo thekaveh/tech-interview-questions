@@ -11,5 +11,5 @@ Given an integer, determine whether all of its digits are even.
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Extract digits via modulo, check each for evenness | O(d) | O(1) |
-| solution-2.java | Convert to string and match regex of even digits | O(d) | O(d) |
+| Solution1 | Extract digits via modulo, check each for evenness | O(d) | O(1) |
+| Solution2 | Convert to string and match regex of even digits | O(d) | O(d) |

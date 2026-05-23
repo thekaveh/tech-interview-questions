@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Brute-force search over all bases 2–20 and valid exponents.
 class Solution1 {
     static boolean solution(int n) {
         if(n == 1) { return true; }

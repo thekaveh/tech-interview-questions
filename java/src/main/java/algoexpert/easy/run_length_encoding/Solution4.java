@@ -1,7 +1,7 @@
 package algoexpert.easy.run_length_encoding;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Single pass, count then emit on boundary.
 class Solution4 {
 	public String runLengthEncoding(String txt) {
 		int N = txt.length();

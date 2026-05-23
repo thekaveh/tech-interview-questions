@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Stream filter over candidate jump sizes.
 class Solution2 {
     static int solution(int[] A) {
         return IntStream.range(2, Arrays.stream(A).max().getAsInt() + 2)

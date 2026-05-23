@@ -11,4 +11,4 @@ A string is "beautiful" if the frequency of each letter is greater than or equal
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Frequency array, check non-increasing order | O(n) | O(1) |
+| Solution1 | Frequency array, check non-increasing order | O(n) | O(1) |

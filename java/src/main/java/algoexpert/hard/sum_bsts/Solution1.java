@@ -1,7 +1,7 @@
 package algoexpert.hard.sum_bsts;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Post-order DFS tracking BST validity, range, size, and subtree sums.
 class Solution1 {
 	// This is an input class. Do not edit.
 	static class BinaryTree {

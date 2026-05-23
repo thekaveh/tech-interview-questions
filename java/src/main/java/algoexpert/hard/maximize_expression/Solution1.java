@@ -1,7 +1,7 @@
 package algoexpert.hard.maximize_expression;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Four nested loops brute force.
 class Solution1 {
 	public int maximizeExpression(int[] A) {
 		var N = A.length;

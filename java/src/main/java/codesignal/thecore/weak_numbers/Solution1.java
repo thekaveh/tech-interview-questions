@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Compute divisor count for each number 1–n, then compute weakness by scanning all prior numbers.
 class Solution1 {
     static int[] solution(int n) {
         var max_w = 0;

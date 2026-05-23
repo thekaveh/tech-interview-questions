@@ -1,7 +1,7 @@
 package algoexpert.hard.longest_substring_without_duplication;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sliding window with last-seen index map.
 class Solution1 {
 	public static String longestSubstringWithoutDuplication(String txt) {
 		var N = txt.length();

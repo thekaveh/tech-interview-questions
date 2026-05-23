@@ -11,4 +11,4 @@ A plant grows by upSpeed each day and shrinks by downSpeed each night; given a d
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| solution-1.java | Day-by-day simulation | O(days) | O(1) |
+| Solution1 | Day-by-day simulation | O(days) | O(1) |

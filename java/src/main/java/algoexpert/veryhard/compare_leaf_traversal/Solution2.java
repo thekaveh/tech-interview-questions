@@ -1,7 +1,7 @@
 package algoexpert.veryhard.compare_leaf_traversal;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Two synchronized iterative DFS stacks, compare leaf by leaf.
 class Solution2 {
 	// This is an input class. Do not edit.
 	static class BinaryTree {

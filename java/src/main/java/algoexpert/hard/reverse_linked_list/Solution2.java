@@ -1,7 +1,7 @@
 package algoexpert.hard.reverse_linked_list;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Recursive reversal.
 class Solution2 {
 	public static LinkedList reverseLinkedList(LinkedList H) {
 		return reverse(null, H);

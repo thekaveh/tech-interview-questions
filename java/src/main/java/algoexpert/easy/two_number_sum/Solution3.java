@@ -1,7 +1,7 @@
 package algoexpert.easy.two_number_sum;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Sort + two pointers.
 class Solution3 {
     public static int[] twoNumberSum(int[] A, int S) {
         var N = A.length;

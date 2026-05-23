@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.math.*;
 
-// Approach: TODO.
+// Approach: Single boolean expression encoding both acceptance conditions.
 class Solution1 {
     static boolean solution(boolean young, boolean beautiful, boolean loved) {
         return (young && beautiful && !loved) || (loved && (!young || !beautiful));

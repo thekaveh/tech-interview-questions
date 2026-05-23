@@ -1,7 +1,7 @@
 package algoexpert.medium.minimum_characters_for_words;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Same logic with cleaner per-word map merging.
 class Solution2 {
     public char[] minimumCharactersForWords(String[] words) {
         var FREQ = new HashMap<Character, Integer>();

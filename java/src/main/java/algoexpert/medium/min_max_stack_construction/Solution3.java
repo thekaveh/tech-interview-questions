@@ -1,7 +1,7 @@
 package algoexpert.medium.min_max_stack_construction;
 import java.util.*;
 
-// Approach: TODO.
+// Approach: Intrusive linked list where each node carries its min/max.
 class Solution3 {
     static class Node {
         Integer min;
