@@ -1,0 +1,42 @@
+package algoexpert.medium.find_successor;
+import java.util.*;
+
+// Approach: TODO.
+class Solution2 {
+    // This is an input class. Do not edit.
+    static class BinaryTree {
+        public int value;
+        public BinaryTree left = null;
+        public BinaryTree right = null;
+        public BinaryTree parent = null;
+
+        public BinaryTree(int value) {
+            this.value = value;
+        }
+    }
+
+    public BinaryTree findSuccessor(BinaryTree tree, BinaryTree node) {
+        var S = new Stack<BinaryTree>();
+
+        traverseRNL(tree, S);
+
+        while(!S.isEmpty()) {
+            if(S.pop() == node) {
+                if(!S.isEmpty())    { return S.peek(); }
+                else                { return null; }
+            }
+        }
+
+        return null;
+    }
+
+    private static void traverseRNL(BinaryTree tree, Stack<BinaryTree> S) {
+        if(tree == null) { return; }
+        
+        traverseRNL(tree.right, S);
+
+        S.push(tree);
+
+        traverseRNL(tree.left, S);
+    }
+}
