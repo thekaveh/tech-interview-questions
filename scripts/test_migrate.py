@@ -424,6 +424,24 @@ class TestTransformEducative(unittest.TestCase):
         )
         self.assertEqual(out, EDUCATIVE_WITH_IMPORT_EXPECTED)
 
+    def test_rewrites_old_class_name_references_in_body(self):
+        src = """class MaxFruitCountOf2Types {
+\tpublic static int findLength(char[] A) { return A.length; }
+
+\tpublic static void main(String[] args) {
+\t\tSystem.out.println(MaxFruitCountOf2Types.findLength(new char[] { 'A' }));
+\t}
+}
+"""
+        out = transform_educative(
+            src,
+            'educative.patterns.sliding_window.fruits_into_baskets',
+            1,
+        )
+        self.assertIn('class Solution1 {', out)
+        self.assertIn('Solution1.findLength(', out)
+        self.assertNotIn('MaxFruitCountOf2Types', out)
+
 
 if __name__ == '__main__':
     unittest.main()

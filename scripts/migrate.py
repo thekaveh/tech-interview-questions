@@ -202,19 +202,31 @@ def _transform_simple(content: str, package: str, sol_num: int) -> str:
 
     Both providers have files that already contain a class declaration
     (with varying names) and need: package prepended, java.util.* ensured,
-    class renamed to Solution{N}, and an Approach placeholder inserted.
+    class renamed to Solution{N}, references to the old class name
+    (e.g. `OldName.staticMethod(...)`) rewritten to the new name, and an
+    Approach placeholder inserted.
     """
     imports, body = _split_imports(content)
     imports = _ensure_java_util_import(imports)
     body = body.rstrip() + '\n'
 
-    body = re.sub(
-        r'^class [A-Za-z_]\w*\s*\{',
-        f'class Solution{sol_num} {{',
-        body,
-        count=1,
-        flags=re.MULTILINE,
-    )
+    new_class = f'Solution{sol_num}'
+    m = re.search(r'^class ([A-Za-z_]\w*)\s*\{', body, flags=re.MULTILINE)
+    if m:
+        old_class = m.group(1)
+        body = re.sub(
+            r'^class ' + re.escape(old_class) + r'\s*\{',
+            f'class {new_class} {{',
+            body,
+            count=1,
+            flags=re.MULTILINE,
+        )
+        if old_class != new_class:
+            body = re.sub(
+                r'\b' + re.escape(old_class) + r'\b',
+                new_class,
+                body,
+            )
 
     imports_block = '\n'.join(imports)
     return (
