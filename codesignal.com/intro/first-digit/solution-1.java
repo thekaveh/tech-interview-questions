@@ -5,5 +5,5 @@ char solution(String txt) {
         return c;
     }
 
-    return '';
+    return '\0';
 }

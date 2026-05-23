@@ -1,5 +1,5 @@
 String solution(String txt) {
-    var N = txt.length;
+    var N = txt.length();
 
     for(var i = 0; i < N; i++) {
         var c = txt.charAt(i);
