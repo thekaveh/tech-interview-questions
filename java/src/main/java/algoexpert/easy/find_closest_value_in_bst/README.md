@@ -1,4 +1,4 @@
-# Find Closest Value In Bst
+# Find Closest Value In BST
 
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** AlgoExpert

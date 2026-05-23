@@ -1,4 +1,4 @@
-# Is Mac48 Address
+# Is MAC48 Address
 
 ![Difficulty](https://img.shields.io/badge/difficulty-warm--up-green)
 **Source:** CodeSignal

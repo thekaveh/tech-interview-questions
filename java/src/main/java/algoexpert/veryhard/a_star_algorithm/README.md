@@ -1,4 +1,4 @@
-# A Star Algorithm
+# A* Algorithm
 
 ![Difficulty](https://img.shields.io/badge/difficulty-very--hard-red)
 **Source:** AlgoExpert

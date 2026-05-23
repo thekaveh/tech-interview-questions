@@ -1,4 +1,4 @@
-# Repair Bst
+# Repair BST
 
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert

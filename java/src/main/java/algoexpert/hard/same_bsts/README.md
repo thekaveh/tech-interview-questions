@@ -1,4 +1,4 @@
-# Same Bsts
+# Same BSTs
 
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert

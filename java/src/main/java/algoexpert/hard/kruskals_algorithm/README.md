@@ -1,4 +1,4 @@
-# Kruskals Algorithm
+# Kruskal's Algorithm
 
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert

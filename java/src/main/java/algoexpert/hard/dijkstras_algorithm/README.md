@@ -1,4 +1,4 @@
-# Dijkstras Algorithm
+# Dijkstra's Algorithm
 
 ![Difficulty](https://img.shields.io/badge/difficulty-hard-orange)
 **Source:** AlgoExpert
