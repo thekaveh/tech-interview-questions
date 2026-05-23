@@ -3,32 +3,25 @@ import java.util.*;
 
 // Approach: Variable-size sliding window with a HashSet shrinking left when distinct count exceeds 2.
 class Solution1 {
-	public static int findLength(char[] A) {
-		if (A == null || A.length == 0) {
-			return -1;
-		}
+    public static int findLength(char[] A) {
+        if (A == null || A.length == 0) {
+            return -1;
+        }
 
-		int N = A.length, lo = 0, hi = 0, ret = -1;
-		Set<Character> M = new HashSet<>();
+        int N = A.length, lo = 0, hi = 0, ret = -1;
+        Set<Character> M = new HashSet<>();
 
-		while (hi < N) {
-			while (hi < N && M.size() <= 2) {
-				M.add(A[hi++]);
-			}
-			while (lo <= hi && 2 < M.size()) {
-				M.remove(A[lo++]);
-			}
+        while (hi < N) {
+            while (hi < N && M.size() <= 2) {
+                M.add(A[hi++]);
+            }
+            while (lo <= hi && 2 < M.size()) {
+                M.remove(A[lo++]);
+            }
 
-			ret = Math.max(ret, hi - lo);
-		}
+            ret = Math.max(ret, hi - lo);
+        }
 
-		return ret;
-	}
-
-	public static void main(String[] args) {
-		System.out.println("Maximum number of fruits: " +
-				Solution1.findLength(new char[] { 'A', 'B', 'C', 'A', 'C' }));
-		System.out.println("Maximum number of fruits: " +
-				Solution1.findLength(new char[] { 'A', 'B', 'C', 'B', 'B', 'C' }));
-	}
+        return ret;
+    }
 }

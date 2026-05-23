@@ -11,8 +11,8 @@ Given a directed graph represented as an adjacency list (array of int arrays), d
 
 | File | Approach | Time | Space |
 |---|---|---|---|
-| Solution0 | DFS with boolean visited + recursion-stack arrays | O(v + e) | O(v) |
 | Solution1 | DFS wrapped in a class, HashMap-based state | O(v + e) | O(v) |
 | Solution2 | DFS with Graph/DFS classes, boolean arrays | O(v + e) | O(v) |
 | Solution3 | DFS with Graph class using adjacency HashMap | O(v + e) | O(v) |
 | Solution4 | DFS with Graph class and keyset iteration | O(v + e) | O(v) |
+| Solution5 | DFS with boolean visited + recursion-stack arrays | O(v + e) | O(v) |

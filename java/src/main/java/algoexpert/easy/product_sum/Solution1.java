@@ -9,6 +9,7 @@ class Solution1 {
         return solve(A, 1);
     }
 
+    @SuppressWarnings("unchecked")
     private static int solve(List<Object> A, int coefficient) {
         var S = 0;
 

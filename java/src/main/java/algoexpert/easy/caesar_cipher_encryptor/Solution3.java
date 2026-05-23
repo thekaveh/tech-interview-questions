@@ -2,16 +2,16 @@ package algoexpert.easy.caesar_cipher_encryptor;
 import java.util.*;
 
 // Approach: Arithmetic modulo 26.
-class Solution0 {
-	public static String caesarCypherEncryptor(String txt, int k) {
-		var R = new StringBuilder();
+class Solution3 {
+    public static String caesarCypherEncryptor(String txt, int k) {
+        var R = new StringBuilder();
 
-		for(var c : txt.toCharArray()) {
-			var delta = (c - 'a' + k) % ('z' - 'a' + 1);
-			
-			R.append((char)('a' + delta));
-		}
+        for(var c : txt.toCharArray()) {
+            var delta = (c - 'a' + k) % ('z' - 'a' + 1);
+            
+            R.append((char)('a' + delta));
+        }
 
-		return R.toString();
-	}
+        return R.toString();
+    }
 }
