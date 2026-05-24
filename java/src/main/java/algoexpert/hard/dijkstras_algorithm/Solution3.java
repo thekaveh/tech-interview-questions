@@ -2,7 +2,7 @@ package algoexpert.hard.dijkstras_algorithm;
 import java.util.*;
 
 // Approach: Min-heap Dijkstra with in-queue tracking.
-public class Solution3 {
+class Solution3 {
     public int[] dijkstrasAlgorithm(int s, int[][][] E) {
         var N = E.length;
 
