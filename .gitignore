@@ -10,8 +10,9 @@
 # trunk local state (linter runtime cache)
 .trunk/
 
-# claude code session state and notes
+# claude code session state, config, and notes (local-only, never committed)
 .claude/
+CLAUDE.md
 
 # in-progress design or planning notes (kept local, never committed)
 docs/superpowers/
