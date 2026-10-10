@@ -5,8 +5,8 @@ Stub tree for future Python ports of selected problems. Mirrors the
 
 Currently a single example (Two Number Sum) is here to prove the layout
 and test wiring work. Add more as desired; each new problem follows the
-same shape as in [`../CLAUDE.md`](../CLAUDE.md) §3, translated to
-Python idioms.
+public [solution-shape conventions](https://github.com/thekaveh/tech-interview-questions/blob/main/CONTRIBUTING.md#1-layout-and-solution-shape),
+translated to Python idioms.
 
 ## 1. Layout
 
@@ -19,13 +19,19 @@ python/
 
 ## 2. Running the tests
 
-From this directory:
+Install Python 3.10+ before testing. From the repository root, create an isolated
+environment and install `pytest`, then enter the Python project:
 
 ```bash
+python3 -m venv /tmp/tech-interview-python-venv
+. /tmp/tech-interview-python-venv/bin/activate
+python3 -m pip install pytest
+cd python
 python3 -m pytest
 ```
 
-Requires Python 3.10+ and `pytest` installed (`pip install pytest`).
+The current example's tests should pass. These tests cover the single Python port,
+not the Java collection.
 
 ## 3. Conventions
 
