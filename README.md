@@ -6,7 +6,41 @@ A personal collection of solved coding-interview problems from AlgoExpert,
 CodeSignal, and Educative. Solutions are my own work; problem statements in
 each `README.md` are paraphrased in my own words.
 
-## 1. Counts
+## 1. Browse problems
+
+Open the [online problem catalog](https://thekaveh.github.io/tech-interview-questions/PROBLEMS.html)
+or the [problem index](PROBLEMS.md). Choose a provider and tier, then open a
+problem to read its paraphrased statement and compare solution approaches with
+their time and space complexity.
+
+For a first example, read [Two Number Sum](java/src/main/java/algoexpert/easy/two_number_sum/README.md).
+Its table compares brute force, sorting with binary search, and two pointers.
+Open its [Java implementations](https://github.com/thekaveh/tech-interview-questions/tree/main/java/src/main/java/algoexpert/easy/two_number_sum)
+to study each approach. Browsing
+requires no local build; the Python tree currently contains one example port.
+
+## 2. Build locally
+
+Install Git, a JDK **17 or newer**, and Maven before running the commands below.
+Make sure `java` and `mvn` are available in your shell. From a new checkout:
+
+```bash
+git clone https://github.com/thekaveh/tech-interview-questions.git
+cd tech-interview-questions
+```
+
+From the checkout root, build the Java project:
+
+```bash
+(cd java && mvn -B verify)
+```
+
+A successful run ends with Maven's `BUILD SUCCESS`. It compiles every Java
+solution and runs the JUnit smoke test that loads each `Solution{N}` class through
+reflection. This checks compilation and class loading, not the correctness of
+every algorithm. See the [Python guide](python/README.md) for its separate test path.
+
+## 3. Inventory
 
 | Provider   | Problems | Solutions |
 | ---------- | -------: | --------: |
@@ -15,9 +49,7 @@ each `README.md` are paraphrased in my own words.
 | Educative  |        8 |         9 |
 | **Total**  |  **278** |   **475** |
 
-Full browsable index: [PROBLEMS.md](./PROBLEMS.md).
-
-## 2. Layout
+## 4. Layout
 
 ```text
 java/                              ← Java solutions (active)
@@ -33,16 +65,7 @@ Each `<problem>/` directory contains a `README.md` (problem summary,
 difficulty badge, complexity table) and one or more `SolutionN.java`
 files where the number denotes attempt order.
 
-## 3. Building
-
-```bash
-cd java && mvn -B verify
-```
-
-Requires JDK 17+. The build compiles every solution and runs the JUnit
-smoke test that loads each `Solution{N}` class via reflection.
-
-## 4. Difficulty badges
+## 5. Difficulty badges
 
 - ![warmup](https://img.shields.io/badge/-warm--up-green) — elementary, FizzBuzz-tier
 - ![easy](https://img.shields.io/badge/-easy-yellowgreen)
@@ -53,18 +76,12 @@ smoke test that loads each `Solution{N}` class via reflection.
 The badge defaults from the source tier but is labeled honestly per
 problem — some "easy"-tier problems are really warm-ups.
 
-## 5. Adding a problem
+## 6. Extend the collection
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for the conventions, and
-[CLAUDE.md](./CLAUDE.md) for the full house-style reference.
-
-## 6. Browse online
-
-GitHub Pages is configured (`_config.yml` + `.github/workflows/pages.yml`).
-Enable it once in repo Settings → Pages → Source: **GitHub Actions**, then
-each push deploys a Jekyll site rendering this README and the per-problem
-catalog.
+External contributions are not actively solicited. Forks and future additions
+should follow the public [contributor and style guide](https://github.com/thekaveh/tech-interview-questions/blob/main/CONTRIBUTING.md),
+which covers layout, solution naming, code style, catalog regeneration and checks.
 
 ## 7. License
 
-[MIT](./LICENSE)
+[MIT license](https://github.com/thekaveh/tech-interview-questions/blob/main/LICENSE)
